@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{hymnbook}[2025/04/19 Vertical-stretched hymn number style]
+\ProvidesPackage{hymnbook}[2025/04/19 Two-column hymnbook with dividing line]
 
 \RequirePackage{titlesec}
 \RequirePackage{parskip}
@@ -16,6 +16,18 @@
 \fancyhf{}
 \rhead{\thepage}
 \renewcommand{\headrulewidth}{0pt}
+
+% Set up two-column layout
+\AtBeginDocument{%
+  \setlength{\columnsep}{1em}     % Set the space between columns
+  \setlength{\columnseprule}{0.4pt} % Thickness of the dividing line
+  \begin{multicols}{2}
+}
+
+% Close columns at end of document
+\AtEndDocument{%
+  \end{multicols}
+}
 
 % Left-aligned title with vertically stretched hymn number
 \newcommand{\HymnTitleWithNumber}[2]{%
@@ -53,4 +65,4 @@
 }
 
 % Page break between hymns
-\newcommand{\HymnBreak}{\newpage}
+\newcommand{\HymnBreak}{\columnbreak}
