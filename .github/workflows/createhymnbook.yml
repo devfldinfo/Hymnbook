@@ -4,23 +4,18 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  build-pdf:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Install TinyTeX
+    - name: Install TeX Live (minimal)
       run: |
-        wget -qO- https://yihui.org/tinytex/install-unx.sh | sh
-        echo "$HOME/bin" >> $GITHUB_PATH
-        ~/.TinyTeX/bin/*/tlmgr path add
-
-    - name: Install required LaTeX packages
-      run: |
-        tlmgr install latexmk collection-latexrecommended \
-          collection-latexextra collection-fontsrecommended
+        sudo apt-get update
+        sudo apt-get install -y texlive-latex-base texlive-latex-recommended \
+          texlive-latex-extra texlive-fonts-recommended latexmk
 
     - name: Compile LaTeX document
       run: |
