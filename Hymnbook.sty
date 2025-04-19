@@ -64,14 +64,17 @@
   \end{minipage}\par\vspace{0.5em}%
 }
 
-% Chorus formatting
+% Chorus formatting: bold text, no label
 \newenvironment{chorus}{%
   \vspace{0.5em}%
-  \noindent\textit{Chorus:}%
-  \begin{quote}\itshape
-}{%
-  \end{quote}%
+  \begin{minipage}[t]{\linewidth}%
+  \raggedright\bfseries
 }
+
+{%
+  \end{minipage}\par\vspace{0.5em}%
+}
+
 
 % Optional manual break if needed
 \newcommand{\HymnBreak}{\columnbreak}
