@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{hymnbook}[2025/04/19 Split hymn number styling]
+\ProvidesPackage{hymnbook}[2025/04/19 Vertical-stretched hymn number style]
 
 \RequirePackage{titlesec}
 \RequirePackage{parskip}
@@ -17,21 +17,24 @@
 \rhead{\thepage}
 \renewcommand{\headrulewidth}{0pt}
 
-% Left-aligned title with large hymn number
+% Left-aligned title with vertically stretched hymn number
 \newcommand{\HymnTitleWithNumber}[2]{%
   \vspace{1em}%
-  {\LARGE\bfseries \raisebox{0.2ex}{\Huge #1}\hspace{0.5em}#2\par}%
-  \addcontentsline{toc}{section}{#1 #2}%
+  {\LARGE\bfseries
+    \raisebox{-0.3ex}{\parbox[c][2\baselineskip][c]{1.5em}{\centering\Huge #1}}%
+    \hspace{0.5em}#2\par}%
+  \addcontentsline{toc}{section}{#1\ #2}%
   \markboth{#2}{#2}%
   \vspace{1em}%
 }
 
-% Large hymn number before first stanza
+% Vertically stretched hymn number before first line
 \newcommand{\HymnNumberBeforeFirstVerse}[1]{%
-  {\Huge\textbf{#1}}\hspace{0.5em}%
+  \raisebox{-0.3ex}{\parbox[c][2\baselineskip][c]{1.5em}{\centering\Huge\bfseries #1}}%
+  \hspace{0.5em}%
 }
 
-% Stanza environment (manual verse input)
+% Stanza environment
 \newenvironment{stanza}{%
   \noindent
   \begin{minipage}[t]{\linewidth}%
