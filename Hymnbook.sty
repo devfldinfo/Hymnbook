@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{hymnbook}[2025/04/19 Two-column hymnbook with dividing line]
+\ProvidesPackage{hymnbook}[2025/04/19 First verse directly under title]
 
 \RequirePackage{titlesec}
 \RequirePackage{parskip}
@@ -29,15 +29,12 @@
   \end{multicols}
 }
 
-% Left-aligned title with vertically stretched hymn number
+% Left-aligned title with same size as verse text (no large font)
 \newcommand{\HymnTitleWithNumber}[2]{%
-  \vspace{1em}%
-  {\LARGE\bfseries
-    \raisebox{-0.3ex}{\parbox[c][2\baselineskip][c]{1.5em}{\centering\Huge #1}}%
-    \hspace{0.5em}#2\par}%
-  \addcontentsline{toc}{section}{#1\ #2}%
+  \vspace{0em} % Reduced space after title to bring first verse closer
+  {\bfseries #1~#2\par}%
+  \addcontentsline{toc}{section}{#1~#2}%
   \markboth{#2}{#2}%
-  \vspace{1em}%
 }
 
 % Vertically stretched hymn number before first line
