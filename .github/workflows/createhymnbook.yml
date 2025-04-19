@@ -11,12 +11,15 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Set up Tectonic
-      uses: actions-rs/tectonic@v1
+    - name: Install TeX Live (minimal)
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y texlive-latex-base texlive-latex-recommended \
+          texlive-latex-extra texlive-fonts-recommended latexmk
 
     - name: Compile LaTeX document
       run: |
-        tectonic hymnbook.tex --print --keep-logs --keep-intermediates
+        latexmk -pdf hymnbook.tex
 
     - name: Upload PDF artifact
       uses: actions/upload-artifact@v4
