@@ -1,6 +1,16 @@
 \documentclass[12pt]{article}
 \usepackage{hymnbook}
-\title{Amharic Hymns}
+
+% For Amharic and Unicode support
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainlanguage{amharic}
+\newfontfamily\amharicfont[
+    Path=~/.fonts/,
+    UprightFont=*Nyala
+]{Nyala}
+
+\title{የመዝሙሮች ክፍል}
 \begin{document}
 \maketitle
 \newpage
