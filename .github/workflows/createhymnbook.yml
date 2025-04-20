@@ -10,6 +10,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Install TeX Live (minimal)
       run: |
@@ -19,18 +21,15 @@ jobs:
 
     - name: Compile LaTeX document
       run: |
-        latexmk -pdf hymnbook.tex
-        
-    - name: Auto Commit PDFs
-      uses: stefanzweifel/git-auto-commit-action@v4
-      with:
-        commit_message: "Compiled LaTeX files with View and Print versions"
-        push_options: '--force'
-        file_pattern: '*.pdf'
-        
+        latexmk -pdf -interaction=nonstopmode -file-line-error hymnbook.tex
 
-    - name: Upload PDF artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: hymnbook-pdf
-        path: hymnbook.pdf
+    - name: Commit PDF to repository
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        cp hymnbook.pdf ./  # Ensure it's at the root if needed
+        git add hymnbook.pdf
+        git commit -m "Auto-compile and update hymnbook.pdf" || echo "No changes to commit"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
