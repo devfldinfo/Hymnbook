@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{hymnbook}[2025/04/20 Flowing hymns, stanza-aware spacing]
+\ProvidesPackage{hymnbook}[2025/04/20 Flowing hymns, natural stanza breaks]
 
 \RequirePackage{titlesec}
 \RequirePackage{parskip}
@@ -23,7 +23,7 @@
 \AtBeginDocument{%
   \setlength{\columnsep}{1em}
   \setlength{\columnseprule}{0pt}
-  \raggedcolumns % Prevents vertical stretching
+  \raggedcolumns % Prevent vertical stretch
   \begin{multicols}{2}
 }
 
@@ -39,7 +39,7 @@
   \end{multicols}
 }
 
-% Hymn wrapper: light formatting, no forced jump
+% Hymn wrapper
 \newenvironment{hymn}[2]{%
   \vspace{0.5em}%
   {\bfseries #1~#2\par}%
@@ -56,23 +56,21 @@
   \hspace{0.5em}%
 }
 
-% Stanza environment: prevent splitting across columns
+% Stanza environment: no minipage, flows naturally
 \newenvironment{stanza}{%
   \Needspace{5\baselineskip}%
-  \begin{minipage}[t]{\linewidth}%
-  \raggedright
+  \par\raggedright
 }{%
-  \end{minipage}\par\vspace{0.5em}%
+  \par\vspace{0.5em}%
 }
 
-% Chorus formatting: bold text, no label
+% Chorus formatting: bold, natural flow
 \newenvironment{chorus}{%
-  \vspace{0.5em}%
-  \begin{minipage}[t]{\linewidth}%
-  \raggedright\bfseries
+  \Needspace{5\baselineskip}%
+  \par\raggedright\bfseries
 }{%
-  \end{minipage}\par\vspace{0.5em}%
+  \par\vspace{0.5em}%
 }
 
-% Optional manual break if needed
+% Optional manual column break
 \newcommand{\HymnBreak}{\columnbreak}
