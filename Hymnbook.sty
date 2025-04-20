@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{hymnbook}[2025/04/19 Flowing hymns without spacing gaps]
+\ProvidesPackage{hymnbook}[2025/04/20 Flowing hymns, stanza-aware spacing]
 
 \RequirePackage{titlesec}
 \RequirePackage{parskip}
@@ -23,7 +23,7 @@
 \AtBeginDocument{%
   \setlength{\columnsep}{1em}
   \setlength{\columnseprule}{0pt}
-  \raggedcolumns % Prevent vertical stretching of columns (no spacing out)
+  \raggedcolumns % Prevents vertical stretching
   \begin{multicols}{2}
 }
 
@@ -39,9 +39,8 @@
   \end{multicols}
 }
 
-% Hymn wrapper to keep hymn content together (prevent splitting)
+% Hymn wrapper: light formatting, no forced jump
 \newenvironment{hymn}[2]{%
-  \Needspace*{8\baselineskip} % Require space, else go to next column
   \vspace{0.5em}%
   {\bfseries #1~#2\par}%
   \addcontentsline{toc}{section}{#1~#2}%
@@ -57,8 +56,9 @@
   \hspace{0.5em}%
 }
 
-% Stanza environment
+% Stanza environment: prevent splitting across columns
 \newenvironment{stanza}{%
+  \Needspace{5\baselineskip}%
   \begin{minipage}[t]{\linewidth}%
   \raggedright
 }{%
