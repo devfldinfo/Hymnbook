@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{hymnbook}[2025/04/20 Flowing hymns, natural stanza breaks]
+\ProvidesPackage{hymnbook}[2025/04/20 Flowing hymns, tight formatting]
 
 \RequirePackage{titlesec}
 \RequirePackage{parskip}
@@ -19,28 +19,30 @@
 \rhead{\thepage}
 \renewcommand{\headrulewidth}{0pt}
 
-% Set up two-column layout without rule on first page
+% Begin two-column layout, no rule on page 1
 \AtBeginDocument{%
   \setlength{\columnsep}{1em}
   \setlength{\columnseprule}{0pt}
-  \raggedcolumns % Prevent vertical stretch
+  \raggedcolumns
   \begin{multicols}{2}
 }
 
-% Turn on dividing rule from page 2 onward
+% Turn on column rule from page 2
 \AddEverypageHook{%
   \ifnum\value{page}>1
     \setlength{\columnseprule}{0.4pt}%
   \fi
 }
 
-% Close columns at end of document
+% Close multicol environment at end
 \AtEndDocument{%
   \end{multicols}
 }
 
-% Hymn wrapper
+% Hymn environment: title + first stanza stay together
 \newenvironment{hymn}[2]{%
+  \Needspace{8\baselineskip}%
+  \begingroup
   \vspace{0.5em}%
   {\bfseries #1~#2\par}%
   \addcontentsline{toc}{section}{#1~#2}%
@@ -48,28 +50,29 @@
   \vspace{0.25em}%
 }{%
   \vspace{1em}%
+  \endgroup
 }
 
-% Vertically stretched hymn number before first verse
+% Hymn number block before first stanza
 \newcommand{\HymnNumberBeforeFirstVerse}[1]{%
   \raisebox{-0.3ex}{\parbox[c][2\baselineskip][c]{1.5em}{\centering\Huge\bfseries #1}}%
   \hspace{0.5em}%
 }
 
-% Stanza environment: no minipage, flows naturally
+% Stanza: keep block together with Needspace
 \newenvironment{stanza}{%
   \Needspace{5\baselineskip}%
-  \par\raggedright
+  \begingroup\par\raggedright
 }{%
-  \par\vspace{0.5em}%
+  \par\endgroup\vspace{0.5em}%
 }
 
-% Chorus formatting: bold, natural flow
+% Chorus: bold, kept together
 \newenvironment{chorus}{%
   \Needspace{5\baselineskip}%
-  \par\raggedright\bfseries
+  \begingroup\par\raggedright\bfseries
 }{%
-  \par\vspace{0.5em}%
+  \par\endgroup\vspace{0.5em}%
 }
 
 % Optional manual column break
