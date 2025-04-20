@@ -27,7 +27,7 @@ jobs:
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        cp hymnbook.pdf ./  # Ensure it's at the root if needed
+        
         git add hymnbook.pdf
         git commit -m "Auto-compile and update hymnbook.pdf" || echo "No changes to commit"
         git push
