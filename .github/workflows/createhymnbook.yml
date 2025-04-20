@@ -13,23 +13,29 @@ jobs:
       with:
         token: ${{ secrets.TOKEN }}
 
-    - name: Install TeX Live (minimal)
+    - name: Install TeX Live and XeLaTeX
       run: |
         sudo apt-get update
-        sudo apt-get install -y texlive-latex-base texlive-latex-recommended \
-          texlive-latex-extra texlive-fonts-recommended latexmk
+        sudo apt-get install -y texlive-xetex texlive-latex-recommended \
+          texlive-latex-extra texlive-fonts-recommended latexmk fonts-noto
 
-    - name: Compile LaTeX document
+    - name: Install Nyala font
       run: |
-        latexmk -pdf -interaction=nonstopmode -file-line-error hymnbook.tex
+        mkdir -p ~/.fonts
+        cp ./fonts/Nyala.ttf ~/.fonts/
+        fc-cache -fv
+
+    - name: Compile with XeLaTeX
+      run: |
+        latexmk -xelatex -interaction=nonstopmode -file-line-error amharic-hymnbook.tex
 
     - name: Commit PDF to repository
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        
-        git add hymnbook.pdf
-        git commit -m "Auto-compile and update hymnbook.pdf" || echo "No changes to commit"
+
+        git add amharic-hymnbook.pdf
+        git commit -m "Auto-compile and update Amharic hymnbook PDF" || echo "No changes to commit"
         git push
       env:
         GITHUB_TOKEN: ${{ secrets.TOKEN }}
