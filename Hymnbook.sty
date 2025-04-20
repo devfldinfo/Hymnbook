@@ -23,6 +23,7 @@
 \AtBeginDocument{%
   \setlength{\columnsep}{1em}
   \setlength{\columnseprule}{0pt}
+  \raggedcolumns % Prevent vertical stretching of columns (no spacing out)
   \begin{multicols}{2}
 }
 
@@ -40,7 +41,7 @@
 
 % Hymn wrapper to keep hymn content together (prevent splitting)
 \newenvironment{hymn}[2]{%
-  \needspace{6\baselineskip} % Require space, else go to next column
+  \Needspace*{8\baselineskip} % Require space, else go to next column
   \vspace{0.5em}%
   {\bfseries #1~#2\par}%
   \addcontentsline{toc}{section}{#1~#2}%
@@ -72,7 +73,6 @@
 }{%
   \end{minipage}\par\vspace{0.5em}%
 }
-
 
 % Optional manual break if needed
 \newcommand{\HymnBreak}{\columnbreak}
