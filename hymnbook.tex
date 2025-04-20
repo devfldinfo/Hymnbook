@@ -1,6 +1,21 @@
 \documentclass[12pt]{article}
 \usepackage{hymnbook}
-\title{Amharic Hymns}
+
+% Amharic-only setup with custom Nyala font
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainlanguage{amharic}
+
+% Load Nyala font from local .fonts folder
+\newfontfamily\amharicfont[
+    Path=~/.fonts/,
+    UprightFont=*Nyala
+]{Nyala}
+
+\title{የመዝሙር መፅሀፍ}
+\author{}
+\date{}
+
 \begin{document}
 \maketitle
 \newpage
