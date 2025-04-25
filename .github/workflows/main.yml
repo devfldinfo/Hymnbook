@@ -1,0 +1,31 @@
+name: Create PDF Booklet
+
+on:
+  workflow_dispatch:
+
+jobs:
+  make-booklet:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install pdfbook2
+        run: pip install pdfbook2
+
+      - name: Create PDF booklet from input.pdf
+        run: |
+          mkdir -p output
+          pdfbook2 input.pdf --short-edge --outfile output/booklet.pdf
+
+      - name: Upload booklet as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pdf-booklet
+          path: output/booklet.pdf
