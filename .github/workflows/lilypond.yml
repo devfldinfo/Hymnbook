@@ -11,31 +11,24 @@ on:
 
 jobs:
   compile:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # Run on an Ubuntu virtual machine
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Compile OnePage.ly using LilyPond Docker image
+    - name: Install LilyPond
       run: |
-        # Define the LilyPond version to use.
-        # You can find available versions on Docker Hub: https://hub.docker.com/r/lilypond/lilypond/tags
-        LILYPOND_VERSION="2.24.3" # Or 'latest', '2.25.x', etc.
+        sudo apt-get update
+        sudo apt-get install -y lilypond
 
-        # Run the LilyPond Docker image
-        # -v ${{ github.workspace }}:/data mounts your repository to /data inside the container
-        # lilypond /data/OnePage/OnePage.ly executes lilypond on your file
-        docker run --rm \
-          -v "${{ github.workspace }}:/data" \
-          lilypond/lilypond:${LILYPOND_VERSION} \
-          /data/OnePage/OnePage.ly
-      # The working directory for this step is the repository root by default.
-      # The output PDF will be generated in OnePage/ within the mounted volume.
+    - name: Compile OnePage.ly from OnePage folder
+      run: |
+        cd OnePage/ # Change directory to the OnePage folder
+        lilypond OnePage.ly
 
     - name: Upload compiled PDF
       uses: actions/upload-artifact@v4
       with:
         name: OnePage-pdf
-        # The PDF will be generated directly in the OnePage/ folder relative to the workspace.
-        path: OnePage/OnePage.pdf
+        path: OnePage/OnePage.pdf # The compiled PDF file will be in the OnePage folder
