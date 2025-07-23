@@ -1,3 +1,4 @@
+\version "2.18.2"
 staffSetup = {  \set Staff.minimumPageTurnLength = #(ly:make-moment 10 1)
         \override Staff.BarLine #'allow-span-bar  = ##f
         \set Staff.printPartCombineTexts = ##f}
