@@ -18,7 +18,12 @@ jobs:
 
     - name: Update LilyPond files with convert-ly
       run: |
-        find . -name "*.ly" -exec lilypond-invoke-wrapper convert-ly -e {} \;
+        # Use find with xargs for a more robust way to run convert-ly on multiple files
+        find . -name "*.ly" | xargs -r -n 1 convert-ly -e
+        # Explanation of xargs:
+        # -r: Do not run the command if there are no arguments.
+        # -n 1: Pass one argument at a time to convert-ly. This is safer than passing many at once.
+        # convert-ly -e: The command to execute on each file.
 
     - name: Compile OnePage.ly from OnePage folder
       run: |
