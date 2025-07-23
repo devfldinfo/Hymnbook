@@ -17,18 +17,22 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Set up LilyPond
-      uses: zamband/setup-lilypond@v1
-      with:
-        lilypond-version: '2.24.2' # Specify your desired LilyPond version
-
     - name: Compile OnePage.ly from OnePage folder
-      run: |
-        cd OnePage/ # Change directory to the OnePage folder
-        lilypond OnePage.ly
+      # Use the alexandre-touret/lilypond-github-action to compile LilyPond files.
+      # This action automatically handles setting up LilyPond within a Docker container.
+      uses: alexandre-touret/lilypond-github-action@v1
+      with:
+        # The 'files' input specifies which .ly files to compile.
+        # We need to tell it to look inside the 'OnePage' folder.
+        files: OnePage/OnePage.ly
+        # You can also specify the LilyPond version if needed.
+        # For example, to use LilyPond 2.24.2:
+        # lilypond-version: '2.24.2'
 
     - name: Upload compiled PDF
       uses: actions/upload-artifact@v4
       with:
         name: OnePage-pdf
-        path: OnePage/OnePage.pdf # The compiled PDF file will be in the OnePage folder
+        # The alexandre-touret/lilypond-github-action places outputs in a 'docs/' folder by default.
+        # We need to adjust the path accordingly.
+        path: docs/OnePage.pdf
