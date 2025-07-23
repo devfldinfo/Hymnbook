@@ -20,7 +20,7 @@ FBVerseB = \lyricmode {  \set lyricMelismaAlignment = #CENTER \set shortVocalNam
   Gee  aan  die  Mees --   ter  u  bes --   te,
   Gee  Hom  die  troon  van  u  hart,
   Stel  Hom  die  eer --   ste  in  al --   les,
-  Wy  Horn  ge --   heel  el --   ke  part.
+  Wy  Hom  ge --   heel  el --   ke  part.
   Gee  en  aan  u  sal  ge --   gee  word,
   God  het  sy  Lief --   ste  ge --   gee,
   Dien  Hom  uit  dank --   baar --   heid  trou  dan,
