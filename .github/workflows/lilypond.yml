@@ -17,22 +17,25 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Compile OnePage.ly from OnePage folder
-      # Use the alexandre-touret/lilypond-github-action to compile LilyPond files.
-      # This action automatically handles setting up LilyPond within a Docker container.
-      uses: alexandre-touret/lilypond-github-action@v1
-      with:
-        # The 'files' input specifies which .ly files to compile.
-        # We need to tell it to look inside the 'OnePage' folder.
-        files: OnePage/OnePage.ly
-        # You can also specify the LilyPond version if needed.
-        # For example, to use LilyPond 2.24.2:
-        # lilypond-version: '2.24.2'
+    - name: Compile OnePage.ly using LilyPond Docker image
+      run: |
+        # Define the LilyPond version to use.
+        # You can find available versions on Docker Hub: https://hub.docker.com/r/lilypond/lilypond/tags
+        LILYPOND_VERSION="2.24.3" # Or 'latest', '2.25.x', etc.
+
+        # Run the LilyPond Docker image
+        # -v ${{ github.workspace }}:/data mounts your repository to /data inside the container
+        # lilypond /data/OnePage/OnePage.ly executes lilypond on your file
+        docker run --rm \
+          -v "${{ github.workspace }}:/data" \
+          lilypond/lilypond:${LILYPOND_VERSION} \
+          /data/OnePage/OnePage.ly
+      # The working directory for this step is the repository root by default.
+      # The output PDF will be generated in OnePage/ within the mounted volume.
 
     - name: Upload compiled PDF
       uses: actions/upload-artifact@v4
       with:
         name: OnePage-pdf
-        # The alexandre-touret/lilypond-github-action places outputs in a 'docs/' folder by default.
-        # We need to adjust the path accordingly.
-        path: docs/OnePage.pdf
+        # The PDF will be generated directly in the OnePage/ folder relative to the workspace.
+        path: OnePage/OnePage.pdf
