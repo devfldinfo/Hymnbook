@@ -22,6 +22,22 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y lilypond
 
+    - name: Update LilyPond files with convert-ly
+      run: |
+        # Find all .ly files in the repository and convert them
+        # -e: Edit files in place
+        # -f: Force conversion even if no changes are detected (good for CI)
+        # --from=2.18.2: If you know the original version, specify it. Otherwise, convert-ly tries to guess.
+        # This will update all .ly files in place, including those in subdirectories.
+        find . -name "*.ly" -exec lilypond-invoke-wrapper convert-ly -e {} \;
+        # Alternatively, if you want to be more specific, you can list them:
+        # lilypond-invoke-wrapper convert-ly -e OnePage/OnePage.ly
+        # lilypond-invoke-wrapper convert-ly -e OnePage/OnePageMusic.ly
+        # lilypond-invoke-wrapper convert-ly -e OnePage/Lib/MusicCommon.ly
+        # lilypond-invoke-wrapper convert-ly -e OnePage/Lib/HymnCommon.ly
+        # lilypond-invoke-wrapper convert-ly -e OnePage/Lib/HymnScoreSettings.ly
+        # lilypond-invoke-wrapper convert-ly -e OnePage/Lib/HymnLayoutOutput.ly
+
     - name: Compile OnePage.ly from OnePage folder
       run: |
         cd OnePage/ # Change directory to the OnePage folder
