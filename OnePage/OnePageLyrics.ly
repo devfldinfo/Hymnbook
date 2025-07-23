@@ -33,7 +33,7 @@ FBVerseC = \lyricmode {  \set lyricMelismaAlignment = #CENTER \set shortVocalNam
   Niks  min --   der  kan  u  Hom  gee.
   Hy  gee  sy  le --   we  as  los --   prys
   En  ook  sy  heer --   lik --   heid  mee.
-  LÃª  neer  sy  le --   we  vry --   wil --   lig
+  Lê  neer  sy  le --   we  vry --   wil --   lig
   U  van  die  son --   de  te  red.
   Gee  Hom  u  vol --   le  aan --   bid --   ding,
   Gee  Hom  selfs  al  wat  u  het.
