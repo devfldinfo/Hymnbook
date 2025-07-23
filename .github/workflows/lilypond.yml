@@ -11,19 +11,20 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Install LilyPond
+    - name: Install LilyPond and font utilities
       run: |
         sudo apt-get update
-        sudo apt-get install -y lilypond
+        sudo apt-get install -y lilypond fontconfig # fontconfig provides fc-cache
+
+    - name: Install Custom Font (Nyala)
+      run: |
+        mkdir -p ~/.fonts # Create a fonts directory in the home folder if it doesn't exist
+        cp ${{ github.workspace }}/fonts/Nyala.ttf ~/.fonts/ # Copy the font file
+        fc-cache -fv # Rebuild the font cache. This makes the font available to applications.
 
     - name: Update LilyPond files with convert-ly
       run: |
-        # Use find with xargs for a more robust way to run convert-ly on multiple files
         find . -name "*.ly" | xargs -r -n 1 convert-ly -e
-        # Explanation of xargs:
-        # -r: Do not run the command if there are no arguments.
-        # -n 1: Pass one argument at a time to convert-ly. This is safer than passing many at once.
-        # convert-ly -e: The command to execute on each file.
 
     - name: Compile OnePage.ly from OnePage folder
       run: |
