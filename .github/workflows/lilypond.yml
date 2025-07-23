@@ -1,12 +1,12 @@
 name: Compile LilyPond
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+#  push:
+#    branches:
+#      - main
+#  pull_request:
+#    branches:
+#      - main
   workflow_dispatch: # Allows manual triggering of the workflow
 
 jobs:
