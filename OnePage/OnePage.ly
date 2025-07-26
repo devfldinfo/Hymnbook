@@ -34,7 +34,7 @@ system-system-spacing =  #'((basic-distance . 6)  (padding . 1) (stretchability 
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {1}
-        \fontsize #6 \center-align \line {Al my bronne}
+        \fontsize #6 \center-align \line {ነጀ my bronne}
         \null
     }
     \justify-line {
