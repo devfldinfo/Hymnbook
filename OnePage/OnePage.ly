@@ -1,8 +1,8 @@
 \version "2.22.0"
 #(ly:set-option 'point-and-click #f)
-\include "Afrikaans 1989Lyrics.ly"
+\include "Afrikaans1989Lyrics.ly"
 chorusStr = Koor
-\include "Afrikaans 1989Music.ly"
+\include "Afrikaans1989Music.ly"
 \include "../Lib/HymnSetup.ly"
 #(set! paper-alist (cons '("my size" . (cons (* 148 mm) (* 210 mm))) paper-alist))
 #(set-default-paper-size "my size")
