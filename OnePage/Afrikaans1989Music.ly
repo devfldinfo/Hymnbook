@@ -1,3 +1,4 @@
+\version "2.22.0"
 \include "../Lib/MusicCommon.ly"
 BBFIFxAZZMusicGlobal = { 
     \set Staff.autoBeaming = ##f
