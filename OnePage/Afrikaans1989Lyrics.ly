@@ -1,7 +1,7 @@
 \version "2.22.0"
 \include "../Lib/LyricsCommon.ly"
 AVerseA = \lyricmode {  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."}
-  Al  my  bron --   ne  spruit  uit  Je --   sus,
+  ኘአ  my  bron --   ne  spruit  uit  Je --   sus,
   Hy  in  diep --   ste  nood  voor --   sien
   En  be --   vre --   dig  my  ver --   lan --   ge;
   Demp  die  vrees  vir  straf  ver --   dien
