@@ -95,8 +95,8 @@ system-system-spacing =  #'((basic-distance . 6)  (padding . 1) (stretchability 
         \context Staff = BStaffRH <<
             \override Staff.BarLine #'allow-span-bar  = ##f
             \set Staff.printPartCombineTexts = ##f
-            \context NullVoice = BVoiceLyrics \BBFIFxAZZMusicLyrics
-            \context Voice = BVoiceRH \BBFIFxAZZMusicRH
+            \context NullVoice = BVoiceLyrics \1MusicLyrics
+            \context Voice = BVoiceRH \1MusicRH
         >>
         \new Lyrics  = BLyricsA
         \new Lyrics = BLyricsAAlt
@@ -108,7 +108,7 @@ system-system-spacing =  #'((basic-distance . 6)  (padding . 1) (stretchability 
         \new Lyrics = BLyricsDAlt
         \context Staff = BStaffLH <<
             \set Staff.printPartCombineTexts = ##f
-            \context Voice = BVoiceLH \BBFIFxAZZMusicLH
+            \context Voice = BVoiceLH \1MusicLH
         >>
         \context Lyrics = BLyricsA \lyricsto BVoiceLyrics \BVerseA
         \context Lyrics = BLyricsAAlt \lyricsto BVoiceLyrics \BVerseAAlt
