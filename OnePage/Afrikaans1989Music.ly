@@ -1,6 +1,6 @@
 \version "2.22.0"
 \include "../Lib/MusicCommon.ly"
-BBFIFxAZZMusicGlobal = { 
+1MusicGlobal = { 
     \set Staff.autoBeaming = ##f
 \numericTimeSignature
 
@@ -10,7 +10,7 @@ BBFIFxAZZMusicGlobal = {
     \key as \major
     
 }
-BBFIFxAZZMusicRHA = \relative c'{ \BBFIFxAZZMusicGlobal \clef "treble"
+1MusicRHA = \relative c'{ \1MusicGlobal \clef "treble"
     aes'4 g8 [f] ees4 \pcAO c | %1
 f aes8 [f] ees4 c | %2
 c' bes8 [aes] f4 bes | aes g aes2 | %4
@@ -20,7 +20,7 @@ aes4 g8 [f] ees4 \pcAO c | %9
 f aes8 [f] ees4 c | %10
 c' bes8 [aes] f4 bes aes g aes2 \he
 }
-BBFIFxAZZMusicRHB = \relative c'{ \BBFIFxAZZMusicGlobal \clef "treble"
+1MusicRHB = \relative c'{ \1MusicGlobal \clef "treble"
     c4 ees8 [des] c4 c | %1
 des f8 [des] c4 aes | %2
 ees' des8 [ees] des4 f | ees des c2 | %4
@@ -30,8 +30,8 @@ c4 ees8 [des] c4 c | %9
 des f8 [des] c4 aes | %10
 ees' des8 [ees] des4 f ees des c2
 }
-BBFIFxAZZMusicRH =  \partCombine #'(2 . 20)  \BBFIFxAZZMusicRHA \BBFIFxAZZMusicRHB
-BBFIFxAZZMusicLHA = \relative c{ \BBFIFxAZZMusicGlobal \clef "bass"
+1MusicRH =  \partCombine #'(2 . 20)  \1MusicRHA \1MusicRHB
+1MusicLHA = \relative c{ \1MusicGlobal \clef "bass"
     aes'4 aes aes aes | aes aes aes ees | %2
 aes g8 [aes] aes4 des | %3
 c bes aes2 \pcAp | %4
@@ -40,7 +40,7 @@ bes g aes ees | aes aes8 [bes] c4 aes | %7
 bes aes g2 | ees4 aes aes aes | %9
 aes aes aes ees | aes g8 [aes] aes4 des c bes aes2
 }
-BBFIFxAZZMusicLHB = \relative c{ \BBFIFxAZZMusicGlobal \clef "bass"
+1MusicLHB = \relative c{ \1MusicGlobal \clef "bass"
     aes4 aes aes aes | des des aes aes | %2
 aes bes8 [c] des4 bes | ees ees aes,2 | %4
 aes'4 aes aes4 aes | %5
@@ -48,8 +48,8 @@ ees ees aes, aes | aes aes aes aes | %7
 g aes8 [c] ees2 | aes,4 aes aes aes | %9
 des des aes aes | aes bes8 [c] des4 bes ees ees aes,2
 }
-BBFIFxAZZMusicLH =  \partCombine #'(2 . 20)  \BBFIFxAZZMusicLHA \BBFIFxAZZMusicLHB
-BBFIFxAZZMusicLyrics = \relative c''''{ \BBFIFxAZZMusicGlobal \clef "treble"
+1MusicLH =  \partCombine #'(2 . 20)  \1MusicLHA \1MusicLHB
+1MusicLyrics = \relative c''''{ \1MusicGlobal \clef "treble"
     \hideNotes \voiceFour c4 c8  s8 c4 c4 c4 c8  s8 c4 c4 c4 c8  s8 c4 c4 c4 c4 c2 c4 c8  s8 c4 c4 c4 c4 c4 c4 c4 c8  s8 c4 c4 c4 c4 c2 c4 c8  s8 c4 c4 c4 c8  s8 c4 c4 c4 c8  s8 c4 c4 c4 c4 c2
 }
 
