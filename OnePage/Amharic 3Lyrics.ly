@@ -1,3 +1,4 @@
+\version "2.22.0"
 \include "../Lib/LyricsCommon.ly"
 AVerseA = \lyricmode {  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."}
 ስ -- ለ -- የ -- ሱስ ብ -- ዙ ላ -- ውቅ
