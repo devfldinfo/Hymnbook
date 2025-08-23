@@ -1,8 +1,8 @@
 \version "2.22.0"
 #(ly:set-option 'point-and-click #f)
-\include "Amharic 3Lyrics.ly"
-chorusStr = Chorus
-\include "Amharic 3Music.ly"
+\include "Amharic3Lyrics.ly"
+chorusStr = "Chorus"
+\include "Amharic3Music.ly"
 \include "../Lib/HymnSetup.ly"
 
 #(set! paper-alist (cons '("my size" . (cons (* <PageWidthmm> mm) (* <PageHeightmm> mm))) paper-alist))
