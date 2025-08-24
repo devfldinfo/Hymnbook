@@ -26,13 +26,13 @@ jobs:
       run: |
         find . -name "*.ly" | xargs -r -n 1 convert-ly -e
 
-    - name: Compile OnePage.ly from OnePage folder
+    - name: Compile GeneratedHymns.ly from OnePage folder
       run: |
         cd OnePage/ # Change directory to the OnePage folder
-        lilypond OnePage.ly
+        lilypond GeneratedHymns.ly
 
     - name: Upload compiled PDF
       uses: actions/upload-artifact@v4
       with:
-          name: OnePage-pdf
-          path: OnePage/OnePage.pdf # The compiled PDF file will be in the OnePage folder
+          name: GeneratedHymns-pdf
+          path: OnePage/GeneratedHymns.pdf # The compiled PDF file will be in the OnePage folder
