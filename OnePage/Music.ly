@@ -1,4 +1,5 @@
 \version "2.22.0"
+\include "../Lib/MusicCommon.ly"
 AxBAMusicGlobal = {
 \set Staff.autoBeaming = ##f
 \numericTimeSignature
