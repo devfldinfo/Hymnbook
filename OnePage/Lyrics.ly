@@ -1273,7 +1273,7 @@ CHVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 CHVerseAAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 CHVerseB = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "2."} \set vocalName = \markup {\right-align "2."} 
 ከ -- ኢ -- የ -- ሱስ ጋር ብ -- ~ -- ~ -- - ~ -- ~ -- - ቻ ሁን
-“ሰላም ጸጥ በል” እንዲ -- ና -- ገ -- ረን
+"ሰላም ጸጥ በል" እንዲ -- ና -- ገ -- ረን
 ጨ -- ነ -- ቀት ልብ ላይ ሲ -- ~ -- ~ -- - ~ -- ~ -- - ነ -- ሳ
 ጩ -- ኸትና ፍርሃት ያ -- ረ -- ጋ -- ጋል።
 }
@@ -1620,7 +1620,7 @@ DHVerseB = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 "ልብህን ስ -- ጠኝ"፣ ይ -- ላል አ -- ዳ -- ኛ -- ችን፣
 ደ -- ጋ -- ግ -- ሞ በ -- ምሕረት ይ -- ጣ -- ራል፣
 "ከዐ -- መ -- ፃ -- ና ከ -- ክ -- ፉ ተ -- ለይ
-ላንተ አልሞትኩ -- ምን? ልብህን ስ -- ጠኝ”።
+ላንተ አልሞትኩ -- ምን? ልብህን ስ -- ጠኝ"።
 }
 DHVerseBAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 DHVerseC = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "3."} \set vocalName = \markup {\right-align "3."} 
@@ -1888,7 +1888,7 @@ EFVerseC = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 ስ -- ለ -- ራ -- ራ -- ህ -- ልኝ
 የ -- ደስታ ዝ -- ማ -- ሬ ሰ -- ማሁ
 ዙ -- ሪ -- ያ -- ዬን ሞልቶ
-“አካ -- ሌ ነህ” ት -- ል -- ሃ -- ለች
+"አካ -- ሌ ነህ" ት -- ል -- ሃ -- ለች
 ነፍሴ ከ -- ሺ -- ዎች ጋር
 በ -- ደስታ አ -- ሜን እ -- ያ -- ሉ
 ከ -- ቶ አ -- ያ -- ቆ -- ሙም።
@@ -2165,7 +2165,7 @@ FEVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 ውድ የ -- ሆ -- ነው ን -- ገ -- ረኝ።
 መ -- ላ -- እክት ለ -- ም -- ድር ሰ -- ላም
 እ -- ና የ -- ምስራች አ -- ሉ፣
-“ክብር ለእግዚአብሔር በ -- አርያም!”
+"ክብር ለእግዚአብሔር በ -- አርያም!"
 ሲ -- ወ -- ለድ እንዴት ዘ -- መ -- ሩ።
 }
 FEVerseAAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
