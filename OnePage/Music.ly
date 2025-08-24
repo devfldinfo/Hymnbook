@@ -36,7 +36,7 @@ ees4 ees8 ees4. | %14
 des8. ees16 ees8 ees4 f8 ees4 des8 c4.
 }
 
-AxBAMusicRH = \partCombine #'(2.20) \AxBAMusicRHA\AxBAMusicRHB
+AxBAMusicRH = \partCombine #'(2 . 20) \AxBAMusicRHA\AxBAMusicRHB
 
 AxBAMusicLHA = \relative c{ \AxBAMusicGlobal \clef "bass"
 aes'8. aes16 aes8 aes4 aes8 | %1
@@ -66,7 +66,7 @@ aes,4. aes | aes'8. aes16 aes8 aes4 g8 | %13
 aes4 aes8 aes4. | des,8. c16 bes8 c4 des8 ees4 ees8 aes,4.
 }
 
-AxBAMusicLH = \partCombine #'(2.20) \AxBAMusicLHA\AxBAMusicLHB
+AxBAMusicLH = \partCombine #'(2 . 20) \AxBAMusicLHA\AxBAMusicLHB
 
 AxBAMusicLyrics = \relative c''''{ \AxBAMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c8. c16 c8 c4 c8 c4 c8 c4. c8. c16 c8 c4 c8 c4 c8 c4. c8. c16 c8 c4 c8 c4 c8 c4. c8. c16 c8 c4 c8 c4 c8 c4. c4. c8. c16 c8 c4. c4. c4. c8. c16 c8 c4. c4. c8. c16 c8 c4 c8 c4 c8 c4. c8. c16 c8 c4 c8 c4 c8 c4.
@@ -128,7 +128,7 @@ ges4 ges8 ges4 ges8 | f4. des4 des8 | %29
 des4 f8 f4 ges8 | f des4 c c8 des2.~des4.
 }
 
-BxDGBMusicRH = \partCombine #'(2.20) \BxDGBMusicRHA\BxDGBMusicRHB
+BxDGBMusicRH = \partCombine #'(2 . 20) \BxDGBMusicRHA\BxDGBMusicRHB
 
 BxDGBMusicLHA = \relative c{ \BxDGBMusicGlobal \clef "bass"
 aes'4 aes8 | des4 des8 des4 des8 | %2
@@ -167,7 +167,7 @@ ges4 ges8 ges4 ges8 | des4. des4 des8 | %29
 des4 des8 des4 des8 | des des4 aes aes8 des2.~des4.
 }
 
-BxDGBMusicLH = \partCombine #'(2.20) \BxDGBMusicLHA\BxDGBMusicLHB
+BxDGBMusicLH = \partCombine #'(2 . 20) \BxDGBMusicLHA\BxDGBMusicLHB
 
 BxDGBMusicLyrics = \relative c''''{ \BxDGBMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c4 c8 c4 c8 c4 c8 c8 c4 c4 c8 c4 c8 c4 c8 c4. c4 c8 c4 c8 c4 c8 c8 c4 c4 c8 c2. ct4. c4 c8 c4 c8 c4 c8 c8 c4 c4 c8 c4 c8 c4 c8 c4. c4 c8 c8 c4 c4 c8 c8 c4 c4 c8 c2. ct4. c4 c8 c2. ct4. c4 c8 c2. ct4. c4. c8 c4 c4 c8 c8 c4 c4 c8 c2. ct4. c4 c8 c4 c8 c4 c8 c4. ct4 c8 c4 c8 c4 c8 c4. c4 c8 c4 c8 c4 c8 c8 c4 c4 c8 c8 c2. ct4.
@@ -198,7 +198,7 @@ f f f | f4. d8 d4 | e e e | e4. d8 d4 | %12
 d d d | d4. bes8 bes4 | c c e c2.
 }
 
-CxFZCMusicRH = \partCombine #'(2.20) \CxFZCMusicRHA\CxFZCMusicRHB
+CxFZCMusicRH = \partCombine #'(2 . 20) \CxFZCMusicRHA\CxFZCMusicRHB
 
 CxFZCMusicLHA = \relative c{ \CxFZCMusicGlobal \clef "bass"
 c'4 c c | c4. c8 c4 | c c c | c2. | %4
@@ -215,7 +215,7 @@ f d c | bes4. bes8 bes4 | c c c | %11
 a4. d8 d4 | c bes a | g4. g8 g4 | c c c f2.
 }
 
-CxFZCMusicLH = \partCombine #'(2.20) \CxFZCMusicLHA\CxFZCMusicLHB
+CxFZCMusicLH = \partCombine #'(2 . 20) \CxFZCMusicLHA\CxFZCMusicLHB
 
 CxFZCMusicLyrics = \relative c''''{ \CxFZCMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c4 c4 c4 c4. c8 c4 c4 c4 c4 c2. c4 c4 c4 c4. c8 c4 c4 c4 c4 c2 ct4 c4 c4 c4 c4. c8 c4 c4 c4 c4 c4. c8 c4 c4 c4 c4 c4. c8 c4 c4 c4 c4 c2.
@@ -240,7 +240,7 @@ DxHDDMusicRHB = \relative c'{ \DxHDDMusicGlobal \clef "treble"
 
 }
 
-DxHDDMusicRH = \partCombine #'(2.20) \DxHDDMusicRHA\DxHDDMusicRHB
+DxHDDMusicRH = \partCombine #'(2 . 20) \DxHDDMusicRHA\DxHDDMusicRHB
 
 DxHDDMusicLHA = \relative c{ \DxHDDMusicGlobal \clef "bass"
 
@@ -250,7 +250,7 @@ DxHDDMusicLHB = \relative c{ \DxHDDMusicGlobal \clef "bass"
 
 }
 
-DxHDDMusicLH = \partCombine #'(2.20) \DxHDDMusicLHA\DxHDDMusicLHB
+DxHDDMusicLH = \partCombine #'(2 . 20) \DxHDDMusicLHA\DxHDDMusicLHB
 
 DxHDDMusicLyrics = \relative c''''{ \DxHDDMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c8. c16 c4 c4 c8. c16 c4 c4 c8 c8 c4 c4 c8 c8 c4 c4 c8. c16 c4 c4 c8. c16 c4 c4 c8. c16 c4. c8 c8. c16 c4 c4 c8 c8 c8 c8 c4. c8 c2
@@ -275,7 +275,7 @@ ExHDEMusicRHB = \relative c'{ \ExHDEMusicGlobal \clef "treble"
 
 }
 
-ExHDEMusicRH = \partCombine #'(2.20) \ExHDEMusicRHA\ExHDEMusicRHB
+ExHDEMusicRH = \partCombine #'(2 . 20) \ExHDEMusicRHA\ExHDEMusicRHB
 
 ExHDEMusicLHA = \relative c{ \ExHDEMusicGlobal \clef "bass"
 
@@ -285,7 +285,7 @@ ExHDEMusicLHB = \relative c{ \ExHDEMusicGlobal \clef "bass"
 
 }
 
-ExHDEMusicLH = \partCombine #'(2.20) \ExHDEMusicLHA\ExHDEMusicLHB
+ExHDEMusicLH = \partCombine #'(2 . 20) \ExHDEMusicLHA\ExHDEMusicLHB
 
 ExHDEMusicLyrics = \relative c''''{ \ExHDEMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c8. c16 c4 c4 c8. c16 c4 c4 c8 c8 c4 c4 c8 c8 c4 c4 c8. c16 c4 c4 c8. c16 c4 c4 c8. c16 c4. c8 c8. c16 c4 c4 c8 c8 c8 c8 c4. c8 c2
@@ -329,7 +329,7 @@ d4. ees8 d ees | ees4. ees8 f aes | %14
 g4. g8 g ees | g4. ees8 ees d ees4.
 }
 
-FxHFMusicRH = \partCombine #'(2.20) \FxHFMusicRHA\FxHFMusicRHB
+FxHFMusicRH = \partCombine #'(2 . 20) \FxHFMusicRHA\FxHFMusicRHB
 
 FxHFMusicLHA = \relative c{ \FxHFMusicGlobal \clef "bass"
 bes'8 bes bes | bes4. bes8 bes bes | %2
@@ -358,7 +358,7 @@ aes aes aes r4 aes8 | ees ees ees r4 ees8 | %15
 ees ees ees ees bes bes ees4.
 }
 
-FxHFMusicLH = \partCombine #'(2.20) \FxHFMusicLHA\FxHFMusicLHB
+FxHFMusicLH = \partCombine #'(2 . 20) \FxHFMusicLHA\FxHFMusicLHB
 
 FxHFMusicLyrics = \relative c''''{ \FxHFMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c8 c8 c8 c4. c8 c8 c8 c4. c8 c8 c8 c4. c8 c8 c8 c4. c8 c8 c8 c4. c8 c8 c8 c4. c8 c8 c8 c4. c8 c8 c8 c4. c8 c8 c8 c4. c8 c8 c8 c4. c8 c8 c8 c4. c8 c8 c8 c4. c8 c8 c8 c4. c8 c8 c8 c4. c8 c8 c8 c4. c8 c8 c8 c4.
@@ -398,7 +398,7 @@ g2 g4 g | g2 g4 g | g2 g4 g | g2 fis4 e | %20
 e2 d4 c | b2 d4 d | c2 c4 c b1
 }
 
-GxEAGMusicRH = \partCombine #'(2.20) \GxEAGMusicRHA\GxEAGMusicRHB
+GxEAGMusicRH = \partCombine #'(2 . 20) \GxEAGMusicRHA\GxEAGMusicRHB
 
 GxEAGMusicLHA = \relative c{ \GxEAGMusicGlobal \clef "bass"
 b'2 b4 b | d2 b4 \pcAO g | fis2 a4 a | %3
@@ -419,7 +419,7 @@ g2. g4 | g2 g4 g | g2 g4 g | g2 g4 g | %19
 g2 d4 e | c2 c4 c | d2 \fpre d4 \fpostbelow d | d2 d4 d g,1
 }
 
-GxEAGMusicLH = \partCombine #'(2.20) \GxEAGMusicLHA\GxEAGMusicLHB
+GxEAGMusicLH = \partCombine #'(2 . 20) \GxEAGMusicLHA\GxEAGMusicLHB
 
 GxEAGMusicLyrics = \relative c''''{ \GxEAGMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c2 c4 c4 c2 c4 c4 c4 c4 c4 c4 c2 c4 c4 c2 c4 c4 c2 c4 c4 c2 c4 c4 c2. c4 c2 c4 c4 c2 c4 c4 c4 c4 c4 c4 c2 c4 c4 c2 c4 c4 c2 c4 c4 c2 c4 c4 c2. c4 c2 c4 c4 c2 c4 c4 c2 c4 c4 c2 c4 c4 c2 c4 c4 c2 c4 c4 c4 ct4 c4 c4 c1
@@ -449,7 +449,7 @@ ees4. d8 ees4 g | f f8 [ees] d2 | %6
 ees4. d8 ees4 ees ees d ees2
 }
 
-HxBADHMusicRH = \partCombine #'(2.20) \HxBADHMusicRHA\HxBADHMusicRHB
+HxBADHMusicRH = \partCombine #'(2 . 20) \HxBADHMusicRHA\HxBADHMusicRHB
 
 HxBADHMusicLHA = \relative c{ \HxBADHMusicGlobal \clef "bass"
 bes'4. bes8 ees4 c | bes aes g2 | %2
@@ -465,7 +465,7 @@ ees4. f8 g4 ees | f f bes,2 | %6
 g'4. f8 ees4 aes, bes bes ees2
 }
 
-HxBADHMusicLH = \partCombine #'(2.20) \HxBADHMusicLHA\HxBADHMusicLHB
+HxBADHMusicLH = \partCombine #'(2 . 20) \HxBADHMusicLHA\HxBADHMusicLHB
 
 HxBADHMusicLyrics = \relative c''''{ \HxBADHMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c4. c8 c4 c4 c4 c4 c2 c4. c8 c4 c4 c4 c4 c2 c4. c8 c4 c4 c4 c4 c2 c4. c8 c4 c4 c4 c4 c2
@@ -489,7 +489,7 @@ IxBCZIMusicRHB = \relative c'{ \IxBCZIMusicGlobal \clef "treble"
 
 }
 
-IxBCZIMusicRH = \partCombine #'(2.20) \IxBCZIMusicRHA\IxBCZIMusicRHB
+IxBCZIMusicRH = \partCombine #'(2 . 20) \IxBCZIMusicRHA\IxBCZIMusicRHB
 
 IxBCZIMusicLHA = \relative c{ \IxBCZIMusicGlobal \clef "bass"
 
@@ -499,7 +499,7 @@ IxBCZIMusicLHB = \relative c{ \IxBCZIMusicGlobal \clef "bass"
 
 }
 
-IxBCZIMusicLH = \partCombine #'(2.20) \IxBCZIMusicLHA\IxBCZIMusicLHB
+IxBCZIMusicLH = \partCombine #'(2 . 20) \IxBCZIMusicLHA\IxBCZIMusicLHB
 
 IxBCZIMusicLyrics = \relative c''''{ \IxBCZIMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c8 c8 c8 c8 c8 c8 c4 c8 c4. c8 c8 c8 c4 c8 c4. c4. c8 c8 c8 c8 c8 c8 c4 c8 c4. c8 c8 c8 c4 c8 c2. c4. c4 c8 c4 c8 c4. c8 c8 c8 c4. c8 c8 c8 c4. c4. c4 c8 c8 c8 c8 c4. c8 c8 c8 c8 c8 c8 c2.
@@ -547,7 +547,7 @@ d e d dis4 dis8 | fis4. e4 r8 | %22
 cis d e d4 cis8 | d4.~d cis8 d4.~d
 }
 
-AZxBCAAZMusicRH = \partCombine #'(2.20) \AZxBCAAZMusicRHA\AZxBCAAZMusicRHB
+AZxBCAAZMusicRH = \partCombine #'(2 . 20) \AZxBCAAZMusicRHA\AZxBCAAZMusicRHB
 
 AZxBCAAZMusicLHA = \relative c{ \AZxBCAAZMusicGlobal \clef "bass"
 d'8 d d a4 a8 | a4. a4 r8 | a a a a4 a8 | %3
@@ -573,7 +573,7 @@ d d d b4 b8 | e4. e4 r8 | a, a a a4 a8 | %23
 d4.~d a8 d4.~d
 }
 
-AZxBCAAZMusicLH = \partCombine #'(2.20) \AZxBCAAZMusicLHA\AZxBCAAZMusicLHB
+AZxBCAAZMusicLH = \partCombine #'(2 . 20) \AZxBCAAZMusicLHA\AZxBCAAZMusicLHB
 
 AZxBCAAZMusicLyrics = \relative c''''{ \AZxBCAAZMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c8 c8 c8 c4 c8 c4. c4 cr8 c8 c8 c8 c4 c8 c4. ct4 cr8 c8 c8 c8 c4 c8 c4. c4 cr8 c8 c8 c8 c4 c8 c4. ct4 cr8 c8 c8 c8 c4 c8 c4. c4 cr8 c8 c8 c8 c4 c8 c4. ct4 cr8 c8 c8 c8 c4 c8 c4. c4 cr8 c8 c8 c8 c4 c8 c4. ct4 cr8 c\ParAltStart c8 c8 c8 c4 c8 c4. c4 cr8 c8 c8 c8 c4 c8 c4. ct4 cr8 c8 c8 c8 c4 c8 c4. c4 cr8 c8 c8 c8 c4 c\ParAltFirst c8 c4. ct4. c\ParAltSecond c8 c2. c\ParAltEnd
@@ -604,7 +604,7 @@ f2 f4 f | ees2. ees4 | ees2 d | ees1 | %11
 des2 c4 c | c2 bes bes1
 }
 
-AAxBFFAAMusicRH = \partCombine #'(2.20) \AAxBFFAAMusicRHA\AAxBFFAAMusicRHB
+AAxBFFAAMusicRH = \partCombine #'(2 . 20) \AAxBFFAAMusicRHA\AAxBFFAAMusicRHB
 
 AAxBFFAAMusicLHA = \relative c{ \AAxBFFAAMusicGlobal \clef "bass"
 bes'2 bes4 bes | bes2. g4 | f2 aes | g1 | %4
@@ -621,7 +621,7 @@ aes2 aes4 aes | g2. g4 | f2 bes, | ees1 | %11
 g,2 aes4 aes | aes2 bes ees1
 }
 
-AAxBFFAAMusicLH = \partCombine #'(2.20) \AAxBFFAAMusicLHA\AAxBFFAAMusicLHB
+AAxBFFAAMusicLH = \partCombine #'(2 . 20) \AAxBFFAAMusicLHA\AAxBFFAAMusicLHB
 
 AAxBFFAAMusicLyrics = \relative c''''{ \AAxBFFAAMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c2 c4 c4 c2. c4 c2 c2 c1 c2 c4 c4 c2 c2 c1 c2 c4 c4 c2. c4 c2 c2 c1 c2 c4 c4 c2 c2 c1
@@ -663,7 +663,7 @@ g4. g8 g4 g | f2. f4 | ees ees ees ees | %14
 c2 c4 c | c c c bes bes2.
 }
 
-ABxBGABMusicRH = \partCombine #'(2.20) \ABxBGABMusicRHA\ABxBGABMusicRHB
+ABxBGABMusicRH = \partCombine #'(2 . 20) \ABxBGABMusicRHA\ABxBGABMusicRHB
 
 ABxBGABMusicLHA = \relative c{ \ABxBGABMusicGlobal \clef "bass"
 bes'4 | bes bes c bes | bes2 bes4 bes | %3
@@ -685,7 +685,7 @@ ees ees ees ees | aes,2 aes4 aes | %15
 f f bes bes ees2.
 }
 
-ABxBGABMusicLH = \partCombine #'(2.20) \ABxBGABMusicLHA\ABxBGABMusicLHB
+ABxBGABMusicLH = \partCombine #'(2 . 20) \ABxBGABMusicLHA\ABxBGABMusicLHB
 
 ABxBGABMusicLyrics = \relative c''''{ \ABxBGABMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c4 c4 c4 c4 c4 c2 c4 c4 c4 c4 c4 c4 c2. c4 c4 c4 c4 c4 c2 c4 c4 c4 c4 c4 c4 c2. c4 c4 c4 c4 c4 c2 c4 c4 c4. c8 c4 c4 c2. c4 c4 c4 c4 c4 c2 c4 c4 c4 c4 c4 c4 c2.
@@ -725,7 +725,7 @@ cis8 cis cis d e2 | d8 d d cis d4. d8 | %11
 d d d d d4 d8 d d4 cis8 cis d4.
 }
 
-ACxAFIACMusicRH = \partCombine #'(2.20) \ACxAFIACMusicRHA\ACxAFIACMusicRHB
+ACxAFIACMusicRH = \partCombine #'(2 . 20) \ACxAFIACMusicRHA\ACxAFIACMusicRHB
 
 ACxAFIACMusicLHA = \relative c{ \ACxAFIACMusicGlobal \clef "bass"
 fis8 | fis4. b8 a4. a8 | %2
@@ -746,7 +746,7 @@ a8 a e' d cis2 | d8 d d e fis4. fis8 | %11
 g g g g d4 d8 g, a4 a8 a \fpre d4. \fpostbelow
 }
 
-ACxAFIACMusicLH = \partCombine #'(2.20) \ACxAFIACMusicLHA\ACxAFIACMusicLHB
+ACxAFIACMusicLH = \partCombine #'(2 . 20) \ACxAFIACMusicLHA\ACxAFIACMusicLHB
 
 ACxAFIACMusicLyrics = \relative c''''{ \ACxAFIACMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c8 c4. c8 c4. c8 c8 c8 c8 c8 c4 c8 c8 c4. c8 c4. c8 c8 c8 c8 c8 c4. c8 c4. c8 c4. c8 c8 c8 c8 c8 c4 c8 c8 c8 c8 c8 c8 c4 c8 c8 c4 c8 c8 c2 c8 c8 c8 c8 c2 c8 c8 c8 c8 c4. c8 c8 c8 c8 c8 c4 c8 c8 c4 c8 c8 c4.
@@ -784,7 +784,7 @@ des2. r4 | ges2 ges4 ges | f2 des4 des | %18
 des2 c4. c8 des2. r4
 }
 
-ADxABEADMusicRH = \partCombine #'(2.20) \ADxABEADMusicRHA\ADxABEADMusicRHB
+ADxABEADMusicRH = \partCombine #'(2 . 20) \ADxABEADMusicRHA\ADxABEADMusicRHB
 
 ADxABEADMusicLHA = \relative c{ \ADxABEADMusicGlobal \clef "bass"
 aes'2 aes4 aes | aes2 ees | f bes4 bes | %3
@@ -809,7 +809,7 @@ ges,2 ges4 ges | aes2 beses4 beses | %18
 aes2 aes4. aes8 des2. r4
 }
 
-ADxABEADMusicLH = \partCombine #'(2.20) \ADxABEADMusicLHA\ADxABEADMusicLHB
+ADxABEADMusicLH = \partCombine #'(2 . 20) \ADxABEADMusicLHA\ADxABEADMusicLHB
 
 ADxABEADMusicLyrics = \relative c''''{ \ADxABEADMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c2 c4 c4 c2 c2 c2 c4 c4 c2. cr4 c2 c4 c4 c2 c4 c4 c2 c4 c4 c2. cr4 c2 c4 c4 c2 c2 c2 c4 c4 c2. cr4 c2 c4 c4 c2 c4 c4 c2 c4. c8 c2. cr4 c2 c4 c4 c2 c4 c4 c2 c4. c8 c2.
@@ -845,7 +845,7 @@ d2 ees4 | c (d) ees | d2 ees4 | %15
 ees2 d4 ees2
 }
 
-AExFAEMusicRH = \partCombine #'(2.20) \AExFAEMusicRHA\AExFAEMusicRHB
+AExFAEMusicRH = \partCombine #'(2 . 20) \AExFAEMusicRHA\AExFAEMusicRHB
 
 AExFAEMusicLHA = \relative c{ \AExFAEMusicGlobal \clef "bass"
 g'4 | bes (c) bes | g2 c4 | bes2 aes4 | %4
@@ -863,7 +863,7 @@ d2 f4 | bes2 g4 | c,2 f4 | bes,2 g'4 | %13
 f2 ees4 | bes2 c4 | aes (bes) bes ees2
 }
 
-AExFAEMusicLH = \partCombine #'(2.20) \AExFAEMusicLHA\AExFAEMusicLHB
+AExFAEMusicLH = \partCombine #'(2 . 20) \AExFAEMusicLHA\AExFAEMusicLHB
 
 AExFAEMusicLyrics = \relative c''''{ \AExFAEMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c4 c2 c4 c2 c4 c2 c4 c2 c4 c2 c4 c2 c4 c2 c4 c2 c4 c2 c4 c2 c4 c2 c4 c2 c4 c2 c4 c2 c4 c2 c4 c2
@@ -896,7 +896,7 @@ ees (d) ees | d1 c2 | f1 ees2 | %14
 c1 bes2 bes1.
 }
 
-AFxBGIAFMusicRH = \partCombine #'(2.20) \AFxBGIAFMusicRHA\AFxBGIAFMusicRHB
+AFxBGIAFMusicRH = \partCombine #'(2 . 20) \AFxBGIAFMusicRHA\AFxBGIAFMusicRHB
 
 AFxBGIAFMusicLHA = \relative c{ \AFxBGIAFMusicGlobal \clef "bass"
 bes'2 bes bes | c1 bes2 | c1 f,2 | %3
@@ -914,7 +914,7 @@ aes1 g2 | f1 ees2 | bes1 c2 | d1 ees2 | %14
 aes, (f) bes ees1.
 }
 
-AFxBGIAFMusicLH = \partCombine #'(2.20) \AFxBGIAFMusicLHA\AFxBGIAFMusicLHB
+AFxBGIAFMusicLH = \partCombine #'(2 . 20) \AFxBGIAFMusicLHA\AFxBGIAFMusicLHB
 
 AFxBGIAFMusicLyrics = \relative c''''{ \AFxBGIAFMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c2 c2 c2 c1 c2 c1 c2 c1. c2 c2 c2 c1 c2 c2 c2 c2 c1. c2 c2 c2 c1 c2 c2 c2 c2 c1 c2 c1 c2 c1 c2 c2 c2 c2 c1.
@@ -960,7 +960,7 @@ gis2 gis8. gis16 | gis4. e8 dis8. e16 | %14
 e4 e e8. cis16 | b4 e dis8. b16 b2
 }
 
-AGxHEAGMusicRH = \partCombine #'(2.20) \AGxHEAGMusicRHA\AGxHEAGMusicRHB
+AGxHEAGMusicRH = \partCombine #'(2 . 20) \AGxHEAGMusicRHA\AGxHEAGMusicRHB
 
 AGxHEAGMusicLHA = \relative c{ \AGxHEAGMusicGlobal \clef "bass"
 b'8. b16 | e4. b8 b8. e16 | %2
@@ -984,7 +984,7 @@ e4. e8 fis8. gis16 | a4 a a,8. a16 | %15
 b4 b \fpre b8. \fpostbelow b16 e2
 }
 
-AGxHEAGMusicLH = \partCombine #'(2.20) \AGxHEAGMusicLHA\AGxHEAGMusicLHB
+AGxHEAGMusicLH = \partCombine #'(2 . 20) \AGxHEAGMusicLHA\AGxHEAGMusicLHB
 
 AGxHEAGMusicLyrics = \relative c''''{ \AGxHEAGMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c8. c16 c4. c8 c8. c16 c4 c4 c8. c16 c4. c8 c8. c16 c2 c8. c16 c4. c8 c8. c16 c4 c4 c8. c16 c4. c8 c8. c16 c2 c8. c16 c4. c8 c8. c16 c2 c8. c16 c4. c8 c8. c16 c2 c8. c16 c4. c8 c8. c16 c4 c4 c8. c16 c4 c4 c8. c16 c2
@@ -1031,7 +1031,7 @@ g2.~g4. g4 a8 | b2.~b4. g4 d8 | %14
 e2.~e4. d4 c8 | b4. d4 d8 d4. d4 d8 d2.~d4.
 }
 
-AHxICAHMusicRH = \partCombine #'(2.20) \AHxICAHMusicRHA\AHxICAHMusicRHB
+AHxICAHMusicRH = \partCombine #'(2 . 20) \AHxICAHMusicRHA\AHxICAHMusicRHB
 
 AHxICAHMusicLHA = \relative c{ \AHxICAHMusicGlobal \clef "bass"
 b'4 c8 | d4. d4 d8 c4. g4 g8 | %2
@@ -1059,7 +1059,7 @@ g4. g4 g8 g4. g4 b8 | c4. c4 c8 c4. c4 c8 | %15
 d4. d4 d8 d4. d4 d8 g2.~g4.
 }
 
-AHxICAHMusicLH = \partCombine #'(2.20) \AHxICAHMusicLHA\AHxICAHMusicLHB
+AHxICAHMusicLH = \partCombine #'(2 . 20) \AHxICAHMusicLHA\AHxICAHMusicLHB
 
 AHxICAHMusicLyrics = \relative c''''{ \AHxICAHMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c4 c8 c4. c4 c8 c4. c4 c8 c1 cr8 c4 c8 c4. c4 c8 c4. c4 c8 c1 cr8 c4 c8 c4. c4 c8 c4. c4 c8 c1 cr8 c4 c8 c4. c4 c8 c4. c4 c8 c1 cr8 c4 c8 c2. ct4. c4 c8 c2. ct4. c4 c8 c4. c4 c8 c4. c4 c8 c2. ct4. c4 c8 c2. ct4. c4 c8 c2. ct4. c4 c8 c4. c4 c8 c4. c4 c8 c2. ct4.
@@ -1098,7 +1098,7 @@ c4. c8 des c aes c | des2 f | %14
 ees4. des8 des des des des c1
 }
 
-AIxCGAIMusicRH = \partCombine #'(2.20) \AIxCGAIMusicRHA\AIxCGAIMusicRHB
+AIxCGAIMusicRH = \partCombine #'(2 . 20) \AIxCGAIMusicRHA\AIxCGAIMusicRHB
 
 AIxCGAIMusicLHA = \relative c{ \AIxCGAIMusicGlobal \clef "bass"
 aes'4. aes8 aes aes ees aes | aes2 des | %2
@@ -1122,7 +1122,7 @@ aes4. aes8 aes aes aes aes | des2 des | %14
 ees4. ees8 ees ees ees ees aes,1
 }
 
-AIxCGAIMusicLH = \partCombine #'(2.20) \AIxCGAIMusicLHA\AIxCGAIMusicLHB
+AIxCGAIMusicLH = \partCombine #'(2 . 20) \AIxCGAIMusicLHA\AIxCGAIMusicLHB
 
 AIxCGAIMusicLyrics = \relative c''''{ \AIxCGAIMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c4. c8 c8 c8 c8 c8 c2 c2 c4. c8 c8 c8 c8 c8 c1 c4. c8 c8 c8 c8 c8 c2 c2 c4. c8 c8 c8 c8 c8 c1 c4. c8 c8 c8 c8 c8 c2 c2 c4. c8 c8 c8 c8 c8 c1 c4. c8 c8 c8 c8 c8 c2 c2 c4. c8 c8 c8 c8 c8 c1
@@ -1150,7 +1150,7 @@ ees ees ees ees | d2. d4 | ees2 e | %5
 f4 f f ees | d2 c bes1
 }
 
-BZxCIDBZMusicRH = \partCombine #'(2.20) \BZxCIDBZMusicRHA\BZxCIDBZMusicRHB
+BZxCIDBZMusicRH = \partCombine #'(2 . 20) \BZxCIDBZMusicRHA\BZxCIDBZMusicRHB
 
 BZxCIDBZMusicLHA = \relative c{ \BZxCIDBZMusicGlobal \clef "bass"
 bes'2 a8 [bes] c4 | bes2. bes4 | %2
@@ -1164,7 +1164,7 @@ ees c8 [bes] a4 a | bes2. aes'4 | %4
 g2 ges | f4 ees d ees | f2 f, bes1
 }
 
-BZxCIDBZMusicLH = \partCombine #'(2.20) \BZxCIDBZMusicLHA\BZxCIDBZMusicLHB
+BZxCIDBZMusicLH = \partCombine #'(2 . 20) \BZxCIDBZMusicLHA\BZxCIDBZMusicLHB
 
 BZxCIDBZMusicLyrics = \relative c''''{ \BZxCIDBZMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c2 c4 c4 c2. c4 c4 c4 c4 c4 c2. c4 c2 c2 c4 c4 c4 c4 c2 c4 c4 c1
@@ -1197,7 +1197,7 @@ g4. aes8 g2 | aes ees4 ees | %11
 ees4. ees8 ees4 ees | c2 d ees1
 }
 
-BAxAABAMusicRH = \partCombine #'(2.20) \BAxAABAMusicRHA\BAxAABAMusicRHB
+BAxAABAMusicRH = \partCombine #'(2 . 20) \BAxAABAMusicRHA\BAxAABAMusicRHB
 
 BAxAABAMusicLHA = \relative c{ \BAxAABAMusicGlobal \clef "bass"
 g'2 bes4 bes | bes4. bes8 bes2 | %2
@@ -1217,7 +1217,7 @@ ees4. ees8 ees2 | ees ees4 ees | %11
 ees4. ees8 ees4 g, | aes2 bes ees1
 }
 
-BAxAABAMusicLH = \partCombine #'(2.20) \BAxAABAMusicLHA\BAxAABAMusicLHB
+BAxAABAMusicLH = \partCombine #'(2 . 20) \BAxAABAMusicLHA\BAxAABAMusicLHB
 
 BAxAABAMusicLyrics = \relative c''''{ \BAxAABAMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c2 c4 c4 c4. c8 c2 c2 c4 c4 c4. c8 c2 c2 c4 c4 c1 c2 c4 c4 c4. c8 c2 c2 c4 c4 c4. c8 c2 c2 c4 c4 c4. c8 c4 c4 c2 c2 c1
@@ -1263,7 +1263,7 @@ c4 b8 r d d | d4. d8 c b | d2 r4 | f e2 | %18
 e4 d2 | fis8 fis eis fis fis fis d2
 }
 
-BBxHABBMusicRH = \partCombine #'(2.20) \BBxHABBMusicRHA\BBxHABBMusicRHB
+BBxHABBMusicRH = \partCombine #'(2 . 20) \BBxHABBMusicRHA\BBxHABBMusicRHB
 
 BBxHABBMusicLHA = \relative c{ \BBxHABBMusicGlobal \clef "bass"
 d'8 d | b4. a8 c b | d4 d d8 e | %3
@@ -1285,7 +1285,7 @@ c4 g8 r g' g | d4. d8 d d | g,2 r4 | %17
 b c2 | c4 d2 | d8 d d d \fpre d \fpostbelow d \pcCh <g g,>2
 }
 
-BBxHABBMusicLH = \partCombine #'(2.20) \BBxHABBMusicLHA\BBxHABBMusicLHB
+BBxHABBMusicLH = \partCombine #'(2 . 20) \BBxHABBMusicLHA\BBxHABBMusicLHB
 
 BBxHABBMusicLyrics = \relative c''''{ \BBxHABBMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c8 c8 c4. c8 c8 c8 c4 c4 c8 c8 c4. c8 c8 c8 c4. cr8 c8 c8 c4. c8 c8 c8 c4 c4 c8 c8 c4. c8 c8 c8 c4. cr8 c8 c8 c4. c8 c8 c8 c4 c8 cr8 c8 c8 c4. c8 c8 c8 c4 c8 cr8 c4 ct8 c8 c8 c8 c8 c8 c4 c8 cr8 c8 c8 c4 ct8 c8 c8 c8 c2 cr4 c4 c4 ct4 c4 c2 c8 c8 c8 c8 c8 c8 c2
@@ -1339,7 +1339,7 @@ ees8. ees16 ees8. ees16 ees4 ees8. d16 | %15
 ees8. ees16 ees8. ees16 d4 d8. bes16 bes2.
 }
 
-BCxAZBBCMusicRH = \partCombine #'(2.20) \BCxAZBBCMusicRHA\BCxAZBBCMusicRHB
+BCxAZBBCMusicRH = \partCombine #'(2 . 20) \BCxAZBBCMusicRHA\BCxAZBBCMusicRHB
 
 BCxAZBBCMusicLHA = \relative c{ \BCxAZBBCMusicGlobal \clef "bass"
 g'8. aes16 | %1
@@ -1377,7 +1377,7 @@ aes8. aes16 aes8. aes16 aes4 g8. f16 | %15
 ees8. ees16 ees8. ees16 bes4 bes8. bes16 ees2.
 }
 
-BCxAZBBCMusicLH = \partCombine #'(2.20) \BCxAZBBCMusicLHA\BCxAZBBCMusicLHB
+BCxAZBBCMusicLH = \partCombine #'(2 . 20) \BCxAZBBCMusicLHA\BCxAZBBCMusicLHB
 
 BCxAZBBCMusicLyrics = \relative c''''{ \BCxAZBBCMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c8. c16 c8. c16 c8. c16 c4 c8. c16 c8. c16 c8. c16 c4 c8. c16 c8. c16 c8. c16 c16 ct8. c8. c16 c2. c8. c16 c8. c16 c8. c16 c4 c8. c16 c8. c16 c8. c16 c16 ct8. c8. c16 c8. c16 c8. c16 c16 ct8. c8. c16 c2. c8. c16 c2. c8*2/3 ct8*2/3 c8*2/3 c2. c8. c16 c8. c16 c8. c16 c16 c8. c8. c16 c2. c8. c16 c8. c16 c8. c16 c4 c8. c16 c8. c16 c8. c16 c16 ct8. c8. c16 c8. c16 c8. c16 c16 ct8. c8. c16 c2.
@@ -1399,7 +1399,7 @@ BDxABDBDMusicRHB = \relative c'{ \BDxABDBDMusicGlobal \clef "treble"
 
 }
 
-BDxABDBDMusicRH = \partCombine #'(2.20) \BDxABDBDMusicRHA\BDxABDBDMusicRHB
+BDxABDBDMusicRH = \partCombine #'(2 . 20) \BDxABDBDMusicRHA\BDxABDBDMusicRHB
 
 BDxABDBDMusicLHA = \relative c{ \BDxABDBDMusicGlobal \clef "bass"
 
@@ -1409,7 +1409,7 @@ BDxABDBDMusicLHB = \relative c{ \BDxABDBDMusicGlobal \clef "bass"
 
 }
 
-BDxABDBDMusicLH = \partCombine #'(2.20) \BDxABDBDMusicLHA\BDxABDBDMusicLHB
+BDxABDBDMusicLH = \partCombine #'(2 . 20) \BDxABDBDMusicLHA\BDxABDBDMusicLHB
 
 BDxABDBDMusicLyrics = \relative c''''{ \BDxABDBDMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c4 c4. c8 c8 c8 c2 c4 c4. c8 c8 c8 c2 c4 c4. c8 c8 c8 c2 c4 c4. c8 c8 c8 c2 c4 c4. c8 c8 c8 c4 c2 c4. c8 c8 c8 c4 c4 c4 c4. c8 c8 c8 c4 c4 c4 c4. c8 c4 c2
@@ -1446,7 +1446,7 @@ c4 c8 e f4 f8 f | f4 f8 f f2 | %10
 e4 e8 f e2 e4 e8 e f2
 }
 
-BExCHDBEMusicRH = \partCombine #'(2.20) \BExCHDBEMusicRHA\BExCHDBEMusicRHB
+BExCHDBEMusicRH = \partCombine #'(2 . 20) \BExCHDBEMusicRHA\BExCHDBEMusicRHB
 
 BExCHDBEMusicLHA = \relative c{ \BExCHDBEMusicGlobal \clef "bass"
 a'4 a8 c c4 \pcAO f,8 g | a4 bes8 a c2 | %2
@@ -1466,7 +1466,7 @@ f4 f8 c f4 f8 f | f4 f8 f f2 | %10
 c4 c8 c c2 c4 c8 c \pcCh <f f,> 2
 }
 
-BExCHDBEMusicLH = \partCombine #'(2.20) \BExCHDBEMusicLHA\BExCHDBEMusicLHB
+BExCHDBEMusicLH = \partCombine #'(2 . 20) \BExCHDBEMusicLHA\BExCHDBEMusicLHB
 
 BExCHDBEMusicLyrics = \relative c''''{ \BExCHDBEMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c\ParStart c4 c8 c8 c4 c8 c8 c4 c8 c8 c2 c4 c8 c8 c2 c4 c8 c8 c2 c\ParEnd c4 c8 c8 c4 c8 c8 c4 c8 c8 c2 c4 c8 c8 c4 c8 c8 c4 c8 c8 c2 c4 c8 c8 c4 c8 c8 c4 c8 c8 c2 c4 c8 c8 c2 c4 c8 c8 c2
@@ -1488,7 +1488,7 @@ BFxCFEBFMusicRHB = \relative c'{ \BFxCFEBFMusicGlobal \clef "treble"
 
 }
 
-BFxCFEBFMusicRH = \partCombine #'(2.20) \BFxCFEBFMusicRHA\BFxCFEBFMusicRHB
+BFxCFEBFMusicRH = \partCombine #'(2 . 20) \BFxCFEBFMusicRHA\BFxCFEBFMusicRHB
 
 BFxCFEBFMusicLHA = \relative c{ \BFxCFEBFMusicGlobal \clef "bass"
 
@@ -1498,7 +1498,7 @@ BFxCFEBFMusicLHB = \relative c{ \BFxCFEBFMusicGlobal \clef "bass"
 
 }
 
-BFxCFEBFMusicLH = \partCombine #'(2.20) \BFxCFEBFMusicLHA\BFxCFEBFMusicLHB
+BFxCFEBFMusicLH = \partCombine #'(2 . 20) \BFxCFEBFMusicLHA\BFxCFEBFMusicLHB
 
 BFxCFEBFMusicLyrics = \relative c''''{ \BFxCFEBFMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c2 c4 c4 ct4 c4 c2 c4 c4 ct4 c4 c2 c4 c2 c4 c4. c8 c4 c2. c2 c4 c4 ct4 c4 c2 c4 c4 ct4 c4 c2 c4 c4 ct4 c4 c2 c4 c2. c2 c4 c2 c4 c2 c4 c4. ct8 c4 c2 c4 c2 c4 c4 ct4 c4 c2. c2 c4 c4 ct4 c4 c2 c4 c4 ct4 c4 c2 c4 c4 c4 c4 c2 c4 c2.
@@ -1542,7 +1542,7 @@ d4. ees8 d ees | ees4. ees8 f aes | %14
 g4. g8 g ees | g4. ees8 ees d ees4.
 }
 
-BGxBBGBGMusicRH = \partCombine #'(2.20) \BGxBBGBGMusicRHA\BGxBBGBGMusicRHB
+BGxBBGBGMusicRH = \partCombine #'(2 . 20) \BGxBBGBGMusicRHA\BGxBBGBGMusicRHB
 
 BGxBBGBGMusicLHA = \relative c{ \BGxBBGBGMusicGlobal \clef "bass"
 bes'8 bes bes | bes4. bes8 bes bes | %2
@@ -1571,7 +1571,7 @@ aes aes aes r4 aes8 | ees ees ees r4 ees8 | %15
 ees ees ees ees bes bes ees4.
 }
 
-BGxBBGBGMusicLH = \partCombine #'(2.20) \BGxBBGBGMusicLHA\BGxBBGBGMusicLHB
+BGxBBGBGMusicLH = \partCombine #'(2 . 20) \BGxBBGBGMusicLHA\BGxBBGBGMusicLHB
 
 BGxBBGBGMusicLyrics = \relative c''''{ \BGxBBGBGMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c8 c8 c8 c4. c8 c8 c8 c4. c8 c8 c8 c4. c8 c8 c8 c4. c8 c8 c8 c4. c8 c8 c8 c4. c8 c8 c8 c4. c8 c8 c8 c4. c8 c8 c8 c4. c8 c8 c8 c4. c8 c8 c8 c4. c8 c8 c8 c4. c8 c8 c8 c4. c8 c8 c8 c4. c8 c8 c8 c4. c8 c8 c8 c4.
@@ -1593,7 +1593,7 @@ BHxCIZBHMusicRHB = \relative c'{ \BHxCIZBHMusicGlobal \clef "treble"
 
 }
 
-BHxCIZBHMusicRH = \partCombine #'(2.20) \BHxCIZBHMusicRHA\BHxCIZBHMusicRHB
+BHxCIZBHMusicRH = \partCombine #'(2 . 20) \BHxCIZBHMusicRHA\BHxCIZBHMusicRHB
 
 BHxCIZBHMusicLHA = \relative c{ \BHxCIZBHMusicGlobal \clef "bass"
 
@@ -1603,7 +1603,7 @@ BHxCIZBHMusicLHB = \relative c{ \BHxCIZBHMusicGlobal \clef "bass"
 
 }
 
-BHxCIZBHMusicLH = \partCombine #'(2.20) \BHxCIZBHMusicLHA\BHxCIZBHMusicLHB
+BHxCIZBHMusicLH = \partCombine #'(2 . 20) \BHxCIZBHMusicLHA\BHxCIZBHMusicLHB
 
 BHxCIZBHMusicLyrics = \relative c''''{ \BHxCIZBHMusicGlobal \clef "treble" 
 \hideNotes \voiceFour 
@@ -1636,7 +1636,7 @@ g2. fis4 f f f f | e1 r4 c e e | %7
 d2. d4 d2. d4 d1 r4
 }
 
-BIxBABIMusicRH = \partCombine #'(2.20) \BIxBABIMusicRHA\BIxBABIMusicRHB
+BIxBABIMusicRH = \partCombine #'(2 . 20) \BIxBABIMusicRHA\BIxBABIMusicRHB
 
 BIxBABIMusicLHA = \relative c{ \BIxBABIMusicGlobal \clef "bass"
 g'4 g g | a2. g4 fis a fis fis | %2
@@ -1652,7 +1652,7 @@ g2. g4 g g b, b | c1 r4 c c cis | %7
 d2. d4 d2. d4 g,1 r4
 }
 
-BIxBABIMusicLH = \partCombine #'(2.20) \BIxBABIMusicLHA\BIxBABIMusicLHB
+BIxBABIMusicLH = \partCombine #'(2 . 20) \BIxBABIMusicLHA\BIxBABIMusicLHB
 
 BIxBABIMusicLyrics = \relative c''''{ \BIxBABIMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c4 c4 c4 c2. c4 c4 c4 c4 c4 c1 cr4 c4 c4 c4 c2. c4 c4 c4 c4 c4 c1 cr4 c4 c4 c4 c2. c4 c4 c4 c4 c4 c1 cr4 c4 c4 c4 c2. c4 c2. c4 c1 cr4
@@ -1688,7 +1688,7 @@ f2. ees4 | ees ees ees d | ees2. ees4 | %9
 g g g f | d2. ees4 | ees ees ees d ees2.
 }
 
-CZxBFCZMusicRH = \partCombine #'(2.20) \CZxBFCZMusicRHA\CZxBFCZMusicRHB
+CZxBFCZMusicRH = \partCombine #'(2 . 20) \CZxBFCZMusicRHA\CZxBFCZMusicRHB
 
 CZxBFCZMusicLHA = \relative c{ \CZxBFCZMusicGlobal \clef "bass"
 g'4 | bes aes g c | d2. bes4 | %3
@@ -1704,7 +1704,7 @@ bes2. ees4 | aes, g aes bes | ees2. c4 | %9
 c d ees f | g2. aes4 | g aes bes bes, ees2.
 }
 
-CZxBFCZMusicLH = \partCombine #'(2.20) \CZxBFCZMusicLHA\CZxBFCZMusicLHB
+CZxBFCZMusicLH = \partCombine #'(2 . 20) \CZxBFCZMusicLHA\CZxBFCZMusicLHB
 
 CZxBFCZMusicLyrics = \relative c''''{ \CZxBFCZMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c4 c4 c4 c4 c4 c2. c4 c4 c4 c4 c4 c2. c4 c4 c4 c4 c4 c2. c4 c4 c4 c4 c4 c2. c4 c4 c4 c4 c4 c2. c4 c4 c4 c4 c4 c2.
@@ -1726,7 +1726,7 @@ CAxBHICAMusicRHB = \relative c'{ \CAxBHICAMusicGlobal \clef "treble"
 
 }
 
-CAxBHICAMusicRH = \partCombine #'(2.20) \CAxBHICAMusicRHA\CAxBHICAMusicRHB
+CAxBHICAMusicRH = \partCombine #'(2 . 20) \CAxBHICAMusicRHA\CAxBHICAMusicRHB
 
 CAxBHICAMusicLHA = \relative c{ \CAxBHICAMusicGlobal \clef "bass"
 
@@ -1736,7 +1736,7 @@ CAxBHICAMusicLHB = \relative c{ \CAxBHICAMusicGlobal \clef "bass"
 
 }
 
-CAxBHICAMusicLH = \partCombine #'(2.20) \CAxBHICAMusicLHA\CAxBHICAMusicLHB
+CAxBHICAMusicLH = \partCombine #'(2 . 20) \CAxBHICAMusicLHA\CAxBHICAMusicLHB
 
 CAxBHICAMusicLyrics = \relative c''''{ \CAxBHICAMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c4 c8 c8 c4 c8 c8 c8 c8 c4 c4 c8 c8 c4 c8 c8 c8 c8 c4 c4 c8 c8 c4 c8 ct8 c8 c8 c4 c4 c8 c8 c4 c4 c2 c4 c8 c8 c4 c4 c2 c4 c8 c8 c4 c4 c2 c\chorusbelow18 c4 c8 c8 c4 c8 ct8 c8 c8 c4 c4 c8 c8 c4 c4 c4
@@ -1786,7 +1786,7 @@ aes4 (g) r | g ees aes8. [ees16] | %21
 g8. [f16] f4 f8 ees | d c bes4. bes8 bes2 r4
 }
 
-CBxBZCBMusicRH = \partCombine #'(2.20) \CBxBZCBMusicRHA\CBxBZCBMusicRHB
+CBxBZCBMusicRH = \partCombine #'(2 . 20) \CBxBZCBMusicRHA\CBxBZCBMusicRHB
 
 CBxBZCBMusicLHA = \relative c{ \CBxBZCBMusicGlobal \clef "bass"
 bes'2 bes8 bes | aes ees4. ees8 aes | %2
@@ -1816,7 +1816,7 @@ ees,2 r4 | ees ees ees8. ees16 | %21
 bes4 bes bes8 bes | bes bes bes4. bes8 ees2 r4
 }
 
-CBxBZCBMusicLH = \partCombine #'(2.20) \CBxBZCBMusicLHA\CBxBZCBMusicLHB
+CBxBZCBMusicLH = \partCombine #'(2 . 20) \CBxBZCBMusicLHA\CBxBZCBMusicLHB
 
 CBxBZCBMusicLyrics = \relative c''''{ \CBxBZCBMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c2 c8 c8 c8 c4. c8 c8 c4. c8 c8 c8 c2 cr4 c2 c8 c8 c8 c4. c8 c8 c2 c4 c2 c8 c8 c2 c4 c8 c4. c8 c8 c4. c8 c8 c8 c2 c8 c8 c2 c4 c8 c4. c8 c8 c2 c4 c2 cr4 c4 c4 c8. ct16 c8. ct16 c4 c8 c8 c4. c8 c8 c8 c4 ct4 cr4 c4 c4 c8. ct16 c8. ct16 c4 c8 c8 c8 c8 c4. c8 c2
@@ -1838,7 +1838,7 @@ CCxCDDCCMusicRHB = \relative c'{ \CCxCDDCCMusicGlobal \clef "treble"
 
 }
 
-CCxCDDCCMusicRH = \partCombine #'(2.20) \CCxCDDCCMusicRHA\CCxCDDCCMusicRHB
+CCxCDDCCMusicRH = \partCombine #'(2 . 20) \CCxCDDCCMusicRHA\CCxCDDCCMusicRHB
 
 CCxCDDCCMusicLHA = \relative c{ \CCxCDDCCMusicGlobal \clef "bass"
 
@@ -1848,7 +1848,7 @@ CCxCDDCCMusicLHB = \relative c{ \CCxCDDCCMusicGlobal \clef "bass"
 
 }
 
-CCxCDDCCMusicLH = \partCombine #'(2.20) \CCxCDDCCMusicLHA\CCxCDDCCMusicLHB
+CCxCDDCCMusicLH = \partCombine #'(2 . 20) \CCxCDDCCMusicLHA\CCxCDDCCMusicLHB
 
 CCxCDDCCMusicLyrics = \relative c''''{ \CCxCDDCCMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c4 c4. c8 c8 c8 c8 c8 c2 c4 c4 c4. c8 c8 c8 c8 c8 c2 c4 c4 c4. c8 c8 c8 c8 c8 c2 c4 c4 c4. c8 c8 c8 c8 c8 c4. c8 c4 c4 c2. c4 c2.
@@ -1870,7 +1870,7 @@ CDxAECCDMusicRHB = \relative c'{ \CDxAECCDMusicGlobal \clef "treble"
 
 }
 
-CDxAECCDMusicRH = \partCombine #'(2.20) \CDxAECCDMusicRHA\CDxAECCDMusicRHB
+CDxAECCDMusicRH = \partCombine #'(2 . 20) \CDxAECCDMusicRHA\CDxAECCDMusicRHB
 
 CDxAECCDMusicLHA = \relative c{ \CDxAECCDMusicGlobal \clef "bass"
 
@@ -1880,7 +1880,7 @@ CDxAECCDMusicLHB = \relative c{ \CDxAECCDMusicGlobal \clef "bass"
 
 }
 
-CDxAECCDMusicLH = \partCombine #'(2.20) \CDxAECCDMusicLHA\CDxAECCDMusicLHB
+CDxAECCDMusicLH = \partCombine #'(2 . 20) \CDxAECCDMusicLHA\CDxAECCDMusicLHB
 
 CDxAECCDMusicLyrics = \relative c''''{ \CDxAECCDMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c8 c8 c8 c4 c8 c4. c4 cr8 c8 c8 c8 c4 c8 c4. ct4 cr8 c8 c8 c8 c4 c8 c4. c4 cr8 c8 c8 c8 c4 c8 c4. ct4 cr8 c8 c8 c8 c4 c8 c4. c4 cr8 c8 c8 c8 c4 c8 c4. c4 cr8 c8 c8 c8 c4 c8 c4. c4 cr8 c8 c8 c8 c4 c8 c4. ct4
@@ -1917,7 +1917,7 @@ ges2 ges4 ges2 ges4 | %7
 f2 f4 f4. (ees8) des4 | c2. c des~des2
 }
 
-CExAEHCEMusicRH = \partCombine #'(2.20) \CExAEHCEMusicRHA\CExAEHCEMusicRHB
+CExAEHCEMusicRH = \partCombine #'(2 . 20) \CExAEHCEMusicRHA\CExAEHCEMusicRHB
 
 CExAEHCEMusicLHA = \relative c{ \CExAEHCEMusicGlobal \clef "bass"
 f8 [ges] | aes2 aes4 aes2 aes4 | %2
@@ -1939,7 +1939,7 @@ ges2 ges4 ges2 ges4 | des2 des4 des2 des4 | %8
 aes'2. aes, des~des2
 }
 
-CExAEHCEMusicLH = \partCombine #'(2.20) \CExAEHCEMusicLHA\CExAEHCEMusicLHB
+CExAEHCEMusicLH = \partCombine #'(2 . 20) \CExAEHCEMusicLHA\CExAEHCEMusicLHB
 
 CExAEHCEMusicLyrics = \relative c''''{ \CExAEHCEMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c8 ct8 c2 c4 c4. ct8 c4 c4. ct8 c4 c2 c4 c4 ct4 c4 c2 c4 c2 c4 c2 c8 ct8 c2 c4 c4. ct8 c4 c2 c4 c4. ct8 c4 c2 c4 c4. ct8 c4 c2. c2. c2. ct2
@@ -1982,7 +1982,7 @@ ees4. ees8 ees4 ees2 ees8 [des] | %11
 c4. c8 c4 ees ees ees ees2.~ees2
 }
 
-CFxBICFMusicRH = \partCombine #'(2.20) \CFxBICFMusicRHA\CFxBICFMusicRHB
+CFxBICFMusicRH = \partCombine #'(2 . 20) \CFxBICFMusicRHA\CFxBICFMusicRHB
 
 CFxBICFMusicLHA = \relative c{ \CFxBICFMusicGlobal \clef "bass"
 aes'4 | aes4. aes8 aes4 aes4. g8 aes4 | %2
@@ -2012,7 +2012,7 @@ aes4. aes8 aes4 aes2 aes4 | %11
 aes4. aes8 aes4 c bes aes ees'2.~ees2
 }
 
-CFxBICFMusicLH = \partCombine #'(2.20) \CFxBICFMusicLHA\CFxBICFMusicLHB
+CFxBICFMusicLH = \partCombine #'(2 . 20) \CFxBICFMusicLHA\CFxBICFMusicLHB
 
 CFxBICFMusicLyrics = \relative c''''{ \CFxBICFMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c4 c4. c8 c4 c4. c8 c4 c4. c8 c4 c2 c4 c4. c8 c4 c4 c4 c4 c2. ct2 c4 c4. c8 c4 c4. c8 c4 c4. c8 c4 c2 c4 c4. c8 c4 c4. c8 c4 c2. ct2 c4 c4. c8 c4 c4. c8 c4 c4. c8 c4 c2 c4 c4. c8 c4 c4 c4 c4 c2. ct2 c\chorusbelow19 c4 c4. c8 c4 c4. c8 c4 c4. c8 c4 c2 c4 c4. c8 c4 c4. c8 c4 c2. ct2
@@ -2035,7 +2035,7 @@ CGxBBHCGMusicRHB = \relative c'{ \CGxBBHCGMusicGlobal \clef "treble"
 
 }
 
-CGxBBHCGMusicRH = \partCombine #'(2.20) \CGxBBHCGMusicRHA\CGxBBHCGMusicRHB
+CGxBBHCGMusicRH = \partCombine #'(2 . 20) \CGxBBHCGMusicRHA\CGxBBHCGMusicRHB
 
 CGxBBHCGMusicLHA = \relative c{ \CGxBBHCGMusicGlobal \clef "bass"
 
@@ -2045,7 +2045,7 @@ CGxBBHCGMusicLHB = \relative c{ \CGxBBHCGMusicGlobal \clef "bass"
 
 }
 
-CGxBBHCGMusicLH = \partCombine #'(2.20) \CGxBBHCGMusicLHA\CGxBBHCGMusicLHB
+CGxBBHCGMusicLH = \partCombine #'(2 . 20) \CGxBBHCGMusicLHA\CGxBBHCGMusicLHB
 
 CGxBBHCGMusicLyrics = \relative c''''{ \CGxBBHCGMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c4. c4 c8 c8 c8 c8 c8 c4 c8 c8 c8 c8 c8 c8 c4. c4. c4. c4 c8 c8 c8 c8 c8 c4 c8 c8 c8 c8 c8. c16 c4. ct4 cr8 c4. c4 c8 c8 c8 c8 c8 c4 c4. c4 c8 c8 c8 c8 c4 c8 c\chorusbelow16 c4. c4 c8 c8 c8 c8 c8 c4 c8 c8 c8 c8 c8. c16 c4. ct4
@@ -2067,7 +2067,7 @@ CHxAIHCHMusicRHB = \relative c'{ \CHxAIHCHMusicGlobal \clef "treble"
 
 }
 
-CHxAIHCHMusicRH = \partCombine #'(2.20) \CHxAIHCHMusicRHA\CHxAIHCHMusicRHB
+CHxAIHCHMusicRH = \partCombine #'(2 . 20) \CHxAIHCHMusicRHA\CHxAIHCHMusicRHB
 
 CHxAIHCHMusicLHA = \relative c{ \CHxAIHCHMusicGlobal \clef "bass"
 
@@ -2077,7 +2077,7 @@ CHxAIHCHMusicLHB = \relative c{ \CHxAIHCHMusicGlobal \clef "bass"
 
 }
 
-CHxAIHCHMusicLH = \partCombine #'(2.20) \CHxAIHCHMusicLHA\CHxAIHCHMusicLHB
+CHxAIHCHMusicLH = \partCombine #'(2 . 20) \CHxAIHCHMusicLHA\CHxAIHCHMusicLHB
 
 CHxAIHCHMusicLyrics = \relative c''''{ \CHxAIHCHMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c4 c4 c4 c2 c4 c4 c4 c4 c2. c4 c4 c4 c2 c4 c4 c4 c4 c2. c4 c4 c4 c2 c4 c4 c4 c4 c2. c4 c4 c4 c2 c4 c4 c4 c4 c2.
@@ -2113,7 +2113,7 @@ f4. f8 f f g f | e2. r4 | f4. f8 f f f c | %13
 d2 bes4 r | a4. c8 f c c c c2.
 }
 
-CIxICIMusicRH = \partCombine #'(2.20) \CIxICIMusicRHA\CIxICIMusicRHB
+CIxICIMusicRH = \partCombine #'(2 . 20) \CIxICIMusicRHA\CIxICIMusicRHB
 
 CIxICIMusicLHA = \relative c{ \CIxICIMusicGlobal \clef "bass"
 a'4. a8 bes a c a | bes2 f4 r | %2
@@ -2136,7 +2136,7 @@ f4. f8 f f f f | bes,2 bes4 r | %14
 c4. c8 c c c c f2.
 }
 
-CIxICIMusicLH = \partCombine #'(2.20) \CIxICIMusicLHA\CIxICIMusicLHB
+CIxICIMusicLH = \partCombine #'(2 . 20) \CIxICIMusicLHA\CIxICIMusicLHB
 
 CIxICIMusicLyrics = \relative c''''{ \CIxICIMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c4. c8 c8 c8 c8 c8 c2 c4 cr4 c4. c8 c8 c8 c8 c8 c2. cr4 c4. c8 c8 c8 c8 c8 c2 c4 cr4 c4. c8 c8 c8 c8 c8 c2. cr4 c4. c8 c8 c8 c8 c8 c2 c4 cr4 c4. c8 c8 c8 c8 c8 c2. cr4 c4. c8 c8 c8 c8 c8 c2 c4 cr4 c4. c8 c8 c8 c8 c8 c2.
@@ -2184,7 +2184,7 @@ f4. aes8 g8. fis16 g8 ees | %14
 d2~d8 f ees f | g2~g8 g g ees d2~d8
 }
 
-DZxDZMusicRH = \partCombine #'(2.20) \DZxDZMusicRHA\DZxDZMusicRHB
+DZxDZMusicRH = \partCombine #'(2 . 20) \DZxDZMusicRHA\DZxDZMusicRHB
 
 DZxDZMusicLHA = \relative c{ \DZxDZMusicGlobal \clef "bass"
 bes'8 bes bes | f4. bes8 a f bes bes | %2
@@ -2217,7 +2217,7 @@ bes4. d8 ees8. ees16 ees8 ees | %14
 bes2~bes8 bes c d | ees2~ees8 d \fpre c \fpostbelow  f bes,2~bes8
 }
 
-DZxDZMusicLH = \partCombine #'(2.20) \DZxDZMusicLHA\DZxDZMusicLHB
+DZxDZMusicLH = \partCombine #'(2 . 20) \DZxDZMusicLHA\DZxDZMusicLHB
 
 DZxDZMusicLyrics = \relative c''''{ \DZxDZMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c8 c8 c8 c4. c8 c8 c8 c8 c8 c4 c4. c8 c8 c8 c4. c8 c8 c8 c8 c8 c2 ct8 c8 c8 c8 c4. c8 c8 c8 c8 c8 c4 c4. c8 c8 c8 c4. c8 c8 c8 c8 c8 c2 ct8 c8 c8 c8 c4. c8 c8. c16 c8 c8 c2 ct8 c8 c8 c8 c2 ct8 c8 c8 c8 c2 ct8 c8 c8 c8 c4. c8 c8. c16 c8 c8 c2 ct8 c8 c8 c8 c2 ct8 c8 c8 c8 c2 ct8
@@ -2250,7 +2250,7 @@ f2 f | ees4 ees ees ees | ees1 | %12
 c2 c4 c | des2 des | bes4 bes des des c1
 }
 
-DAxDDAMusicRH = \partCombine #'(2.20) \DAxDDAMusicRHA\DAxDDAMusicRHB
+DAxDDAMusicRH = \partCombine #'(2 . 20) \DAxDDAMusicRHA\DAxDDAMusicRHB
 
 DAxDDAMusicLHA = \relative c{ \DAxDDAMusicGlobal \clef "bass"
 aes'2 aes4 aes | aes2 aes | ees4 ees f g | %3
@@ -2268,7 +2268,7 @@ bes2 aes | g4 g ees ees | aes,1 | %12
 f'2 f4 f | des2 des | ees4 ees ees ees aes,1
 }
 
-DAxDDAMusicLH = \partCombine #'(2.20) \DAxDDAMusicLHA\DAxDDAMusicLHB
+DAxDDAMusicLH = \partCombine #'(2 . 20) \DAxDDAMusicLHA\DAxDDAMusicLHB
 
 DAxDDAMusicLyrics = \relative c''''{ \DAxDDAMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c2 c4 c4 c2 c2 c4 c4 c4 c4 c1 c2 c4 c4 c2 c2 c4 c4 c4 c4 c1 c2 c4 c4 c2 c2 c4 c4 c4 c4 c1 c2 c4 c4 c2 c2 c4 c4 c4 c4 c1
@@ -2290,7 +2290,7 @@ DBxDZADBMusicRHB = \relative c'{ \DBxDZADBMusicGlobal \clef "treble"
 
 }
 
-DBxDZADBMusicRH = \partCombine #'(2.20) \DBxDZADBMusicRHA\DBxDZADBMusicRHB
+DBxDZADBMusicRH = \partCombine #'(2 . 20) \DBxDZADBMusicRHA\DBxDZADBMusicRHB
 
 DBxDZADBMusicLHA = \relative c{ \DBxDZADBMusicGlobal \clef "bass"
 
@@ -2300,7 +2300,7 @@ DBxDZADBMusicLHB = \relative c{ \DBxDZADBMusicGlobal \clef "bass"
 
 }
 
-DBxDZADBMusicLH = \partCombine #'(2.20) \DBxDZADBMusicLHA\DBxDZADBMusicLHB
+DBxDZADBMusicLH = \partCombine #'(2 . 20) \DBxDZADBMusicLHA\DBxDZADBMusicLHB
 
 DBxDZADBMusicLyrics = \relative c''''{ \DBxDZADBMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c8 c8 c4. c8 c8 c8 c2 c8 c8 c4. c8 c4 c2 c8 c8 c4. c8 c8 c8 c2 c8 c8 c4. c8 c4 c2 c8 c8 c4. c8 c8 c8 c2 c8 c8 c4. c8 c8 c8 c2 c8 c8 c4. c8 c8 c8 c4 c4 c8 c8 c4. c8 c4 c2
@@ -2322,7 +2322,7 @@ DCxAGDCMusicRHB = \relative c'{ \DCxAGDCMusicGlobal \clef "treble"
 
 }
 
-DCxAGDCMusicRH = \partCombine #'(2.20) \DCxAGDCMusicRHA\DCxAGDCMusicRHB
+DCxAGDCMusicRH = \partCombine #'(2 . 20) \DCxAGDCMusicRHA\DCxAGDCMusicRHB
 
 DCxAGDCMusicLHA = \relative c{ \DCxAGDCMusicGlobal \clef "bass"
 
@@ -2332,7 +2332,7 @@ DCxAGDCMusicLHB = \relative c{ \DCxAGDCMusicGlobal \clef "bass"
 
 }
 
-DCxAGDCMusicLH = \partCombine #'(2.20) \DCxAGDCMusicLHA\DCxAGDCMusicLHB
+DCxAGDCMusicLH = \partCombine #'(2 . 20) \DCxAGDCMusicLHA\DCxAGDCMusicLHB
 
 DCxAGDCMusicLyrics = \relative c''''{ \DCxAGDCMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c2 c4. c8 c4. c8 c2 c2 c4 c4 c1 c2 c4. c8 c4. c8 c2 c4 c4 c4 c4 c1 c2 c4. c8 c4. c8 c2 c2 c4. c8 c4. c8 c2 c2 c4. c8 c4. c8 c2 c4 c4 c4 c4 c1
@@ -2354,7 +2354,7 @@ DDxCAZDDMusicRHB = \relative c'{ \DDxCAZDDMusicGlobal \clef "treble"
 
 }
 
-DDxCAZDDMusicRH = \partCombine #'(2.20) \DDxCAZDDMusicRHA\DDxCAZDDMusicRHB
+DDxCAZDDMusicRH = \partCombine #'(2 . 20) \DDxCAZDDMusicRHA\DDxCAZDDMusicRHB
 
 DDxCAZDDMusicLHA = \relative c{ \DDxCAZDDMusicGlobal \clef "bass"
 
@@ -2364,7 +2364,7 @@ DDxCAZDDMusicLHB = \relative c{ \DDxCAZDDMusicGlobal \clef "bass"
 
 }
 
-DDxCAZDDMusicLH = \partCombine #'(2.20) \DDxCAZDDMusicLHA\DDxCAZDDMusicLHB
+DDxCAZDDMusicLH = \partCombine #'(2 . 20) \DDxCAZDDMusicLHA\DDxCAZDDMusicLHB
 
 DDxCAZDDMusicLyrics = \relative c''''{ \DDxCAZDDMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c4 c4 c4 c4. c8 c4 c4 c4 c4 c2 ct4 c4 c4 c4 c4. c8 c4 c4 c4 c4 c2 c4 c4 c4 c4 c4. c8 c4 c4 c4 c4 c2 c4 c4 c4 c4 c4. c8 c4 c4 c4 c4 c2. c4 c4 c4 c4. c8 c4 c4 c4 c4 c2. c4 c4 c4 c4. c8 c4 c4 c4 c4 c2. c4 c4 c4 c4. c8 c4 c4 c4 c4 c2. c4 c4 c4 c4. c8 c4 c4 c4 c4 c2.
@@ -2407,7 +2407,7 @@ aes2. aes4 | aes4. aes8 aes4 ees | %14
 ees aes aes aes | aes ees ees des c2.
 }
 
-DExAHEDEMusicRH = \partCombine #'(2.20) \DExAHEDEMusicRHA\DExAHEDEMusicRHB
+DExAHEDEMusicRH = \partCombine #'(2 . 20) \DExAHEDEMusicRHA\DExAHEDEMusicRHB
 
 DExAHEDEMusicLHA = \relative c{ \DExAHEDEMusicGlobal \clef "bass"
 ees4 | ees aes aes f | aes2. aes4 | %3
@@ -2430,7 +2430,7 @@ aes2. aes4 | aes4. aes8 aes4 aes | %14
 g ges \fpre f \fpostbelow des | ees ees ees ees aes,2.
 }
 
-DExAHEDEMusicLH = \partCombine #'(2.20) \DExAHEDEMusicLHA\DExAHEDEMusicLHB
+DExAHEDEMusicLH = \partCombine #'(2 . 20) \DExAHEDEMusicLHA\DExAHEDEMusicLHB
 
 DExAHEDEMusicLyrics = \relative c''''{ \DExAHEDEMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c4 c4 c4 c4 c4 c2. c4 c4 c4 c4 c4 c2. c4 c4 c4 c4 c4 c4 c4 c4 c4 c4 c4 c4 c4 c2. c4 c4. c8 c4 c4 c2. c4 c4. c8 c4 c4 c2. c4 c4. c8 c4 c4 c4 c4 c4 c4 c4 c4 c4 c4 c2.
@@ -2465,7 +2465,7 @@ ees4. ees8 ees4 des | c2. r4 | aes'2 aes | %9
 f des | c4 c ees ees ees2.
 }
 
-DFxABGDFMusicRH = \partCombine #'(2.20) \DFxABGDFMusicRHA\DFxABGDFMusicRHB
+DFxABGDFMusicRH = \partCombine #'(2 . 20) \DFxABGDFMusicRHA\DFxABGDFMusicRHB
 
 DFxABGDFMusicLHA = \relative c{ \DFxABGDFMusicGlobal \clef "bass"
 aes'4. aes8 aes8. aes16 aes8. aes16 | %1
@@ -2485,7 +2485,7 @@ aes,2. r4 | aes'2 aes | des, des | %10
 aes4 aes aes c ees2.
 }
 
-DFxABGDFMusicLH = \partCombine #'(2.20) \DFxABGDFMusicLHA\DFxABGDFMusicLHB
+DFxABGDFMusicLH = \partCombine #'(2 . 20) \DFxABGDFMusicLHA\DFxABGDFMusicLHB
 
 DFxABGDFMusicLyrics = \relative c''''{ \DFxABGDFMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c4. c8 c8. c16 c8. c16 c2 c2 c4. c8 c4 c4 c2. cr4 c4. c8 c8. c16 c8. c16 c2 c2 c4. c8 c4 c4 c2. cr4 c2 c2 c4. ct8 c2 c4 c4 c4 c4 c2. c\chorusbelow13 c4. c8 c8. c16 c8. c16 c2 c2 c4. c8 c4 c4 c2.
@@ -2507,7 +2507,7 @@ DGxAHFDGMusicRHB = \relative c'{ \DGxAHFDGMusicGlobal \clef "treble"
 
 }
 
-DGxAHFDGMusicRH = \partCombine #'(2.20) \DGxAHFDGMusicRHA\DGxAHFDGMusicRHB
+DGxAHFDGMusicRH = \partCombine #'(2 . 20) \DGxAHFDGMusicRHA\DGxAHFDGMusicRHB
 
 DGxAHFDGMusicLHA = \relative c{ \DGxAHFDGMusicGlobal \clef "bass"
 
@@ -2517,7 +2517,7 @@ DGxAHFDGMusicLHB = \relative c{ \DGxAHFDGMusicGlobal \clef "bass"
 
 }
 
-DGxAHFDGMusicLH = \partCombine #'(2.20) \DGxAHFDGMusicLHA\DGxAHFDGMusicLHB
+DGxAHFDGMusicLH = \partCombine #'(2 . 20) \DGxAHFDGMusicLHA\DGxAHFDGMusicLHB
 
 DGxAHFDGMusicLyrics = \relative c''''{ \DGxAHFDGMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c4 c4 ct4 c4 c4 ct4 c4 c4 c4 c4 c2 c4 c4 ct4 c4 c4 c4 c4 c4 c4 c4 c2 c4 c4 ct4 c4 c2 c4 c4 ct4 c4 c4 c4 c4 c2 c4 c2 c4 c4 ct4 c4 c2
@@ -2558,7 +2558,7 @@ c8 c c f8. f16 f8 | f d f f4. | %14
 f8 f f f8. f16 f8 f e e f4.
 }
 
-DHxHIDHMusicRH = \partCombine #'(2.20) \DHxHIDHMusicRHA\DHxHIDHMusicRHB
+DHxHIDHMusicRH = \partCombine #'(2 . 20) \DHxHIDHMusicRHA\DHxHIDHMusicRHB
 
 DHxHIDHMusicLHA = \relative c{ \DHxHIDHMusicGlobal \clef "bass"
 a'8 a bes c4 c16 c | %1
@@ -2585,7 +2585,7 @@ f8 f f f8. f16 f8 | f f f f4. | %14
 d8 c bes c8. c16 \fpre d8 \fpostbelow c c c f4.
 }
 
-DHxHIDHMusicLH = \partCombine #'(2.20) \DHxHIDHMusicLHA\DHxHIDHMusicLHB
+DHxHIDHMusicLH = \partCombine #'(2 . 20) \DHxHIDHMusicLHA\DHxHIDHMusicLHB
 
 DHxHIDHMusicLyrics = \relative c''''{ \DHxHIDHMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c8 c8 c8 c4 c16 c16 c8 c8 c8 c4. c8 c8 c8 c8. c16 c8 c8 c8 c8 c4. c8 c8 c8 c8. c16 c8 c8 c8 c8 c4. c8. c16 c8 c8 c8 c8 c8 c8 c8 c4. c8 c8. c16 c4. c8 c8. c16 c4. c8. c16 c8 c8 c8 c8 c8 c8 c8 c4. c8 c8 c8 c8. c16 c8 c8 c8 c8 c4. c8 c8 c8 c8. c16 c8 c8 c8 c8 c4.
@@ -2624,7 +2624,7 @@ r2 e4 e | d2 g4 g | r2 d4 f | e2 c4 e | %19
 f2 f4 f | e2 d4. e8 e2.
 }
 
-DIxAAFDIMusicRH = \partCombine #'(2.20) \DIxAAFDIMusicRHA\DIxAAFDIMusicRHB
+DIxAAFDIMusicRH = \partCombine #'(2 . 20) \DIxAAFDIMusicRHA\DIxAAFDIMusicRHB
 
 DIxAAFDIMusicLHA = \relative c{ \DIxAAFDIMusicGlobal \clef "bass"
 g'4 | g2 g4 g | c2 g4 g | a (f) g b | %4
@@ -2644,7 +2644,7 @@ g2 g4 g8 [f] | e2 e4 f | g2 g,4. c8 | %14
 f2 f4 f | g2 g,4. c8 c2.
 }
 
-DIxAAFDIMusicLH = \partCombine #'(2.20) \DIxAAFDIMusicLHA\DIxAAFDIMusicLHB
+DIxAAFDIMusicLH = \partCombine #'(2 . 20) \DIxAAFDIMusicLHA\DIxAAFDIMusicLHB
 
 DIxAAFDIMusicLyrics = \relative c''''{ \DIxAAFDIMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c4 c2 c4 c4 c2 c4 c4 c2 c4 c4 c2. c4 c2 c4 c4 c2 c4 c4 c2. c4 c2 c4 c4 c2 c4 c4 c2 c4 c4 c2 c4 c4 c2 c4 c4 c2 c4. c8 c2 c4 c4 c1. c4 c4 c1. c4 c4 c2 c4 c4 c2 c4. c8 c2
@@ -2693,7 +2693,7 @@ e4 e d c | b4. b8 b2~| b4 b b b | %31
 c1~c4
 }
 
-EZxBAEEZMusicRH = \partCombine #'(2.20) \EZxBAEEZMusicRHA\EZxBAEEZMusicRHB
+EZxBAEEZMusicRH = \partCombine #'(2 . 20) \EZxBAEEZMusicRHA\EZxBAEEZMusicRHB
 
 EZxBAEEZMusicLHA = \relative c{ \EZxBAEEZMusicGlobal \clef "bass"
 c'4 c g | c1~| c4 a a aes | g1~| %4
@@ -2721,7 +2721,7 @@ c4 c c c | g4. g8 g2~| g4 g g g | %31
 c1~c4
 }
 
-EZxBAEEZMusicLH = \partCombine #'(2.20) \EZxBAEEZMusicLHA\EZxBAEEZMusicLHB
+EZxBAEEZMusicLH = \partCombine #'(2 . 20) \EZxBAEEZMusicLHA\EZxBAEEZMusicLHB
 
 EZxBAEEZMusicLyrics = \relative c''''{ \EZxBAEEZMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c4 c4 c4 c2 ct2 ct4 c4 c4 c4 c1 ct4 c4 c4 c4 c1 ct4 c4 c4 c4 c1 ct4 c4 c4 c4 c2 c2 ct4 c4 c4 c4 c1 ct4 c4 c4 c4 c1 ct4 c4 c4 c4 c1 ct4 c4 c4 c4 c4. c8 c2 ct4 c4 c4 c4 c4. c8 c2. c4 c4 c4 c4. c8 c2. c4 c4 c4 c4. c8 c2. c4 c4 c4 c4. c8 c2. c4 c4 c4 c4. c8 c2. c4 c4 c4 c4. c8 c2. c4 c4 c4 c1 ct4
@@ -2755,7 +2755,7 @@ des4. c8 | ees ees ees f | ees4 ees | %12
 ees ees8 ees | des4 f | ees8 ees g8. g16 aes2
 }
 
-EAxCFEAMusicRH = \partCombine #'(2.20) \EAxCFEAMusicRHA\EAxCFEAMusicRHB
+EAxCFEAMusicRH = \partCombine #'(2 . 20) \EAxCFEAMusicRHA\EAxCFEAMusicRHB
 
 EAxCFEAMusicLHA = \relative c{ \EAxCFEAMusicGlobal \clef "bass"
 aes'4 aes8 aes | aes4. aes8 | %2
@@ -2775,7 +2775,7 @@ c aes c des | ees4 ees | c bes8 aes | %13
 des4 bes | ees8 ees ees8. ees16 aes,2
 }
 
-EAxCFEAMusicLH = \partCombine #'(2.20) \EAxCFEAMusicLHA\EAxCFEAMusicLHB
+EAxCFEAMusicLH = \partCombine #'(2 . 20) \EAxCFEAMusicLHA\EAxCFEAMusicLHB
 
 EAxCFEAMusicLyrics = \relative c''''{ \EAxCFEAMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c4 c8 c8 c4. c8 c8 c8 c8 c8 c4 c4 c4 c8 c8 c4 c4 c8 c8 c8. c16 c2 c4 c8 c8 c4. c8 c8 c8 c8 c8 c4 c4 c4 c8 c8 c4 c4 c8 c8 c8. c16 c2
@@ -2797,7 +2797,7 @@ EBxDBEBMusicRHB = \relative c'{ \EBxDBEBMusicGlobal \clef "treble"
 
 }
 
-EBxDBEBMusicRH = \partCombine #'(2.20) \EBxDBEBMusicRHA\EBxDBEBMusicRHB
+EBxDBEBMusicRH = \partCombine #'(2 . 20) \EBxDBEBMusicRHA\EBxDBEBMusicRHB
 
 EBxDBEBMusicLHA = \relative c{ \EBxDBEBMusicGlobal \clef "bass"
 
@@ -2807,7 +2807,7 @@ EBxDBEBMusicLHB = \relative c{ \EBxDBEBMusicGlobal \clef "bass"
 
 }
 
-EBxDBEBMusicLH = \partCombine #'(2.20) \EBxDBEBMusicLHA\EBxDBEBMusicLHB
+EBxDBEBMusicLH = \partCombine #'(2 . 20) \EBxDBEBMusicLHA\EBxDBEBMusicLHB
 
 EBxDBEBMusicLyrics = \relative c''''{ \EBxDBEBMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c8 c8 ct8 c8 c4 c8 c8 ct8 c8 c4 c8 c8 ct8 c8 c4 c8 c4. c4 c8 c8 ct8 c8 c4 c8 c8 c8 c8 c4 c8 c8 ct8 c8 c4 c8 c4. ct4 c8 c8 ct8 c8 c4 c8 c8 ct8 c8 c4 c8 c8 ct8 c8 c4 c8 c4. ct4 c8 c8 ct8 c8 c4 c8 c8 ct8 c8 c4 c8 c8 ct8 c8 c4 c8 c4. ct4
@@ -2846,7 +2846,7 @@ ees4 d8 ees4 g8 | aes4 g8 ees g4 | %14
 ees d8 ees [g] ees d4 d8 ees4.
 }
 
-ECxAIECMusicRH = \partCombine #'(2.20) \ECxAIECMusicRHA\ECxAIECMusicRHB
+ECxAIECMusicRH = \partCombine #'(2 . 20) \ECxAIECMusicRHA\ECxAIECMusicRHB
 
 ECxAIECMusicLHA = \relative c{ \ECxAIECMusicGlobal \clef "bass"
 g'4 bes8 bes4 ees8 | ees4 ees8 bes ees4 | %2
@@ -2870,7 +2870,7 @@ ees4 bes8 ees4 ees8 | ees4 ees8 ees ees4 | %14
 g f8 ees [ \fpre ees] \fpostbelow g, bes4 bes8 ees4.
 }
 
-ECxAIECMusicLH = \partCombine #'(2.20) \ECxAIECMusicLHA\ECxAIECMusicLHB
+ECxAIECMusicLH = \partCombine #'(2 . 20) \ECxAIECMusicLHA\ECxAIECMusicLHB
 
 ECxAIECMusicLyrics = \relative c''''{ \ECxAIECMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c4 c8 c4 c8 c4 c8 c8 c4 c4 c8 c4 c8 c4 c8 c4. c4 c8 c4 c8 c4 c8 c8 c4 c4 c8 c4 c8 c4 c8 c4. c4 c8 c8 c4 c4. c8 c4 c4 c8 c4 c8 c8 c8 c8 c4. c4 c8 c4 c8 c4 c8 c8 c4 c4 c8 c8 c8 c8 c4 c8 c4.
@@ -2910,7 +2910,7 @@ d4. c8 b8. b16 b8. b16 | c2 e4 d8 c | %14
 b4 d d c b2. r4
 }
 
-EDxAZEEDMusicRH = \partCombine #'(2.20) \EDxAZEEDMusicRHA\EDxAZEEDMusicRHB
+EDxAZEEDMusicRH = \partCombine #'(2 . 20) \EDxAZEEDMusicRHA\EDxAZEEDMusicRHB
 
 EDxAZEEDMusicLHA = \relative c{ \EDxAZEEDMusicGlobal \clef "bass"
 g'4. g8 fis8. g16 g8. fis16 | g2 g4 r | %2
@@ -2934,7 +2934,7 @@ g,4. g8 g8. g16 g8. g16 | c2 \fpre c4 \fpostbelow c8 c | %14
 d4 d d d g,2. r4
 }
 
-EDxAZEEDMusicLH = \partCombine #'(2.20) \EDxAZEEDMusicLHA\EDxAZEEDMusicLHB
+EDxAZEEDMusicLH = \partCombine #'(2 . 20) \EDxAZEEDMusicLHA\EDxAZEEDMusicLHB
 
 EDxAZEEDMusicLyrics = \relative c''''{ \EDxAZEEDMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c4. c8 c8. c16 c8. c16 c2 c4 cr4 c4. c8 c8. c16 c8. c16 c2. cr4 c4. c8 c8. c16 c8. c16 c2 c4 c8. c16 c4 c4 c4 c4 c2. cr4 c4. c8 c8. c16 c8. c16 c2 c2 c4. c8 c8. c16 c8. c16 c2. cr4 c4. c8 c8. c16 c8. c16 c2 c4 c8 c8 c4 c4 c4 c4 c2.
@@ -2965,7 +2965,7 @@ c2 cis4 | d2 cis4 | d2. | d4 d c | %12
 b2 c4 b2.
 }
 
-EExACEEMusicRH = \partCombine #'(2.20) \EExACEEMusicRHA\EExACEEMusicRHB
+EExACEEMusicRH = \partCombine #'(2 . 20) \EExACEEMusicRHA\EExACEEMusicRHB
 
 EExACEEMusicLHA = \relative c{ \EExACEEMusicGlobal \clef "bass"
 b'4 b g | c2 g4 | a2 a4 | b2. | %4
@@ -2981,7 +2981,7 @@ a2 a4 | d2 d4 | d2 (c4) | b c e | %12
 d2 d4 g,2.
 }
 
-EExACEEMusicLH = \partCombine #'(2.20) \EExACEEMusicLHA\EExACEEMusicLHB
+EExACEEMusicLH = \partCombine #'(2 . 20) \EExACEEMusicLHA\EExACEEMusicLHB
 
 EExACEEMusicLyrics = \relative c''''{ \EExACEEMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c4 c4 c4 c2 c4 c2 c4 c2. c4 c4 c4 c2 c4 c2. c4 c4 c4 c2 c4 c2 c4 c2. c4 c4 c4 c2 c4 c2.
@@ -3018,7 +3018,7 @@ g4. g8 g4 g | g d d cis | d2. d8 (d) | %13
 d4. d8 c4 b | e e c c | d d d4. c8 b2.
 }
 
-EFxBDDEFMusicRH = \partCombine #'(2.20) \EFxBDDEFMusicRHA\EFxBDDEFMusicRHB
+EFxBDDEFMusicRH = \partCombine #'(2 . 20) \EFxBDDEFMusicRHA\EFxBDDEFMusicRHB
 
 EFxBDDEFMusicLHA = \relative c{ \EFxBDDEFMusicGlobal \clef "bass"
 b'8 [c] | d4. d8 c4 b | c c g e | %3
@@ -3038,7 +3038,7 @@ d2~d8 [c] b (a) | g4. g8 d'4 e | %14
 c c c c | b g d'4. d8 g,2.
 }
 
-EFxBDDEFMusicLH = \partCombine #'(2.20) \EFxBDDEFMusicLHA\EFxBDDEFMusicLHB
+EFxBDDEFMusicLH = \partCombine #'(2 . 20) \EFxBDDEFMusicLHA\EFxBDDEFMusicLHB
 
 EFxBDDEFMusicLyrics = \relative c''''{ \EFxBDDEFMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c8 ct8 c4. c8 c4 c4 c4 c4 c4 c4 c4 c4 c4 c4 c2. c8 ct8 c4. c8 c4 c4 c4 c4 c4 c4 c4 c4 c4. c8 c2. c4 c4. c8 c4 c4 c4. c8 c4 c4 c4 c4 c4 c4 c2. c8 ct8 c4. c8 c4 c4 c4 c4 c4 c4 c4 c4 c4. c8 c2.
@@ -3072,7 +3072,7 @@ f4. f8 f2 f | f2. f4 f f | %6
 ees4. ees8 ees2 ees | ees2. bes4 bes bes bes4. bes8 bes2
 }
 
-EGxFIEGMusicRH = \partCombine #'(2.20) \EGxFIEGMusicRHA\EGxFIEGMusicRHB
+EGxFIEGMusicRH = \partCombine #'(2 . 20) \EGxFIEGMusicRHA\EGxFIEGMusicRHB
 
 EGxFIEGMusicLHA = \relative c{ \EGxFIEGMusicGlobal \clef "bass"
 g'2 | g2. g4 bes aes | g4. aes8 bes2 g | %3
@@ -3088,7 +3088,7 @@ f4. f8 f2 bes | bes,2. bes'4 a aes | %6
 g4. ees8 ees2 ees | bes2. bes4 bes bes bes4. ees8 \fpre ees2 \fpostbelow
 }
 
-EGxFIEGMusicLH = \partCombine #'(2.20) \EGxFIEGMusicLHA\EGxFIEGMusicLHB
+EGxFIEGMusicLH = \partCombine #'(2 . 20) \EGxFIEGMusicLHA\EGxFIEGMusicLHB
 
 EGxFIEGMusicLyrics = \relative c''''{ \EGxFIEGMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c2 c2. c4 c4 c4 c4. c8 c2 c2 c2. c4 c4 c4 c4. c8 c2 c2 c2. c4 c4 c4 c4. c8 c2 c2 c2. c4 c4 c4 c4. c8 c2
@@ -3137,7 +3137,7 @@ des8. des16 des4. des8 | %14
 des ges ges4. bes8 | aes8. ges16 f4. des8 des8. c16 des4.
 }
 
-EHxBHDEHMusicRH = \partCombine #'(2.20) \EHxBHDEHMusicRHA\EHxBHDEHMusicRHB
+EHxBHDEHMusicRH = \partCombine #'(2 . 20) \EHxBHDEHMusicRHA\EHxBHDEHMusicRHB
 
 EHxBHDEHMusicLHA = \relative c{ \EHxBHDEHMusicGlobal \clef "bass"
 aes'8 | aes8. aes16 des4. f,8 | %2
@@ -3170,7 +3170,7 @@ bes ges ges'4. ges8 | %15
 ges8. ges16 aes4. aes,8 aes8. aes16 des4.
 }
 
-EHxBHDEHMusicLH = \partCombine #'(2.20) \EHxBHDEHMusicLHA\EHxBHDEHMusicLHB
+EHxBHDEHMusicLH = \partCombine #'(2 . 20) \EHxBHDEHMusicLHA\EHxBHDEHMusicLHB
 
 EHxBHDEHMusicLyrics = \relative c''''{ \EHxBHDEHMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c8 c8. c16 c4. c8 c8. c16 c4. c8 c8. c16 c4. c8 c8. c16 c4. c8 c8. c16 c4. c8 c8 c8 c4. c8 c8 c8 c4. c8 c8 c8 c4. c8 c8. c16 c4. c8 c8. c16 c4. c8 c8. c16 c4. c8 c8. c16 c4. c8 c8. c16 c4. c8 c8 c8 c4. c8 c8. c16 c4. c8 c8. c16 c4.
@@ -3222,7 +3222,7 @@ ees4. ees8 des4 | c2. | ees2 ees4 | %29
 ees4. ees8 ees4 | ees4. d8 des4 | c2.~c2
 }
 
-EIxBIAEIMusicRH = \partCombine #'(2.20) \EIxBIAEIMusicRHA\EIxBIAEIMusicRHB
+EIxBIAEIMusicRH = \partCombine #'(2 . 20) \EIxBIAEIMusicRHA\EIxBIAEIMusicRHB
 
 EIxBIAEIMusicLHA = \relative c{ \EIxBIAEIMusicGlobal \clef "bass"
 aes'4 | aes4. g8 aes4 | g4. aes8 g4 | %3
@@ -3256,7 +3256,7 @@ aes,2. | aes2 aes'4 | g4. aes8 g4 | %30
 ees4. f8 ees4 | aes,2.~aes2
 }
 
-EIxBIAEIMusicLH = \partCombine #'(2.20) \EIxBIAEIMusicLHA\EIxBIAEIMusicLHB
+EIxBIAEIMusicLH = \partCombine #'(2 . 20) \EIxBIAEIMusicLHA\EIxBIAEIMusicLHB
 
 EIxBIAEIMusicLyrics = \relative c''''{ \EIxBIAEIMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c8 ct8 c4. c8 c4 c4. c8 c4 c2 ct4 c2 c4 c4. c8 c4 c4. c8 c4 c2. ct2 c8 ct8 c4. c8 c4 c4. c8 c4 c2 ct4 c2 c4 c4. c8 c4 c4. c8 c4 c2. ct2 c4 c4. c8 c4 c4. c8 c4 c2. c2 c8 ct8 c4. c8 c4 c4. c8 c4 c2. ct2 c8 ct8 c4. c8 c4 c4. c8 c4 c2 ct4 c2 c4 c4. c8 c4 c4. c8 c4 c2. ct2
@@ -3313,7 +3313,7 @@ f8. f16 f8. f16 f4 f8. f16 | %23
 d8. d16 d8. d16 d8. e16 f8. f16 e8. e16 f8. f16 e4
 }
 
-FZxBZZFZMusicRH = \partCombine #'(2.20) \FZxBZZFZMusicRHA\FZxBZZFZMusicRHB
+FZxBZZFZMusicRH = \partCombine #'(2 . 20) \FZxBZZFZMusicRHA\FZxBZZFZMusicRHB
 
 FZxBZZFZMusicLHA = \relative c{ \FZxBZZFZMusicGlobal \clef "bass"
 e8. g16 | c4 g g c | c g2 g8. g16 | %3
@@ -3349,7 +3349,7 @@ f8. f16 f8. f16 f4 f8. f16 | %23
 g8. g16 g8. g16 g,8. g16 g8. g16 c8. c16 c8. c16 c4
 }
 
-FZxBZZFZMusicLH = \partCombine #'(2.20) \FZxBZZFZMusicLHA\FZxBZZFZMusicLHB
+FZxBZZFZMusicLH = \partCombine #'(2 . 20) \FZxBZZFZMusicLHA\FZxBZZFZMusicLHB
 
 FZxBZZFZMusicLyrics = \relative c''''{ \FZxBZZFZMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c8. c16 c4 c4 c4 c4 c4 c2 c8. c16 c4 c4 c4 c4 c2. c8. c16 c4 c4 c4 c4 c4 c2 c8. c16 c4. c8 c4. c8 c2. c8. c16 c4 c4 c4. c8 c4 c2 c8. c16 c4 c4 c4. c8 c2. c8. c16 c4 c4 c4 c4 c4 c2 c8. c16 c4. c8 c4 c4 c2. c8. c16 c2 ct8. c16 c8. c16 c2 c4 c8. c16 c2 ct8. c16 c8. c16 c2. c8. c16 c2 ct8. c16 c8. c16 c2 c4 c8. c16 c2 ct8. c16 c8. c16 c2.
@@ -3371,7 +3371,7 @@ FAxAZFAMusicRHB = \relative c'{ \FAxAZFAMusicGlobal \clef "treble"
 
 }
 
-FAxAZFAMusicRH = \partCombine #'(2.20) \FAxAZFAMusicRHA\FAxAZFAMusicRHB
+FAxAZFAMusicRH = \partCombine #'(2 . 20) \FAxAZFAMusicRHA\FAxAZFAMusicRHB
 
 FAxAZFAMusicLHA = \relative c{ \FAxAZFAMusicGlobal \clef "bass"
 
@@ -3381,7 +3381,7 @@ FAxAZFAMusicLHB = \relative c{ \FAxAZFAMusicGlobal \clef "bass"
 
 }
 
-FAxAZFAMusicLH = \partCombine #'(2.20) \FAxAZFAMusicLHA\FAxAZFAMusicLHB
+FAxAZFAMusicLH = \partCombine #'(2 . 20) \FAxAZFAMusicLHA\FAxAZFAMusicLHB
 
 FAxAZFAMusicLyrics = \relative c''''{ \FAxAZFAMusicGlobal \clef "treble" 
 \hideNotes \voiceFour 
@@ -3422,7 +3422,7 @@ d4. f8 e8. e16 | e4. e8 d8. d16 | %15
 d4. b8 c4 b4.
 }
 
-FBxGBFBMusicRH = \partCombine #'(2.20) \FBxGBFBMusicRHA\FBxGBFBMusicRHB
+FBxGBFBMusicRH = \partCombine #'(2 . 20) \FBxGBFBMusicRHA\FBxGBFBMusicRHB
 
 FBxGBFBMusicLHA = \relative c{ \FBxGBFBMusicGlobal \clef "bass"
 g'8 g g | g4. g8 g8. fis16 | %2
@@ -3446,7 +3446,7 @@ g4. b8 c8. c16 | c4. c8 d8. d16 | %15
 d4. d8 d4 g,4.
 }
 
-FBxGBFBMusicLH = \partCombine #'(2.20) \FBxGBFBMusicLHA\FBxGBFBMusicLHB
+FBxGBFBMusicLH = \partCombine #'(2 . 20) \FBxGBFBMusicLHA\FBxGBFBMusicLHB
 
 FBxGBFBMusicLyrics = \relative c''''{ \FBxGBFBMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c8 c8 c8 c4. c8 c8. c16 c4. c8 c8 c8 c4. c8 c8. c16 c4. c8 c8 c8 c4. c8 c8. c16 c4. c8 c8. c16 c4. c8 c4 c4. c8 c8 c8 c4. c8 c8. c16 c4. c8 c8 c8 c4. c8 c8. c16 c4. c8 c8 c8 c4. c8 c8. c16 c4. c8 c8. c16 c4. c8 c4 c4.
@@ -3478,7 +3478,7 @@ ees2 d4 ees | c2 c | c4 c c c | d1 | %12
 bes2 aes4 c | ees2 bes | bes4 c bes bes bes1
 }
 
-FCxBBCFCMusicRH = \partCombine #'(2.20) \FCxBBCFCMusicRHA\FCxBBCFCMusicRHB
+FCxBBCFCMusicRH = \partCombine #'(2 . 20) \FCxBBCFCMusicRHA\FCxBBCFCMusicRHB
 
 FCxBBCFCMusicLHA = \relative c{ \FCxBBCFCMusicGlobal \clef "bass"
 bes'2 bes4 aes | g2 bes | %2
@@ -3498,7 +3498,7 @@ g2 aes4 aes | bes2 bes | %14
 bes4 bes bes bes ees1
 }
 
-FCxBBCFCMusicLH = \partCombine #'(2.20) \FCxBBCFCMusicLHA\FCxBBCFCMusicLHB
+FCxBBCFCMusicLH = \partCombine #'(2 . 20) \FCxBBCFCMusicLHA\FCxBBCFCMusicLHB
 
 FCxBBCFCMusicLyrics = \relative c''''{ \FCxBBCFCMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c2 c4 c4 c2 c2 c4 c4 c4 c4 c1 c2 c4 c4 c2 c2 c4 c4 c4 c4 c1 c2 c4 c4 c2 c2 c4 c4 c4 c4 c1 c2 c4 c4 c2 c2 c4 c4 c4 c4 c1
@@ -3537,7 +3537,7 @@ aes8 aes aes g4 ees8 | ees4 ees8 ees4. | %14
 ees8 ees ees ees4 ees8 d4 bes8 bes4.
 }
 
-FDxCBFDMusicRH = \partCombine #'(2.20) \FDxCBFDMusicRHA\FDxCBFDMusicRHB
+FDxCBFDMusicRH = \partCombine #'(2 . 20) \FDxCBFDMusicRHA\FDxCBFDMusicRHB
 
 FDxCBFDMusicLHA = \relative c{ \FDxCBFDMusicGlobal \clef "bass"
 bes'8 bes bes bes4 g8 | ees'4 ees8 ees4. | %2
@@ -3563,7 +3563,7 @@ f4 f8 bes,4. | bes'8 bes bes ees,4 ees8 | %13
 ees4 ees8 aes,4. | aes8 aes aes bes4 bes8 bes4 ees8 ees4.
 }
 
-FDxCBFDMusicLH = \partCombine #'(2.20) \FDxCBFDMusicLHA\FDxCBFDMusicLHB
+FDxCBFDMusicLH = \partCombine #'(2 . 20) \FDxCBFDMusicLHA\FDxCBFDMusicLHB
 
 FDxCBFDMusicLyrics = \relative c''''{ \FDxCBFDMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c8 c8 c8 c4 c8 c4 c8 c4. c8 c8 c8 c4 c8 c4 c8 c4. c8 c8 c8 c4 c8 c4 c8 c4. c8 c8 c8 c4 c8 c4 c8 c4. c8 c8 c8 c4 c8 c4 c8 c4. c8 c8 c8 c4 c8 c4 c8 c4. c8 c8 c8 c4 c8 c4 c8 c4. c8 c8 c8 c4 c8 c4 c8 c4.
@@ -3607,7 +3607,7 @@ ees ees8. ees16 ees4 ees8. ees16 | %13
 ees2 ees4. r8 | d4 d8. f16 f4 f8. ees16 d2 (f)
 }
 
-FExAFEMusicRH = \partCombine #'(2.20) \FExAFEMusicRHA\FExAFEMusicRHB
+FExAFEMusicRH = \partCombine #'(2 . 20) \FExAFEMusicRHA\FExAFEMusicRHB
 
 FExAFEMusicLHA = \relative c{ \FExAFEMusicGlobal \clef "bass"
 bes'4 bes8. aes16 g4 bes8. bes16 | %1
@@ -3642,7 +3642,7 @@ aes aes8. aes16 aes4 aes8. aes16 | %13
 ees2 ees4. r8 | f4 f8. f16 f4 f8. f16 bes,1
 }
 
-FExAFEMusicLH = \partCombine #'(2.20) \FExAFEMusicLHA\FExAFEMusicLHB
+FExAFEMusicLH = \partCombine #'(2 . 20) \FExAFEMusicLHA\FExAFEMusicLHB
 
 FExAFEMusicLyrics = \relative c''''{ \FExAFEMusicGlobal \clef "treble" 
 \hideNotes \voiceFour c4 c8. c16 c4 c8. c16 c2 c4. cr8 c4 c8. c16 c4 c8. c16 c2. cr4 c4 c8. c16 c4 c8. c16 c2 c4 cr4 c4 c8. c16 c4 c8. c16 c2. cr4 c4 c8. c16 c4 c8. c16 c2 c4 cr4 c4 c8. c16 c4 c8. c16 c2. cr4 c4 c8. c16 c4 c8. c16 c2 c4. cr8 c4 c8. c16 c8 ct8 c8. c16 c2 ct2 c\ChorusBelow0 c4 c8. c16 c4 c8. c16 c2 c4. cr8 c4 c8. c16 c4 c8. c16 c2. cr4 c4 c8. c16 c4 c8. c16 c2 c4 cr4 c4 c8. c16 c4 c8. c16 c2. cr4 c4 c8. c16 c4 c8. c16 c2 c4
