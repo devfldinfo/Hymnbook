@@ -46,15 +46,15 @@ chorusStr = Chorus
 \include "../Lib/HymnBookPartSetup.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {1}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ስለየሱስ ብዙ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {More about Jesus (2)}
     }
     \vspace #-10
@@ -98,15 +98,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {2}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ሊረዳን የሚችል አለ?}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Is there anyone can help us (47)}
     }
     \vspace #-10
@@ -146,15 +146,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {3}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {መንገድህን አስተምረኝ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Teach Me Thy Way (60)}
     }
     \vspace #-10
@@ -196,15 +196,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {4}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ተከተለኝ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Follow me (84)}
     }
     \vspace #-10
@@ -246,15 +246,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {5}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ኢየሱስን በገሊላ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Tune (84)}
     }
     \vspace #-10
@@ -296,15 +296,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {6}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ለኔ ነበር?}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Was it for me? (8)}
     }
     \vspace #-10
@@ -348,15 +348,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {7}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {አንድ መንግስት አለ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {There is a Kingdom (51)}
     }
     \vspace #-10
@@ -396,15 +396,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {8}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ጌታ ከኔ ጋር ባይሆን}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {If it had not been the Lord (214)}
     }
     \vspace #-10
@@ -446,15 +446,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {9}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ወደ አንተ እንመጣለን}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Lord, in our need (230)}
     }
     \vspace #-10
@@ -498,15 +498,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {10}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ጌታዬ ሆይ ተናገር}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Speak to my soul (231)}
     }
     \vspace #-10
@@ -546,15 +546,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {11}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ቅርብ ልንጓዝ!}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Oh! for a closer walk with God (266)}
     }
     \vspace #-10
@@ -596,15 +596,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {12}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {እንደ ኢየሱስ የለም}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {There is no friend like Jesus (27)}
     }
     \vspace #-10
@@ -642,15 +642,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {13}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {የተሰቀለው ጌታ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Thy bleeding feet (169)}
     }
     \vspace #-10
@@ -694,15 +694,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {14}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ጌታ ሆይ ወዳንተ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Nearer still nearer (125)}
     }
     \vspace #-10
@@ -744,15 +744,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {15}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {መስቀል ላይ ሳሰላስል}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {When I survey the wondrous cross (6)}
     }
     \vspace #-10
@@ -794,15 +794,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {16}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ጌታ ሆይ እምነት}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Increase our faith (279)}
     }
     \vspace #-10
@@ -848,15 +848,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {17}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ካዳኝ ጋር መጓዝ አለብኝ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {I must have the Saviour with me (85)}
     }
     \vspace #-10
@@ -900,15 +900,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {18}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {አንድ ሕይወት አለኝ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {I have only one life on the earth (93)}
     }
     \vspace #-10
@@ -952,15 +952,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {19}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ከምንም መዳን ይልቃል}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {God gives you the invitation (37)}
     }
     \vspace #-10
@@ -1004,15 +1004,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {20}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {በርሱ ኑሩ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Abide in Him (394)}
     }
     \vspace #-10
@@ -1062,15 +1062,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {21}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ክርስቶስ ዛሬም ያው ነው}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Jesus is still the same (11)}
     }
     \vspace #-10
@@ -1108,15 +1108,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {22}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {የኢየሱስ ብሩክ ዱካ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Blessèd footprints of my Saviour (81)}
     }
     \vspace #-10
@@ -1160,15 +1160,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {23}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {በጊዜ፤ ንቁ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Life at best is very brief (102)}
     }
     \vspace #-10
@@ -1212,15 +1212,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {24}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ፍላጎት}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {I need Thee every hour (124)}
     }
     \vspace #-10
@@ -1268,15 +1268,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {25}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {እግዚአብሔር ሆይ፣ በየሱስ ደም በኩል}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Lord, through the Blood (384)}
     }
     \vspace #-10
@@ -1314,15 +1314,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {26}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ያንተን ሞገስ እንድናገኝ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Loved of God (365)}
     }
     \vspace #-10
@@ -1362,15 +1362,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {27}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ዝም አትበል፣ ተናገረኝ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Lord, be not silent unto me (227)}
     }
     \vspace #-10
@@ -1414,15 +1414,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {28}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {የክርስቶስ ንፁህ ልብ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {I need the mind of Christ (390)}
     }
     \vspace #-10
@@ -1466,15 +1466,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {29}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {የተከፈለውን ብናውቅ ኖሮ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {If we but knew (21)}
     }
     \vspace #-10
@@ -1516,15 +1516,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {30}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ሕይወትህ ተሰጥቷል!}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Thy life was given for me (26)}
     }
     \vspace #-10
@@ -1566,15 +1566,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {31}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ጌታዬ፣ አስበኝ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Amid the trials which I meet (289)}
     }
     \vspace #-10
@@ -1614,15 +1614,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {32}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {አዳኜ፣ ነፃ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {From Heaven's glory (20)}
     }
     \vspace #-10
@@ -1666,15 +1666,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {33}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ውድ አዳኝ፣ ብቻዬን አትተውኝ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Dear Saviour, leave me not alone (344)}
     }
     \vspace #-10
@@ -1716,15 +1716,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {34}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {የሱስ ብቻ ያድንኛል}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Where shall I flee for refuge (153)}
     }
     \vspace #-10
@@ -1768,15 +1768,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {35}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {እንደሆንኩኝ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Just as I am (158)}
     }
     \vspace #-10
@@ -1818,15 +1818,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {36}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {በምድር ካለው ሁሉ ይበልጣል}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {God's word is so pure (29)}
     }
     \vspace #-10
@@ -1870,15 +1870,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {37}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {የተባረከ ጊዜ ነው}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Rich are the moments of blessing (228)}
     }
     \vspace #-10
@@ -1922,15 +1922,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {38}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {በእግሩ ታች እንድንማር}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Alone with Jesus (198)}
     }
     \vspace #-10
@@ -1972,15 +1972,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {39}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ኢየሱስ ከሰማይ መጣ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Jesus came from Heaven (9)}
     }
     \vspace #-10
@@ -2024,15 +2024,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {40}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ኦ ጌታ አምላኬ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {How great Thou art ()}
     }
     \vspace #-10
@@ -2076,15 +2076,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {41}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ያምላክ በግ ሆይ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {O Lamb of God (4)}
     }
     \vspace #-10
@@ -2126,15 +2126,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {42}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {የጌታውን መታየት}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Art thou waiting for the day? (401)}
     }
     \vspace #-10
@@ -2178,15 +2178,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {43}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {የእግዚአብሔር በግ ሆይ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Wash me, O Lamb of God (17)}
     }
     \vspace #-10
@@ -2228,15 +2228,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {44}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {የእስራኤል እረኛ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Shepherd of Israel (310)}
     }
     \vspace #-10
@@ -2276,15 +2276,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {45}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ወዳምላክ እንቅረብ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Let us draw near (185)}
     }
     \vspace #-10
@@ -2328,15 +2328,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {46}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ስማው፣ ስማው}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Hear the voice of Jesus (127)}
     }
     \vspace #-10
@@ -2380,15 +2380,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {47}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ጸሎት ታላቅ የኃይል ምንጭ ነው}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Prayer is a mighty source (186)}
     }
     \vspace #-10
@@ -2438,15 +2438,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {48}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ልብህን ስጠኝ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Give Me Thy Heart (89)}
     }
     \vspace #-10
@@ -2486,15 +2486,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {49}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {የእረኛው ድምፅ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {The voice of the Shepherd (116)}
     }
     \vspace #-10
@@ -2534,15 +2534,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {50}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ደግና አዲስ የሆነ ልብ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Give me a heart (215)}
     }
     \vspace #-10
@@ -2580,15 +2580,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {51}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ብርሃን የት ነው?}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Is there no light? (36)}
     }
     \vspace #-10
@@ -2630,15 +2630,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {52}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {መንገድ አለ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {There is a way (42)}
     }
     \vspace #-10
@@ -2682,15 +2682,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {53}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {በወርቅ፣ በብር ያልተዋጀ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Not redeemed with gold (19)}
     }
     \vspace #-10
@@ -2734,15 +2734,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {54}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ወንጌልን ማወቅ ደስ ይላል}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Sweet to know (105)}
     }
     \vspace #-10
@@ -2786,15 +2786,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {55}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ኢየሱስ ሆይ፣ አንተን ሳስብ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Jesus the very thought of Thee (13)}
     }
     \vspace #-10
@@ -2840,15 +2840,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {56}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ልቤ ዐረፈ፣ አምላክ ሆይ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {My heart is resting (244)}
     }
     \vspace #-10
@@ -2890,15 +2890,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {57}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ጌታ ሆይ ወደ ማን እንሂድ?}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {To whom, Lord, shall we go? (69)}
     }
     \vspace #-10
@@ -2940,15 +2940,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {58}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ያንን ቀን መቼም አልረሳም}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {I never can forget the day (284)}
     }
     \vspace #-10
@@ -2992,15 +2992,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {59}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {የአዳኜ ልብ የዋህ ነው}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {The heart of my Saviour (291)}
     }
     \vspace #-10
@@ -3038,15 +3038,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {60}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ፍላጎቴን ታውቃለህ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Lord, my heart's deep need Thou knowest (200)}
     }
     \vspace #-10
@@ -3086,15 +3086,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {61}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {አሁንም ለዘላለም ነው}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Jesus is our only message (10)}
     }
     \vspace #-10
@@ -3138,15 +3138,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {62}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ለምን በጨለማ ልሂድ?}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Why should I walk? (72)}
     }
     \vspace #-10
@@ -3190,15 +3190,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {63}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {ጌታ ሆይ ቀንበርህን ልሸከመው}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Lord, I would take Thy yoke (223)}
     }
     \vspace #-10
@@ -3240,15 +3240,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {64}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {የሱን መንገድ እንወዳለን}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {We love the perfect way (32)}
     }
     \vspace #-10
@@ -3292,15 +3292,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {65}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {የሱስን ታሪክ ቃል ሁሉ}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line {Tell me the story of Jesus (1)}
     }
     \vspace #-10
@@ -3340,15 +3340,15 @@ chorusStr = Chorus
 \include "../Lib/HymnLayoutOutput.ly"
 
 \markup \column{
-    \justify-line {
+    \justify {
         \fontsize #6 \bold {66}
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \fontsize #6 \center-align \line {}
         }
         \null
     }
-    \justify-line {
-        \override #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
+    \justify {
+        \with-font #'(font-name . "Bitstream Vera Sans, Nyala, Oblique Bold")
         \null\fontsize #-1 \center-align \line { ()}
     }
     \vspace #-10
