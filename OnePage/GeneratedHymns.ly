@@ -5,40 +5,74 @@ chorusStr = Chorus
 \include "Music.ly"
 \include "../Lib/HymnSetup.ly"
 
-#(set! paper-alist (cons '("my size" . (cons (* <PageWidthmm> mm) (* <PageHeightmm> mm))) paper-alist))
+#(set! paper-alist (cons '("my size" . (cons (* 148 mm) (* 210 mm))) paper-alist))
+
 #(set-default-paper-size "my size")
-#(set-global-staff-size <MusicFontSize>) 
+
+#(set-global-staff-size 14.4) 
+
+
 
 \layout {
+
   ragged-right = ##f
+
   \context {
+
   \Lyrics
+
   %\override LyricText #'font-name = #"Times New Roman"
+
   %\override LyricText #'font-name = #"Bitstream Vera Sans"
+
   \override LyricText #'font-name = #"Nyala"
+
   %\override LyricText #'font-size = #+1
+
   %\override LyricText #'font-series = #'bold
+
   %\override LyricText #'font-series = #'medium-bold
+
   %\override LyricText #'font-shape = #'italic
+
   }
+
 }
+
 \paper {
 
+
+
   two-sided = ##t 
+
   indent = 0 \mm 
 
+
+
  page-breaking = #ly:page-turn-breaking
+
 % annotate-spacing = ##t
+
   top-margin = 20\mm
+
   bottom-margin=20\mm
+
   inner-margin = 22\mm
+
   outer-margin = 20\mm
+
   system-system-spacing =  #'((basic-distance . 6)  (padding . 1) (stretchability . 60) (minimum-distance . 4))
+
   score-markup-spacing = #'((basic-distance . 8) (padding . 2) (stretchability . 120)(minimum-distance . 4))  
+
   markup-system-spacing = #'((basic-distance . 6) (padding . 1) (stretchability . 40) (minimum-distance .  3))
+
   score-system-spacing = #'((basic-distance . 6) (minimum-distance . 1) (padding . 2) (stretchability . 60))  
+
   markup-markup-spacing = #'((basic-distance . 0) (minimum-distance . 0) (padding . 0) (stretchability . 0))
+
 }
+
 
 \include "../Lib/HymnCommon.ly"
 
@@ -75,7 +109,7 @@ chorusStr = Chorus
       \new Lyrics = ALyricsDAlt
       \new Lyrics  = ALyricsE
       \new Lyrics = ALyricsEAlt
->>
+
       \context Staff = AStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = AVoiceLH \AxBAMusicLH
@@ -91,6 +125,7 @@ chorusStr = Chorus
       \context Lyrics = ALyricsEAlt \lyricsto AVoiceLyrics \AVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -122,7 +157,7 @@ chorusStr = Chorus
       \new Lyrics = BLyricsCAlt
       \new Lyrics  = BLyricsD
       \new Lyrics = BLyricsDAlt
->>
+
       \context Staff = BStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = BVoiceLH \BxDGBMusicLH
@@ -136,6 +171,7 @@ chorusStr = Chorus
       \context Lyrics = BLyricsDAlt \lyricsto BVoiceLyrics \BVerseCAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -168,7 +204,7 @@ chorusStr = Chorus
       \new Lyrics = CLyricsCAlt
       \new Lyrics  = CLyricsD
       \new Lyrics = CLyricsDAlt
->>
+
       \context Staff = CStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = CVoiceLH \CxFZCMusicLH
@@ -183,6 +219,7 @@ chorusStr = Chorus
       \context Lyrics = CLyricsDAlt \lyricsto CVoiceLyrics \CVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -215,7 +252,7 @@ chorusStr = Chorus
       \new Lyrics = DLyricsCAlt
       \new Lyrics  = DLyricsD
       \new Lyrics = DLyricsDAlt
->>
+
       \context Staff = DStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = DVoiceLH \DxHDDMusicLH
@@ -230,6 +267,7 @@ chorusStr = Chorus
       \context Lyrics = DLyricsDAlt \lyricsto DVoiceLyrics \DVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -262,7 +300,7 @@ chorusStr = Chorus
       \new Lyrics = ELyricsCAlt
       \new Lyrics  = ELyricsD
       \new Lyrics = ELyricsDAlt
->>
+
       \context Staff = EStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = EVoiceLH \ExHDEMusicLH
@@ -277,6 +315,7 @@ chorusStr = Chorus
       \context Lyrics = ELyricsDAlt \lyricsto EVoiceLyrics \EVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -310,7 +349,7 @@ chorusStr = Chorus
       \new Lyrics = FLyricsDAlt
       \new Lyrics  = FLyricsE
       \new Lyrics = FLyricsEAlt
->>
+
       \context Staff = FStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = FVoiceLH \FxHFMusicLH
@@ -326,6 +365,7 @@ chorusStr = Chorus
       \context Lyrics = FLyricsEAlt \lyricsto FVoiceLyrics \FVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -357,7 +397,7 @@ chorusStr = Chorus
       \new Lyrics = GLyricsCAlt
       \new Lyrics  = GLyricsD
       \new Lyrics = GLyricsDAlt
->>
+
       \context Staff = GStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = GVoiceLH \GxEAGMusicLH
@@ -371,6 +411,7 @@ chorusStr = Chorus
       \context Lyrics = GLyricsDAlt \lyricsto GVoiceLyrics \GVerseCAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -403,7 +444,7 @@ chorusStr = Chorus
       \new Lyrics = HLyricsCAlt
       \new Lyrics  = HLyricsD
       \new Lyrics = HLyricsDAlt
->>
+
       \context Staff = HStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = HVoiceLH \HxBADHMusicLH
@@ -418,6 +459,7 @@ chorusStr = Chorus
       \context Lyrics = HLyricsDAlt \lyricsto HVoiceLyrics \HVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -451,7 +493,7 @@ chorusStr = Chorus
       \new Lyrics = ILyricsDAlt
       \new Lyrics  = ILyricsE
       \new Lyrics = ILyricsEAlt
->>
+
       \context Staff = IStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = IVoiceLH \IxBCZIMusicLH
@@ -467,6 +509,7 @@ chorusStr = Chorus
       \context Lyrics = ILyricsEAlt \lyricsto IVoiceLyrics \IVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -498,7 +541,7 @@ chorusStr = Chorus
       \new Lyrics = AZLyricsCAlt
       \new Lyrics  = AZLyricsD
       \new Lyrics = AZLyricsDAlt
->>
+
       \context Staff = AZStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = AZVoiceLH \AZxBCAAZMusicLH
@@ -512,6 +555,7 @@ chorusStr = Chorus
       \context Lyrics = AZLyricsDAlt \lyricsto AZVoiceLyrics \AZVerseCAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -544,7 +588,7 @@ chorusStr = Chorus
       \new Lyrics = AALyricsCAlt
       \new Lyrics  = AALyricsD
       \new Lyrics = AALyricsDAlt
->>
+
       \context Staff = AAStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = AAVoiceLH \AAxBFFAAMusicLH
@@ -559,6 +603,7 @@ chorusStr = Chorus
       \context Lyrics = AALyricsDAlt \lyricsto AAVoiceLyrics \AAVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -589,7 +634,7 @@ chorusStr = Chorus
       \new Lyrics = ABLyricsBAlt
       \new Lyrics  = ABLyricsC
       \new Lyrics = ABLyricsCAlt
->>
+
       \context Staff = ABStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = ABVoiceLH \ABxBGABMusicLH
@@ -602,6 +647,7 @@ chorusStr = Chorus
       \context Lyrics = ABLyricsCAlt \lyricsto ABVoiceLyrics \ABVerseCAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -635,7 +681,7 @@ chorusStr = Chorus
       \new Lyrics = ACLyricsDAlt
       \new Lyrics  = ACLyricsE
       \new Lyrics = ACLyricsEAlt
->>
+
       \context Staff = ACStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = ACVoiceLH \ACxAFIACMusicLH
@@ -651,6 +697,7 @@ chorusStr = Chorus
       \context Lyrics = ACLyricsEAlt \lyricsto ACVoiceLyrics \ACVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -683,7 +730,7 @@ chorusStr = Chorus
       \new Lyrics = ADLyricsCAlt
       \new Lyrics  = ADLyricsD
       \new Lyrics = ADLyricsDAlt
->>
+
       \context Staff = ADStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = ADVoiceLH \ADxABEADMusicLH
@@ -698,6 +745,7 @@ chorusStr = Chorus
       \context Lyrics = ADLyricsDAlt \lyricsto ADVoiceLyrics \ADVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -730,7 +778,7 @@ chorusStr = Chorus
       \new Lyrics = AELyricsCAlt
       \new Lyrics  = AELyricsD
       \new Lyrics = AELyricsDAlt
->>
+
       \context Staff = AEStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = AEVoiceLH \AExFAEMusicLH
@@ -745,6 +793,7 @@ chorusStr = Chorus
       \context Lyrics = AELyricsDAlt \lyricsto AEVoiceLyrics \AEVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -779,7 +828,7 @@ chorusStr = Chorus
       \new Lyrics = AFLyricsDAlt
       \new Lyrics  = AFLyricsE
       \new Lyrics = AFLyricsEAlt
->>
+
       \context Staff = AFStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = AFVoiceLH \AFxBGIAFMusicLH
@@ -796,6 +845,7 @@ chorusStr = Chorus
       \context Lyrics = AFLyricsEAlt \lyricsto AFVoiceLyrics \AFVerseEAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -829,7 +879,7 @@ chorusStr = Chorus
       \new Lyrics = AGLyricsDAlt
       \new Lyrics  = AGLyricsE
       \new Lyrics = AGLyricsEAlt
->>
+
       \context Staff = AGStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = AGVoiceLH \AGxHEAGMusicLH
@@ -845,6 +895,7 @@ chorusStr = Chorus
       \context Lyrics = AGLyricsEAlt \lyricsto AGVoiceLyrics \AGVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -878,7 +929,7 @@ chorusStr = Chorus
       \new Lyrics = AHLyricsDAlt
       \new Lyrics  = AHLyricsE
       \new Lyrics = AHLyricsEAlt
->>
+
       \context Staff = AHStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = AHVoiceLH \AHxICAHMusicLH
@@ -894,6 +945,7 @@ chorusStr = Chorus
       \context Lyrics = AHLyricsEAlt \lyricsto AHVoiceLyrics \AHVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -927,7 +979,7 @@ chorusStr = Chorus
       \new Lyrics = AILyricsDAlt
       \new Lyrics  = AILyricsE
       \new Lyrics = AILyricsEAlt
->>
+
       \context Staff = AIStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = AIVoiceLH \AIxCGAIMusicLH
@@ -943,6 +995,7 @@ chorusStr = Chorus
       \context Lyrics = AILyricsEAlt \lyricsto AIVoiceLyrics \AIVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -979,7 +1032,7 @@ chorusStr = Chorus
       \new Lyrics = BZLyricsEAlt
       \new Lyrics  = BZLyricsF
       \new Lyrics = BZLyricsFAlt
->>
+
       \context Staff = BZStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = BZVoiceLH \BZxCIDBZMusicLH
@@ -998,6 +1051,7 @@ chorusStr = Chorus
       \context Lyrics = BZLyricsFAlt \lyricsto BZVoiceLyrics \BZVerseFAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -1028,7 +1082,7 @@ chorusStr = Chorus
       \new Lyrics = BALyricsBAlt
       \new Lyrics  = BALyricsC
       \new Lyrics = BALyricsCAlt
->>
+
       \context Staff = BAStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = BAVoiceLH \BAxAABAMusicLH
@@ -1041,6 +1095,7 @@ chorusStr = Chorus
       \context Lyrics = BALyricsCAlt \lyricsto BAVoiceLyrics \BAVerseCAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -1074,7 +1129,7 @@ chorusStr = Chorus
       \new Lyrics = BBLyricsDAlt
       \new Lyrics  = BBLyricsE
       \new Lyrics = BBLyricsEAlt
->>
+
       \context Staff = BBStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = BBVoiceLH \BBxHABBMusicLH
@@ -1090,6 +1145,7 @@ chorusStr = Chorus
       \context Lyrics = BBLyricsEAlt \lyricsto BBVoiceLyrics \BBVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -1123,7 +1179,7 @@ chorusStr = Chorus
       \new Lyrics = BCLyricsDAlt
       \new Lyrics  = BCLyricsE
       \new Lyrics = BCLyricsEAlt
->>
+
       \context Staff = BCStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = BCVoiceLH \BCxAZBBCMusicLH
@@ -1139,6 +1195,7 @@ chorusStr = Chorus
       \context Lyrics = BCLyricsEAlt \lyricsto BCVoiceLyrics \BCVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -1174,7 +1231,7 @@ chorusStr = Chorus
       \new Lyrics = BDLyricsEAlt
       \new Lyrics  = BDLyricsF
       \new Lyrics = BDLyricsFAlt
->>
+
       \context Staff = BDStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = BDVoiceLH \BDxABDBDMusicLH
@@ -1192,6 +1249,7 @@ chorusStr = Chorus
       \context Lyrics = BDLyricsFAlt \lyricsto BDVoiceLyrics \BDVerseEAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -1222,7 +1280,7 @@ chorusStr = Chorus
       \new Lyrics = BELyricsBAlt
       \new Lyrics  = BELyricsC
       \new Lyrics = BELyricsCAlt
->>
+
       \context Staff = BEStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = BEVoiceLH \BExCHDBEMusicLH
@@ -1235,6 +1293,7 @@ chorusStr = Chorus
       \context Lyrics = BELyricsCAlt \lyricsto BEVoiceLyrics \BEVerseCAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -1266,7 +1325,7 @@ chorusStr = Chorus
       \new Lyrics = BFLyricsCAlt
       \new Lyrics  = BFLyricsD
       \new Lyrics = BFLyricsDAlt
->>
+
       \context Staff = BFStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = BFVoiceLH \BFxCFEBFMusicLH
@@ -1280,6 +1339,7 @@ chorusStr = Chorus
       \context Lyrics = BFLyricsDAlt \lyricsto BFVoiceLyrics \BFVerseCAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -1313,7 +1373,7 @@ chorusStr = Chorus
       \new Lyrics = BGLyricsDAlt
       \new Lyrics  = BGLyricsE
       \new Lyrics = BGLyricsEAlt
->>
+
       \context Staff = BGStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = BGVoiceLH \BGxBBGBGMusicLH
@@ -1329,6 +1389,7 @@ chorusStr = Chorus
       \context Lyrics = BGLyricsEAlt \lyricsto BGVoiceLyrics \BGVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -1362,7 +1423,7 @@ chorusStr = Chorus
       \new Lyrics = BHLyricsDAlt
       \new Lyrics  = BHLyricsE
       \new Lyrics = BHLyricsEAlt
->>
+
       \context Staff = BHStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = BHVoiceLH \BHxCIZBHMusicLH
@@ -1378,6 +1439,7 @@ chorusStr = Chorus
       \context Lyrics = BHLyricsEAlt \lyricsto BHVoiceLyrics \BHVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -1410,7 +1472,7 @@ chorusStr = Chorus
       \new Lyrics = BILyricsCAlt
       \new Lyrics  = BILyricsD
       \new Lyrics = BILyricsDAlt
->>
+
       \context Staff = BIStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = BIVoiceLH \BIxBABIMusicLH
@@ -1425,6 +1487,7 @@ chorusStr = Chorus
       \context Lyrics = BILyricsDAlt \lyricsto BIVoiceLyrics \BIVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -1457,7 +1520,7 @@ chorusStr = Chorus
       \new Lyrics = CZLyricsCAlt
       \new Lyrics  = CZLyricsD
       \new Lyrics = CZLyricsDAlt
->>
+
       \context Staff = CZStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = CZVoiceLH \CZxBFCZMusicLH
@@ -1472,6 +1535,7 @@ chorusStr = Chorus
       \context Lyrics = CZLyricsDAlt \lyricsto CZVoiceLyrics \CZVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -1503,7 +1567,7 @@ chorusStr = Chorus
       \new Lyrics = CALyricsCAlt
       \new Lyrics  = CALyricsD
       \new Lyrics = CALyricsDAlt
->>
+
       \context Staff = CAStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = CAVoiceLH \CAxBHICAMusicLH
@@ -1517,6 +1581,7 @@ chorusStr = Chorus
       \context Lyrics = CALyricsDAlt \lyricsto CAVoiceLyrics \CAVerseCAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -1550,7 +1615,7 @@ chorusStr = Chorus
       \new Lyrics = CBLyricsDAlt
       \new Lyrics  = CBLyricsE
       \new Lyrics = CBLyricsEAlt
->>
+
       \context Staff = CBStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = CBVoiceLH \CBxBZCBMusicLH
@@ -1566,6 +1631,7 @@ chorusStr = Chorus
       \context Lyrics = CBLyricsEAlt \lyricsto CBVoiceLyrics \CBVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -1598,7 +1664,7 @@ chorusStr = Chorus
       \new Lyrics = CCLyricsCAlt
       \new Lyrics  = CCLyricsD
       \new Lyrics = CCLyricsDAlt
->>
+
       \context Staff = CCStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = CCVoiceLH \CCxCDDCCMusicLH
@@ -1613,6 +1679,7 @@ chorusStr = Chorus
       \context Lyrics = CCLyricsDAlt \lyricsto CCVoiceLyrics \CCVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -1646,7 +1713,7 @@ chorusStr = Chorus
       \new Lyrics = CDLyricsDAlt
       \new Lyrics  = CDLyricsE
       \new Lyrics = CDLyricsEAlt
->>
+
       \context Staff = CDStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = CDVoiceLH \CDxAECCDMusicLH
@@ -1662,6 +1729,7 @@ chorusStr = Chorus
       \context Lyrics = CDLyricsEAlt \lyricsto CDVoiceLyrics \CDVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -1694,7 +1762,7 @@ chorusStr = Chorus
       \new Lyrics = CELyricsCAlt
       \new Lyrics  = CELyricsD
       \new Lyrics = CELyricsDAlt
->>
+
       \context Staff = CEStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = CEVoiceLH \CExAEHCEMusicLH
@@ -1709,6 +1777,7 @@ chorusStr = Chorus
       \context Lyrics = CELyricsDAlt \lyricsto CEVoiceLyrics \CEVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -1742,7 +1811,7 @@ chorusStr = Chorus
       \new Lyrics = CFLyricsDAlt
       \new Lyrics  = CFLyricsE
       \new Lyrics = CFLyricsEAlt
->>
+
       \context Staff = CFStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = CFVoiceLH \CFxBICFMusicLH
@@ -1758,6 +1827,7 @@ chorusStr = Chorus
       \context Lyrics = CFLyricsEAlt \lyricsto CFVoiceLyrics \CFVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -1791,7 +1861,7 @@ chorusStr = Chorus
       \new Lyrics = CGLyricsDAlt
       \new Lyrics  = CGLyricsE
       \new Lyrics = CGLyricsEAlt
->>
+
       \context Staff = CGStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = CGVoiceLH \CGxBBHCGMusicLH
@@ -1807,6 +1877,7 @@ chorusStr = Chorus
       \context Lyrics = CGLyricsEAlt \lyricsto CGVoiceLyrics \CGVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -1839,7 +1910,7 @@ chorusStr = Chorus
       \new Lyrics = CHLyricsCAlt
       \new Lyrics  = CHLyricsD
       \new Lyrics = CHLyricsDAlt
->>
+
       \context Staff = CHStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = CHVoiceLH \CHxAIHCHMusicLH
@@ -1854,6 +1925,7 @@ chorusStr = Chorus
       \context Lyrics = CHLyricsDAlt \lyricsto CHVoiceLyrics \CHVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -1887,7 +1959,7 @@ chorusStr = Chorus
       \new Lyrics = CILyricsDAlt
       \new Lyrics  = CILyricsE
       \new Lyrics = CILyricsEAlt
->>
+
       \context Staff = CIStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = CIVoiceLH \CIxICIMusicLH
@@ -1903,6 +1975,7 @@ chorusStr = Chorus
       \context Lyrics = CILyricsEAlt \lyricsto CIVoiceLyrics \CIVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -1936,7 +2009,7 @@ chorusStr = Chorus
       \new Lyrics = DZLyricsDAlt
       \new Lyrics  = DZLyricsE
       \new Lyrics = DZLyricsEAlt
->>
+
       \context Staff = DZStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = DZVoiceLH \DZxDZMusicLH
@@ -1952,6 +2025,7 @@ chorusStr = Chorus
       \context Lyrics = DZLyricsEAlt \lyricsto DZVoiceLyrics \DZVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -1984,7 +2058,7 @@ chorusStr = Chorus
       \new Lyrics = DALyricsCAlt
       \new Lyrics  = DALyricsD
       \new Lyrics = DALyricsDAlt
->>
+
       \context Staff = DAStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = DAVoiceLH \DAxDDAMusicLH
@@ -1999,6 +2073,7 @@ chorusStr = Chorus
       \context Lyrics = DALyricsDAlt \lyricsto DAVoiceLyrics \DAVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -2032,7 +2107,7 @@ chorusStr = Chorus
       \new Lyrics = DBLyricsDAlt
       \new Lyrics  = DBLyricsE
       \new Lyrics = DBLyricsEAlt
->>
+
       \context Staff = DBStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = DBVoiceLH \DBxDZADBMusicLH
@@ -2048,6 +2123,7 @@ chorusStr = Chorus
       \context Lyrics = DBLyricsEAlt \lyricsto DBVoiceLyrics \DBVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -2080,7 +2156,7 @@ chorusStr = Chorus
       \new Lyrics = DCLyricsCAlt
       \new Lyrics  = DCLyricsD
       \new Lyrics = DCLyricsDAlt
->>
+
       \context Staff = DCStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = DCVoiceLH \DCxAGDCMusicLH
@@ -2095,6 +2171,7 @@ chorusStr = Chorus
       \context Lyrics = DCLyricsDAlt \lyricsto DCVoiceLyrics \DCVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -2126,7 +2203,7 @@ chorusStr = Chorus
       \new Lyrics = DDLyricsCAlt
       \new Lyrics  = DDLyricsD
       \new Lyrics = DDLyricsDAlt
->>
+
       \context Staff = DDStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = DDVoiceLH \DDxCAZDDMusicLH
@@ -2140,6 +2217,7 @@ chorusStr = Chorus
       \context Lyrics = DDLyricsDAlt \lyricsto DDVoiceLyrics \DDVerseCAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -2173,7 +2251,7 @@ chorusStr = Chorus
       \new Lyrics = DELyricsDAlt
       \new Lyrics  = DELyricsE
       \new Lyrics = DELyricsEAlt
->>
+
       \context Staff = DEStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = DEVoiceLH \DExAHEDEMusicLH
@@ -2189,6 +2267,7 @@ chorusStr = Chorus
       \context Lyrics = DELyricsEAlt \lyricsto DEVoiceLyrics \DEVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -2222,7 +2301,7 @@ chorusStr = Chorus
       \new Lyrics = DFLyricsDAlt
       \new Lyrics  = DFLyricsE
       \new Lyrics = DFLyricsEAlt
->>
+
       \context Staff = DFStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = DFVoiceLH \DFxABGDFMusicLH
@@ -2238,6 +2317,7 @@ chorusStr = Chorus
       \context Lyrics = DFLyricsEAlt \lyricsto DFVoiceLyrics \DFVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -2274,7 +2354,7 @@ chorusStr = Chorus
       \new Lyrics = DGLyricsEAlt
       \new Lyrics  = DGLyricsF
       \new Lyrics = DGLyricsFAlt
->>
+
       \context Staff = DGStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = DGVoiceLH \DGxAHFDGMusicLH
@@ -2293,6 +2373,7 @@ chorusStr = Chorus
       \context Lyrics = DGLyricsFAlt \lyricsto DGVoiceLyrics \DGVerseFAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -2324,7 +2405,7 @@ chorusStr = Chorus
       \new Lyrics = DHLyricsCAlt
       \new Lyrics  = DHLyricsD
       \new Lyrics = DHLyricsDAlt
->>
+
       \context Staff = DHStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = DHVoiceLH \DHxHIDHMusicLH
@@ -2338,6 +2419,7 @@ chorusStr = Chorus
       \context Lyrics = DHLyricsDAlt \lyricsto DHVoiceLyrics \DHVerseCAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -2369,7 +2451,7 @@ chorusStr = Chorus
       \new Lyrics = DILyricsCAlt
       \new Lyrics  = DILyricsD
       \new Lyrics = DILyricsDAlt
->>
+
       \context Staff = DIStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = DIVoiceLH \DIxAAFDIMusicLH
@@ -2383,6 +2465,7 @@ chorusStr = Chorus
       \context Lyrics = DILyricsDAlt \lyricsto DIVoiceLyrics \DIVerseCAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -2413,7 +2496,7 @@ chorusStr = Chorus
       \new Lyrics = EZLyricsBAlt
       \new Lyrics  = EZLyricsC
       \new Lyrics = EZLyricsCAlt
->>
+
       \context Staff = EZStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = EZVoiceLH \EZxBAEEZMusicLH
@@ -2426,6 +2509,7 @@ chorusStr = Chorus
       \context Lyrics = EZLyricsCAlt \lyricsto EZVoiceLyrics \EZVerseCAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -2458,7 +2542,7 @@ chorusStr = Chorus
       \new Lyrics = EALyricsCAlt
       \new Lyrics  = EALyricsD
       \new Lyrics = EALyricsDAlt
->>
+
       \context Staff = EAStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = EAVoiceLH \EAxCFEAMusicLH
@@ -2473,6 +2557,7 @@ chorusStr = Chorus
       \context Lyrics = EALyricsDAlt \lyricsto EAVoiceLyrics \EAVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -2506,7 +2591,7 @@ chorusStr = Chorus
       \new Lyrics = EBLyricsDAlt
       \new Lyrics  = EBLyricsE
       \new Lyrics = EBLyricsEAlt
->>
+
       \context Staff = EBStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = EBVoiceLH \EBxDBEBMusicLH
@@ -2522,6 +2607,7 @@ chorusStr = Chorus
       \context Lyrics = EBLyricsEAlt \lyricsto EBVoiceLyrics \EBVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -2555,7 +2641,7 @@ chorusStr = Chorus
       \new Lyrics = ECLyricsDAlt
       \new Lyrics  = ECLyricsE
       \new Lyrics = ECLyricsEAlt
->>
+
       \context Staff = ECStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = ECVoiceLH \ECxAIECMusicLH
@@ -2571,6 +2657,7 @@ chorusStr = Chorus
       \context Lyrics = ECLyricsEAlt \lyricsto ECVoiceLyrics \ECVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -2604,7 +2691,7 @@ chorusStr = Chorus
       \new Lyrics = EDLyricsDAlt
       \new Lyrics  = EDLyricsE
       \new Lyrics = EDLyricsEAlt
->>
+
       \context Staff = EDStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = EDVoiceLH \EDxAZEEDMusicLH
@@ -2620,6 +2707,7 @@ chorusStr = Chorus
       \context Lyrics = EDLyricsEAlt \lyricsto EDVoiceLyrics \EDVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -2654,7 +2742,7 @@ chorusStr = Chorus
       \new Lyrics = EELyricsDAlt
       \new Lyrics  = EELyricsE
       \new Lyrics = EELyricsEAlt
->>
+
       \context Staff = EEStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = EEVoiceLH \EExACEEMusicLH
@@ -2671,6 +2759,7 @@ chorusStr = Chorus
       \context Lyrics = EELyricsEAlt \lyricsto EEVoiceLyrics \EEVerseEAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -2703,7 +2792,7 @@ chorusStr = Chorus
       \new Lyrics = EFLyricsCAlt
       \new Lyrics  = EFLyricsD
       \new Lyrics = EFLyricsDAlt
->>
+
       \context Staff = EFStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = EFVoiceLH \EFxBDDEFMusicLH
@@ -2718,6 +2807,7 @@ chorusStr = Chorus
       \context Lyrics = EFLyricsDAlt \lyricsto EFVoiceLyrics \EFVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -2750,7 +2840,7 @@ chorusStr = Chorus
       \new Lyrics = EGLyricsCAlt
       \new Lyrics  = EGLyricsD
       \new Lyrics = EGLyricsDAlt
->>
+
       \context Staff = EGStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = EGVoiceLH \EGxFIEGMusicLH
@@ -2765,6 +2855,7 @@ chorusStr = Chorus
       \context Lyrics = EGLyricsDAlt \lyricsto EGVoiceLyrics \EGVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -2798,7 +2889,7 @@ chorusStr = Chorus
       \new Lyrics = EHLyricsDAlt
       \new Lyrics  = EHLyricsE
       \new Lyrics = EHLyricsEAlt
->>
+
       \context Staff = EHStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = EHVoiceLH \EHxBHDEHMusicLH
@@ -2814,6 +2905,7 @@ chorusStr = Chorus
       \context Lyrics = EHLyricsEAlt \lyricsto EHVoiceLyrics \EHVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -2844,7 +2936,7 @@ chorusStr = Chorus
       \new Lyrics = EILyricsBAlt
       \new Lyrics  = EILyricsC
       \new Lyrics = EILyricsCAlt
->>
+
       \context Staff = EIStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = EIVoiceLH \EIxBIAEIMusicLH
@@ -2857,6 +2949,7 @@ chorusStr = Chorus
       \context Lyrics = EILyricsCAlt \lyricsto EIVoiceLyrics \EIVerseCAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -2888,7 +2981,7 @@ chorusStr = Chorus
       \new Lyrics = FZLyricsCAlt
       \new Lyrics  = FZLyricsD
       \new Lyrics = FZLyricsDAlt
->>
+
       \context Staff = FZStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = FZVoiceLH \FZxBZZFZMusicLH
@@ -2902,6 +2995,7 @@ chorusStr = Chorus
       \context Lyrics = FZLyricsDAlt \lyricsto FZVoiceLyrics \FZVerseCAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -2935,7 +3029,7 @@ chorusStr = Chorus
       \new Lyrics = FALyricsDAlt
       \new Lyrics  = FALyricsE
       \new Lyrics = FALyricsEAlt
->>
+
       \context Staff = FAStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = FAVoiceLH \FAxAZFAMusicLH
@@ -2951,6 +3045,7 @@ chorusStr = Chorus
       \context Lyrics = FALyricsEAlt \lyricsto FAVoiceLyrics \FAVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -2984,7 +3079,7 @@ chorusStr = Chorus
       \new Lyrics = FBLyricsDAlt
       \new Lyrics  = FBLyricsE
       \new Lyrics = FBLyricsEAlt
->>
+
       \context Staff = FBStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = FBVoiceLH \FBxGBFBMusicLH
@@ -3000,6 +3095,7 @@ chorusStr = Chorus
       \context Lyrics = FBLyricsEAlt \lyricsto FBVoiceLyrics \FBVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -3032,7 +3128,7 @@ chorusStr = Chorus
       \new Lyrics = FCLyricsCAlt
       \new Lyrics  = FCLyricsD
       \new Lyrics = FCLyricsDAlt
->>
+
       \context Staff = FCStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = FCVoiceLH \FCxBBCFCMusicLH
@@ -3047,6 +3143,7 @@ chorusStr = Chorus
       \context Lyrics = FCLyricsDAlt \lyricsto FCVoiceLyrics \FCVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -3080,7 +3177,7 @@ chorusStr = Chorus
       \new Lyrics = FDLyricsDAlt
       \new Lyrics  = FDLyricsE
       \new Lyrics = FDLyricsEAlt
->>
+
       \context Staff = FDStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = FDVoiceLH \FDxCBFDMusicLH
@@ -3096,6 +3193,7 @@ chorusStr = Chorus
       \context Lyrics = FDLyricsEAlt \lyricsto FDVoiceLyrics \FDVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -3127,7 +3225,7 @@ chorusStr = Chorus
       \new Lyrics = FELyricsCAlt
       \new Lyrics  = FELyricsD
       \new Lyrics = FELyricsDAlt
->>
+
       \context Staff = FEStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = FEVoiceLH \FExAFEMusicLH
@@ -3141,6 +3239,7 @@ chorusStr = Chorus
       \context Lyrics = FELyricsDAlt \lyricsto FEVoiceLyrics \FEVerseCAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
 
@@ -3165,12 +3264,13 @@ chorusStr = Chorus
         \context NullVoice = FFVoiceLyrics \FFxFFMusicLyrics
         \context Voice = FFVoiceRH \FFxFFMusicRH
       >>
->>
+
       \context Staff = FFStaffLH <<
         \set Staff.printPartCombineTexts = ##f
         \context Voice = FFVoiceLH \FFxFFMusicLH
       >>
   >>
   \include "../Lib/HymnScoreSettings.ly"
+  >>
 }
 \include "../Lib/HymnLayoutOutput.ly"
