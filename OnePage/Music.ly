@@ -237,21 +237,41 @@ DxHDDMusicGlobal = {
 }
 
 DxHDDMusicRHA = \relative c'{ \DxHDDMusicGlobal \clef "treble"
-
+f8. ees16 |  \nbp ees4 (d) bes'8. g16 | %2
+\nbp g4 (f) \lbp d8 f | %3
+\nbp f4 ees c8 ees | %4
+\nbp ees4 (d) \lbp bes'8. a16 | %5
+\nbp a4 g bes8. g16 | %6
+\nbp g4 f \lbp d'8. bes16 | %7
+\nbp a4. g8 f8. ees16 | %8
+\nbp ees4 d \lbp d8 f | %9
+\nbp bes f d'4. c8 \nbp bes2 \he
 }
 
 DxHDDMusicRHB = \relative c'{ \DxHDDMusicGlobal \clef "treble"
-
+d8. c16 | c4 (bes) bes8. ees16 | %2
+ees4 (d) bes8 d | d4 c a8 c | %4
+c4 (bes) d8. f16 | f4 ees ees8. ees16 | %6
+ees4 d f8. f16 | f4. ees8 d8. c16 | %8
+c4 bes bes8 d | f d f4. ees8 d2
 }
 
 DxHDDMusicRH = \partCombine #'(2 . 20) \DxHDDMusicRHA\DxHDDMusicRHB
 
 DxHDDMusicLHA = \relative c{ \DxHDDMusicGlobal \clef "bass"
-
+bes'8. a16 | a4 (bes) g8. bes16 | %2
+bes2 f8 f | f4 f a8 c | f,2 f8. bes16 | %5
+bes4 bes g8. bes16 | bes4 bes bes8. bes16 | %7
+c4. bes8 a8. a16 | a4 f f8 bes | %9
+bes bes bes4. a8 bes2
 }
 
 DxHDDMusicLHB = \relative c{ \DxHDDMusicGlobal \clef "bass"
-
+bes8. f'16 | f4 (bes,) ees8. ees16 | %2
+bes2 bes8 bes | a4 f f'8 f | %4
+bes,2 bes8. d16 | d4 ees ees8. ees16 | %6
+bes4 bes bes8. d16 | f4. f8 f8. f16 | %8
+f4 bes, bes8 bes | d bes f'4. f8 bes,2
 }
 
 DxHDDMusicLH = \partCombine #'(2 . 20) \DxHDDMusicLHA\DxHDDMusicLHB
@@ -273,21 +293,41 @@ ExHDEMusicGlobal = {
 }
 
 ExHDEMusicRHA = \relative c'{ \ExHDEMusicGlobal \clef "treble"
-
+f8. ees16 |  \nbp ees4 (d) bes'8. g16 | %2
+\nbp g4 (f) \lbp d8 f | %3
+\nbp f4 ees c8 ees | %4
+\nbp ees4 (d) \lbp bes'8. a16 | %5
+\nbp a4 g bes8. g16 | %6
+\nbp g4 f \lbp d'8. bes16 | %7
+\nbp a4. g8 f8. ees16 | %8
+\nbp ees4 d \lbp d8 f | %9
+\nbp bes f d'4. c8 \nbp bes2 \he
 }
 
 ExHDEMusicRHB = \relative c'{ \ExHDEMusicGlobal \clef "treble"
-
+d8. c16 | c4 (bes) bes8. ees16 | %2
+ees4 (d) bes8 d | d4 c a8 c | %4
+c4 (bes) d8. f16 | f4 ees ees8. ees16 | %6
+ees4 d f8. f16 | f4. ees8 d8. c16 | %8
+c4 bes bes8 d | f d f4. ees8 d2
 }
 
 ExHDEMusicRH = \partCombine #'(2 . 20) \ExHDEMusicRHA\ExHDEMusicRHB
 
 ExHDEMusicLHA = \relative c{ \ExHDEMusicGlobal \clef "bass"
-
+bes'8. a16 | a4 (bes) g8. bes16 | %2
+bes2 f8 f | f4 f a8 c | f,2 f8. bes16 | %5
+bes4 bes g8. bes16 | bes4 bes bes8. bes16 | %7
+c4. bes8 a8. a16 | a4 f f8 bes | %9
+bes bes bes4. a8 bes2
 }
 
 ExHDEMusicLHB = \relative c{ \ExHDEMusicGlobal \clef "bass"
-
+bes8. f'16 | f4 (bes,) ees8. ees16 | %2
+bes2 bes8 bes | a4 f f'8 f | %4
+bes,2 bes8. d16 | d4 ees ees8. ees16 | %6
+bes4 bes bes8. d16 | f4. f8 f8. f16 | %8
+f4 bes, bes8 bes | d bes f'4. f8 bes,2
 }
 
 ExHDEMusicLH = \partCombine #'(2 . 20) \ExHDEMusicLHA\ExHDEMusicLHB
@@ -484,28 +524,55 @@ IxBCZIMusicGlobal = {
 \set Staff.autoBeaming = ##f
 \numericTimeSignature
 \set Score.tempoHideNote = ##t
-\tempo 
+\tempo 4 = 72
 \time 6/8
 \key bes \major
 
 }
 
 IxBCZIMusicRHA = \relative c'{ \IxBCZIMusicGlobal \clef "treble"
-
+d8 ees e f [bes] c | d4 c8 bes4. | %2
+f8 a g ees4 g8 |  \nbp f4. (d) | %4
+d8 ees e f [bes] c | d4 c8 bes4. | %6
+f8 a g f4 c'8 |  \nbp bes2. \cbp | %8
+bes4. \postCho a4 g8 | g4 f8 f4. | %10
+f8 a g ees4. | ees8 g f d4. | %12
+f bes4 bes8 | c [bes] c \fpre d4. \fpost | %14
+c8 bes g f [bes]  a \nbp bes2. \he
 }
 
 IxBCZIMusicRHB = \relative c'{ \IxBCZIMusicGlobal \clef "treble"
-
+bes8 c cis d [f] f | f4 ees8 d4. | %2
+ees8 ees ees c4 ees8 | d4. (bes) | %4
+bes8 c cis d [f] f | f4 ees8 d4. | %6
+ees8 ees ees ees4 ees8 | d2. | %8
+g4. f4 ees8 | ees4 d8 d4. | d8 f ees c4. | %11
+c8 ees d bes4. | d f4 f8 | g4 g8 fis4. | %14
+g8 g ees d4 c8 d2.
 }
 
 IxBCZIMusicRH = \partCombine #'(2 . 20) \IxBCZIMusicRHA\IxBCZIMusicRHB
 
 IxBCZIMusicLHA = \relative c{ \IxBCZIMusicGlobal \clef "bass"
-
+f8 f bes bes4 a8 \pcAO | bes4 a8 f4. | %2
+a8 c bes a4 a8 | bes4. (f) | %4
+f8 f bes bes4 a8 \pcAO | bes4 a8 bes4. | %6
+a8 c bes a4 a8 | bes2. | bes4. bes4 bes8 | %9
+bes4 bes8 bes4. \pcAO | %10
+f8 \pcAO f \pcAO f a4. | %11
+a8 \pcAO f \pcAO f f4. | bes bes4 bes8 | %13
+bes4 g8  a4.  | %14
+g8 bes bes \pcAO f4 \pcAO f8 f2.
 }
 
 IxBCZIMusicLHB = \relative c{ \IxBCZIMusicGlobal \clef "bass"
-
+bes8 bes bes bes d f | bes4 f8 bes,4. | %2
+f'8 f f f4 f8 | bes,4. (bes) | %4
+bes8 bes bes bes [d] f | bes4 f8 bes,4. | %6
+f'8 f f f4 f8 | bes,2. | ees4. ees4 ees8 | %9
+bes4 bes8 bes4. | f'8 f f f4. | %11
+f8 f f bes,4. | bes d4 d8 | %13
+ees4 ees8 \fpre d4. \fpostbelow | ees8 ees ees f4 f8 bes,2.
 }
 
 IxBCZIMusicLH = \partCombine #'(2 . 20) \IxBCZIMusicLHA\IxBCZIMusicLHB
@@ -1412,25 +1479,59 @@ BDxABDBDMusicGlobal = {
 \numericTimeSignature
 \set Score.tempoHideNote = ##t
 \tempo 4 = 80
-
+\time 3/4 \key as \major
+\partial 4
 }
 
 BDxABDBDMusicRHA = \relative c'{ \BDxABDBDMusicGlobal \clef "treble"
-
+aes'4 |  \nbp c4. bes8 aes g | %2
+\nbp aes2 \lbp aes4 | %3
+\nbp aes4. (bes8) aes [f] | %4
+\nbp ees2 \pcAO \lbp ees4 | %5
+\nbp bes'4. c8 bes \pcAO ees, | %6
+\nbp c'2 \lbp aes4 | %7
+\nbp g4. aes8 g [f] \pcAO | %8
+\nbp ees2 \cbp c'4 \postCho | %9
+\nbp c4. aes8 des c |  \nbp c4 bes2 | %11
+bes4. aes8 c bes | %12
+\nbp bes4 aes \lbp aes | %13
+\nbp aes4. bes8 aes f | %14
+\nbp ees4 aes \lbp bes | %15
+\nbp c4. (aes8) bes4 \nbp aes2 \he
 }
 
 BDxABDBDMusicRHB = \relative c'{ \BDxABDBDMusicGlobal \clef "treble"
-
+c4 | ees4. des8 c bes | c2 c4 | %3
+des2 des4 | c2 ees4 | ees4. ees8 ees ees | %6
+ees2 ees4 | ees4. f8 ees [d] | %8
+ees2 ees4 | ees4. ees8 aes aes | aes4 g2 | %11
+ees4. ees8 ees ees | ees4 ees ees | %13
+f4. f8 f des | c4 ees f | %15
+ees4. (c8) des4 c2
 }
 
 BDxABDBDMusicRH = \partCombine #'(2 . 20) \BDxABDBDMusicRHA\BDxABDBDMusicRHB
 
 BDxABDBDMusicLHA = \relative c{ \BDxABDBDMusicGlobal \clef "bass"
-
+ees4 | aes4. f8 \pcAO ees \pcAO ees | %2
+ees2 ees4 | f2 f8 [aes] | aes2 g4 | %5
+g4. aes8 g g \pcAO | aes2 c4 | %7
+bes2 bes8 [aes] | g2 \pcAO aes4 \pcAO | %9
+aes4. c8 f ees | ees4 ees2 | %11
+des4. c8  ees des | des4 c aes | %13
+aes4. aes8 aes aes | aes4 aes aes | %15
+aes2 g4 aes2
 }
 
 BDxABDBDMusicLHB = \relative c{ \BDxABDBDMusicGlobal \clef "bass"
-
+aes4 | aes4. des8 ees ees | aes,2 aes4 | %3
+des2 des4 | aes2 ees'4 | %5
+ees4. ees8 ees ees | aes2 aes,4 | %7
+bes2 bes4 | ees2 aes4 | %9
+aes4. aes8 aes aes | ees4 ees2 | %11
+ees4. ees8 ees ees | aes,4 aes c | %13
+des4. des8 des des | aes4 c des | %15
+ees2 ees4 aes,2
 }
 
 BDxABDBDMusicLH = \partCombine #'(2 . 20) \BDxABDBDMusicLHA\BDxABDBDMusicLHB
@@ -1502,26 +1603,59 @@ BFxCFEBFMusicGlobal = {
 \set Staff.autoBeaming = ##f
 \numericTimeSignature
 \set Score.tempoHideNote = ##t
-\tempo 
+\tempo 2 = 64
+\time 3/4
+\key g \major
 
 }
 
 BFxCFEBFMusicRHA = \relative c'{ \BFxCFEBFMusicGlobal \clef "treble"
-
+b'2 b4 |  \nbp b (a) g | g2 g4 | %3
+a (g) e | d2 d4 |  \nbp g2 g4 | %6
+b4. (a8) g4 |  \nbp a2. | b2 b4 | %9
+\nbp b (a) g | g2 g4 | a (g) e | %12
+d2 g4 |  \nbp b (d) c | b2 a4 | %15
+\nbp g2. \cbp | d'2 \postCho b4 | %17
+\nbp d2 b4 | c2 c4 | c4. (b8) a4 | %20
+b2 c4 |  \nbp d2 d4 | e (d) b | %23
+\nbp a2. | b2 b4 |  \nbp b (a) g | %26
+g2 g4 | a (g) e | d2 g4 | %29
+\nbp b (d) c | b2 a4 \nbp g2. \he
 }
 
 BFxCFEBFMusicRHB = \relative c'{ \BFxCFEBFMusicGlobal \clef "treble"
-
+d2 d4 | d2 d4 | e2 e4 | e2 c4 | b2 b4 | %5
+d2 d4 | d2 cis4 | d2. | g2 g4 | %9
+g (d) d | e2 e4 | e2 c4 | b2 d4 | %13
+d2 e4 | d2 c4 | b2. | g'2 g4 | g2 d4 | %18
+fis2 fis4 | fis4. (g8) fis4 | g2 fis4 | %21
+g2 g4 | g2 g4 | fis2. | d2 d4 | d2 d4 | %26
+e2 e4 | e2 c4 | b2 d4 | d2 e4 | d2 c4 b2.
 }
 
 BFxCFEBFMusicRH = \partCombine #'(2 . 20) \BFxCFEBFMusicRHA\BFxCFEBFMusicRHB
 
 BFxCFEBFMusicLHA = \relative c{ \BFxCFEBFMusicGlobal \clef "bass"
-
+g'2 g4 | g (fis) g | g2 c4 | c2 g4 | %4
+g2 g4 | b2 b4 \pcAp | %6
+g4. (a8) \pcAu a4 | fis2. | d'2 d4 | %9
+d (c) b | g2 c4 | c2 g4 | g2 b4 | %13
+g2 g4 | g2 fis4 | g2. | b2 d4 | %17
+b2 \pcAO g4 | a2 a4 | a2 d4 | d2 d4 | %21
+d2 b4 | c (b) d | d2. \pcAO | %24
+g,2 \pcAO g4 | g (fis) g | g2 c4 | %27
+c2 g4 | g2 b4 | g2 g4 | g2 fis4 g2.
 }
 
 BFxCFEBFMusicLHB = \relative c{ \BFxCFEBFMusicGlobal \clef "bass"
-
+g2 g4 | g (a) b | c2 c4 | c2 c4 | %4
+g2 g4 | g2 g4 | g'4. (fis8) e4 | d2. | %8
+g,2 g4 | g (a) b | c2 c4 | c2 c4 | %12
+g2 g4 | g (b) c | d2 d4 | g,2. | %16
+g'2 g4 | g2 g4 | d2 d4 | d2 d4 | g2 a4 | %21
+b2 g4 | g2 g4 | d2. | g2 g4 | %25
+g, (a) b | c2 c4 | c2 c4 | g2 g4 | %29
+g (b) c | d2 d4 g,2.
 }
 
 BFxCFEBFMusicLH = \partCombine #'(2 . 20) \BFxCFEBFMusicLHA\BFxCFEBFMusicLHB
@@ -1609,32 +1743,59 @@ BHxCIZBHMusicGlobal = {
 \set Staff.autoBeaming = ##f
 \numericTimeSignature
 \set Score.tempoHideNote = ##t
-\tempo 
+\tempo 4 = 104
+\time 4/4
+\key d \major
+\partial 4
 
 }
 
 BHxCIZBHMusicRHA = \relative c'{ \BHxCIZBHMusicGlobal \clef "treble"
-
+fis4 |  \nbp fis fis fis fis | %2
+\nbp g2. \lbp g4 |  \nbp e e e fis | %4
+\nbp e2. \lbp e4 |  \nbp fis fis a a | %6
+d d \fpre d \fpost \lbp d, |  \nbp d fis fis e \pcAO | %8
+\nbp d2. \cbp \pcAO d4 \postCho | %9
+\nbp g4. g8 g4 d | %10
+\nbp fis2. \lbp fis4 | %11
+\nbp b4. b8 b4 fis |  \nbp a2. \lbp a4 | %13
+\nbp d4. d8 d4 cis | cis b a \lbp g | %15
+\nbp fis4. \pcAO d8 fis4 e \pcAO \nbp d2. \he
 }
 
 BHxCIZBHMusicRHB = \relative c'{ \BHxCIZBHMusicGlobal \clef "treble"
-
+d4 | d e d d | d2. d4 | d cis d d | %4
+cis2. cis4 | d d e e | d d b b | %7
+a d cis cis | d2. d4 | bes4. bes8 d4 bes | %10
+d2. e4 | d4. d8 d4 d | cis2. g'4 | %13
+fis4. d8 fis4 e | e d fis e | %15
+d4. d8 cis4 cis d2.
 }
 
 BHxCIZBHMusicRH = \partCombine #'(2 . 20) \BHxCIZBHMusicRHA\BHxCIZBHMusicRHB
 
 BHxCIZBHMusicLHA = \relative c{ \BHxCIZBHMusicGlobal \clef "bass"
-
+a'4 | a ais b c | b2. b4 | a a gis gis | %4
+a2. a4 | a a a g | g fis e eis | %7
+fis a a g | fis2. fis4 | g4. g8 g4 g | %10
+a2. ais4 | fis4. fis8 fis4 fis8 [gis] | %12
+a2. a4 | a4. a8 ais4 ais | ais b b b | %15
+a4. fis8 a4 g fis2.
 }
 
 BHxCIZBHMusicLHB = \relative c{ \BHxCIZBHMusicGlobal \clef "bass"
-
+d4 | d cis b a | g2. g4 | a a b e | %4
+a,2. a4 | d d cis cis | b a \fpre g \fpostbelow gis | %7
+a a a a | d2. d4 | g,4.  g8  bes4 g | %10
+d'2. cis4 | b4. b8 d4 b | a2. cis4 | %13
+d4. fis8 fis4 fis | g g dis e | %15
+a,4. a8 a4 a d2.
 }
 
 BHxCIZBHMusicLH = \partCombine #'(2 . 20) \BHxCIZBHMusicLHA\BHxCIZBHMusicLHB
 
 BHxCIZBHMusicLyrics = \relative c''''{ \BHxCIZBHMusicGlobal \clef "treble" 
-\hideNotes \voiceFour 
+\hideNotes \voiceFour c4 c4 c4 c4 c4 c2. c4 c4 c4 c4 c4 c2. c4 c4 c4 c4 c4 c4 c4 c4 c4 c4 c4 c4 c4 c2. c4 c4. c8 c4 c4 c2. c4 c4. c8 c4 c4 c2. c4 c4. c8 c4 c4 c4 c4 c4 c4 c4. c8 c4 c4 c2.
 }
 
 
@@ -1746,25 +1907,47 @@ CAxBHICAMusicGlobal = {
 \numericTimeSignature
 \set Score.tempoHideNote = ##t
 \tempo 4 = 68
+\time 3/4
+\key g \major
+\partial 4
 
 }
 
 CAxBHICAMusicRHA = \relative c'{ \CAxBHICAMusicGlobal \clef "treble"
-
+d4 |  \nbp d8 b' b4 g8 [a] | %2
+g fis fis4 \lbp d | %3
+\nbp d8 c' c4 a8 [b] | %4
+a g g4 \postSegnoMark \lbp d' | %5
+\nbp d8 b b4 a8 [b] | a g g4 \lbp a | %7
+\nbp b8 d, b'4 a | %8
+\nbp g2 \postFine \cbp d'4 \postCho | %9
+\nbp d8 b d4 e |  \nbp a,2 \lbp c4 | %11
+\nbp c8 a c4 d \nbp b2 \postDS \he
 }
 
 CAxBHICAMusicRHB = \relative c'{ \CAxBHICAMusicGlobal \clef "treble"
-
+b4 | b8 d d4 b | c8 c c4 c | %3
+c8 d d4 c8 [d] | c b b4 g' | %5
+g8 g g4 fis8 [f] | e e e4 e | %7
+d8 b d4 c | b2 g'4 | g8 g g4 g | %10
+fis2 fis4 | a8 fis a4 fis g2
 }
 
 CAxBHICAMusicRH = \partCombine #'(2 . 20) \CAxBHICAMusicRHA\CAxBHICAMusicRHB
 
 CAxBHICAMusicLHA = \relative c{ \CAxBHICAMusicGlobal \clef "bass"
-
+\pcAp g'4 | g8 g g4 g \pcAu | %2
+a8 a a4 fis | fis8 a a4 fis \pcAp | %4
+g8 g g4 \pcAu b | b8 d d4 c8 [b] | %6
+c c c4 g | g8 g fis4 fis | g2 b4 | %9
+b8 d b4 c | c8 c c4 a | a8 d d4 d d8 d d4
 }
 
 CAxBHICAMusicLHB = \relative c{ \CAxBHICAMusicGlobal \clef "bass"
-
+g'4 | g8 g g4 g | d8 d d4 d | d8 d d4 d | %4
+g8 g g4 g | g8 g g4 g | c,8 c c4 c | %7
+d8 d d4 d | g,2 g'4 | g8 g g4 c, | %10
+d8 d d4 d | d8 d d4 d g8 g g4
 }
 
 CAxBHICAMusicLH = \partCombine #'(2 . 20) \CAxBHICAMusicLHA\CAxBHICAMusicLHB
@@ -1860,25 +2043,50 @@ CCxCDDCCMusicGlobal = {
 \numericTimeSignature
 \set Score.tempoHideNote = ##t
 \tempo 4 = 78
+\time 4/4
+\key as \major
+\partial 4
 
 }
 
 CCxCDDCCMusicRHA = \relative c'{ \CCxCDDCCMusicGlobal \clef "treble"
-
+ees4 \pcAO | %1
+\nbp ees4. \pcAO ees8 \pcAO ees f g aes | %2
+\nbp aes2 (g4) \lbp g | %3
+\nbp g4. g8 g aes bes c | %4
+\nbp ees2 (des4) \lbp des | %5
+\nbp c4. c8 c bes aes g | %6
+\nbp bes2 (aes4) \lbp aes | %7
+\nbp aes4. aes8 aes aes g f | %8
+\nbp ees4. \lbp f8 g4 aes | %9
+c2. bes4 \pcAO \nbp aes2. \he
 }
 
 CCxCDDCCMusicRHB = \relative c'{ \CCxCDDCCMusicGlobal \clef "treble"
-
+c4 | ees4. ees8 ees ees d d | ees2. ees4 | %3
+ees4. ees8 ees ees g aes | bes2. ees,4 | %5
+ees4. ees8 e e e e | f2. c4 | %7
+d4. d8 d d d d | c4. ees8 ees4 ees | %9
+aes2 (g4) g aes2.
 }
 
 CCxCDDCCMusicRH = \partCombine #'(2 . 20) \CCxCDDCCMusicRHA\CCxCDDCCMusicRHB
 
 CCxCDDCCMusicLHA = \relative c{ \CCxCDDCCMusicGlobal \clef "bass"
-
+aes'4 | c4. c8 c c aes aes | %2
+c2 (bes4) bes \pcAO | %3
+des4. \pcAO des8 \pcAO des \pcAO c ees ees | %4
+ees2. bes4 | c4. c8 c c c c | c2. aes4 | %7
+bes4. f8 f f g aes | aes4. aes8 bes4 c | %9
+ees2 (des4) des c2.
 }
 
 CCxCDDCCMusicLHB = \relative c{ \CCxCDDCCMusicGlobal \clef "bass"
-
+aes4 | aes'4. aes8 aes aes f f | %2
+ees2. ees4 | des'4. des8 des c bes aes | %4
+g2. g4 | aes4. aes8 g g c, c | f2. f4 | %7
+bes,4. bes8 bes bes bes bes | %8
+ees4. ees8 ees4 ees | ees2. ees4 aes,2.
 }
 
 CCxCDDCCMusicLH = \partCombine #'(2 . 20) \CCxCDDCCMusicLHA\CCxCDDCCMusicLHB
@@ -1893,25 +2101,56 @@ CDxAECCDMusicGlobal = {
 \numericTimeSignature
 \set Score.tempoHideNote = ##t
 \tempo 4 = 74
+\time 6/8
+\key es \major
 
 }
 
 CDxAECCDMusicRHA = \relative c'{ \CDxAECCDMusicGlobal \clef "treble"
-
+g'8 ges g aes4 g8 | g4. f4 r8 | %2
+f e f g4 f8 |  \nbp ees4.~ees4 r8 | %4
+bes' a bes ees4 bes8 | d4. c4 r8 | %6
+aes g aes bes4 aes8 \pcAp | %7
+\nbp g4.~g4 \pcAu r8 \cbp | %8
+c \postCho c c bes4 \pcAO ees,8 | %9
+aes4. g4 r8 | g g g c4 g8 | %11
+\nbp bes4. (aes4) r8 | aes g aes d4 c8 | %13
+bes4. g4 r8 | ees d ees g4 f8 \nbp ees4.~ees4 \he
 }
 
 CDxAECCDMusicRHB = \relative c'{ \CDxAECCDMusicGlobal \clef "treble"
-
+ees8 ees ees ees4 ees8 | ees4. d4 r8 | %2
+d d d d4 d8 | bes4.~bes4 r8 | %4
+ees ees ees g4 ees8 | ees4. ees4 r8 | %6
+d d d d4 d8 | g4.~g4 r8 | %8
+ees ees ees ees4 ees8 | d4. ees4 r8 | %10
+ees ees ees e4 e8 | g4. (f4) r8 | %12
+d d d aes'4 d,8 | ees4. ees4 r8 | %14
+a, a a bes [ees] d bes4.~bes4
 }
 
 CDxAECCDMusicRH = \partCombine #'(2 . 20) \CDxAECCDMusicRHA\CDxAECCDMusicRHB
 
 CDxAECCDMusicLHA = \relative c{ \CDxAECCDMusicGlobal \clef "bass"
-
+bes'8 a bes c4 bes8 | bes4. aes4 r8 | %2
+aes g aes bes4 aes8 | g4.~g4 r8 | %4
+g ges g bes4 bes8 | bes4. aes4 r8 | %6
+f e f g4 f8 | bes4.~bes4 r8 \pcAO | %8
+aes \pcAO aes \pcAO aes bes4 bes8 | %9
+bes4. bes4 r8 | bes bes bes g4 c8 | %11
+c4.~c4 r8 | bes bes bes bes4 aes8 | %13
+g4. bes4 r8 | f f f ees [bes'] aes g4.~g4
 }
 
 CDxAECCDMusicLHB = \relative c{ \CDxAECCDMusicGlobal \clef "bass"
-
+ees8 ees ees ees4 ees8 | bes4. bes4 r8 | %2
+bes bes bes bes4 bes8 | ees4.~ees4 r8 | %4
+ees ees ees ees4 g8 | aes4. aes,4 r8 | %6
+bes bes bes bes4 bes8 | ees4.~ees4 r8 | %8
+aes aes aes g4 g8 | f4. ees4 r8 | %10
+ees ees des c4 c8 | f4.~f4 r8 | %12
+bes, bes bes bes4 bes8 | ees4. ees4 r8 | %14
+c c c bes4 bes8 ees4.~ees4
 }
 
 CDxAECCDMusicLH = \partCombine #'(2 . 20) \CDxAECCDMusicLHA\CDxAECCDMusicLHB
@@ -2065,21 +2304,36 @@ CGxBBHCGMusicGlobal = {
 }
 
 CGxBBHCGMusicRHA = \relative c'{ \CGxBBHCGMusicGlobal \clef "treble"
-
+b'4. g4 a8 | b d, e d g4 | a8 a a a g a | %3
+b4. (d) \postSegnoMark| b g4 a8 | b d, e d g4 | %6
+a8 a g b b8. a16 | g4.~g4 r8 \postFine \cbp | %8
+g4. \postCho c4 e,8 | e g c c b4 | a4. d4 fis,8 a g e \pcAO d4 (\pcAO \fpre c'8)  \fpost  \he  \postDS
 }
 
 CGxBBHCGMusicRHB = \relative c'{ \CGxBBHCGMusicGlobal \clef "treble"
-
+d4. b4 c8 | d b c b d4 | %2
+fis8 fis fis fis e fis | g4. (g) | d b4 c8 | %5
+d b c b d4 | cis8 cis cis d d8. d16 | %7
+d4.~d4 r8 | e4. e4 c8 | c e g g g4 | %10
+fis4. fis4 d8 cis cis cis d4.
 }
 
 CGxBBHCGMusicRH = \partCombine #'(2 . 20) \CGxBBHCGMusicRHA\CGxBBHCGMusicRHB
 
 CGxBBHCGMusicLHA = \relative c{ \CGxBBHCGMusicGlobal \clef "bass"
-
+g'4. d4 d8 | g g g g b4 | d8 d d d d d | %3
+d4. (b) | g d4 d8 | g g g g b4 | %6
+a8 a a g g8. c16 | b4.~b4 r8 | %8
+c c c g g g | g c e e d4 | %10
+d8 d d \pcAO a \pcAO a a e e g fis8. [g16 a8]
 }
 
 CGxBBHCGMusicLHB = \relative c{ \CGxBBHCGMusicGlobal \clef "bass"
-
+g4. g4 g8 | g g g g g4 | d'8 d d d d d | %3
+g4. g | g, g4 g8 | g g g g g4 | %6
+e'8 e e d d8. d16 | g,4.~g4 r8 | %8
+c c c c c c | c c c g' g4 | %10
+a8 a a a a a, a a a d8. [e16 \fpre fis8] \fpost
 }
 
 CGxBBHCGMusicLH = \partCombine #'(2 . 20) \CGxBBHCGMusicLHA\CGxBBHCGMusicLHB
@@ -2094,25 +2348,42 @@ CHxAIHCHMusicGlobal = {
 \numericTimeSignature
 \set Score.tempoHideNote = ##t
 \tempo 4 = 108
+\time 3/4
+\key bes \major
 
 }
 
 CHxAIHCHMusicRHA = \relative c'{ \CHxAIHCHMusicGlobal \clef "treble"
-
+f4 d f | d'2 c4 | bes (d,) g | %3
+\nbp f2. |  \nbp ees4 \pcAO \lbp c ees | %5
+\nbp a2 g4 | f (c) ees | d2. | %8
+f4 f f | bes2 bes4 |  \nbp c (bes) c | %11
+d2. | c4 bes g |  \nbp f2 \lbp bes4 | %14
+\nbp a (g) a bes2. \he
 }
 
 CHxAIHCHMusicRHB = \relative c'{ \CHxAIHCHMusicGlobal \clef "treble"
-
+d4 bes d | f2 ees4 | d (bes) ees | %3
+d2. | c4 c c | ees2 ees4 | c2 c4 | %7
+bes2. | d4 d d | d2 f4 | f2 f4 | f2. | %12
+ees4 ees ees | d2 f4 | ees2 ees4 d2.
 }
 
 CHxAIHCHMusicRH = \partCombine #'(2 . 20) \CHxAIHCHMusicRHA\CHxAIHCHMusicRHB
 
 CHxAIHCHMusicLHA = \relative c{ \CHxAIHCHMusicGlobal \clef "bass"
-
+bes'4 f bes | bes2 bes4 | bes (f) bes | %3
+bes2. | a4 a a | c2 bes4 | a2 f4 | f2. | %8
+bes4 bes bes | f2 bes4 | a (g) a | %11
+bes2. | g4 g bes | bes2 bes4 | %14
+c2 \pcAO f,4 f2.
 }
 
 CHxAIHCHMusicLHB = \relative c{ \CHxAIHCHMusicGlobal \clef "bass"
-
+bes4 bes bes | bes2 bes4 | bes2 bes4 | %3
+bes2. | f'4 f f | f2 f4 | f2 a,4 | %7
+bes2. | bes4 bes bes | bes2 d4 | f2 f4 | %11
+bes,2. | ees4 ees ees | bes2 d4 | f2 f4 bes,2.
 }
 
 CHxAIHCHMusicLH = \partCombine #'(2 . 20) \CHxAIHCHMusicLHA\CHxAIHCHMusicLHB
@@ -2325,21 +2596,55 @@ DBxDZADBMusicGlobal = {
 }
 
 DBxDZADBMusicRHA = \relative c'{ \DBxDZADBMusicGlobal \clef "treble"
-
+\pcAO ees8 f |  \nbp g4. g8 aes f | %2
+\nbp bes2 \pcAO \lbp ees,8 f | %3
+\nbp g4. ees8 f4 \pcAO | %4
+\nbp ees2 \pcAO \lbp ees8 f | %5
+\nbp g4. bes8 d c | %6
+\nbp bes2 \pcAO \lbp ees,8 f | %7
+\nbp g4. ees8 f4 | %8
+\nbp ees2 \cbp \pcAO bes'8 \postCho \pcAO bes | %9
+\nbp bes4. g8 c bes | %10
+\nbp aes2 \pcAO \lbp aes8 \pcAO aes | %11
+\nbp aes4. f8 bes aes | %12
+\nbp g2 \pcAO \lbp bes8 \pcAO bes | %13
+\nbp ees4. d8 c bes | %14
+bes4 (aes) \lbp g8 f |  \nbp ees4. ees8 f4 \nbp ees2 \he
 }
 
 DBxDZADBMusicRHB = \relative c'{ \DBxDZADBMusicGlobal \clef "treble"
-
+ees8 ees | ees4. ees8 d d | %2
+ees2 ees8 ees | ees4. bes8 d4 | %4
+ees2 ees8 ees | ees4. g8 fis fis | %6
+g2 ees8 ees | ees4. bes8 d4 | bes2 r4 | %9
+ees8 g g [ees] c4 | c8 c c4 r | %11
+d8 d d4 g8 [f] | ees ees ees4 r | %13
+g8 g g4 g | g8 g f4 c8 c | %15
+bes bes bes4 (d) bes2
 }
 
 DBxDZADBMusicRH = \partCombine #'(2 . 20) \DBxDZADBMusicRHA\DBxDZADBMusicRHB
 
 DBxDZADBMusicLHA = \relative c{ \DBxDZADBMusicGlobal \clef "bass"
-
+g'8 aes | bes4. bes8 bes bes | bes2 a8 a | %3
+bes4. g8 aes4 | g2 g8 aes | %5
+bes4. bes8 a a | bes2 a8 a | %7
+bes4. g8 aes4 | g2 r4 | %9
+g8 bes ees [bes] g4 | aes8 aes aes4 r | %11
+f8 f f [bes] bes4 | bes8 bes bes4 r | %13
+bes8 bes bes [b] c [des] | %14
+c c c4 bes8 aes | g g g4 (aes) g2
 }
 
 DBxDZADBMusicLHB = \relative c{ \DBxDZADBMusicGlobal \clef "bass"
-
+ees8 ees | ees4. ees8 f aes | g2 c,8 c | %3
+bes4. bes8 bes4 | ees2 ees8 ees | %5
+ees4. ees8 ees ees | ees2 c8 ces | %7
+bes4. bes8 bes4 | ees2 r4 | %9
+ees8 ees ees4 e | f8 f f4 r | %11
+bes,8 bes bes4 bes | ees8 ees ees4 r | %13
+ees8 ees ees4 ees8 [e] | %14
+f f f4 aes,8 aes | bes bes bes2 ees
 }
 
 DBxDZADBMusicLH = \partCombine #'(2 . 20) \DBxDZADBMusicLHA\DBxDZADBMusicLHB
@@ -2353,26 +2658,45 @@ DCxAGDCMusicGlobal = {
 \set Staff.autoBeaming = ##f
 \numericTimeSignature
 \set Score.tempoHideNote = ##t
-\tempo 
+\tempo 4 = 120
+\time 4/4
+\key g \major
 
 }
 
 DCxAGDCMusicRHA = \relative c'{ \DCxAGDCMusicGlobal \clef "treble"
-
+b'2 a4. g8 | g4. e8 e2 \pcAO | d g4 b | %3
+\nbp a1 | b2 a4. g8 | g4. e8 e2 | %6
+d4 (g) fis a |  \nbp g1 | d'2 e4. d8 | %9
+d4. b8 d2 | d e4. d8 | d4. b8 a2 | %12
+b a4. g8 | g4. e8 e2 | d4 (g) fis a \nbp g1 \he
 }
 
 DCxAGDCMusicRHB = \relative c'{ \DCxAGDCMusicGlobal \clef "treble"
-
+d2 c4. b8 | e4. c8 c2 | d d4 d | d1 | %4
+d2 c4. b8 | e4. c8 c2 | b4 (d) d d | %7
+d1 | g2 g4. g8 | g4. g8 g2 | g g4. g8 | %11
+d4. d8 d2 | d c4. b8 | e4. c8 c2 | %14
+b4 (d) d d d1
 }
 
 DCxAGDCMusicRH = \partCombine #'(2 . 20) \DCxAGDCMusicRHA\DCxAGDCMusicRHB
 
 DCxAGDCMusicLHA = \relative c{ \DCxAGDCMusicGlobal \clef "bass"
-
+\pcAO g'2 fis4. g8 | c4. g8 g2 | b g4 g | %3
+fis1 \pcAO | g2 fis4. g8 | c4. g8 g2 | %6
+g4 (b) a c | b1 | b2 c4. b8 | %9
+b4. d8 b2 | b c4. b8 | %11
+a4. \pcAO g8 fis2 \pcAO | g fis4. g8 | %13
+c4. g8 g2 | g4 (b) a c b1
 }
 
 DCxAGDCMusicLHB = \relative c{ \DCxAGDCMusicGlobal \clef "bass"
-
+g'2 d4. e8 | c4. c8 c2 | g b4 g | d'1 | %4
+g2 d4. e8 | c4. c8 c2 | d d4 d | g,1 | %8
+g'2 g4. g8 | g4. g8 g2 | g c,4. g'8 | %11
+fis4. g8 d2 | g d4. e8 | c4. c8 c2 | %14
+d d4 d g,1
 }
 
 DCxAGDCMusicLH = \partCombine #'(2 . 20) \DCxAGDCMusicLHA\DCxAGDCMusicLHB
@@ -2386,26 +2710,66 @@ DDxCAZDDMusicGlobal = {
 \set Staff.autoBeaming = ##f
 \numericTimeSignature
 \set Score.tempoHideNote = ##t
-\tempo 
+\tempo 4 = 96
+\time 3/4
+\key bes \major
 
 }
 
 DDxCAZDDMusicRHA = \relative c'{ \DDxCAZDDMusicGlobal \clef "treble"
-
+f4 d bes' | a4. g8 a4 | c g a | %3
+\nbp g2 (f4) \breathe \pcAO | f g a | %5
+bes4. a8 bes4 | d g, c |  \nbp c2 (f,4) \breathe | %8
+f d bes' | a4. g8 a4 | ees' g, a | %11
+\nbp g2 (f4) \breathe | bes c d | g,4. a8 bes4 | %14
+c f, c' |  \nbp bes2. \cbp | %16
+d4 \postCho d d | ees4. a,8 a4 | c c c | %19
+\nbp bes2. | bes4 a bes \pcAO | %21
+f4. bes8 d4 | d g, c |  \nbp c2. | %24
+d4 d d | ees4. a,8 a4 | c c d | %27
+\nbp bes2. | bes4 a bes | f4. bes8 d4 | %30
+d f, c' \nbp bes2. \he
 }
 
 DDxCAZDDMusicRHB = \relative c'{ \DDxCAZDDMusicGlobal \clef "treble"
-
+d4 bes d | ees4. ees8 ees4 | ees ees ees | %3
+e2 (d4) | f ees ees | d4. ees8 f4 | %6
+e e e | ees2. | d4 bes f' | %9
+ees4. ees8 ees4 | ees ees ees | e2 (f4) | %12
+f f f | ees4. ees8 ees4 | ees ees ees | %15
+d2. | f4 g bes | a4. f8 f4 | a a a | %19
+g2. | g4 ges g | f4. f8 f4 | e e e | %23
+ees2. | f4 g bes | a4. f8 f4 | a a a | %27
+g2. | g4 g g | d4. f8 f4 | f d ees d2.
 }
 
 DDxCAZDDMusicRH = \partCombine #'(2 . 20) \DDxCAZDDMusicRHA\DDxCAZDDMusicRHB
 
 DDxCAZDDMusicLHA = \relative c{ \DDxCAZDDMusicGlobal \clef "bass"
-
+bes'4 f f | f4. f8 f4 | a bes c | %3
+des2 r4 | bes bes f | f4. f8 bes4 | %6
+bes bes bes | a2. | bes4 f d' | %9
+c4. bes8 c4 | a bes c | cis2 (d4) | %12
+bes a bes | bes4. bes8 bes4 | a a a | %15
+bes2. \pcAO | bes4 d d | c4. ees8 ees4 | %18
+ees ees d | d2. | ees4 c bes | %21
+bes4. bes8 bes4 | bes bes bes | %23
+a2. \pcAO | bes4 d d | c4. ees8 ees4 | %26
+ees ees d | d2. | des4 des des \pcAO | %29
+f,4. bes8 bes4 | bes bes a bes2.
 }
 
 DDxCAZDDMusicLHB = \relative c{ \DDxCAZDDMusicGlobal \clef "bass"
-
+bes4 bes bes | c4. c8 c4 | f f f | %3
+bes,2. | d4 ees c | bes4. c8 d4 | g g g | %7
+f2 (f,4) | bes bes bes | f'4. f8 f4 | %10
+f f f | bes,2. | d4 c bes | ees4. f8 g4 | %14
+f f f | bes,2. | bes'4 bes bes | %17
+f4. f8 f4 | f f ges | g2. | %20
+ees4 ees ees | d4. d8 bes4 | c c c | %23
+f2. | bes4 bes bes | f4. f8 f4 | %26
+f f ges | g2. | e4 e e | f4. d8 bes4 | %30
+f' f f bes,2.
 }
 
 DDxCAZDDMusicLH = \partCombine #'(2 . 20) \DDxCAZDDMusicLHA\DDxCAZDDMusicLHB
@@ -2542,26 +2906,54 @@ DGxAHFDGMusicGlobal = {
 \set Staff.autoBeaming = ##f
 \numericTimeSignature
 \set Score.tempoHideNote = ##t
-\tempo 
+\tempo 4 = 120
+\time 3/4
+\key as \major
+\partial 4
 
 }
 
 DGxAHFDGMusicRHA = \relative c'{ \DGxAHFDGMusicGlobal \clef "treble"
-
+c'4 |  \nbp c (bes) aes | aes (g) f | %3
+ees (c') bes | %4
+\nbp aes2 \pcAO \lbp ees4 | %5
+\nbp ees (des') c | c (bes) aes | %7
+ees' (c) aes | %8
+\nbp bes2 \pcAO \lbp ees,4 \pcAO | %9
+\nbp ees (f) g | aes2 ees4 | %11
+f (des') bes | %12
+\nbp aes (g) \breathe \pcAO \lbp ees | %13
+\nbp f2 g4 | aes2 aes4 | aes (g) bes \nbp aes2 \he
 }
 
 DGxAHFDGMusicRHB = \relative c'{ \DGxAHFDGMusicGlobal \clef "treble"
-
+ees4 | ees2 ees4 | f (ees) des | %3
+c (ees) des | c2 ees4 | ees2 ees4 | %6
+aes (g) f | ees2 ees4 | ees2 ees4 | %9
+ees d des | c2 c4 | des (f) f | %12
+ees2 ees4 | des2 des4 | c2 ees4 | %15
+ees2 ees4 ees2
 }
 
 DGxAHFDGMusicRH = \partCombine #'(2 . 20) \DGxAHFDGMusicRHA\DGxAHFDGMusicRHB
 
 DGxAHFDGMusicLHA = \relative c{ \DGxAHFDGMusicGlobal \clef "bass"
-
+c'4 | ees (des) c | aes2 aes4 | %3
+aes2 g4 | aes2 g4 | aes (g) aes | %6
+ees' (des) c \pcAp | %7
+bes (aes) \pcAu aes | g2 g4 | %9
+g (aes) bes | aes2 aes4 | aes2 des4 | %12
+c (bes) aes | aes2 bes4 | %14
+ees, (aes) c | c (bes) des c2
 }
 
 DGxAHFDGMusicLHB = \relative c{ \DGxAHFDGMusicGlobal \clef "bass"
-
+aes4 | aes (bes) c | des2 des4 | %3
+ees2 ees4 | aes,2 ees'8 [des] | %5
+c4 (bes) aes | aes' (ees) f | %7
+g (aes) c, | ees2 ees4 | ees2 ees4 | %10
+aes,2 aes4 | des2 des4 | ees2 c4 | %13
+des2 bes4 | aes2 aes4 | ees'2 ees4 aes,2
 }
 
 DGxAHFDGMusicLH = \partCombine #'(2 . 20) \DGxAHFDGMusicLHA\DGxAHFDGMusicLHB
@@ -2837,26 +3229,62 @@ EBxDBEBMusicGlobal = {
 \set Staff.autoBeaming = ##f
 \numericTimeSignature
 \set Score.tempoHideNote = ##t
-\tempo 
+\tempo 4 = 68
+\time 6/8
+\key c \major
+\partial 8
 
 }
 
 EBxDBEBMusicRHA = \relative c'{ \EBxDBEBMusicGlobal \clef "treble"
-
+g'8 |  \nbp e [g] c e4 c8 | %2
+d [c] a c4 \lbp a8 | %3
+\nbp g [e] \pcAO c g'4 e8 | %4
+\nbp e4. (d4) \lbp f8 | %5
+\nbp e [g] c e4 c8 | %6
+d [c] a c4 \lbp a8 | %7
+\nbp g [e] \pcAO c e4 d8 \pcAp | %8
+\nbp c4.~c4 \cbp \pcAu g'8 \postCho | %9
+\nbp g [d] e f4 b8 | %10
+c [e,] f g4 \lbp g8 | %11
+\nbp fis [g] a c4 fis,8 | %12
+\nbp g4.~g4 \lbp f8 | %13
+\nbp e [g] c e4 c8 | %14
+d [c] a c4 \lbp a8 | %15
+\nbp g [e] \pcAO c e4 d8 \pcAp \nbp c4.~c4 \pcAu \he
 }
 
 EBxDBEBMusicRHB = \relative c'{ \EBxDBEBMusicGlobal \clef "treble"
-
+e8 | c [e] e g4 e8 | f4 f8 f4 f8 | %3
+e [c] c e4 c8 | c4. (b4) b8 | %5
+c [e] e g4 g8 | f4 f8 f4 f8 | %7
+e [c] c c4 b8 | c4.~c4 e8 | %9
+d4 c8 b4 f'8 | e [c] d e4 e8 | %11
+d4 d8 d4 c8 | b4.~b4 b8 | %13
+c [e] e g4 e8 | f4 f8 f4 f8 | %15
+e [c] c b4 b8 c4.~c4
 }
 
 EBxDBEBMusicRH = \partCombine #'(2 . 20) \EBxDBEBMusicRHA\EBxDBEBMusicRHB
 
 EBxDBEBMusicLHA = \relative c{ \EBxDBEBMusicGlobal \clef "bass"
-
+g'8 | g4 g8 c4 g8 | a4 c8 a4 c8 | %3
+c [g] e c'4 g8 | g4.~g4 g8 | %5
+g4 g8 c4 c8 | a4 c8 a4 c8 | %7
+c [g] e g4 f8 | e4.~e4 c'8 | %9
+b4 c8 g4 g8 | g4 g8 c4 c8 | %11
+a [b] c fis,4 a8 | g4.~g4 g8 | %13
+g4 g8 c4 g8 | a4 c8 a4 c8 | %15
+c [g] e g4 f8 e4.~e4
 }
 
 EBxDBEBMusicLHB = \relative c{ \EBxDBEBMusicGlobal \clef "bass"
-
+c8 | c4 c8 c4 c8 | f4 f8 f4 f8 | %3
+c4 c8 c4 c8 | g4.~g4 g8 | c4 c8 c4 e8 | %6
+f4 f8 f4 f,8 | g4 a8 g4 g8 | c4.~c4 c8 | %9
+g'4 g8 g,4 g8 | c4 c8 c4 c8 | %11
+d4 d8 d4 d8 | g,4.~g4 g8 | c4 c8 c4 c8 | %14
+f4 f8 f4 f,8 | g4 g8 g4 g8 c4.~c4
 }
 
 EBxDBEBMusicLH = \partCombine #'(2 . 20) \EBxDBEBMusicLHA\EBxDBEBMusicLHB
@@ -2870,7 +3298,7 @@ ECxAIECMusicGlobal = {
 \set Staff.autoBeaming = ##f
 \numericTimeSignature
 \set Score.tempoHideNote = ##t
-\tempo 
+\tempo 4 = 64
 \time 6/8
 \key es \major
 
@@ -3420,32 +3848,59 @@ FAxAZFAMusicGlobal = {
 \set Staff.autoBeaming = ##f
 \numericTimeSignature
 \set Score.tempoHideNote = ##t
-\tempo 
+\tempo 4 = 84
+\time 4/4
+\key f \major
 
 }
 
 FAxAZFAMusicRHA = \relative c'{ \FAxAZFAMusicGlobal \clef "treble"
-
+c'4. c8 d c a f | f2 d4 r \pcAO | %2
+c4. f8 a f c' a |  \nbp g2. r4 | %4
+c4. c8 d c a f | f2 d4 r | %6
+c4. f8 a g f e |  \nbp f2. r4 \cbp | %8
+g4. \postCho fis8 g a bes g | a2 c4 r | %10
+d4. d8 c a bes a |  \nbp g2. r4 | %12
+c4. c8 d c a f | f2 d4 r | %14
+c4. f8 a g f e \nbp f2. \he
 }
 
 FAxAZFAMusicRHB = \relative c'{ \FAxAZFAMusicGlobal \clef "treble"
-
+f4. f8 f f f c | d2 bes4 r | %2
+c4. c8 c c f f | e2. r4 | f4. f8 f f f c | %5
+d2 bes4 r | a4. c8 f c c c | c2. r4 | %8
+e4. dis8 e f g e | f2 f4 r | %10
+f4. f8 f f g f | e2. r4 | f4. f8 f f f c | %13
+d2 bes4 r | a4. c8 f c c c c2.
 }
 
 FAxAZFAMusicRH = \partCombine #'(2 . 20) \FAxAZFAMusicRHA\FAxAZFAMusicRHB
 
 FAxAZFAMusicLHA = \relative c{ \FAxAZFAMusicGlobal \clef "bass"
-
+a'4. a8 bes a c a | bes2 f4 r | %2
+a4. a8 a a a c \pcAO | c2. r4 | %4
+a4. a8 bes a c a | bes2 f4 r | %6
+f4. a8 c bes a g | a2. r4 | %8
+c4. c8 c c c c | c2 a4 r \pcAO | %10
+bes4. \pcAO bes8 c c c c | c2. r4 | %12
+a4. a8 bes a c a | bes2 f4 r | %14
+f4. a8 c bes a g a2.
 }
 
 FAxAZFAMusicLHB = \relative c{ \FAxAZFAMusicGlobal \clef "bass"
-
+f4. f8 f f f f | bes,2 bes4 r | %2
+f'4. f8 f f f a | c2. r4 | %4
+f,4. f8 f f f f | bes,2 bes4 r | %6
+c4. c8 c c c c | f2. r4 | c4. c8 c c c c | %9
+f2 f4 r | bes4. bes8 a f e f | c2. r4 | %12
+f4. f8 f f f f | bes,2 bes4 r | %14
+c4. c8 c c c c f2.
 }
 
 FAxAZFAMusicLH = \partCombine #'(2 . 20) \FAxAZFAMusicLHA\FAxAZFAMusicLHB
 
 FAxAZFAMusicLyrics = \relative c''''{ \FAxAZFAMusicGlobal \clef "treble" 
-\hideNotes \voiceFour 
+\hideNotes \voiceFour c4. c8 c8 c8 c8 c8 c2 c4 s4 c4. c8 c8 c8 c8 c8 c2. s4 c4. c8 c8 c8 c8 c8 c2 c4 s4 c4. c8 c8 c8 c8 c8 c2. s4 c4. c8 c8 c8 c8 c8 c2 c4 s4 c4. c8 c8 c8 c8 c8 c2. s4 c4. c8 c8 c8 c8 c8 c2 c4 s4 c4. c8 c8 c8 c8 c8 c2.
 }
 
 
