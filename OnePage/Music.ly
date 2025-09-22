@@ -2298,7 +2298,7 @@ CGxBBHCGMusicGlobal = {
 \set Staff.autoBeaming = ##f
 \numericTimeSignature
 \set Score.tempoHideNote = ##t
-\tempo 
+\tempo 4 = 90
 \time 6/8
 \key g \major
 }
