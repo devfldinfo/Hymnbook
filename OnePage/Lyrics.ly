@@ -2200,3 +2200,75 @@ FEVerseC = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 እ -- ሱን እ -- ከ -- ተ -- ለ -- ዋ -- ለሁ።
 }
 FEVerseCAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
+FFVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
+ኢ -- የ -- ሱስ እ -- የ -- መ -- ጣ ነው
+ወ -- ደ ላይ እንመ -- ል -- ከት
+ክርስቶስ በ -- ክ -- ብር ይ -- ታ -- ያል
+በ -- ታ -- ላቅ የ -- ድል ጩ -- ኸት
+የ -- ሁ -- ሉም ነ -- ገር ፍ -- ጻ -- ሜ
+በ -- ቅርቡ ይ -- መ -- ጣልና
+ወንጌ -- ልን የ -- ሚ -- ወ -- ዱ ግን
+ዘ -- ላ -- ለም ይ -- ኖ -- ራ -- ሉ
+}
+FFVerseAAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
+FFVerseB = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "2."} \set vocalName = \markup {\right-align "2."} 
+ኢ -- የ -- ሱስ እ -- የ -- መ -- ጣ ነው
+እንሰ -- ማ የ -- ሱን አ -- ዋዽ
+ም -- ድ -- ራ -- ዊ ደስታን እንተው
+በ -- ጥ -- በብ እንዘ -- ጋ -- ጅ
+ሰ -- ለ ክርስቶስ የ -- ተ -- ጣ -- ልን
+ሥ -- ቃ -- ዩን ስንቀ -- ም -- ስ
+ደስታ -- ውን እንካ -- ፈ -- ላ -- ለን
+በ -- ክ -- ብ -- ሩ ሲ -- መ -- ለስ
+}
+FFVerseBAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
+FFVerseC = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "3."} \set vocalName = \markup {\right-align "3."} 
+ኢ -- የ -- ሱስ እ -- የ -- መ -- ጣ ነው
+ስ -- ቃ -- ያ -- ችን ያ -- ል -- ቃል,
+ለ -- ኢ -- የ -- ሱስ የ -- ሰ -- ጠ -- ነው
+ሥ -- ጋ -- ችን ይ -- ለ -- ው -- ጣል
+ከ -- ዚ -- ያ ዘ -- ላ -- ለም ህ -- ብረት
+ደ -- ስ -- ታ -- ችን ይ -- ፈ -- ጽ -- ማል
+ለ -- ዘ -- ለአለም ምስጋ -- ና -- ችን
+ለ -- ሁ -- ሉን ቻይ ይ -- ሆ -- ናል
+}
+FFVerseCAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
+FGVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
+የ -- ኢ -- የ -- ሱ -- ስ ሕ -- ያ -- ው ቃ -- ል
+ለ -- እ -- ኔ ው -- ድ ዘ -- ር ነ -- ው
+መ -- መ -- ሪ -- ና መ -- ጽ -- ና -- ኛ
+የ -- ሚ -- ሰ -- ጠ -- ኝ ነ -- ው
+በ -- ል -- ቤ ው -- ስ -- ጥ ሲ -- ተ -- ከ -- ል
+በ -- እ -- ው -- ነ -- ት ስ -- ገ -- ዛ
+ዘ -- ሩ ሕ -- ይ -- ወ -- ት ይ -- ሰ -- ጣ -- ል
+በ -- ደ -- ስ -- ታ ስ -- ሰ -- ራ
+}
+FGVerseAAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
+FGChorus = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} 
+መ -- ላ -- ኮ -- ታ -- ዊ መ -- ል -- እ -- ክ -- ት
+የ -- ተ -- ባ -- ረ -- ከ ነ -- ው -- ።
+ብ -- ታ -- ዘ -- ዝ ለ -- ዘ -- ላ -- ለ -- ም
+ሕ -- ይ -- ወ -- ት አ -- ገ -- ኛ -- ለ -- ሁ
+}
+FGVerseB = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "2."} \set vocalName = \markup {\right-align "2."} 
+ል -- ቤ እ -- ን -- ደ መ -- ሬ -- ት ነ -- ው
+ዘ -- ሩ ይ -- ታ -- ጨ -- ዳ -- ል -- ?
+ድ -- ን -- ጋ -- ይ በ -- ው -- ስ -- ጤ አ -- ለ -- ?
+እ -- ሾ -- ህ -- ም ይ -- ገ -- ኛ -- ል -- ?
+ል -- ቤ ከ -- ደ -- ነ -- ደ -- ነ
+ጠ -- ላ -- ት ይ -- ሰ -- ር -- ቀ -- ኛ -- ል
+ጣ -- ፋ -- ጭ ፍ -- ሬ አ -- ይ -- ሆ -- ን -- ም
+ው -- ድ ዘ -- ሩ ይ -- ደ -- ር -- ቃ -- ል
+}
+FGVerseBAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
+FGVerseC = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "3."} \set vocalName = \markup {\right-align "3."} 
+ዘ -- ሪ -- ዎ -- ቹ -- ን ጠ -- ር -- ቶ -- አ -- ል
+ቤ -- ታ -- ቸ -- ው -- ን ጥ -- ለ -- ው
+ለ -- መ -- ዝ -- ራ -- ት ወ -- ጥ -- ተ -- ዋ -- ል
+በ -- የ -- ሱ -- ስ ፍ -- ቅ -- ር ነ -- ው
+የ -- መ -- ኸ -- ር ተ -- ስ -- ፋ ይ -- ዘ -- ው
+ወ -- ን -- ጌ -- ል ይ -- ሰ -- ብ -- ካ -- ሉ
+በ -- ፀ -- ሐ -- ይ በ -- ደ -- መ -- ና
+ቃ -- ሉ -- ን ይ -- ዘ -- ራ -- ሉ
+}
+FGVerseCAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
