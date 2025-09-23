@@ -1,9 +1,11 @@
 \version "2.18.2"
 #(ly:set-option 'point-and-click #f)
-\include "../Lib/HymnSetup.ly"
 \include "Lyrics.ly"
 chorusStr = Chorus
 \include "Music.ly"
+\include "../Lib/HymnSetup.ly"
+
+\include "../Lib/HymnLayoutOutput.ly"
 
 #(set! paper-alist (cons '("my size" . (cons (* 148 mm) (* 210 mm))) paper-alist))
 #(set-default-paper-size "my size")
@@ -95,8 +97,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {2}
@@ -141,8 +141,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {3}
@@ -189,8 +187,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {4}
@@ -237,8 +233,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {5}
@@ -285,8 +279,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {6}
@@ -335,8 +327,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {7}
@@ -381,8 +371,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {8}
@@ -429,8 +417,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {9}
@@ -479,8 +465,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {10}
@@ -525,8 +509,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {11}
@@ -573,8 +555,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {12}
@@ -617,8 +597,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {13}
@@ -667,8 +645,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {14}
@@ -715,8 +691,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {15}
@@ -763,8 +737,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {16}
@@ -815,8 +787,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {17}
@@ -865,8 +835,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {18}
@@ -915,8 +883,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {19}
@@ -965,8 +931,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {20}
@@ -1021,8 +985,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {21}
@@ -1065,8 +1027,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {22}
@@ -1115,8 +1075,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {23}
@@ -1165,8 +1123,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {24}
@@ -1219,8 +1175,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {25}
@@ -1263,8 +1217,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {26}
@@ -1309,8 +1261,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {27}
@@ -1359,8 +1309,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {28}
@@ -1409,8 +1357,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {29}
@@ -1457,8 +1403,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {30}
@@ -1505,8 +1449,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {31}
@@ -1551,8 +1493,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {32}
@@ -1601,8 +1541,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {33}
@@ -1649,8 +1587,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {34}
@@ -1699,8 +1635,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {35}
@@ -1747,8 +1681,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {36}
@@ -1797,8 +1729,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {37}
@@ -1847,8 +1777,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {38}
@@ -1895,8 +1823,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {39}
@@ -1945,8 +1871,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {40}
@@ -1995,8 +1919,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {41}
@@ -2043,8 +1965,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {42}
@@ -2093,8 +2013,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {43}
@@ -2141,8 +2059,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {44}
@@ -2187,8 +2103,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {45}
@@ -2237,8 +2151,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {46}
@@ -2287,8 +2199,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {47}
@@ -2343,8 +2253,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {48}
@@ -2389,8 +2297,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {49}
@@ -2435,8 +2341,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {50}
@@ -2479,8 +2383,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {51}
@@ -2527,8 +2429,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {52}
@@ -2577,8 +2477,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {53}
@@ -2627,8 +2525,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {54}
@@ -2677,8 +2573,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {55}
@@ -2729,8 +2623,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {56}
@@ -2777,8 +2669,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {57}
@@ -2825,8 +2715,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {58}
@@ -2875,8 +2763,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {59}
@@ -2919,8 +2805,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {60}
@@ -2965,8 +2849,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {61}
@@ -3015,8 +2897,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {62}
@@ -3065,8 +2945,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {63}
@@ -3113,8 +2991,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {64}
@@ -3163,8 +3039,6 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\include "../Lib/HymnLayoutOutput.ly"
-
 \markup \column{
     \justify-line {
         \fontsize #6 \bold {65}
@@ -3209,4 +3083,89 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {66}
+        \fontsize #6 \center-align \line {ኢየሱስ እየመጣ ነው}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Christ is coming (398)}
+    }
+    \vspace #-10
 }
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = FFStaffGroup <<
+      \context Staff = FFStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = FFVoiceLyrics \FFxCIHFFMusicLyrics
+        \context Voice = FFVoiceRH \FFxCIHFFMusicRH
+      >>
+      \new Lyrics  = FFLyricsA
+      \new Lyrics = FFLyricsAAlt
+      \new Lyrics  = FFLyricsB
+      \new Lyrics = FFLyricsBAlt
+      \new Lyrics  = FFLyricsC
+      \new Lyrics = FFLyricsCAlt
+
+      \context Staff = FFStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = FFVoiceLH \FFxCIHFFMusicLH
+      >>
+      \context Lyrics = FFLyricsA \lyricsto FFVoiceLyrics \FFVerseA
+      \context Lyrics = FFLyricsAAlt \lyricsto FFVoiceLyrics \FFVerseAAlt
+      \context Lyrics = FFLyricsB \lyricsto FFVoiceLyrics \FFVerseB
+      \context Lyrics = FFLyricsBAlt \lyricsto FFVoiceLyrics \FFVerseBAlt
+      \context Lyrics = FFLyricsC \lyricsto FFVoiceLyrics \FFVerseC
+      \context Lyrics = FFLyricsCAlt \lyricsto FFVoiceLyrics \FFVerseCAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {67}
+        \fontsize #6 \center-align \line {የኢየሱስ ሕያው ቃል}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {My heart was sad (107)}
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = FGStaffGroup <<
+      \context Staff = FGStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = FGVoiceLyrics \FGxAZGFGMusicLyrics
+        \context Voice = FGVoiceRH \FGxAZGFGMusicRH
+      >>
+      \new Lyrics  = FGLyricsA
+      \new Lyrics = FGLyricsAAlt
+      \new Lyrics  = FGLyricsB
+      \new Lyrics  = FGLyricsC
+      \new Lyrics = FGLyricsCAlt
+      \new Lyrics  = FGLyricsD
+      \new Lyrics = FGLyricsDAlt
+
+      \context Staff = FGStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = FGVoiceLH \FGxAZGFGMusicLH
+      >>
+      \context Lyrics = FGLyricsA \lyricsto FGVoiceLyrics \FGVerseA
+      \context Lyrics = FGLyricsAAlt \lyricsto FGVoiceLyrics \FGVerseAAlt
+      \context Lyrics = FGLyricsB \lyricsto FGVoiceLyrics \FGChorus
+      \context Lyrics = FGLyricsC \lyricsto FGVoiceLyrics \FGVerseB
+      \context Lyrics = FGLyricsCAlt \lyricsto FGVoiceLyrics \FGVerseBAlt
+      \context Lyrics = FGLyricsD \lyricsto FGVoiceLyrics \FGVerseC
+      \context Lyrics = FGLyricsDAlt \lyricsto FGVoiceLyrics \FGVerseCAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}}
