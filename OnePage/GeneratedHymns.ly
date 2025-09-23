@@ -3090,4 +3090,5 @@ chorusStr = Chorus
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
-}}
+}
+}
