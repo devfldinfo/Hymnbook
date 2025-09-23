@@ -31,9 +31,9 @@ chorusStr = Chorus
   ragged-right = ##f
   \context {
   \Lyrics
-  %\override LyricText #'font-name = #""Times New Roman""
-  %\override LyricText #'font-name = #""Bitstream Vera Sans""
-  \override LyricText #'font-name = #""Nyala""
+  %\override LyricText #'font-name = #"Times New Roman"
+  %\override LyricText #'font-name = #"Bitstream Vera Sans"
+  \override LyricText #'font-name = #"Nyala"
   %\override LyricText #'font-size = #+1
   %\override LyricText #'font-series = #'bold
   %\override LyricText #'font-series = #'medium-bold
