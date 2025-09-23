@@ -4168,3 +4168,153 @@ FExAFEMusicLyrics = \relative c''''{ \FExAFEMusicGlobal \clef "treble"
 \hideNotes \voiceFour c4 c8. c16 c4 c8. c16 c2 c4. s8 c4 c8. c16 c4 c8. c16 c2. s4 c4 c8. c16 c4 c8. c16 c2 c4 s4 c4 c8. c16 c4 c8. c16 c2. s4 c4 c8. c16 c4 c8. c16 c2 c4 s4 c4 c8. c16 c4 c8. c16 c2. s4 c4 c8. c16 c4 c8. c16 c2 c4. s8 c4 c8. c16 c8 s8 c8. c16 c2 s2 c4 c8. c16 c4 c8. c16 c2 c4. s8 c4 c8. c16 c4 c8. c16 c2. s4 c4 c8. c16 c4 c8. c16 c2 c4 s4 c4 c8. c16 c4 c8. c16 c2. s4 c4 c8. c16 c4 c8. c16 c2 c4
 }
 
+
+FFxCIHFFMusicGlobal = {
+\set Staff.autoBeaming = ##f
+\numericTimeSignature
+\set Score.tempoHideNote = ##t
+\tempo 4 = 66
+\time 3/4
+\key es \major
+\partial 4
+
+}
+
+FFxCIHFFMusicRHA = \relative c'{ \FFxCIHFFMusicGlobal \clef "treble"
+\pcAO ees8 f |  \nbp g4 g g8 aes | %2
+\nbp bes4 bes \lbp aes8 g | %3
+\nbp f4. f8 bes aes | %4
+\nbp g2 \pcAO \lbp ees8 f | %5
+\nbp g4 g g8 aes | %6
+\nbp bes4 bes \lbp aes8 g | %7
+\nbp f4. bes8 aes f \pcAO | %8
+\nbp ees2 \lbp bes'8 bes | %9
+\nbp ees4. ees8 d c | %10
+\nbp bes4 g \lbp bes8 bes | %11
+\nbp c4. ees8 d c | %12
+\nbp bes2 \pcAO \lbp ees,8 f | %13
+\nbp g4 g g8 aes | %14
+\nbp bes4 bes \lbp c8 bes | %15
+\nbp f4. bes8 aes f \pcAO \nbp ees2 \he
+}
+
+FFxCIHFFMusicRHB = \relative c'{ \FFxCIHFFMusicGlobal \clef "treble"
+ees8 ees | ees4 ees ees8 f | g4 g f8 ees | %3
+d4. d8 d f | ees2 ees8 ees | %5
+ees4 ees ees8 f | g4 g f8 ees | %7
+d4. d8 d d | ees2 g8 g | g4. g8 bes aes | %10
+g4 ees g8 g | aes4. aes8 aes aes | %12
+g2 ees8 ees | ees4 ees ees8 f | %14
+g4 g aes8 g | d4. d8 d d ees2
+}
+
+FFxCIHFFMusicRH = \partCombine #'(2 . 20) \FFxCIHFFMusicRHA\FFxCIHFFMusicRHB
+
+FFxCIHFFMusicLHA = \relative c{ \FFxCIHFFMusicGlobal \clef "bass"
+g'8 aes | bes4 bes bes8 bes | %2
+ees4 ees bes8 bes | bes4. bes8 bes bes | %4
+bes2 g8 aes | bes4 bes bes8 bes | %6
+ees4 ees bes8 bes | bes4. f8 f aes | %8
+g2 bes8 bes | bes4. bes8 bes ees | %10
+ees4 bes ees8 ees | ees4. c8 d ees | %12
+ees2 g,8 aes | bes4 bes bes8 bes | %14
+ees4 ees ees8 ees \pcAO | %15
+bes4. bes8 f aes g2
+}
+
+FFxCIHFFMusicLHB = \relative c{ \FFxCIHFFMusicGlobal \clef "bass"
+ees8 ees | ees4 ees ees8 ees | %2
+ees4 ees ees8 ees | bes4. bes8 bes d | %4
+ees2 ees8 ees | ees4 ees ees8 ees | %6
+ees4 ees ees8 ees | bes4. bes8 bes bes | %8
+ees2 ees8 ees | ees4. ees8 ees ees | %10
+ees4 ees ees8 ees | aes4. aes8 aes aes | %12
+ees2 ees8 ees | ees4 ees ees8 ees | %14
+ees4 ees ees8 ees | bes'4. bes,8 bes bes ees2
+}
+
+FFxCIHFFMusicLH = \partCombine #'(2 . 20) \FFxCIHFFMusicLHA\FFxCIHFFMusicLHB
+
+FFxCIHFFMusicLyrics = \relative c''''{ \FFxCIHFFMusicGlobal \clef "treble" 
+\hideNotes \voiceFour c8 c8 c4 c4 c8 c8 c4 c4 c8 c8 c4. c8 c8 c8 c2 c8 c8 c4 c4 c8 c8 c4 c4 c8 c8 c4. c8 c8 c8 c2 c8 c8 c4. c8 c8 c8 c4 c4 c8 c8 c4. c8 c8 c8 c2 c8 c8 c4 c4 c8 c8 c4 c4 c8 c8 c4. c8 c8 c8 c2
+}
+
+
+FGxAZGFGMusicGlobal = {
+\set Staff.autoBeaming = ##f
+\numericTimeSignature
+\set Score.tempoHideNote = ##t
+\tempo 4 = 74
+\time 6/8
+\key g \major
+\partial 8
+
+}
+
+FGxAZGFGMusicRHA = \relative c'{ \FGxAZGFGMusicGlobal \clef "treble"
+\pcAO d8 |  \nbp b'4 b8 b4 a8 | %2
+\nbp a g2 \lbp g8 |  \nbp g4 a8 g4 e8 | %4
+\nbp d4.~d4 \lbp d8 | %5
+\nbp b'4 b8 b4 a8 | a g2 \lbp b8 | %7
+\nbp b4 a8 cis4 a8 | %8
+\nbp d4.~d4 \lbp d8 | %9
+\nbp a4 b8 c4 c8 | c b2 \lbp b8 | %11
+\nbp b4 fis8 b4 a8 | %12
+\nbp g4.~g4 \lbp g8 | %13
+\nbp g4 g8 g4 e8 |  \nbp e d2 \lbp g8 | %15
+\nbp b4 b8 b4 a8 | %16
+\nbp g4.~g4 \cbp b8 \postCho | %17
+\nbp d4 d8 d4 b8 | a g2 \lbp b8 | %19
+\nbp d4 d8 d4 b8 | %20
+\nbp a4.~a4 \pcAO \lbp d,8 | %21
+\nbp b'4 b8 b4 d8 | d c2 \lbp a8 | %23
+\nbp g4 b8 b4 a8 \nbp g4.~g4 \he
+}
+
+FGxAZGFGMusicRHB = \relative c'{ \FGxAZGFGMusicGlobal \clef "treble"
+d8 | d4 d8 d4 c8 | c b2 b8 | %3
+c4 c8 c4 c8 | b4.~b4 b8 | d4 d8 d4 c8 | %6
+c b2 d8 | d4 d8 g4 g8 | %8
+fis4.~fis4 fis8 | fis4 fis8 fis4 fis8 | %10
+fis g2 d8 | dis4 dis8 dis4 dis8 | %12
+e4.~e4 e8 | e4 e8 e4 c8 | c b2 b8 | %15
+d4 d8 d4 c8 | b4.~b4 g'8 | g4 g8 g4 g8 | %18
+fis d2 g8 | g4 g8 g4 g8 | %20
+fis4.~fis4 d8 | d4 d8 d4 f8 | %22
+e e2 e8 | d4 d8 d4 c8 b4.~b4
+}
+
+FGxAZGFGMusicRH = \partCombine #'(2 . 20) \FGxAZGFGMusicRHA\FGxAZGFGMusicRHB
+
+FGxAZGFGMusicLHA = \relative c{ \FGxAZGFGMusicGlobal \clef "bass"
+d'8 | g,4 g8 g4 fis8 | fis d2 d8 | %3
+e4 e8 e4 g8 | g4.~g4 g8 | %5
+g4 g8 g4 fis8 | fis d2 g8 | %7
+fis4 fis8 a4 a8 | a4.~a4 a8 | %9
+c4 b8 a4 a8 | a \pcAp g2 \pcAu g8 | %11
+fis4 fis8 fis4 b8 | b4.~b4 b8 | %13
+c4 c8 c4 g8 | g g2 g8 | g4 g8 g4 fis8 | %16
+g4.~g4 \pcAO g8 | b4 b8 b4 d8 | %18
+c b2 d8 | b4 b8 b4 d8 | %20
+d4.~d4 fis,8 | g4 g8 g4 g8 | %22
+g g2 c8 | b4 g8 g4 fis8 g4.~g4
+}
+
+FGxAZGFGMusicLHB = \relative c{ \FGxAZGFGMusicGlobal \clef "bass"
+d8 | g,4 g8 g4 d'8 | d g,2 g8 | %3
+c4 c8 c4 c8 | g4.~g4 g8 | g4 g8 g4 d'8 | %6
+d g,2 g8 | a4 a8 a4 cis8 | %8
+d4.~d4 d8 | d4 d8 d4 d8 | d g2 g,8 | %11
+b4 b8 b4 b8 | e4.~e4 e8 | c4 c8 c4 c8 | %14
+g g2 g8 | d'4 d8 d4 d8 | g,4.~g4 g'8 | %17
+g4 g8 g4 g8 | d g2 g8 | g4 g8 g4 g8 | %20
+d4.~d4 d8 | g,4 g8 g4 b8 | c c2 c8 | %23
+d4 d8 d4 d8 g,4.~g4
+}
+
+FGxAZGFGMusicLH = \partCombine #'(2 . 20) \FGxAZGFGMusicLHA\FGxAZGFGMusicLHB
+
+FGxAZGFGMusicLyrics = \relative c''''{ \FGxAZGFGMusicGlobal \clef "treble" 
+\hideNotes \voiceFour c8 c4 c8 c4 c8 c8 c2 c8 c4 c8 c4 c8 c4. s4 c8 c4 c8 c4 c8 c8 c4 s4 c8 c4 c8 c4 c8 c4. s4 c8 c4 c8 c4 c8 c8 c8 s4. c8 c4 c8 c4 c8 c4. s4 c8 c4 c8 c4 c8 c8 c2 c8 c4 c8 c4 c8 c4. s4 c8 c4 c8 c4 c8 c8 c4 s4 c8 c4 c8 c4 c8 c4. s4 c8 c4 c8 c4 c8 c8 c8 s4. c8 c4 c8 c4 c8 c4. s4
+}
+
