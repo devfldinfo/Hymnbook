@@ -1,10 +1,10 @@
 \version "2.18.2"
 \include "../Lib/LyricsCommon.ly"
 AVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-ስ - -- - ለ - -- - የ - -- - ሱ -- ስ ብ - -- - ዙ ላ - -- - ው -- ቅ
-ፀ - -- - ጋ - -- - ው -- ን ለ - -- - ሌ - -- - ሎ -- ች ላ - -- - ሳ -- ይ
-ብ - -- - ዙ መ - -- - ዳ - -- - ኑ ል - -- - ማ - -- - ረ -- ው
-የ - -- - ሞ - -- - ተ - -- - ል -- ን ብ - -- - ዙ ፍ - -- - ቅ -- ር -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+ስ -- ለ -- የ -- ሱስ ብ -- ዙ ላ -- ውቅ
+ፀ -- ጋ -- ውን ለ -- ሌ -- ሎች ላ -- ሳይ
+ብ -- ዙ መ -- ዳ -- ኑ ል -- ማ -- ረው
+የ -- ሞ -- ተ -- ልን ብ -- ዙ ፍ -- ቅር።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 ብ -- ዙ ስ -- ለ -- የ -- ሱስ
 ብ -- ዙ ስ -- ለ -- የ -- ሱስ
 ብ -- ዙ መ -- ዳ -- ኑ ል -- ማ -- ረው
@@ -33,14 +33,14 @@ AVerseD = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName 
 }
 AVerseDAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 BVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-ሊ - -- - ረ - -- - ዳ -- ን የ - -- - ሚ - -- - ች -- ል አ - -- - ለ -- ?
-የ - -- - ኛ -- ን ል -- ብ የ - -- - ሚ - -- - ረ - -- - ዳ
-የ - -- - ኑ - -- - ሮ እ - -- - ሾ -- ህ
-የ - -- - ኛ ል -- ብ ሲ - -- - ጎ - -- - ዳ
-ሀ - -- - ዘ - -- - ና - -- - ች -- ን የ - -- - ሚ - -- - ሰ - -- - ማ -- ው
-በ - -- - ረ - -- - ከ - -- - ቱ -- ን አ -- ብ -- ዝ - -- - ቶ
-በ - -- - ፍ - -- - ቅ - -- - ር -- ን የ - -- - ሚ - -- - ሰ - -- - ጠ -- ው
-የ - -- - ሱ -- ስ ነ -- ው -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+ሊ -- ረ -- ዳን የ -- ሚ -- ችል አ -- ለ?
+የ -- ኛን ልብ የ -- ሚ -- ረ -- ዳ
+የ -- ኑ -- ሮ እ -- ሾህ
+የ -- ኛ ልብ ሲ -- ጎ -- ዳ
+ሀ -- ዘ -- ና -- ችን የ -- ሚ -- ሰ -- ማው
+በ -- ረ -- ከ -- ቱን አብዝ -- ቶ
+በ -- ፍ -- ቅ -- ርን የ -- ሚ -- ሰ -- ጠው
+የ -- ሱስ ነው።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 ኢ -- የ -- ሱስ እ -- ሱ ነው
 ወ -- ዳጅ ኢ -- የ -- ሱስ፣ እ -- ሱ፣ ብ -- ቻ ነው
 መ -- ከ -- ራ ሲ -- ያስቸ -- ግር
@@ -183,10 +183,10 @@ EVerseD = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName 
 }
 EVerseDAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 FVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-ሁ - -- - ሉ እ - -- - ያ - -- - ለ -- ው በ - -- - ሰ - -- - ማ -- ይ
-ለ - -- - ኔ ብ - -- - ሎ ት - -- - ቶ መ - -- - ጣ
-አ - -- - ዳ - -- - ኙ ሊ - -- - ሰ - -- - ቃ -- ይ መ - -- - ጣ
-ለ - -- - ኔ ነ - -- - በ -- ር የ - -- - ሞ - -- - ተ - -- - ል -- ኝ -- ?  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+ሁ -- ሉ እ -- ያ -- ለው በ -- ሰ -- ማይ
+ለ -- ኔ ብ -- ሎ ት -- ቶ መ -- ጣ
+አ -- ዳ -- ኙ ሊ -- ሰ -- ቃይ መ -- ጣ
+ለ -- ኔ ነ -- በር የ -- ሞ -- ተ -- ልኝ?  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 ለ -- ኔ ነ -- በር፣ ለ -- ኔ ነ -- በር፣
 የ -- በ -- ለ -- ጠ ያምላክ ፍ -- ቅር፣
 ግ -- ሩም ፍ -- ቅር እ -- ና ጸ -- ጋ
@@ -215,10 +215,10 @@ FVerseD = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName 
 }
 FVerseDAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 GVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-አ -- ን -- ድ መ -- ን -- ግ -- ስ -- ት አ - -- - ለ -- ፣ ዘ - -- - ላ - -- - ለ - -- - ማ - -- - ዊ መ -- ን -- ግ -- ስ -- ት
-የ - -- - ደ -- ስ -- ታ ሰ - -- - ላ -- ም -- ና የ - -- - ጽ -- ድ -- ቅ መ -- ን -- ግ -- ስ -- ት ነ -- ው
-ው -- ስ -- ጡ ሁ - -- - ሉ -- ም ድ -- ን -- ቅ ነ -- ው -- ፣ የ - -- - ማ -- ይ -- ጠ - -- - ፋ ሀ -- ብ -- ት ያ - -- - ለ -- ው -- ፣
-ወ - -- - ዳ - -- - ጄ ታ -- ው -- ቃ - -- - ለ -- ህ -- ፣ መ -- ን -- ግ -- ስ -- ት ቅ -- ር -- ብ ነ -- ው -- ?  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+አንድ መንግስት አ -- ለ፣ ዘ -- ላ -- ለ -- ማ -- ዊ መንግስት
+የ -- ደስታ ሰ -- ላምና የ -- ጽድቅ መንግስት ነው
+ውስጡ ሁ -- ሉም ድንቅ ነው፣ የ -- ማይጠ -- ፋ ሀብት ያ -- ለው፣
+ወ -- ዳ -- ጄ ታውቃ -- ለህ፣ መንግስት ቅርብ ነው?  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 የ -- ዚህ መንግስት ን -- ጉስ
 ቡ -- ራ -- ኬ ያ -- መ -- ጣል፣
 የ -- ል -- ብህን ዙ -- ፋ -- ኑ
@@ -268,10 +268,10 @@ HVerseD = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName 
 }
 HVerseDAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 IVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-ወ - -- - ደ አ -- ን -- ተ ~ - -- - ~ - -- - -  እ -- ን -- መ - -- - ጣ - -- - ለ -- ን
-የ - -- - መ -- ን -- ፈ -- ስ ድ - -- - ሆ -- ች ሆ - -- - ነ -- ን -- ፤
-ሹ -- ክ -- ሹ -- ክ -- ታ - -- - ህ ለ - -- - ል - -- - ባ - -- - ች - -- - ን -- ን
-እ -- ን -- ድ -- ን -- ሰ - -- - ማ እ -- ር -- ዳ -- ን -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+ወ -- ደ አንተ ~ -- ~ -- -  እንመ -- ጣ -- ለን
+የ -- መንፈስ ድ -- ሆች ሆ -- ነን፤
+ሹክሹክታ -- ህ ለ -- ል -- ባ -- ች -- ንን
+እንድንሰ -- ማ እርዳን።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 ለ -- ልብ ተ -- ና -- ገርለት፣
 በ -- የ -- ቀ -- ኑ በ -- መንገ -- ዱ፤
 ተ -- ና -- ገር ጌ ~ -- ~ -- -  ታ ሆይ
@@ -300,14 +300,14 @@ IVerseD = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName 
 }
 IVerseDAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 AZVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-ጌ - -- - ታ - -- - ዬ ሆ -- ይ ተ - -- - ና - -- - ገ -- ር -- ፤
-ን - -- - ገ - -- - ረ -- ኝ በ - -- - ፍ - -- - ቅ -- ር
-ብ - -- - ቻ - -- - ሽ -- ን አ -- ል -- ተ - -- - ው - -- - ሽ -- ም -- ፣
-ለ - -- - ነ -- ፍ -- ሴ ን - -- - ገ - -- - ራ -- ት
-ል - -- - ቤ -- ን ክ - -- - ፈ -- ት ል - -- - ሰ - -- - ማ
-ቶ - -- - ሎ ድ -- ም -- ፅ -- ህ -- ን መ -- ስ -- ማ -- ት
-ነ -- ፍ -- ሴ -- ን በ - -- - ም -- ስ -- ጋ - -- - ና - -- - ና
-ደ -- ስ -- ታ እ -- ን -- ድ -- ት -- ሞ - -- - ላ -- ት -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+ጌ -- ታ -- ዬ ሆይ ተ -- ና -- ገር፤
+ን -- ገ -- ረኝ በ -- ፍ -- ቅር
+ብ -- ቻ -- ሽን አልተ -- ው -- ሽም፣
+ለ -- ነፍሴ ን -- ገ -- ራት
+ል -- ቤን ክ -- ፈት ል -- ሰ -- ማ
+ቶ -- ሎ ድምፅህን መስማት
+ነፍሴን በ -- ምስጋ -- ና -- ና
+ደስታ እንድትሞ -- ላት።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 ዛ -- ሬ ቃልህን ል -- ሰ -- ማ፣
 ን -- ገ -- ረኝ በ -- ፍ -- ቅር
 "አንተ አ -- ሸ -- ና -- ፊ ነህ"፣
@@ -402,10 +402,10 @@ ABVerseC = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 }
 ABVerseCAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 ACVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-እ -- ር -- ም - -- - ጃ - -- - ህ -- ን እ - -- - ኔ እ - -- - ከ - -- - ተ - -- - ላ - -- - ለ -- ሁ
-መ -- ን -- ገ - -- - ዱ አ -- ስ -- ቸ - -- - ጋ - -- - ሪ ቢ - -- - ሆ - -- - ን -- ም
-ም - -- - ን -- ም እ -- ን -- ኳ -- ን ፈ - -- - ተ - -- - ና ቢ - -- - ገ - -- - ጥ - -- - መ -- ኝ
-እ -- ን -- ድ - -- - ተ - -- - ው -- ህ አ -- ል -- ች - -- - ል -- ም -- ፤ እ - -- - ከ - -- - ተ - -- - ላ - -- - ለ -- ሁ -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+እርም -- ጃ -- ህን እ -- ኔ እ -- ከ -- ተ -- ላ -- ለሁ
+መንገ -- ዱ አስቸ -- ጋ -- ሪ ቢ -- ሆ -- ንም
+ም -- ንም እንኳን ፈ -- ተ -- ና ቢ -- ገ -- ጥ -- መኝ
+እንድ -- ተ -- ውህ አልች -- ልም፤ እ -- ከ -- ተ -- ላ -- ለሁ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 አ -- ሳልፌ ነፍሴን
 እ -- ሰ -- ጥ -- ሃ -- ለሁ
 መ -- ከ -- ራ -- ህን እንኳን
@@ -529,10 +529,10 @@ AFVerseE = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 }
 AFVerseEAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 AGVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-ካ - -- - ዳ -- ኝ ጋ -- ር መ - -- - ጓ -- ዝ አ - -- - ለ - -- - ብ -- ኝ
-ብ - -- - ቻ - -- - ዬ -- ን አ -- ል -- ደ - -- - ፍ - -- - ር -- ም
-እ - -- - ሱ ቅ -- ር -- ብ መ - -- - ሆ -- ን አ - -- - ለ - -- - በ -- ት
-ሁ -- ል -- ጊ - -- - ዜ እ - -- - ኔ -- ን ደ - -- - ግ -- ፍ -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+ካ -- ዳኝ ጋር መ -- ጓዝ አ -- ለ -- ብኝ
+ብ -- ቻ -- ዬን አልደ -- ፍ -- ርም
+እ -- ሱ ቅርብ መ -- ሆን አ -- ለ -- በት
+ሁልጊ -- ዜ እ -- ኔን ደ -- ግፍ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 ነፍሴ ክ -- ፉ አትፈ -- ራም
 እንደ አ -- ሻው ይ -- ም -- ራኝ
 ያ -- ለ ቅ -- ሬ -- ታ እንድ -- ሄድ
@@ -561,10 +561,10 @@ AGVerseD = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 }
 AGVerseDAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 AHVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-በ - -- - ም - -- - ድ -- ር ላ -- ይ አ -- ን -- ድ ሕ -- ይ -- ወ -- ት አ - -- - ለ -- ኝ
-እ - -- - ና እ -- ን -- ደ ት - -- - ነ -- ት ያ - -- - ል - -- - ፋ -- ል
-ዋ - -- - ጋ ያ - -- - ለ -- ው ሀ -- ብ -- ት እ - -- - ሰ - -- - ራ - -- - ለ -- ሁ
-ፀ - -- - ሐ -- ይ ከ - -- - መ - -- - ጥ - -- - ለ - -- - ቋ በ - -- - ፊ -- ት -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+በ -- ም -- ድር ላይ አንድ ሕይወት አ -- ለኝ
+እ -- ና እንደ ት -- ነት ያ -- ል -- ፋል
+ዋ -- ጋ ያ -- ለው ሀብት እ -- ሰ -- ራ -- ለሁ
+ፀ -- ሐይ ከ -- መ -- ጥ -- ለ -- ቋ በ -- ፊት።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 አንድ ሕይወት ለ -- መስጠት
 ከ -- አምላክ መ -- ያዝ አልቻልኩምና
 አንድ ሕይወት ለ -- መ -- ኖር
@@ -593,10 +593,10 @@ AHVerseD = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 }
 AHVerseDAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 AIVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-እ -- ግ -- ዚ -- አ -- ብ -- ሔ -- ር ይ - -- - ጋ - -- - ብ - -- - ዝ - -- - ሃ -- ል
-ወ - -- - ደ ን - -- - ጹ -- ህ ሕ -- ይ -- ወ -- ት -- ፣ ና
-ሙ - -- - ሉ - -- - ና ነ - -- - ፃ መ - -- - ዳ -- ን ነ -- ው -- ፣
-በ - -- - መ -- ል -- ካ -- ም ጊ - -- - ዜ ው -- ስ -- ጥ -- ፣ ና -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+እግዚአብሔር ይ -- ጋ -- ብ -- ዝ -- ሃል
+ወ -- ደ ን -- ጹህ ሕይወት፣ ና
+ሙ -- ሉ -- ና ነ -- ፃ መ -- ዳን ነው፣
+በ -- መልካም ጊ -- ዜ ውስጥ፣ ና።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 ከ -- ም -- ንም መ -- ዳን ይ -- ል -- ቃል
 በ -- ም -- ድር ወይም በ -- ሰ -- ማይ
 ከ -- ም -- ንም መ -- ዳን ይ -- ል -- ቃል
@@ -685,10 +685,10 @@ BAVerseC = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 }
 BAVerseCAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 BBVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-የ - -- - ኢ - -- - የ - -- - ሱ -- ስ ብ - -- - ሩ -- ክ ዱ - -- - ካ
-መ -- ን -- ገ - -- - ዱ -- ን ያ - -- - ሳ - -- - ያ - -- - ሉ
-በ - -- - ጨ - -- - ለ - -- - ማ እ -- ን -- ደ መ - -- - ብ -- ራ -- ት -- ፣
-በ - -- - ብ - -- - ሩ -- ህ ማ - -- - ሰ - -- - ራ - -- - ጨ -- ት -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+የ -- ኢ -- የ -- ሱስ ብ -- ሩክ ዱ -- ካ
+መንገ -- ዱን ያ -- ሳ -- ያ -- ሉ
+በ -- ጨ -- ለ -- ማ እንደ መ -- ብራት፣
+በ -- ብ -- ሩህ ማ -- ሰ -- ራ -- ጨት።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 ውድ የ -- አ -- ዳኝ እርም -- ጃ -- ዎች
 ለ -- ኔ ዋ -- ጋ ያ -- ለው ሀብት ነው
 ከ -- ኃ -- ጢ -- አት መንገድ ሳ -- በኝ
@@ -718,14 +718,14 @@ BBVerseD = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 }
 BBVerseDAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 BCVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-ሥ - -- - ጋ ሁ - -- - ሉ -- ም እ -- ን -- ደ ሣ -- ር -- ፣
-ቶ - -- - ሎ ይ - -- - ደ -- ር -- ቃ - -- - ል - -- - ና -- ፣
-አ - -- - በ - -- - ባ - -- - ው -- ም ይ - -- - ረ -- ግ -- ፋ -- ል -- ፤
-ን ~ - -- - ~ - -- - -  ቁ -- ።
-ወ - -- - ቅ - -- - ቶ -- ች ሲ - -- - ቀ - -- - የ - -- - ሩ
-መ - -- - ል - -- - እ -- ክ -- ት ይ - -- - ና - -- - ገ - -- - ሩ -- ፣
-ሕ -- ይ -- ወ -- ት በ - -- - ጣ -- ም አ - -- - ጭ -- ር ነ -- ው -- ፡
-ን ~ - -- - ~ - -- - -  ቁ -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+ሥ -- ጋ ሁ -- ሉም እንደ ሣር፣
+ቶ -- ሎ ይ -- ደርቃ -- ል -- ና፣
+አ -- በ -- ባ -- ውም ይ -- ረግፋል፤
+ን ~ -- ~ -- -  ቁ።
+ወ -- ቅ -- ቶች ሲ -- ቀ -- የ -- ሩ
+መ -- ል -- እክት ይ -- ና -- ገ -- ሩ፣
+ሕይወት በ -- ጣም አ -- ጭር ነው፡
+ን ~ -- ~ -- -  ቁ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 በ -- ጊ -- ዜ፣ ን ~ -- ~ -- -  ቁ፤
 የ -- ጌ -- ታ ድምፅ ሲ -- ጠ -- ራ -- ችሁ፣
 በ -- ጊ -- ዜ።
@@ -769,10 +769,10 @@ BCVerseD = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 }
 BCVerseDAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 BDVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-ጌ - -- - ታ ሆ -- ይ ሁ -- ል -- ጊ - -- - ዜ
-ታ -- ስ -- ፈ - -- - ል - -- - ገ - -- - ኛ - -- - ለ -- ህ
-የ - -- - ኔ አ - -- - ዳ -- ኝ ባ -- ር -- ከ -- ኝ
-ሰ - -- - ላ -- ም ~ - -- - ~ - -- - -  ስ ~ - -- - ~ - -- - -  ጠ -- ኝ -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+ጌ -- ታ ሆይ ሁልጊ -- ዜ
+ታስፈ -- ል -- ገ -- ኛ -- ለህ
+የ -- ኔ አ -- ዳኝ ባርከኝ
+ሰ -- ላም ~ -- ~ -- -  ስ ~ -- ~ -- -  ጠኝ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 አንተን እ -- ፈ -- ልግሃ -- ለሁ
 ሁ -- ሌም በ -- የ -- ቀ -- ኑ
 አ -- ዳ -- ኜ ባርከኝ አ -- ሁን
@@ -841,10 +841,10 @@ BEVerseC = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 }
 BEVerseCAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 BFVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-በ - -- - ጌ - -- - ታ የ - -- - ተ - -- - ወ - -- - ደ - -- - ደ -- ን
-ስ - -- - ና - -- - ወ -- ቅ ያ - -- - በ - -- - ረ - -- - ታ - -- - ና -- ል
-እ - -- - ሱ መ - -- - ረ - -- - ጠ -- ን ደ -- ስ አ - -- - ለ -- ን
-የ - -- - ተ - -- - ዋ - -- - ረ - -- - ደ -- ን ስ -- ን -- ሆ -- ን -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+በ -- ጌ -- ታ የ -- ተ -- ወ -- ደ -- ደን
+ስ -- ና -- ወቅ ያ -- በ -- ረ -- ታ -- ናል
+እ -- ሱ መ -- ረ -- ጠን ደስ አ -- ለን
+የ -- ተ -- ዋ -- ረ -- ደን ስንሆን።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 ያንተን ሞ -- ገስ እንድ -- ና -- ገኝ
 ኦ ታ -- ማኝ እንድ -- ን -- ሆን
 ሁልጊ -- ዜ አ -- ላ -- ማ -- ችን ነው
@@ -866,10 +866,10 @@ BFVerseC = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 }
 BFVerseCAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 BGVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-ነ -- ፍ -- ሴ -- ን እ -- ን -- ደ ድ - -- - ረ -- ቅ መ - -- - ሬ -- ት
-ዝ - -- - ና - -- - ቡ -- ን እ -- ን -- ደ - -- - ሚ - -- - ጠ - -- - በ -- ቅ
-እ -- ን -- ደ - -- - ገ - -- - ና በ - -- - ም -- ህ -- ረ - -- - ት -- ህ
-ዝ -- ም አ - -- - ት - -- - በ -- ል -- ፣ ተ - -- - ና - -- - ገ - -- - ረ -- ኝ -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+ነፍሴን እንደ ድ -- ረቅ መ -- ሬት
+ዝ -- ና -- ቡን እንደ -- ሚ -- ጠ -- በቅ
+እንደ -- ገ -- ና በ -- ምህረ -- ትህ
+ዝም አ -- ት -- በል፣ ተ -- ና -- ገ -- ረኝ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 ነፍሴ አንተን ስትመ -- ለ -- ከት
 እ -- ኔ ሰ -- ላም አ -- ገ -- ኛ -- ለሁ
 የ -- ኔ ተስፋ ሲ -- ጠ -- ፋ -- ብኝ፣
@@ -898,10 +898,10 @@ BGVerseD = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 }
 BGVerseDAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 BHVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-የ - -- - ክ -- ር -- ስ -- ቶ -- ስ ን - -- - ፁ -- ህ ል -- ብ
-በ - -- - ው -- ስ -- ጤ ይ - -- - ን - -- - ገ -- ሥ -- ፣
-ከ - -- - ል - -- - ቤ እ -- ን -- ዳ - -- - ገ -- ል -- ገ - -- - ል -- ው
-እ -- ር -- ሱ -- ን ል - -- - ታ - -- - ዘ - -- - ዘ -- ው -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+የ -- ክርስቶስ ን -- ፁህ ልብ
+በ -- ውስጤ ይ -- ን -- ገሥ፣
+ከ -- ል -- ቤ እንዳ -- ገልገ -- ልው
+እርሱን ል -- ታ -- ዘ -- ዘው።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 መንፈስ ቅ -- ዱስ ም -- ራኝ፤
 እ -- ግሬ እንዲ -- ፈ -- ጥን፣
 እንዳ -- ገኝ የ -- ሱን ሽ -- ል -- ማት፡
@@ -994,10 +994,10 @@ CZVerseD = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 }
 CZVerseDAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 CAVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-ት - -- - ግ - -- - ሎ -- ች ቢ - -- - መ ~ - -- - ~ - -- - -  ጣ - -- - ብ - -- - ኝ -- ም -- ፣
-እ - -- - ሾ -- ህ እ -- ን -- ኳ -- ን ቢ ~ - -- - ~ - -- - -  ወ - -- - ጋ - -- - ኝ -- ም -- ፣
-አ -- ን -- ድ ሀ - -- - ሳ -- ብ በ - -- - ጣ -- ም መ -- ል -- ካ -- ም ነ -- ው -- ፡
-ጌ - -- - ታ - -- - ዬ አ - -- - ስ - -- - በ -- ኝ -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+ት -- ግ -- ሎች ቢ -- መ ~ -- ~ -- -  ጣ -- ብ -- ኝም፣
+እ -- ሾህ እንኳን ቢ ~ -- ~ -- -  ወ -- ጋ -- ኝም፣
+አንድ ሀ -- ሳብ በ -- ጣም መልካም ነው፡
+ጌ -- ታ -- ዬ አ -- ስ -- በኝ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 ጌ -- ታ -- ዬ፣ አ -- ስ -- በኝ
 ጌ -- ታ -- ዬ፣ አ -- ስ -- በኝ
 ካንተ ጋር ም -- ንም አልፈ -- ራም።
@@ -1019,14 +1019,14 @@ CAVerseC = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 }
 CAVerseCAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 CBVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-በ - -- - ሰ - -- - ማ -- ይ ክ - -- - ብ -- ር -- ፣
-ከ - -- - ላ -- ይ ካ - -- - ለ -- ው ዙ - -- - ፋ - -- - ኑ -- ፣
-በ - -- - ግ - -- - ሩ -- ም ፍ - -- - ቅ -- ር
-ቤ - -- - ዛ - -- - ች -- ን መ - -- - ጣ -- ።
-ኦ -- ፣ ህ - -- - መ -- ም -- ና ሀ - -- - ዘ -- ን
-በ - -- - እ -- ን -- ጨ -- ት ላ -- ይ ስ - -- - ቃ - -- - ዩ
-ለ - -- - ሰ -- ው ሁ - -- - ሉ ሞ - -- - ተ -- ፣
-ለ - -- - ኔ - -- - ና ላ -- ን -- ተ -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+በ -- ሰ -- ማይ ክ -- ብር፣
+ከ -- ላይ ካ -- ለው ዙ -- ፋ -- ኑ፣
+በ -- ግ -- ሩም ፍ -- ቅር
+ቤ -- ዛ -- ችን መ -- ጣ።
+ኦ፣ ህ -- መምና ሀ -- ዘን
+በ -- እንጨት ላይ ስ -- ቃ -- ዩ
+ለ -- ሰው ሁ -- ሉ ሞ -- ተ፣
+ለ -- ኔ -- ና ላንተ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 አ -- ዳ -- ኜ፣ ነ -- ፃ
 እንድ -- ወ -- ጣ ሞ -- ተ -- ሃል፥
 በ -- ሙ -- ሉ ል -- ቤ
@@ -1099,10 +1099,10 @@ CCVerseD = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 }
 CCVerseDAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 CDVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-መ - -- - ሸ - -- - ሸ - -- - ጊ - -- - ያ የ -- ት ነ -- ው -- ?
-ማ - -- - ዕ - -- - በ -- ል ሲ - -- - ቃ - -- - ረ -- ብ -- ፣
-ደ - -- - ህ - -- - ን -- ነ -- ት -- ን እ -- ን -- ዳ - -- - ገ -- ኝ -- ፣
-ያ - -- - ለ ፍ -- ር -- ሃ -- ት መ - -- - ኖ -- ር -- ?  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+መ -- ሸ -- ሸ -- ጊ -- ያ የት ነው?
+ማ -- ዕ -- በል ሲ -- ቃ -- ረብ፣
+ደ -- ህ -- ንነትን እንዳ -- ገኝ፣
+ያ -- ለ ፍርሃት መ -- ኖር?  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 የ -- ሱስ ብ -- ቻ ያ -- ድንኛል፣
 ደስታ -- ዬ ይ -- ጨ -- ም -- ራል፥
 ከ -- ማ -- ዕ -- በል ጠ -- በ -- ቀኝ፣
@@ -1159,10 +1159,10 @@ CEVerseD = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 }
 CEVerseDAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 CFVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-የ - -- - ጌ - -- - ታ -- ን ቃ -- ል ነ - -- - ጹ -- ህ -- ና ክ - -- - ቡ -- ር ለ - -- - ኔ -- ፥
-የ - -- - ሱ ት -- ም -- ህ -- ር -- ት የ - -- - ም - -- - ወ - -- - ደ -- ው
-ለ - -- - እ - -- - ግ -- ር መ - -- - ብ -- ራ -- ት ለ - -- - መ -- ን -- ገ - -- - ድ -- ም ብ -- ር -- ሃ -- ን -- ፣
-በ - -- - ም - -- - ድ -- ር ላ -- ይ ቀ - -- - ና -- ት ሲ - -- - ያ -- ል -- ፍ -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+የ -- ጌ -- ታን ቃል ነ -- ጹህና ክ -- ቡር ለ -- ኔ፥
+የ -- ሱ ትምህርት የ -- ም -- ወ -- ደው
+ለ -- እ -- ግር መ -- ብራት ለ -- መንገ -- ድም ብርሃን፣
+በ -- ም -- ድር ላይ ቀ -- ናት ሲ -- ያልፍ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 በ -- ም -- ድር ካ -- ለው ሁ -- ሉ ይ -- በ -- ል -- ጣል፣
 ከ -- ብርና ከ -- ወርቅ ይ -- ሻ -- ላል፣
 በ -- ጌ -- ታ -- ዬ እ -- ግር ስር ለ -- መ -- ቀ -- መጥ
@@ -1191,10 +1191,10 @@ CFVerseD = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 }
 CFVerseDAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 CGVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-የ - -- - ተ - -- - ባ - -- - ረ - -- - ከ ጊ - -- - ዜ ነ -- ው -- ፣
-የ - -- - የ - -- - ሱ -- ስ ህ -- ብ -- ረ -- ት ሳ - -- - ገ -- ኝ -- ፥ ~ - -- - ~ - -- - - 
-ን - -- - ጹ -- ህ የ - -- - ማ - -- - ዳ -- ን ም -- ን -- ጭ ሲ - -- - ፈ -- ል -- ቅ -- ፣
-ም -- ህ -- ረ - -- - ቱ -- ን ሲ - -- - ፈ - -- - ሰ - -- - ስ -- ኝ -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+የ -- ተ -- ባ -- ረ -- ከ ጊ -- ዜ ነው፣
+የ -- የ -- ሱስ ህብረት ሳ -- ገኝ፥ ~ -- ~ -- - 
+ን -- ጹህ የ -- ማ -- ዳን ምንጭ ሲ -- ፈልቅ፣
+ምህረ -- ቱን ሲ -- ፈ -- ሰ -- ስኝ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 ሁ -- ሌም ከ -- ኔ ጋር ይ -- ሄ -- ዳል፥
 ብ -- ሩህ ጸ -- ሐ -- ዩ ያ -- በ -- ራል፣
 ቀስተ ደ -- መ -- ና ይ -- ታ -- ያል
@@ -1251,10 +1251,10 @@ CHVerseD = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 }
 CHVerseDAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 CIVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-ኢ - -- - የ - -- - ሱ -- ስ ከ - -- - ሰ - -- - ማ -- ይ መ - -- - ጣ
-አ - -- - ባ - -- - ቱ -- ን እ -- ን -- ዲ - -- - ገ - -- - ል -- ጥ -- ፣
-ስ - -- - ለ - -- - ፈ - -- - ቃ - -- - ዱ ነ - -- - ገ - -- - ረ -- ን -- ፣
-ዓ - -- - ላ - -- - ማ -- ው -- ን እ -- ን -- ድ - -- - ና - -- - ው -- ቅ -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+ኢ -- የ -- ሱስ ከ -- ሰ -- ማይ መ -- ጣ
+አ -- ባ -- ቱን እንዲ -- ገ -- ልጥ፣
+ስ -- ለ -- ፈ -- ቃ -- ዱ ነ -- ገ -- ረን፣
+ዓ -- ላ -- ማውን እንድ -- ና -- ውቅ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 ሁልጊ -- ዜም እ -- ን -- ከ -- ተ -- ልው፣
 ም -- ንም ነ -- ገር ቢ -- መ -- ጣ፣
 ሁ -- ሌም እርሱን እንመ -- ል -- ከት፡
@@ -1283,10 +1283,10 @@ CIVerseD = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 }
 CIVerseDAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 DZVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-ጌ - -- - ታ -- አ -- ም -- ላ - -- - ኬ እ -- ን -- ዴ -- ት እ - -- - ገ - -- - ረ - -- - ማ - -- - ለ -- ሁ -- !
-የ - -- - ጆ - -- - ች - -- - ህ -- ን ፍ - -- - ጥ -- ረ -- ት ሳ - -- - ስ -- ብ ሳ - -- - ለ -- ሁ -- ።
-ነ - -- - ጎ -- ድ -- ጓ - -- - ድ -- ን ስ - -- - ሰ - -- - ማ -- ፥ ሳ -- ይ ኳ - -- - ክ -- ብ -- ት -- ን -- ፥
-በ - -- - ሕ - -- - ዋ -- ህ ው -- ስ -- ጥ ታ - -- - የ -- ኝ ያ -- ን -- ተ ሥ -- ል -- ጣ -- ን -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+ጌ -- ታአምላ -- ኬ እንዴት እ -- ገ -- ረ -- ማ -- ለሁ!
+የ -- ጆ -- ች -- ህን ፍ -- ጥረት ሳ -- ስብ ሳ -- ለሁ።
+ነ -- ጎድጓ -- ድን ስ -- ሰ -- ማ፥ ሳይ ኳ -- ክብትን፥
+በ -- ሕ -- ዋህ ውስጥ ታ -- የኝ ያንተ ሥልጣን።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 ነፍሴ ላንተ መዝሙር ታ -- ዜ -- ማ -- ለች፤
 ኃ -- ያል ግ -- ሩም ታ -- ላቅ አምላክ፤
 ነፍሴ ላንተ መዝሙር ታ -- ዜ -- ማ -- ለች።
@@ -1343,10 +1343,10 @@ DAVerseD = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 }
 DAVerseDAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 DBVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-የ - -- - ጌ - -- - ታ - -- - ው -- ን መ - -- - ታ - -- - የ -- ት
-ቀ - -- - ኑ -- ን ል - -- - ት - -- - ጠ - -- - በ -- ቅ -- ?
-የ - -- - ሚ - -- - መ - -- - ጣ ቃ -- ል ገ -- ብ -- ቷ -- ል -- ፣
-ጊ - -- - ዜ - -- - ው -- ም ቅ - -- - ረ -- ብ ነ -- ው -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+የ -- ጌ -- ታ -- ውን መ -- ታ -- የት
+ቀ -- ኑን ል -- ት -- ጠ -- በቅ?
+የ -- ሚ -- መ -- ጣ ቃል ገብቷል፣
+ጊ -- ዜ -- ውም ቅ -- ረብ ነው።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 ን -- ቃ፣ ቀ -- ኑን ቅ -- ርብ ነው
 ጌ -- ታው እ -- የ -- መ -- ለ -- ሰ፥
 ል -- ብህ እውነትና ቅን ይ -- ሁን፣
@@ -1419,10 +1419,10 @@ DCVerseD = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 }
 DCVerseDAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 DDVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-የ - -- - እ -- ስ -- ራ - -- - ኤ -- ል እ - -- - ረ - -- - ኛ መ -- ን -- ጋ - -- - ህ -- ን
-ት - -- - ጠ - -- - በ - -- - ቃ - -- - ለ -- ህ -- ፣ አ - -- - ታ - -- - ን - -- - ቀ - -- - ላ - -- - ፋ -- ም -- ፤
-ሌ - -- - ሊ -- ት ሲ - -- - ሆ -- ን ት - -- - ጋ - -- - ር - -- - ዳ - -- - ቸ - -- - ዋ - -- - ለ -- ህ -- ፣
-በ - -- - ማ - -- - ለ - -- - ዳ ተ - -- - መ - -- - ራ - -- - ቸ - -- - ዋ - -- - ለ -- ህ -- !  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+የ -- እስራ -- ኤል እ -- ረ -- ኛ መንጋ -- ህን
+ት -- ጠ -- በ -- ቃ -- ለህ፣ አ -- ታ -- ን -- ቀ -- ላ -- ፋም፤
+ሌ -- ሊት ሲ -- ሆን ት -- ጋ -- ር -- ዳ -- ቸ -- ዋ -- ለህ፣
+በ -- ማ -- ለ -- ዳ ተ -- መ -- ራ -- ቸ -- ዋ -- ለህ!  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 የ -- እስራ -- ኤል እ -- ረ -- ኛ፣ ጠ -- ባ -- ቂ
 ያንተን መንጋ ት -- መ -- ለ -- ከ -- ታ -- ለህ!
 ከ -- ላይ ደ -- ካ -- ማ -- ቸ -- ውን ታ -- ያ -- ለህ፣
@@ -1444,10 +1444,10 @@ DDVerseC = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 }
 DDVerseCAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 DEVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-ወ - -- - ዳ -- ም -- ላ -- ክ እ -- ን -- ቅ - -- - ረ -- ብ
-እ -- ር -- ሱ እ - -- - ዚ -- ህ አ - -- - ለ
-የ -- ር -- ሱ መ - -- - ገ - -- - ኘ -- ት ይ - -- - ሙ - -- - ላ -- ን -- ፥
-ባ -- ም -- ላ - -- - ካ - -- - ዊ ፍ -- ር -- ሃ -- ት -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+ወ -- ዳምላክ እንቅ -- ረብ
+እርሱ እ -- ዚህ አ -- ለ
+የርሱ መ -- ገ -- ኘት ይ -- ሙ -- ላን፥
+ባምላ -- ካ -- ዊ ፍርሃት።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 ወ -- ዳምላክ እንቅ -- ረብ
 የ -- ምንቀ -- ዳ -- በት ምንጭ፥
 ሰ -- ማ -- ዩ አ -- ሁን ክ -- ፍት ነው፡
@@ -1476,10 +1476,10 @@ DEVerseD = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 }
 DEVerseDAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 DFVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-የ - -- - ኢ - -- - የ - -- - ሱ - -- - ስ -- ን ድ -- ም -- ፅ ስ - -- - ማ -- ፣
-ለ - -- - ደ - -- - ከ - -- - መ ነ -- ፍ -- ስ -- ፥
-ለ - -- - አ -- ን ተ ሲ -- ል ተ - -- - ሰ - -- - ቃ -- ይ -- ቷ -- ል -- ፣
-በ - -- - መ -- ስ -- ቀ - -- - ሉ ላ -- ይ -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+የ -- ኢ -- የ -- ሱ -- ስን ድምፅ ስ -- ማ፣
+ለ -- ደ -- ከ -- መ ነፍስ፥
+ለ -- አን ተ ሲል ተ -- ሰ -- ቃይቷል፣
+በ -- መስቀ -- ሉ ላይ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 ስ -- ማው፣ ስ -- ማው
 እንዳ -- ት -- ቃ -- ወም፥
 ለ -- ኢ -- የ -- ሱስ ልብህን ስ -- ጠው
@@ -1550,10 +1550,10 @@ DGVerseF = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 }
 DGVerseFAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 DHVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-" -- ል -- ብ -- ህ -- ን ስ - -- - ጠ -- ኝ -- " -- ፣ ይ - -- - ላ -- ል እ -- ግ -- ዚ -- አ -- ብ - -- - ሔ -- ር -- ፥
-ፍ -- ቅ -- ራ -- ች -- ን መ -- ል -- ካ -- ም ስ - -- - ጦ - -- - ታ ነ -- ው -- ።
-የ - -- - ት -- ም ቦ - -- - ታ ለ - -- - ል -- ብ ይ - -- - ና - -- - ገ - -- - ራ -- ል -- ፣
-" -- በ -- ደ -- ስ -- ታ እ - -- - መ - -- - ነ -- ኝ -- ፣ ል -- ብ -- ህ -- ን ስ - -- - ጠ -- ኝ -- " -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+"ልብህን ስ -- ጠኝ"፣ ይ -- ላል እግዚአብ -- ሔር፥
+ፍቅራችን መልካም ስ -- ጦ -- ታ ነው።
+የ -- ትም ቦ -- ታ ለ -- ልብ ይ -- ና -- ገ -- ራል፣
+"በደስታ እ -- መ -- ነኝ፣ ልብህን ስ -- ጠኝ"።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 "ልብህን ስ -- ጠኝ፣ ልብህን ስ -- ጠኝ"፣
 የርሱን ደምፅ ስ -- ማ፣ የ -- ትም ብ -- ት -- ሆን።
 ከ -- ጨ -- ለ -- ማ ዓ -- ለም ያ -- ወ -- ጣ -- ሃል፣
@@ -1575,10 +1575,10 @@ DHVerseC = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 }
 DHVerseCAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 DIVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-የ - -- - እ - -- - ረ - -- - ኛ -- ው ድ -- ም -- ፅ አ -- ን -- ተ -- ን ይ - -- - ጠ - -- - ራ - -- - ሃ -- ል -- ፥
-በ - -- - ረ - -- - ከ - -- - ት -- ን ይ - -- - ሰ - -- - ጥ - -- - ሃ -- ል
-ለ - -- - ም -- ን በ - -- - ኃ - -- - ጢ - -- - አ -- ት ተ -- ን -- ከ - -- - ራ - -- - ተ - -- - ት -- ህ -- ?
-በ - -- - ሱ መ -- ን -- ጋ ው -- ስ -- ጥ ሰ - -- - ላ -- ም አ - -- - ለ -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+የ -- እ -- ረ -- ኛው ድምፅ አንተን ይ -- ጠ -- ራ -- ሃል፥
+በ -- ረ -- ከ -- ትን ይ -- ሰ -- ጥ -- ሃል
+ለ -- ምን በ -- ኃ -- ጢ -- አት ተንከ -- ራ -- ተ -- ትህ?
+በ -- ሱ መንጋ ውስጥ ሰ -- ላም አ -- ለ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 በ -- እርሱ መንጋ ውስጥ፣
 ታ -- ላቅ ሰ -- ላምና ዕ -- ረፍት አ -- ለ።
 }
@@ -1659,10 +1659,10 @@ EAVerseD = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 }
 EAVerseDAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 EBVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-መ -- ን -- ገ -- ድ አ - -- - ለ -- ፣ ጠ - -- - ባ -- ብ መ -- ን -- ገ -- ድ -- ፣
-ለ - -- - ሕ -- ይ -- ወ -- ት ይ - -- - መ - -- - ራ - -- - ል
-የ - -- - ሰ - -- - ላ -- ም መ -- ን -- ገ -- ድ የ - -- - ~ - -- - ~ - -- - - ~ - -- - ~ - -- - - ቅ - -- - ዱ -- ስ
-የ - -- - ፍ - -- - ቅ - -- - ር -- ም መ -- ን -- ገ -- ድ -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+መንገድ አ -- ለ፣ ጠ -- ባብ መንገድ፣
+ለ -- ሕይወት ይ -- መ -- ራ -- ል
+የ -- ሰ -- ላም መንገድ የ -- ~ -- ~ -- - ~ -- ~ -- - ቅ -- ዱስ
+የ -- ፍ -- ቅ -- ርም መንገድ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 ነፍሴም በ -- ጣም ት -- ወ -- ዳ -- ለች
 ይ -- ህን መ -- ዳን መንገድ
 ጌ -- ታ ሆይ ጸ -- ሎ -- ቴን ስ -- ማ
@@ -1691,10 +1691,10 @@ EBVerseD = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 }
 EBVerseDAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 ECVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-በ - -- - ወ -- ር -- ቅ -- ፣ በ - -- - ብ -- ር ያ -- ል -- ተ - -- - ዋ - -- - ጀ -- ፣
-ግ -- ን በ - -- - የ - -- - ሱ -- ስ ክ - -- - ቡ -- ር ደ -- ም -- ፥
-የ - -- - አ -- ም -- ላ -- ክ አ -- ን -- ድ - -- - ያ ል - -- - ጁ -- ን
-ው -- ድ ቤ - -- - ዛ የ - -- - ሆ - -- - ነ - -- - ው -- ን -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+በ -- ወርቅ፣ በ -- ብር ያልተ -- ዋ -- ጀ፣
+ግን በ -- የ -- ሱስ ክ -- ቡር ደም፥
+የ -- አምላክ አንድ -- ያ ል -- ጁን
+ውድ ቤ -- ዛ የ -- ሆ -- ነ -- ውን።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 አ -- ዳ -- ኜ ነው፣ ኢ -- የ -- ሱስ
 ለ -- ኔ ሲል ነፍሱን~ -- ~ -- - ~ -- ~ -- -  ሰጥቷል፥
 ካእም -- ሮ በ -- ላይ ፍ -- ቅ -- ሩ፣
@@ -1723,10 +1723,10 @@ ECVerseD = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 }
 ECVerseDAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 EDVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-ወ -- ን -- ጌ - -- - ል -- ን ማ - -- - ወ -- ቅ ደ -- ስ ይ - -- - ላ -- ል -- ፣
-ይ -- ህ ለ - -- - ነ -- ፍ -- ሴ መ -- ዝ -- ሙ -- ር ነ -- ው -- ፥
-ም -- ስ -- ጋ - -- - ና - -- - ው -- ን እ - -- - ዘ -- ም -- ራ - -- - ለ -- ሁ
-ለ - -- - አ - -- - ዳ - -- - ነ -- ኝ ፍ - -- - ቅ - -- - ሩ -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+ወንጌ -- ልን ማ -- ወቅ ደስ ይ -- ላል፣
+ይህ ለ -- ነፍሴ መዝሙር ነው፥
+ምስጋ -- ና -- ውን እ -- ዘምራ -- ለሁ
+ለ -- አ -- ዳ -- ነኝ ፍ -- ቅ -- ሩ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 ሕይወት አ -- ጭር፣ የ -- ሚ -- ያልፍ ነው፥
 የ -- ሱ -- ስን እ -- ና -- ያ -- ለን
 ለ -- ዘ -- ላ -- ለም ህ -- ብረት አ -- ለን
@@ -1862,10 +1862,10 @@ EGVerseD = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 }
 EGVerseDAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 EHVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-ያ - -- - ን -- ን ቀ -- ን መ - -- - ቼ -- ም አ -- ል -- ረ - -- - ሳ -- ም
-አ - -- - ዳ -- ኝ ወ - -- - ደ - -- - ኔ ሲ - -- - መ - -- - ጣ
-ነ -- ፍ -- ሴ -- ን በ - -- - ሕ -- ይ -- ወ -- ት ሲ - -- - ሞ - -- - ላ
-የ - -- - ሰ - -- - ማ -- ይ ሀ -- ብ -- ት የ - -- - እ - -- - ኔ ነ -- ው -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+ያ -- ንን ቀን መ -- ቼም አልረ -- ሳም
+አ -- ዳኝ ወ -- ደ -- ኔ ሲ -- መ -- ጣ
+ነፍሴን በ -- ሕይወት ሲ -- ሞ -- ላ
+የ -- ሰ -- ማይ ሀብት የ -- እ -- ኔ ነው።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 ያ -- ንን ቀን መ -- ቼም አልረ -- ሳም
 አ -- ዳኝ በ -- ቸርነት ሲል ሰ -- ማሁ።
 "የኔ ተ -- ከ -- ታይ ል -- ት -- ሆን
@@ -1927,14 +1927,14 @@ EIVerseC = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 }
 EIVerseCAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 FZVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-በ - -- - ን - -- - ስ - -- - ሐ እ - -- - ጸ -- ል -- ያ - -- - ለ -- ሁ
-ፍ - -- - ላ - -- - ጎ - -- - ቴ -- ን ታ -- ው -- ቃ - -- - ለ -- ህ -- ፣
-በ - -- - ፊ - -- - ት -- ህ እ - -- - ጠ - -- - ብ - -- - ቃ - -- - ለ -- ሁ -- ፣
-ተ - -- - ና - -- - ገ -- ር እ - -- - ሰ - -- - ማ - -- - ለ -- ሁ -- ።
-ነ -- ፍ -- ሴ አ -- ን -- ተ -- ን ት - -- - ና -- ፍ -- ቃ - -- - ለ -- ች -- ፣
-ፍ - -- - ቅ -- ር -- ህ -- ን እ - -- - መ - -- - ኛ - -- - ለ -- ሁ
-አ -- ን -- ተ የ - -- - ም - -- - ታ - -- - ረ - -- - ካ ም -- ን -- ጭ
-በ - -- - ህ - -- - ያ -- ው ቃ -- ል መ - -- - ግ - -- - በ -- ኝ -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+በ -- ን -- ስ -- ሐ እ -- ጸልያ -- ለሁ
+ፍ -- ላ -- ጎ -- ቴን ታውቃ -- ለህ፣
+በ -- ፊ -- ትህ እ -- ጠ -- ብ -- ቃ -- ለሁ፣
+ተ -- ና -- ገር እ -- ሰ -- ማ -- ለሁ።
+ነፍሴ አንተን ት -- ናፍቃ -- ለች፣
+ፍ -- ቅርህን እ -- መ -- ኛ -- ለሁ
+አንተ የ -- ም -- ታ -- ረ -- ካ ምንጭ
+በ -- ህ -- ያው ቃል መ -- ግ -- በኝ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 ነፍሴ አንተን ት -- ናፍቃ -- ለች፣
 በ -- አንተ ብ -- ቻ መርካት፣
 ከ -- አንተ በ -- ተ -- ቀ -- በልኩት፣
@@ -1964,10 +1964,10 @@ FZVerseC = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 }
 FZVerseCAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 FAVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-ሁ -- ል ጊ - -- - ዜ ስ - -- - ለ ኢ - -- - የ - -- - ሱ -- ስ -- ፣
-ብ - -- - ቻ እ -- ን -- ና - -- - ገ - -- - ራ - -- - ለ -- ን -- ፣
-ሁ - -- - ሌ እ - -- - ና - -- - ነ - -- - ሳ - -- - ዋ - -- - ለ -- ን -- ፤
-እ - -- - ሱ -- ን እ - -- - ና - -- - የ - -- - ዋ - -- - ለ -- ን -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+ሁል ጊ -- ዜ ስ -- ለ ኢ -- የ -- ሱስ፣
+ብ -- ቻ እንና -- ገ -- ራ -- ለን፣
+ሁ -- ሌ እ -- ና -- ነ -- ሳ -- ዋ -- ለን፤
+እ -- ሱን እ -- ና -- የ -- ዋ -- ለን።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 አ -- ሁ -- ንም ለ -- ዘ -- ላ -- ለም ነው፣
 ሁ -- ሌ በ -- መዝሙ -- ራ -- ችን፡
 የ -- ተ -- ባ -- ረ -- ከ አ -- ዳኝ ነው፣
@@ -1996,10 +1996,10 @@ FAVerseD = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 }
 FAVerseDAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 FBVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-ለ - -- - ም -- ን በ - -- - ጨ - -- - ለ - -- - ማ ል - -- - ሂ -- ድ
-ሰ - -- - ላ - -- - ም -- ን ከ - -- - ማ -- ይ -- ሰ - -- - ጠ -- ው ጋ -- ር -- ?
-መ -- ን -- ገ - -- - ዴ የ - -- - ተ - -- - ሳ - -- - ሳ - -- - ተ -- ፤
-መ -- ን -- ገ - -- - ዱ ኢ - -- - የ - -- - ሱ -- ስ ነ -- ው -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+ለ -- ምን በ -- ጨ -- ለ -- ማ ል -- ሂድ
+ሰ -- ላ -- ምን ከ -- ማይሰ -- ጠው ጋር?
+መንገ -- ዴ የ -- ተ -- ሳ -- ሳ -- ተ፤
+መንገ -- ዱ ኢ -- የ -- ሱስ ነው።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 እውነት ል -- ቤን አ -- ሸ -- ን -- ፏል
 የ -- ጀ -- መ -- ረ -- ውን ይ -- ጨርሳል
 በ -- ም -- ድ -- ርም በ -- ሰ -- ማ -- ይም
@@ -2056,10 +2056,10 @@ FCVerseD = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 }
 FCVerseDAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 FDVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-የ - -- - ሱ -- ን መ -- ን -- ገ -- ድ እ -- ን -- ወ - -- - ዳ - -- - ለ -- ን
-አ - -- - ዳ -- ኝ ያ - -- - ለ - -- - ፈ - -- - ው -- ን መ -- ን -- ገ -- ድ
-እ -- ን -- ግ - -- - ዶ -- ች ነ -- ን በ - -- - ም - -- - ድ -- ር ላ -- ይ -- ፣
-ወ - -- - ደ አ - -- - ባ -- ት እ -- ን -- ሄ - -- - ዳ - -- - ለ -- ን -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+የ -- ሱን መንገድ እንወ -- ዳ -- ለን
+አ -- ዳኝ ያ -- ለ -- ፈ -- ውን መንገድ
+እንግ -- ዶች ነን በ -- ም -- ድር ላይ፣
+ወ -- ደ አ -- ባት እንሄ -- ዳ -- ለን።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 በ -- ክርስቶስ መንገድ አ -- ገ -- ኘን
 ወ -- ደ እግዚአብሔር ይ -- መ -- ራል
 ም -- ድር ላይ ሕይወ -- ትን ሰ -- ጠን፣
@@ -2088,14 +2088,14 @@ FDVerseD = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 }
 FDVerseDAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 FEVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-የ - -- - ሱ - -- - ስ -- ን ታ - -- - ሪ -- ክ ቃ -- ል ሁ - -- - ሉ -- ፥
-በ - -- - ል - -- - ቤ ላ -- ይ ጻ - -- - ፍ - -- - ል -- ኝ -- ።
-ከ - -- - ታ - -- - ሪ - -- - ኮ -- ች ሁ - -- - ሉ በ - -- - ጣ -- ም -- ፣
-ው -- ድ የ - -- - ሆ - -- - ነ -- ው ን - -- - ገ - -- - ረ -- ኝ -- ።
-መ - -- - ላ - -- - እ -- ክ -- ት ለ - -- - ም - -- - ድ -- ር ሰ - -- - ላ -- ም
-እ - -- - ና የ - -- - ም -- ስ -- ራ -- ች አ - -- - ሉ -- ፣
-" -- ክ -- ብ -- ር ለ -- እ -- ግ -- ዚ -- አ -- ብ -- ሔ -- ር በ - -- - አ -- ር -- ያ -- ም -- ! -- "
-ሲ - -- - ወ - -- - ለ -- ድ እ -- ን -- ዴ -- ት ዘ - -- - መ - -- - ሩ -- ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+የ -- ሱ -- ስን ታ -- ሪክ ቃል ሁ -- ሉ፥
+በ -- ል -- ቤ ላይ ጻ -- ፍ -- ልኝ።
+ከ -- ታ -- ሪ -- ኮች ሁ -- ሉ በ -- ጣም፣
+ውድ የ -- ሆ -- ነው ን -- ገ -- ረኝ።
+መ -- ላ -- እክት ለ -- ም -- ድር ሰ -- ላም
+እ -- ና የ -- ምስራች አ -- ሉ፣
+"ክብር ለእግዚአብሔር በ -- አርያም!"
+ሲ -- ወ -- ለድ እንዴት ዘ -- መ -- ሩ።  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 የ -- የ -- ሱስ ታ -- ሪክ ን -- ገ -- ረኝ፥
 በ -- ል -- ቤ ላይ ጻ -- ፍ -- ልኝ።
 ከ -- ታ -- ሪ -- ኮች ሁ -- ሉ በ -- ጣም፣
@@ -2158,14 +2158,14 @@ FFVerseC = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName
 }
 FFVerseCAlt = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""} }
 FGVerseA = \lyricmode { \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align "1."} \set vocalName = \markup {\right-align "1."} 
-የ - -- - ኢ - -- - የ - -- - ሱ -- ስ ሕ - -- - ያ -- ው ቃ -- ል
-ለ - -- - እ - -- - ኔ ው -- ድ ዘ -- ር ነ -- ው
-መ - -- - መ - -- - ሪ - -- - ና መ -- ጽ -- ና - -- - ኛ
-የ - -- - ሚ - -- - ሰ - -- - ጠ - -- - ኝ ነ -- ው
-በ - -- - ል - -- - ቤ ው -- ስ -- ጥ ሲ - -- - ተ - -- - ከ -- ል
-በ - -- - እ -- ው -- ነ -- ት ስ - -- - ገ - -- - ዛ
-ዘ - -- - ሩ ሕ -- ይ -- ወ -- ት ይ - -- - ሰ - -- - ጣ -- ል
-በ - -- - ደ -- ስ -- ታ ስ - -- - ሰ - -- - ራ  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
+የ -- ኢ -- የ -- ሱስ ሕ -- ያው ቃል
+ለ -- እ -- ኔ ውድ ዘር ነው
+መ -- መ -- ሪ -- ና መጽና -- ኛ
+የ -- ሚ -- ሰ -- ጠ -- ኝ ነው
+በ -- ል -- ቤ ውስጥ ሲ -- ተ -- ከል
+በ -- እውነት ስ -- ገ -- ዛ
+ዘ -- ሩ ሕይወት ይ -- ሰ -- ጣል
+በ -- ደስታ ስ -- ሰ -- ራ  \set lyricMelismaAlignment = #CENTER \set shortVocalName = \markup {\right-align ""} \set vocalName = \markup {\right-align ""}
 መ -- ላ -- ኮ -- ታ -- ዊ መልእክት
 የ -- ተ -- ባ -- ረ -- ከ ነው።
 ብ -- ታ -- ዘዝ ለ -- ዘ -- ላ -- ለም
