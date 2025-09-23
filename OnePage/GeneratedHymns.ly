@@ -73,12 +73,11 @@ chorusStr = Chorus
       \new Lyrics  = ALyricsA
       \new Lyrics = ALyricsAAlt
       \new Lyrics  = ALyricsB
+      \new Lyrics = ALyricsBAlt
       \new Lyrics  = ALyricsC
       \new Lyrics = ALyricsCAlt
       \new Lyrics  = ALyricsD
       \new Lyrics = ALyricsDAlt
-      \new Lyrics  = ALyricsE
-      \new Lyrics = ALyricsEAlt
 
       \context Staff = AStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -86,13 +85,12 @@ chorusStr = Chorus
       >>
       \context Lyrics = ALyricsA \lyricsto AVoiceLyrics \AVerseA
       \context Lyrics = ALyricsAAlt \lyricsto AVoiceLyrics \AVerseAAlt
-      \context Lyrics = ALyricsB \lyricsto AVoiceLyrics \AChorus
-      \context Lyrics = ALyricsC \lyricsto AVoiceLyrics \AVerseB
-      \context Lyrics = ALyricsCAlt \lyricsto AVoiceLyrics \AVerseBAlt
-      \context Lyrics = ALyricsD \lyricsto AVoiceLyrics \AVerseC
-      \context Lyrics = ALyricsDAlt \lyricsto AVoiceLyrics \AVerseCAlt
-      \context Lyrics = ALyricsE \lyricsto AVoiceLyrics \AVerseD
-      \context Lyrics = ALyricsEAlt \lyricsto AVoiceLyrics \AVerseDAlt
+      \context Lyrics = ALyricsB \lyricsto AVoiceLyrics \AVerseB
+      \context Lyrics = ALyricsBAlt \lyricsto AVoiceLyrics \AVerseBAlt
+      \context Lyrics = ALyricsC \lyricsto AVoiceLyrics \AVerseC
+      \context Lyrics = ALyricsCAlt \lyricsto AVoiceLyrics \AVerseCAlt
+      \context Lyrics = ALyricsD \lyricsto AVoiceLyrics \AVerseD
+      \context Lyrics = ALyricsDAlt \lyricsto AVoiceLyrics \AVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -121,10 +119,9 @@ chorusStr = Chorus
       \new Lyrics  = BLyricsA
       \new Lyrics = BLyricsAAlt
       \new Lyrics  = BLyricsB
+      \new Lyrics = BLyricsBAlt
       \new Lyrics  = BLyricsC
       \new Lyrics = BLyricsCAlt
-      \new Lyrics  = BLyricsD
-      \new Lyrics = BLyricsDAlt
 
       \context Staff = BStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -132,11 +129,10 @@ chorusStr = Chorus
       >>
       \context Lyrics = BLyricsA \lyricsto BVoiceLyrics \BVerseA
       \context Lyrics = BLyricsAAlt \lyricsto BVoiceLyrics \BVerseAAlt
-      \context Lyrics = BLyricsB \lyricsto BVoiceLyrics \BChorus
-      \context Lyrics = BLyricsC \lyricsto BVoiceLyrics \BVerseB
-      \context Lyrics = BLyricsCAlt \lyricsto BVoiceLyrics \BVerseBAlt
-      \context Lyrics = BLyricsD \lyricsto BVoiceLyrics \BVerseC
-      \context Lyrics = BLyricsDAlt \lyricsto BVoiceLyrics \BVerseCAlt
+      \context Lyrics = BLyricsB \lyricsto BVoiceLyrics \BVerseB
+      \context Lyrics = BLyricsBAlt \lyricsto BVoiceLyrics \BVerseBAlt
+      \context Lyrics = BLyricsC \lyricsto BVoiceLyrics \BVerseC
+      \context Lyrics = BLyricsCAlt \lyricsto BVoiceLyrics \BVerseCAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -303,12 +299,11 @@ chorusStr = Chorus
       \new Lyrics  = FLyricsA
       \new Lyrics = FLyricsAAlt
       \new Lyrics  = FLyricsB
+      \new Lyrics = FLyricsBAlt
       \new Lyrics  = FLyricsC
       \new Lyrics = FLyricsCAlt
       \new Lyrics  = FLyricsD
       \new Lyrics = FLyricsDAlt
-      \new Lyrics  = FLyricsE
-      \new Lyrics = FLyricsEAlt
 
       \context Staff = FStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -316,13 +311,12 @@ chorusStr = Chorus
       >>
       \context Lyrics = FLyricsA \lyricsto FVoiceLyrics \FVerseA
       \context Lyrics = FLyricsAAlt \lyricsto FVoiceLyrics \FVerseAAlt
-      \context Lyrics = FLyricsB \lyricsto FVoiceLyrics \FChorus
-      \context Lyrics = FLyricsC \lyricsto FVoiceLyrics \FVerseB
-      \context Lyrics = FLyricsCAlt \lyricsto FVoiceLyrics \FVerseBAlt
-      \context Lyrics = FLyricsD \lyricsto FVoiceLyrics \FVerseC
-      \context Lyrics = FLyricsDAlt \lyricsto FVoiceLyrics \FVerseCAlt
-      \context Lyrics = FLyricsE \lyricsto FVoiceLyrics \FVerseD
-      \context Lyrics = FLyricsEAlt \lyricsto FVoiceLyrics \FVerseDAlt
+      \context Lyrics = FLyricsB \lyricsto FVoiceLyrics \FVerseB
+      \context Lyrics = FLyricsBAlt \lyricsto FVoiceLyrics \FVerseBAlt
+      \context Lyrics = FLyricsC \lyricsto FVoiceLyrics \FVerseC
+      \context Lyrics = FLyricsCAlt \lyricsto FVoiceLyrics \FVerseCAlt
+      \context Lyrics = FLyricsD \lyricsto FVoiceLyrics \FVerseD
+      \context Lyrics = FLyricsDAlt \lyricsto FVoiceLyrics \FVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -351,10 +345,9 @@ chorusStr = Chorus
       \new Lyrics  = GLyricsA
       \new Lyrics = GLyricsAAlt
       \new Lyrics  = GLyricsB
+      \new Lyrics = GLyricsBAlt
       \new Lyrics  = GLyricsC
       \new Lyrics = GLyricsCAlt
-      \new Lyrics  = GLyricsD
-      \new Lyrics = GLyricsDAlt
 
       \context Staff = GStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -362,11 +355,10 @@ chorusStr = Chorus
       >>
       \context Lyrics = GLyricsA \lyricsto GVoiceLyrics \GVerseA
       \context Lyrics = GLyricsAAlt \lyricsto GVoiceLyrics \GVerseAAlt
-      \context Lyrics = GLyricsB \lyricsto GVoiceLyrics \GChorus
-      \context Lyrics = GLyricsC \lyricsto GVoiceLyrics \GVerseB
-      \context Lyrics = GLyricsCAlt \lyricsto GVoiceLyrics \GVerseBAlt
-      \context Lyrics = GLyricsD \lyricsto GVoiceLyrics \GVerseC
-      \context Lyrics = GLyricsDAlt \lyricsto GVoiceLyrics \GVerseCAlt
+      \context Lyrics = GLyricsB \lyricsto GVoiceLyrics \GVerseB
+      \context Lyrics = GLyricsBAlt \lyricsto GVoiceLyrics \GVerseBAlt
+      \context Lyrics = GLyricsC \lyricsto GVoiceLyrics \GVerseC
+      \context Lyrics = GLyricsCAlt \lyricsto GVoiceLyrics \GVerseCAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -441,12 +433,11 @@ chorusStr = Chorus
       \new Lyrics  = ILyricsA
       \new Lyrics = ILyricsAAlt
       \new Lyrics  = ILyricsB
+      \new Lyrics = ILyricsBAlt
       \new Lyrics  = ILyricsC
       \new Lyrics = ILyricsCAlt
       \new Lyrics  = ILyricsD
       \new Lyrics = ILyricsDAlt
-      \new Lyrics  = ILyricsE
-      \new Lyrics = ILyricsEAlt
 
       \context Staff = IStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -454,13 +445,12 @@ chorusStr = Chorus
       >>
       \context Lyrics = ILyricsA \lyricsto IVoiceLyrics \IVerseA
       \context Lyrics = ILyricsAAlt \lyricsto IVoiceLyrics \IVerseAAlt
-      \context Lyrics = ILyricsB \lyricsto IVoiceLyrics \IChorus
-      \context Lyrics = ILyricsC \lyricsto IVoiceLyrics \IVerseB
-      \context Lyrics = ILyricsCAlt \lyricsto IVoiceLyrics \IVerseBAlt
-      \context Lyrics = ILyricsD \lyricsto IVoiceLyrics \IVerseC
-      \context Lyrics = ILyricsDAlt \lyricsto IVoiceLyrics \IVerseCAlt
-      \context Lyrics = ILyricsE \lyricsto IVoiceLyrics \IVerseD
-      \context Lyrics = ILyricsEAlt \lyricsto IVoiceLyrics \IVerseDAlt
+      \context Lyrics = ILyricsB \lyricsto IVoiceLyrics \IVerseB
+      \context Lyrics = ILyricsBAlt \lyricsto IVoiceLyrics \IVerseBAlt
+      \context Lyrics = ILyricsC \lyricsto IVoiceLyrics \IVerseC
+      \context Lyrics = ILyricsCAlt \lyricsto IVoiceLyrics \IVerseCAlt
+      \context Lyrics = ILyricsD \lyricsto IVoiceLyrics \IVerseD
+      \context Lyrics = ILyricsDAlt \lyricsto IVoiceLyrics \IVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -489,10 +479,9 @@ chorusStr = Chorus
       \new Lyrics  = AZLyricsA
       \new Lyrics = AZLyricsAAlt
       \new Lyrics  = AZLyricsB
+      \new Lyrics = AZLyricsBAlt
       \new Lyrics  = AZLyricsC
       \new Lyrics = AZLyricsCAlt
-      \new Lyrics  = AZLyricsD
-      \new Lyrics = AZLyricsDAlt
 
       \context Staff = AZStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -500,11 +489,10 @@ chorusStr = Chorus
       >>
       \context Lyrics = AZLyricsA \lyricsto AZVoiceLyrics \AZVerseA
       \context Lyrics = AZLyricsAAlt \lyricsto AZVoiceLyrics \AZVerseAAlt
-      \context Lyrics = AZLyricsB \lyricsto AZVoiceLyrics \AZChorus
-      \context Lyrics = AZLyricsC \lyricsto AZVoiceLyrics \AZVerseB
-      \context Lyrics = AZLyricsCAlt \lyricsto AZVoiceLyrics \AZVerseBAlt
-      \context Lyrics = AZLyricsD \lyricsto AZVoiceLyrics \AZVerseC
-      \context Lyrics = AZLyricsDAlt \lyricsto AZVoiceLyrics \AZVerseCAlt
+      \context Lyrics = AZLyricsB \lyricsto AZVoiceLyrics \AZVerseB
+      \context Lyrics = AZLyricsBAlt \lyricsto AZVoiceLyrics \AZVerseBAlt
+      \context Lyrics = AZLyricsC \lyricsto AZVoiceLyrics \AZVerseC
+      \context Lyrics = AZLyricsCAlt \lyricsto AZVoiceLyrics \AZVerseCAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -621,12 +609,11 @@ chorusStr = Chorus
       \new Lyrics  = ACLyricsA
       \new Lyrics = ACLyricsAAlt
       \new Lyrics  = ACLyricsB
+      \new Lyrics = ACLyricsBAlt
       \new Lyrics  = ACLyricsC
       \new Lyrics = ACLyricsCAlt
       \new Lyrics  = ACLyricsD
       \new Lyrics = ACLyricsDAlt
-      \new Lyrics  = ACLyricsE
-      \new Lyrics = ACLyricsEAlt
 
       \context Staff = ACStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -634,13 +621,12 @@ chorusStr = Chorus
       >>
       \context Lyrics = ACLyricsA \lyricsto ACVoiceLyrics \ACVerseA
       \context Lyrics = ACLyricsAAlt \lyricsto ACVoiceLyrics \ACVerseAAlt
-      \context Lyrics = ACLyricsB \lyricsto ACVoiceLyrics \ACChorus
-      \context Lyrics = ACLyricsC \lyricsto ACVoiceLyrics \ACVerseB
-      \context Lyrics = ACLyricsCAlt \lyricsto ACVoiceLyrics \ACVerseBAlt
-      \context Lyrics = ACLyricsD \lyricsto ACVoiceLyrics \ACVerseC
-      \context Lyrics = ACLyricsDAlt \lyricsto ACVoiceLyrics \ACVerseCAlt
-      \context Lyrics = ACLyricsE \lyricsto ACVoiceLyrics \ACVerseD
-      \context Lyrics = ACLyricsEAlt \lyricsto ACVoiceLyrics \ACVerseDAlt
+      \context Lyrics = ACLyricsB \lyricsto ACVoiceLyrics \ACVerseB
+      \context Lyrics = ACLyricsBAlt \lyricsto ACVoiceLyrics \ACVerseBAlt
+      \context Lyrics = ACLyricsC \lyricsto ACVoiceLyrics \ACVerseC
+      \context Lyrics = ACLyricsCAlt \lyricsto ACVoiceLyrics \ACVerseCAlt
+      \context Lyrics = ACLyricsD \lyricsto ACVoiceLyrics \ACVerseD
+      \context Lyrics = ACLyricsDAlt \lyricsto ACVoiceLyrics \ACVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -811,12 +797,11 @@ chorusStr = Chorus
       \new Lyrics  = AGLyricsA
       \new Lyrics = AGLyricsAAlt
       \new Lyrics  = AGLyricsB
+      \new Lyrics = AGLyricsBAlt
       \new Lyrics  = AGLyricsC
       \new Lyrics = AGLyricsCAlt
       \new Lyrics  = AGLyricsD
       \new Lyrics = AGLyricsDAlt
-      \new Lyrics  = AGLyricsE
-      \new Lyrics = AGLyricsEAlt
 
       \context Staff = AGStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -824,13 +809,12 @@ chorusStr = Chorus
       >>
       \context Lyrics = AGLyricsA \lyricsto AGVoiceLyrics \AGVerseA
       \context Lyrics = AGLyricsAAlt \lyricsto AGVoiceLyrics \AGVerseAAlt
-      \context Lyrics = AGLyricsB \lyricsto AGVoiceLyrics \AGChorus
-      \context Lyrics = AGLyricsC \lyricsto AGVoiceLyrics \AGVerseB
-      \context Lyrics = AGLyricsCAlt \lyricsto AGVoiceLyrics \AGVerseBAlt
-      \context Lyrics = AGLyricsD \lyricsto AGVoiceLyrics \AGVerseC
-      \context Lyrics = AGLyricsDAlt \lyricsto AGVoiceLyrics \AGVerseCAlt
-      \context Lyrics = AGLyricsE \lyricsto AGVoiceLyrics \AGVerseD
-      \context Lyrics = AGLyricsEAlt \lyricsto AGVoiceLyrics \AGVerseDAlt
+      \context Lyrics = AGLyricsB \lyricsto AGVoiceLyrics \AGVerseB
+      \context Lyrics = AGLyricsBAlt \lyricsto AGVoiceLyrics \AGVerseBAlt
+      \context Lyrics = AGLyricsC \lyricsto AGVoiceLyrics \AGVerseC
+      \context Lyrics = AGLyricsCAlt \lyricsto AGVoiceLyrics \AGVerseCAlt
+      \context Lyrics = AGLyricsD \lyricsto AGVoiceLyrics \AGVerseD
+      \context Lyrics = AGLyricsDAlt \lyricsto AGVoiceLyrics \AGVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -859,12 +843,11 @@ chorusStr = Chorus
       \new Lyrics  = AHLyricsA
       \new Lyrics = AHLyricsAAlt
       \new Lyrics  = AHLyricsB
+      \new Lyrics = AHLyricsBAlt
       \new Lyrics  = AHLyricsC
       \new Lyrics = AHLyricsCAlt
       \new Lyrics  = AHLyricsD
       \new Lyrics = AHLyricsDAlt
-      \new Lyrics  = AHLyricsE
-      \new Lyrics = AHLyricsEAlt
 
       \context Staff = AHStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -872,13 +855,12 @@ chorusStr = Chorus
       >>
       \context Lyrics = AHLyricsA \lyricsto AHVoiceLyrics \AHVerseA
       \context Lyrics = AHLyricsAAlt \lyricsto AHVoiceLyrics \AHVerseAAlt
-      \context Lyrics = AHLyricsB \lyricsto AHVoiceLyrics \AHChorus
-      \context Lyrics = AHLyricsC \lyricsto AHVoiceLyrics \AHVerseB
-      \context Lyrics = AHLyricsCAlt \lyricsto AHVoiceLyrics \AHVerseBAlt
-      \context Lyrics = AHLyricsD \lyricsto AHVoiceLyrics \AHVerseC
-      \context Lyrics = AHLyricsDAlt \lyricsto AHVoiceLyrics \AHVerseCAlt
-      \context Lyrics = AHLyricsE \lyricsto AHVoiceLyrics \AHVerseD
-      \context Lyrics = AHLyricsEAlt \lyricsto AHVoiceLyrics \AHVerseDAlt
+      \context Lyrics = AHLyricsB \lyricsto AHVoiceLyrics \AHVerseB
+      \context Lyrics = AHLyricsBAlt \lyricsto AHVoiceLyrics \AHVerseBAlt
+      \context Lyrics = AHLyricsC \lyricsto AHVoiceLyrics \AHVerseC
+      \context Lyrics = AHLyricsCAlt \lyricsto AHVoiceLyrics \AHVerseCAlt
+      \context Lyrics = AHLyricsD \lyricsto AHVoiceLyrics \AHVerseD
+      \context Lyrics = AHLyricsDAlt \lyricsto AHVoiceLyrics \AHVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -907,12 +889,11 @@ chorusStr = Chorus
       \new Lyrics  = AILyricsA
       \new Lyrics = AILyricsAAlt
       \new Lyrics  = AILyricsB
+      \new Lyrics = AILyricsBAlt
       \new Lyrics  = AILyricsC
       \new Lyrics = AILyricsCAlt
       \new Lyrics  = AILyricsD
       \new Lyrics = AILyricsDAlt
-      \new Lyrics  = AILyricsE
-      \new Lyrics = AILyricsEAlt
 
       \context Staff = AIStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -920,13 +901,12 @@ chorusStr = Chorus
       >>
       \context Lyrics = AILyricsA \lyricsto AIVoiceLyrics \AIVerseA
       \context Lyrics = AILyricsAAlt \lyricsto AIVoiceLyrics \AIVerseAAlt
-      \context Lyrics = AILyricsB \lyricsto AIVoiceLyrics \AIChorus
-      \context Lyrics = AILyricsC \lyricsto AIVoiceLyrics \AIVerseB
-      \context Lyrics = AILyricsCAlt \lyricsto AIVoiceLyrics \AIVerseBAlt
-      \context Lyrics = AILyricsD \lyricsto AIVoiceLyrics \AIVerseC
-      \context Lyrics = AILyricsDAlt \lyricsto AIVoiceLyrics \AIVerseCAlt
-      \context Lyrics = AILyricsE \lyricsto AIVoiceLyrics \AIVerseD
-      \context Lyrics = AILyricsEAlt \lyricsto AIVoiceLyrics \AIVerseDAlt
+      \context Lyrics = AILyricsB \lyricsto AIVoiceLyrics \AIVerseB
+      \context Lyrics = AILyricsBAlt \lyricsto AIVoiceLyrics \AIVerseBAlt
+      \context Lyrics = AILyricsC \lyricsto AIVoiceLyrics \AIVerseC
+      \context Lyrics = AILyricsCAlt \lyricsto AIVoiceLyrics \AIVerseCAlt
+      \context Lyrics = AILyricsD \lyricsto AIVoiceLyrics \AIVerseD
+      \context Lyrics = AILyricsDAlt \lyricsto AIVoiceLyrics \AIVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -1051,12 +1031,11 @@ chorusStr = Chorus
       \new Lyrics  = BBLyricsA
       \new Lyrics = BBLyricsAAlt
       \new Lyrics  = BBLyricsB
+      \new Lyrics = BBLyricsBAlt
       \new Lyrics  = BBLyricsC
       \new Lyrics = BBLyricsCAlt
       \new Lyrics  = BBLyricsD
       \new Lyrics = BBLyricsDAlt
-      \new Lyrics  = BBLyricsE
-      \new Lyrics = BBLyricsEAlt
 
       \context Staff = BBStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -1064,13 +1043,12 @@ chorusStr = Chorus
       >>
       \context Lyrics = BBLyricsA \lyricsto BBVoiceLyrics \BBVerseA
       \context Lyrics = BBLyricsAAlt \lyricsto BBVoiceLyrics \BBVerseAAlt
-      \context Lyrics = BBLyricsB \lyricsto BBVoiceLyrics \BBChorus
-      \context Lyrics = BBLyricsC \lyricsto BBVoiceLyrics \BBVerseB
-      \context Lyrics = BBLyricsCAlt \lyricsto BBVoiceLyrics \BBVerseBAlt
-      \context Lyrics = BBLyricsD \lyricsto BBVoiceLyrics \BBVerseC
-      \context Lyrics = BBLyricsDAlt \lyricsto BBVoiceLyrics \BBVerseCAlt
-      \context Lyrics = BBLyricsE \lyricsto BBVoiceLyrics \BBVerseD
-      \context Lyrics = BBLyricsEAlt \lyricsto BBVoiceLyrics \BBVerseDAlt
+      \context Lyrics = BBLyricsB \lyricsto BBVoiceLyrics \BBVerseB
+      \context Lyrics = BBLyricsBAlt \lyricsto BBVoiceLyrics \BBVerseBAlt
+      \context Lyrics = BBLyricsC \lyricsto BBVoiceLyrics \BBVerseC
+      \context Lyrics = BBLyricsCAlt \lyricsto BBVoiceLyrics \BBVerseCAlt
+      \context Lyrics = BBLyricsD \lyricsto BBVoiceLyrics \BBVerseD
+      \context Lyrics = BBLyricsDAlt \lyricsto BBVoiceLyrics \BBVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -1099,12 +1077,11 @@ chorusStr = Chorus
       \new Lyrics  = BCLyricsA
       \new Lyrics = BCLyricsAAlt
       \new Lyrics  = BCLyricsB
+      \new Lyrics = BCLyricsBAlt
       \new Lyrics  = BCLyricsC
       \new Lyrics = BCLyricsCAlt
       \new Lyrics  = BCLyricsD
       \new Lyrics = BCLyricsDAlt
-      \new Lyrics  = BCLyricsE
-      \new Lyrics = BCLyricsEAlt
 
       \context Staff = BCStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -1112,13 +1089,12 @@ chorusStr = Chorus
       >>
       \context Lyrics = BCLyricsA \lyricsto BCVoiceLyrics \BCVerseA
       \context Lyrics = BCLyricsAAlt \lyricsto BCVoiceLyrics \BCVerseAAlt
-      \context Lyrics = BCLyricsB \lyricsto BCVoiceLyrics \BCChorus
-      \context Lyrics = BCLyricsC \lyricsto BCVoiceLyrics \BCVerseB
-      \context Lyrics = BCLyricsCAlt \lyricsto BCVoiceLyrics \BCVerseBAlt
-      \context Lyrics = BCLyricsD \lyricsto BCVoiceLyrics \BCVerseC
-      \context Lyrics = BCLyricsDAlt \lyricsto BCVoiceLyrics \BCVerseCAlt
-      \context Lyrics = BCLyricsE \lyricsto BCVoiceLyrics \BCVerseD
-      \context Lyrics = BCLyricsEAlt \lyricsto BCVoiceLyrics \BCVerseDAlt
+      \context Lyrics = BCLyricsB \lyricsto BCVoiceLyrics \BCVerseB
+      \context Lyrics = BCLyricsBAlt \lyricsto BCVoiceLyrics \BCVerseBAlt
+      \context Lyrics = BCLyricsC \lyricsto BCVoiceLyrics \BCVerseC
+      \context Lyrics = BCLyricsCAlt \lyricsto BCVoiceLyrics \BCVerseCAlt
+      \context Lyrics = BCLyricsD \lyricsto BCVoiceLyrics \BCVerseD
+      \context Lyrics = BCLyricsDAlt \lyricsto BCVoiceLyrics \BCVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -1147,14 +1123,13 @@ chorusStr = Chorus
       \new Lyrics  = BDLyricsA
       \new Lyrics = BDLyricsAAlt
       \new Lyrics  = BDLyricsB
+      \new Lyrics = BDLyricsBAlt
       \new Lyrics  = BDLyricsC
       \new Lyrics = BDLyricsCAlt
       \new Lyrics  = BDLyricsD
       \new Lyrics = BDLyricsDAlt
       \new Lyrics  = BDLyricsE
       \new Lyrics = BDLyricsEAlt
-      \new Lyrics  = BDLyricsF
-      \new Lyrics = BDLyricsFAlt
 
       \context Staff = BDStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -1162,15 +1137,14 @@ chorusStr = Chorus
       >>
       \context Lyrics = BDLyricsA \lyricsto BDVoiceLyrics \BDVerseA
       \context Lyrics = BDLyricsAAlt \lyricsto BDVoiceLyrics \BDVerseAAlt
-      \context Lyrics = BDLyricsB \lyricsto BDVoiceLyrics \BDChorus
-      \context Lyrics = BDLyricsC \lyricsto BDVoiceLyrics \BDVerseB
-      \context Lyrics = BDLyricsCAlt \lyricsto BDVoiceLyrics \BDVerseBAlt
-      \context Lyrics = BDLyricsD \lyricsto BDVoiceLyrics \BDVerseC
-      \context Lyrics = BDLyricsDAlt \lyricsto BDVoiceLyrics \BDVerseCAlt
-      \context Lyrics = BDLyricsE \lyricsto BDVoiceLyrics \BDVerseD
-      \context Lyrics = BDLyricsEAlt \lyricsto BDVoiceLyrics \BDVerseDAlt
-      \context Lyrics = BDLyricsF \lyricsto BDVoiceLyrics \BDVerseE
-      \context Lyrics = BDLyricsFAlt \lyricsto BDVoiceLyrics \BDVerseEAlt
+      \context Lyrics = BDLyricsB \lyricsto BDVoiceLyrics \BDVerseB
+      \context Lyrics = BDLyricsBAlt \lyricsto BDVoiceLyrics \BDVerseBAlt
+      \context Lyrics = BDLyricsC \lyricsto BDVoiceLyrics \BDVerseC
+      \context Lyrics = BDLyricsCAlt \lyricsto BDVoiceLyrics \BDVerseCAlt
+      \context Lyrics = BDLyricsD \lyricsto BDVoiceLyrics \BDVerseD
+      \context Lyrics = BDLyricsDAlt \lyricsto BDVoiceLyrics \BDVerseDAlt
+      \context Lyrics = BDLyricsE \lyricsto BDVoiceLyrics \BDVerseE
+      \context Lyrics = BDLyricsEAlt \lyricsto BDVoiceLyrics \BDVerseEAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -1241,10 +1215,9 @@ chorusStr = Chorus
       \new Lyrics  = BFLyricsA
       \new Lyrics = BFLyricsAAlt
       \new Lyrics  = BFLyricsB
+      \new Lyrics = BFLyricsBAlt
       \new Lyrics  = BFLyricsC
       \new Lyrics = BFLyricsCAlt
-      \new Lyrics  = BFLyricsD
-      \new Lyrics = BFLyricsDAlt
 
       \context Staff = BFStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -1252,11 +1225,10 @@ chorusStr = Chorus
       >>
       \context Lyrics = BFLyricsA \lyricsto BFVoiceLyrics \BFVerseA
       \context Lyrics = BFLyricsAAlt \lyricsto BFVoiceLyrics \BFVerseAAlt
-      \context Lyrics = BFLyricsB \lyricsto BFVoiceLyrics \BFChorus
-      \context Lyrics = BFLyricsC \lyricsto BFVoiceLyrics \BFVerseB
-      \context Lyrics = BFLyricsCAlt \lyricsto BFVoiceLyrics \BFVerseBAlt
-      \context Lyrics = BFLyricsD \lyricsto BFVoiceLyrics \BFVerseC
-      \context Lyrics = BFLyricsDAlt \lyricsto BFVoiceLyrics \BFVerseCAlt
+      \context Lyrics = BFLyricsB \lyricsto BFVoiceLyrics \BFVerseB
+      \context Lyrics = BFLyricsBAlt \lyricsto BFVoiceLyrics \BFVerseBAlt
+      \context Lyrics = BFLyricsC \lyricsto BFVoiceLyrics \BFVerseC
+      \context Lyrics = BFLyricsCAlt \lyricsto BFVoiceLyrics \BFVerseCAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -1285,12 +1257,11 @@ chorusStr = Chorus
       \new Lyrics  = BGLyricsA
       \new Lyrics = BGLyricsAAlt
       \new Lyrics  = BGLyricsB
+      \new Lyrics = BGLyricsBAlt
       \new Lyrics  = BGLyricsC
       \new Lyrics = BGLyricsCAlt
       \new Lyrics  = BGLyricsD
       \new Lyrics = BGLyricsDAlt
-      \new Lyrics  = BGLyricsE
-      \new Lyrics = BGLyricsEAlt
 
       \context Staff = BGStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -1298,13 +1269,12 @@ chorusStr = Chorus
       >>
       \context Lyrics = BGLyricsA \lyricsto BGVoiceLyrics \BGVerseA
       \context Lyrics = BGLyricsAAlt \lyricsto BGVoiceLyrics \BGVerseAAlt
-      \context Lyrics = BGLyricsB \lyricsto BGVoiceLyrics \BGChorus
-      \context Lyrics = BGLyricsC \lyricsto BGVoiceLyrics \BGVerseB
-      \context Lyrics = BGLyricsCAlt \lyricsto BGVoiceLyrics \BGVerseBAlt
-      \context Lyrics = BGLyricsD \lyricsto BGVoiceLyrics \BGVerseC
-      \context Lyrics = BGLyricsDAlt \lyricsto BGVoiceLyrics \BGVerseCAlt
-      \context Lyrics = BGLyricsE \lyricsto BGVoiceLyrics \BGVerseD
-      \context Lyrics = BGLyricsEAlt \lyricsto BGVoiceLyrics \BGVerseDAlt
+      \context Lyrics = BGLyricsB \lyricsto BGVoiceLyrics \BGVerseB
+      \context Lyrics = BGLyricsBAlt \lyricsto BGVoiceLyrics \BGVerseBAlt
+      \context Lyrics = BGLyricsC \lyricsto BGVoiceLyrics \BGVerseC
+      \context Lyrics = BGLyricsCAlt \lyricsto BGVoiceLyrics \BGVerseCAlt
+      \context Lyrics = BGLyricsD \lyricsto BGVoiceLyrics \BGVerseD
+      \context Lyrics = BGLyricsDAlt \lyricsto BGVoiceLyrics \BGVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -1333,12 +1303,11 @@ chorusStr = Chorus
       \new Lyrics  = BHLyricsA
       \new Lyrics = BHLyricsAAlt
       \new Lyrics  = BHLyricsB
+      \new Lyrics = BHLyricsBAlt
       \new Lyrics  = BHLyricsC
       \new Lyrics = BHLyricsCAlt
       \new Lyrics  = BHLyricsD
       \new Lyrics = BHLyricsDAlt
-      \new Lyrics  = BHLyricsE
-      \new Lyrics = BHLyricsEAlt
 
       \context Staff = BHStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -1346,13 +1315,12 @@ chorusStr = Chorus
       >>
       \context Lyrics = BHLyricsA \lyricsto BHVoiceLyrics \BHVerseA
       \context Lyrics = BHLyricsAAlt \lyricsto BHVoiceLyrics \BHVerseAAlt
-      \context Lyrics = BHLyricsB \lyricsto BHVoiceLyrics \BHChorus
-      \context Lyrics = BHLyricsC \lyricsto BHVoiceLyrics \BHVerseB
-      \context Lyrics = BHLyricsCAlt \lyricsto BHVoiceLyrics \BHVerseBAlt
-      \context Lyrics = BHLyricsD \lyricsto BHVoiceLyrics \BHVerseC
-      \context Lyrics = BHLyricsDAlt \lyricsto BHVoiceLyrics \BHVerseCAlt
-      \context Lyrics = BHLyricsE \lyricsto BHVoiceLyrics \BHVerseD
-      \context Lyrics = BHLyricsEAlt \lyricsto BHVoiceLyrics \BHVerseDAlt
+      \context Lyrics = BHLyricsB \lyricsto BHVoiceLyrics \BHVerseB
+      \context Lyrics = BHLyricsBAlt \lyricsto BHVoiceLyrics \BHVerseBAlt
+      \context Lyrics = BHLyricsC \lyricsto BHVoiceLyrics \BHVerseC
+      \context Lyrics = BHLyricsCAlt \lyricsto BHVoiceLyrics \BHVerseCAlt
+      \context Lyrics = BHLyricsD \lyricsto BHVoiceLyrics \BHVerseD
+      \context Lyrics = BHLyricsDAlt \lyricsto BHVoiceLyrics \BHVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -1473,10 +1441,9 @@ chorusStr = Chorus
       \new Lyrics  = CALyricsA
       \new Lyrics = CALyricsAAlt
       \new Lyrics  = CALyricsB
+      \new Lyrics = CALyricsBAlt
       \new Lyrics  = CALyricsC
       \new Lyrics = CALyricsCAlt
-      \new Lyrics  = CALyricsD
-      \new Lyrics = CALyricsDAlt
 
       \context Staff = CAStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -1484,11 +1451,10 @@ chorusStr = Chorus
       >>
       \context Lyrics = CALyricsA \lyricsto CAVoiceLyrics \CAVerseA
       \context Lyrics = CALyricsAAlt \lyricsto CAVoiceLyrics \CAVerseAAlt
-      \context Lyrics = CALyricsB \lyricsto CAVoiceLyrics \CAChorus
-      \context Lyrics = CALyricsC \lyricsto CAVoiceLyrics \CAVerseB
-      \context Lyrics = CALyricsCAlt \lyricsto CAVoiceLyrics \CAVerseBAlt
-      \context Lyrics = CALyricsD \lyricsto CAVoiceLyrics \CAVerseC
-      \context Lyrics = CALyricsDAlt \lyricsto CAVoiceLyrics \CAVerseCAlt
+      \context Lyrics = CALyricsB \lyricsto CAVoiceLyrics \CAVerseB
+      \context Lyrics = CALyricsBAlt \lyricsto CAVoiceLyrics \CAVerseBAlt
+      \context Lyrics = CALyricsC \lyricsto CAVoiceLyrics \CAVerseC
+      \context Lyrics = CALyricsCAlt \lyricsto CAVoiceLyrics \CAVerseCAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -1517,12 +1483,11 @@ chorusStr = Chorus
       \new Lyrics  = CBLyricsA
       \new Lyrics = CBLyricsAAlt
       \new Lyrics  = CBLyricsB
+      \new Lyrics = CBLyricsBAlt
       \new Lyrics  = CBLyricsC
       \new Lyrics = CBLyricsCAlt
       \new Lyrics  = CBLyricsD
       \new Lyrics = CBLyricsDAlt
-      \new Lyrics  = CBLyricsE
-      \new Lyrics = CBLyricsEAlt
 
       \context Staff = CBStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -1530,13 +1495,12 @@ chorusStr = Chorus
       >>
       \context Lyrics = CBLyricsA \lyricsto CBVoiceLyrics \CBVerseA
       \context Lyrics = CBLyricsAAlt \lyricsto CBVoiceLyrics \CBVerseAAlt
-      \context Lyrics = CBLyricsB \lyricsto CBVoiceLyrics \CBChorus
-      \context Lyrics = CBLyricsC \lyricsto CBVoiceLyrics \CBVerseB
-      \context Lyrics = CBLyricsCAlt \lyricsto CBVoiceLyrics \CBVerseBAlt
-      \context Lyrics = CBLyricsD \lyricsto CBVoiceLyrics \CBVerseC
-      \context Lyrics = CBLyricsDAlt \lyricsto CBVoiceLyrics \CBVerseCAlt
-      \context Lyrics = CBLyricsE \lyricsto CBVoiceLyrics \CBVerseD
-      \context Lyrics = CBLyricsEAlt \lyricsto CBVoiceLyrics \CBVerseDAlt
+      \context Lyrics = CBLyricsB \lyricsto CBVoiceLyrics \CBVerseB
+      \context Lyrics = CBLyricsBAlt \lyricsto CBVoiceLyrics \CBVerseBAlt
+      \context Lyrics = CBLyricsC \lyricsto CBVoiceLyrics \CBVerseC
+      \context Lyrics = CBLyricsCAlt \lyricsto CBVoiceLyrics \CBVerseCAlt
+      \context Lyrics = CBLyricsD \lyricsto CBVoiceLyrics \CBVerseD
+      \context Lyrics = CBLyricsDAlt \lyricsto CBVoiceLyrics \CBVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -1611,12 +1575,11 @@ chorusStr = Chorus
       \new Lyrics  = CDLyricsA
       \new Lyrics = CDLyricsAAlt
       \new Lyrics  = CDLyricsB
+      \new Lyrics = CDLyricsBAlt
       \new Lyrics  = CDLyricsC
       \new Lyrics = CDLyricsCAlt
       \new Lyrics  = CDLyricsD
       \new Lyrics = CDLyricsDAlt
-      \new Lyrics  = CDLyricsE
-      \new Lyrics = CDLyricsEAlt
 
       \context Staff = CDStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -1624,13 +1587,12 @@ chorusStr = Chorus
       >>
       \context Lyrics = CDLyricsA \lyricsto CDVoiceLyrics \CDVerseA
       \context Lyrics = CDLyricsAAlt \lyricsto CDVoiceLyrics \CDVerseAAlt
-      \context Lyrics = CDLyricsB \lyricsto CDVoiceLyrics \CDChorus
-      \context Lyrics = CDLyricsC \lyricsto CDVoiceLyrics \CDVerseB
-      \context Lyrics = CDLyricsCAlt \lyricsto CDVoiceLyrics \CDVerseBAlt
-      \context Lyrics = CDLyricsD \lyricsto CDVoiceLyrics \CDVerseC
-      \context Lyrics = CDLyricsDAlt \lyricsto CDVoiceLyrics \CDVerseCAlt
-      \context Lyrics = CDLyricsE \lyricsto CDVoiceLyrics \CDVerseD
-      \context Lyrics = CDLyricsEAlt \lyricsto CDVoiceLyrics \CDVerseDAlt
+      \context Lyrics = CDLyricsB \lyricsto CDVoiceLyrics \CDVerseB
+      \context Lyrics = CDLyricsBAlt \lyricsto CDVoiceLyrics \CDVerseBAlt
+      \context Lyrics = CDLyricsC \lyricsto CDVoiceLyrics \CDVerseC
+      \context Lyrics = CDLyricsCAlt \lyricsto CDVoiceLyrics \CDVerseCAlt
+      \context Lyrics = CDLyricsD \lyricsto CDVoiceLyrics \CDVerseD
+      \context Lyrics = CDLyricsDAlt \lyricsto CDVoiceLyrics \CDVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -1705,12 +1667,11 @@ chorusStr = Chorus
       \new Lyrics  = CFLyricsA
       \new Lyrics = CFLyricsAAlt
       \new Lyrics  = CFLyricsB
+      \new Lyrics = CFLyricsBAlt
       \new Lyrics  = CFLyricsC
       \new Lyrics = CFLyricsCAlt
       \new Lyrics  = CFLyricsD
       \new Lyrics = CFLyricsDAlt
-      \new Lyrics  = CFLyricsE
-      \new Lyrics = CFLyricsEAlt
 
       \context Staff = CFStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -1718,13 +1679,12 @@ chorusStr = Chorus
       >>
       \context Lyrics = CFLyricsA \lyricsto CFVoiceLyrics \CFVerseA
       \context Lyrics = CFLyricsAAlt \lyricsto CFVoiceLyrics \CFVerseAAlt
-      \context Lyrics = CFLyricsB \lyricsto CFVoiceLyrics \CFChorus
-      \context Lyrics = CFLyricsC \lyricsto CFVoiceLyrics \CFVerseB
-      \context Lyrics = CFLyricsCAlt \lyricsto CFVoiceLyrics \CFVerseBAlt
-      \context Lyrics = CFLyricsD \lyricsto CFVoiceLyrics \CFVerseC
-      \context Lyrics = CFLyricsDAlt \lyricsto CFVoiceLyrics \CFVerseCAlt
-      \context Lyrics = CFLyricsE \lyricsto CFVoiceLyrics \CFVerseD
-      \context Lyrics = CFLyricsEAlt \lyricsto CFVoiceLyrics \CFVerseDAlt
+      \context Lyrics = CFLyricsB \lyricsto CFVoiceLyrics \CFVerseB
+      \context Lyrics = CFLyricsBAlt \lyricsto CFVoiceLyrics \CFVerseBAlt
+      \context Lyrics = CFLyricsC \lyricsto CFVoiceLyrics \CFVerseC
+      \context Lyrics = CFLyricsCAlt \lyricsto CFVoiceLyrics \CFVerseCAlt
+      \context Lyrics = CFLyricsD \lyricsto CFVoiceLyrics \CFVerseD
+      \context Lyrics = CFLyricsDAlt \lyricsto CFVoiceLyrics \CFVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -1753,12 +1713,11 @@ chorusStr = Chorus
       \new Lyrics  = CGLyricsA
       \new Lyrics = CGLyricsAAlt
       \new Lyrics  = CGLyricsB
+      \new Lyrics = CGLyricsBAlt
       \new Lyrics  = CGLyricsC
       \new Lyrics = CGLyricsCAlt
       \new Lyrics  = CGLyricsD
       \new Lyrics = CGLyricsDAlt
-      \new Lyrics  = CGLyricsE
-      \new Lyrics = CGLyricsEAlt
 
       \context Staff = CGStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -1766,13 +1725,12 @@ chorusStr = Chorus
       >>
       \context Lyrics = CGLyricsA \lyricsto CGVoiceLyrics \CGVerseA
       \context Lyrics = CGLyricsAAlt \lyricsto CGVoiceLyrics \CGVerseAAlt
-      \context Lyrics = CGLyricsB \lyricsto CGVoiceLyrics \CGChorus
-      \context Lyrics = CGLyricsC \lyricsto CGVoiceLyrics \CGVerseB
-      \context Lyrics = CGLyricsCAlt \lyricsto CGVoiceLyrics \CGVerseBAlt
-      \context Lyrics = CGLyricsD \lyricsto CGVoiceLyrics \CGVerseC
-      \context Lyrics = CGLyricsDAlt \lyricsto CGVoiceLyrics \CGVerseCAlt
-      \context Lyrics = CGLyricsE \lyricsto CGVoiceLyrics \CGVerseD
-      \context Lyrics = CGLyricsEAlt \lyricsto CGVoiceLyrics \CGVerseDAlt
+      \context Lyrics = CGLyricsB \lyricsto CGVoiceLyrics \CGVerseB
+      \context Lyrics = CGLyricsBAlt \lyricsto CGVoiceLyrics \CGVerseBAlt
+      \context Lyrics = CGLyricsC \lyricsto CGVoiceLyrics \CGVerseC
+      \context Lyrics = CGLyricsCAlt \lyricsto CGVoiceLyrics \CGVerseCAlt
+      \context Lyrics = CGLyricsD \lyricsto CGVoiceLyrics \CGVerseD
+      \context Lyrics = CGLyricsDAlt \lyricsto CGVoiceLyrics \CGVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -1847,12 +1805,11 @@ chorusStr = Chorus
       \new Lyrics  = CILyricsA
       \new Lyrics = CILyricsAAlt
       \new Lyrics  = CILyricsB
+      \new Lyrics = CILyricsBAlt
       \new Lyrics  = CILyricsC
       \new Lyrics = CILyricsCAlt
       \new Lyrics  = CILyricsD
       \new Lyrics = CILyricsDAlt
-      \new Lyrics  = CILyricsE
-      \new Lyrics = CILyricsEAlt
 
       \context Staff = CIStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -1860,13 +1817,12 @@ chorusStr = Chorus
       >>
       \context Lyrics = CILyricsA \lyricsto CIVoiceLyrics \CIVerseA
       \context Lyrics = CILyricsAAlt \lyricsto CIVoiceLyrics \CIVerseAAlt
-      \context Lyrics = CILyricsB \lyricsto CIVoiceLyrics \CIChorus
-      \context Lyrics = CILyricsC \lyricsto CIVoiceLyrics \CIVerseB
-      \context Lyrics = CILyricsCAlt \lyricsto CIVoiceLyrics \CIVerseBAlt
-      \context Lyrics = CILyricsD \lyricsto CIVoiceLyrics \CIVerseC
-      \context Lyrics = CILyricsDAlt \lyricsto CIVoiceLyrics \CIVerseCAlt
-      \context Lyrics = CILyricsE \lyricsto CIVoiceLyrics \CIVerseD
-      \context Lyrics = CILyricsEAlt \lyricsto CIVoiceLyrics \CIVerseDAlt
+      \context Lyrics = CILyricsB \lyricsto CIVoiceLyrics \CIVerseB
+      \context Lyrics = CILyricsBAlt \lyricsto CIVoiceLyrics \CIVerseBAlt
+      \context Lyrics = CILyricsC \lyricsto CIVoiceLyrics \CIVerseC
+      \context Lyrics = CILyricsCAlt \lyricsto CIVoiceLyrics \CIVerseCAlt
+      \context Lyrics = CILyricsD \lyricsto CIVoiceLyrics \CIVerseD
+      \context Lyrics = CILyricsDAlt \lyricsto CIVoiceLyrics \CIVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -1895,12 +1851,11 @@ chorusStr = Chorus
       \new Lyrics  = DZLyricsA
       \new Lyrics = DZLyricsAAlt
       \new Lyrics  = DZLyricsB
+      \new Lyrics = DZLyricsBAlt
       \new Lyrics  = DZLyricsC
       \new Lyrics = DZLyricsCAlt
       \new Lyrics  = DZLyricsD
       \new Lyrics = DZLyricsDAlt
-      \new Lyrics  = DZLyricsE
-      \new Lyrics = DZLyricsEAlt
 
       \context Staff = DZStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -1908,13 +1863,12 @@ chorusStr = Chorus
       >>
       \context Lyrics = DZLyricsA \lyricsto DZVoiceLyrics \DZVerseA
       \context Lyrics = DZLyricsAAlt \lyricsto DZVoiceLyrics \DZVerseAAlt
-      \context Lyrics = DZLyricsB \lyricsto DZVoiceLyrics \DZChorus
-      \context Lyrics = DZLyricsC \lyricsto DZVoiceLyrics \DZVerseB
-      \context Lyrics = DZLyricsCAlt \lyricsto DZVoiceLyrics \DZVerseBAlt
-      \context Lyrics = DZLyricsD \lyricsto DZVoiceLyrics \DZVerseC
-      \context Lyrics = DZLyricsDAlt \lyricsto DZVoiceLyrics \DZVerseCAlt
-      \context Lyrics = DZLyricsE \lyricsto DZVoiceLyrics \DZVerseD
-      \context Lyrics = DZLyricsEAlt \lyricsto DZVoiceLyrics \DZVerseDAlt
+      \context Lyrics = DZLyricsB \lyricsto DZVoiceLyrics \DZVerseB
+      \context Lyrics = DZLyricsBAlt \lyricsto DZVoiceLyrics \DZVerseBAlt
+      \context Lyrics = DZLyricsC \lyricsto DZVoiceLyrics \DZVerseC
+      \context Lyrics = DZLyricsCAlt \lyricsto DZVoiceLyrics \DZVerseCAlt
+      \context Lyrics = DZLyricsD \lyricsto DZVoiceLyrics \DZVerseD
+      \context Lyrics = DZLyricsDAlt \lyricsto DZVoiceLyrics \DZVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -1989,12 +1943,11 @@ chorusStr = Chorus
       \new Lyrics  = DBLyricsA
       \new Lyrics = DBLyricsAAlt
       \new Lyrics  = DBLyricsB
+      \new Lyrics = DBLyricsBAlt
       \new Lyrics  = DBLyricsC
       \new Lyrics = DBLyricsCAlt
       \new Lyrics  = DBLyricsD
       \new Lyrics = DBLyricsDAlt
-      \new Lyrics  = DBLyricsE
-      \new Lyrics = DBLyricsEAlt
 
       \context Staff = DBStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -2002,13 +1955,12 @@ chorusStr = Chorus
       >>
       \context Lyrics = DBLyricsA \lyricsto DBVoiceLyrics \DBVerseA
       \context Lyrics = DBLyricsAAlt \lyricsto DBVoiceLyrics \DBVerseAAlt
-      \context Lyrics = DBLyricsB \lyricsto DBVoiceLyrics \DBChorus
-      \context Lyrics = DBLyricsC \lyricsto DBVoiceLyrics \DBVerseB
-      \context Lyrics = DBLyricsCAlt \lyricsto DBVoiceLyrics \DBVerseBAlt
-      \context Lyrics = DBLyricsD \lyricsto DBVoiceLyrics \DBVerseC
-      \context Lyrics = DBLyricsDAlt \lyricsto DBVoiceLyrics \DBVerseCAlt
-      \context Lyrics = DBLyricsE \lyricsto DBVoiceLyrics \DBVerseD
-      \context Lyrics = DBLyricsEAlt \lyricsto DBVoiceLyrics \DBVerseDAlt
+      \context Lyrics = DBLyricsB \lyricsto DBVoiceLyrics \DBVerseB
+      \context Lyrics = DBLyricsBAlt \lyricsto DBVoiceLyrics \DBVerseBAlt
+      \context Lyrics = DBLyricsC \lyricsto DBVoiceLyrics \DBVerseC
+      \context Lyrics = DBLyricsCAlt \lyricsto DBVoiceLyrics \DBVerseCAlt
+      \context Lyrics = DBLyricsD \lyricsto DBVoiceLyrics \DBVerseD
+      \context Lyrics = DBLyricsDAlt \lyricsto DBVoiceLyrics \DBVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -2083,10 +2035,9 @@ chorusStr = Chorus
       \new Lyrics  = DDLyricsA
       \new Lyrics = DDLyricsAAlt
       \new Lyrics  = DDLyricsB
+      \new Lyrics = DDLyricsBAlt
       \new Lyrics  = DDLyricsC
       \new Lyrics = DDLyricsCAlt
-      \new Lyrics  = DDLyricsD
-      \new Lyrics = DDLyricsDAlt
 
       \context Staff = DDStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -2094,11 +2045,10 @@ chorusStr = Chorus
       >>
       \context Lyrics = DDLyricsA \lyricsto DDVoiceLyrics \DDVerseA
       \context Lyrics = DDLyricsAAlt \lyricsto DDVoiceLyrics \DDVerseAAlt
-      \context Lyrics = DDLyricsB \lyricsto DDVoiceLyrics \DDChorus
-      \context Lyrics = DDLyricsC \lyricsto DDVoiceLyrics \DDVerseB
-      \context Lyrics = DDLyricsCAlt \lyricsto DDVoiceLyrics \DDVerseBAlt
-      \context Lyrics = DDLyricsD \lyricsto DDVoiceLyrics \DDVerseC
-      \context Lyrics = DDLyricsDAlt \lyricsto DDVoiceLyrics \DDVerseCAlt
+      \context Lyrics = DDLyricsB \lyricsto DDVoiceLyrics \DDVerseB
+      \context Lyrics = DDLyricsBAlt \lyricsto DDVoiceLyrics \DDVerseBAlt
+      \context Lyrics = DDLyricsC \lyricsto DDVoiceLyrics \DDVerseC
+      \context Lyrics = DDLyricsCAlt \lyricsto DDVoiceLyrics \DDVerseCAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -2127,12 +2077,11 @@ chorusStr = Chorus
       \new Lyrics  = DELyricsA
       \new Lyrics = DELyricsAAlt
       \new Lyrics  = DELyricsB
+      \new Lyrics = DELyricsBAlt
       \new Lyrics  = DELyricsC
       \new Lyrics = DELyricsCAlt
       \new Lyrics  = DELyricsD
       \new Lyrics = DELyricsDAlt
-      \new Lyrics  = DELyricsE
-      \new Lyrics = DELyricsEAlt
 
       \context Staff = DEStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -2140,13 +2089,12 @@ chorusStr = Chorus
       >>
       \context Lyrics = DELyricsA \lyricsto DEVoiceLyrics \DEVerseA
       \context Lyrics = DELyricsAAlt \lyricsto DEVoiceLyrics \DEVerseAAlt
-      \context Lyrics = DELyricsB \lyricsto DEVoiceLyrics \DEChorus
-      \context Lyrics = DELyricsC \lyricsto DEVoiceLyrics \DEVerseB
-      \context Lyrics = DELyricsCAlt \lyricsto DEVoiceLyrics \DEVerseBAlt
-      \context Lyrics = DELyricsD \lyricsto DEVoiceLyrics \DEVerseC
-      \context Lyrics = DELyricsDAlt \lyricsto DEVoiceLyrics \DEVerseCAlt
-      \context Lyrics = DELyricsE \lyricsto DEVoiceLyrics \DEVerseD
-      \context Lyrics = DELyricsEAlt \lyricsto DEVoiceLyrics \DEVerseDAlt
+      \context Lyrics = DELyricsB \lyricsto DEVoiceLyrics \DEVerseB
+      \context Lyrics = DELyricsBAlt \lyricsto DEVoiceLyrics \DEVerseBAlt
+      \context Lyrics = DELyricsC \lyricsto DEVoiceLyrics \DEVerseC
+      \context Lyrics = DELyricsCAlt \lyricsto DEVoiceLyrics \DEVerseCAlt
+      \context Lyrics = DELyricsD \lyricsto DEVoiceLyrics \DEVerseD
+      \context Lyrics = DELyricsDAlt \lyricsto DEVoiceLyrics \DEVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -2175,12 +2123,11 @@ chorusStr = Chorus
       \new Lyrics  = DFLyricsA
       \new Lyrics = DFLyricsAAlt
       \new Lyrics  = DFLyricsB
+      \new Lyrics = DFLyricsBAlt
       \new Lyrics  = DFLyricsC
       \new Lyrics = DFLyricsCAlt
       \new Lyrics  = DFLyricsD
       \new Lyrics = DFLyricsDAlt
-      \new Lyrics  = DFLyricsE
-      \new Lyrics = DFLyricsEAlt
 
       \context Staff = DFStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -2188,13 +2135,12 @@ chorusStr = Chorus
       >>
       \context Lyrics = DFLyricsA \lyricsto DFVoiceLyrics \DFVerseA
       \context Lyrics = DFLyricsAAlt \lyricsto DFVoiceLyrics \DFVerseAAlt
-      \context Lyrics = DFLyricsB \lyricsto DFVoiceLyrics \DFChorus
-      \context Lyrics = DFLyricsC \lyricsto DFVoiceLyrics \DFVerseB
-      \context Lyrics = DFLyricsCAlt \lyricsto DFVoiceLyrics \DFVerseBAlt
-      \context Lyrics = DFLyricsD \lyricsto DFVoiceLyrics \DFVerseC
-      \context Lyrics = DFLyricsDAlt \lyricsto DFVoiceLyrics \DFVerseCAlt
-      \context Lyrics = DFLyricsE \lyricsto DFVoiceLyrics \DFVerseD
-      \context Lyrics = DFLyricsEAlt \lyricsto DFVoiceLyrics \DFVerseDAlt
+      \context Lyrics = DFLyricsB \lyricsto DFVoiceLyrics \DFVerseB
+      \context Lyrics = DFLyricsBAlt \lyricsto DFVoiceLyrics \DFVerseBAlt
+      \context Lyrics = DFLyricsC \lyricsto DFVoiceLyrics \DFVerseC
+      \context Lyrics = DFLyricsCAlt \lyricsto DFVoiceLyrics \DFVerseCAlt
+      \context Lyrics = DFLyricsD \lyricsto DFVoiceLyrics \DFVerseD
+      \context Lyrics = DFLyricsDAlt \lyricsto DFVoiceLyrics \DFVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -2277,10 +2223,9 @@ chorusStr = Chorus
       \new Lyrics  = DHLyricsA
       \new Lyrics = DHLyricsAAlt
       \new Lyrics  = DHLyricsB
+      \new Lyrics = DHLyricsBAlt
       \new Lyrics  = DHLyricsC
       \new Lyrics = DHLyricsCAlt
-      \new Lyrics  = DHLyricsD
-      \new Lyrics = DHLyricsDAlt
 
       \context Staff = DHStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -2288,11 +2233,10 @@ chorusStr = Chorus
       >>
       \context Lyrics = DHLyricsA \lyricsto DHVoiceLyrics \DHVerseA
       \context Lyrics = DHLyricsAAlt \lyricsto DHVoiceLyrics \DHVerseAAlt
-      \context Lyrics = DHLyricsB \lyricsto DHVoiceLyrics \DHChorus
-      \context Lyrics = DHLyricsC \lyricsto DHVoiceLyrics \DHVerseB
-      \context Lyrics = DHLyricsCAlt \lyricsto DHVoiceLyrics \DHVerseBAlt
-      \context Lyrics = DHLyricsD \lyricsto DHVoiceLyrics \DHVerseC
-      \context Lyrics = DHLyricsDAlt \lyricsto DHVoiceLyrics \DHVerseCAlt
+      \context Lyrics = DHLyricsB \lyricsto DHVoiceLyrics \DHVerseB
+      \context Lyrics = DHLyricsBAlt \lyricsto DHVoiceLyrics \DHVerseBAlt
+      \context Lyrics = DHLyricsC \lyricsto DHVoiceLyrics \DHVerseC
+      \context Lyrics = DHLyricsCAlt \lyricsto DHVoiceLyrics \DHVerseCAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -2321,10 +2265,9 @@ chorusStr = Chorus
       \new Lyrics  = DILyricsA
       \new Lyrics = DILyricsAAlt
       \new Lyrics  = DILyricsB
+      \new Lyrics = DILyricsBAlt
       \new Lyrics  = DILyricsC
       \new Lyrics = DILyricsCAlt
-      \new Lyrics  = DILyricsD
-      \new Lyrics = DILyricsDAlt
 
       \context Staff = DIStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -2332,11 +2275,10 @@ chorusStr = Chorus
       >>
       \context Lyrics = DILyricsA \lyricsto DIVoiceLyrics \DIVerseA
       \context Lyrics = DILyricsAAlt \lyricsto DIVoiceLyrics \DIVerseAAlt
-      \context Lyrics = DILyricsB \lyricsto DIVoiceLyrics \DIChorus
-      \context Lyrics = DILyricsC \lyricsto DIVoiceLyrics \DIVerseB
-      \context Lyrics = DILyricsCAlt \lyricsto DIVoiceLyrics \DIVerseBAlt
-      \context Lyrics = DILyricsD \lyricsto DIVoiceLyrics \DIVerseC
-      \context Lyrics = DILyricsDAlt \lyricsto DIVoiceLyrics \DIVerseCAlt
+      \context Lyrics = DILyricsB \lyricsto DIVoiceLyrics \DIVerseB
+      \context Lyrics = DILyricsBAlt \lyricsto DIVoiceLyrics \DIVerseBAlt
+      \context Lyrics = DILyricsC \lyricsto DIVoiceLyrics \DIVerseC
+      \context Lyrics = DILyricsCAlt \lyricsto DIVoiceLyrics \DIVerseCAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -2453,12 +2395,11 @@ chorusStr = Chorus
       \new Lyrics  = EBLyricsA
       \new Lyrics = EBLyricsAAlt
       \new Lyrics  = EBLyricsB
+      \new Lyrics = EBLyricsBAlt
       \new Lyrics  = EBLyricsC
       \new Lyrics = EBLyricsCAlt
       \new Lyrics  = EBLyricsD
       \new Lyrics = EBLyricsDAlt
-      \new Lyrics  = EBLyricsE
-      \new Lyrics = EBLyricsEAlt
 
       \context Staff = EBStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -2466,13 +2407,12 @@ chorusStr = Chorus
       >>
       \context Lyrics = EBLyricsA \lyricsto EBVoiceLyrics \EBVerseA
       \context Lyrics = EBLyricsAAlt \lyricsto EBVoiceLyrics \EBVerseAAlt
-      \context Lyrics = EBLyricsB \lyricsto EBVoiceLyrics \EBChorus
-      \context Lyrics = EBLyricsC \lyricsto EBVoiceLyrics \EBVerseB
-      \context Lyrics = EBLyricsCAlt \lyricsto EBVoiceLyrics \EBVerseBAlt
-      \context Lyrics = EBLyricsD \lyricsto EBVoiceLyrics \EBVerseC
-      \context Lyrics = EBLyricsDAlt \lyricsto EBVoiceLyrics \EBVerseCAlt
-      \context Lyrics = EBLyricsE \lyricsto EBVoiceLyrics \EBVerseD
-      \context Lyrics = EBLyricsEAlt \lyricsto EBVoiceLyrics \EBVerseDAlt
+      \context Lyrics = EBLyricsB \lyricsto EBVoiceLyrics \EBVerseB
+      \context Lyrics = EBLyricsBAlt \lyricsto EBVoiceLyrics \EBVerseBAlt
+      \context Lyrics = EBLyricsC \lyricsto EBVoiceLyrics \EBVerseC
+      \context Lyrics = EBLyricsCAlt \lyricsto EBVoiceLyrics \EBVerseCAlt
+      \context Lyrics = EBLyricsD \lyricsto EBVoiceLyrics \EBVerseD
+      \context Lyrics = EBLyricsDAlt \lyricsto EBVoiceLyrics \EBVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -2501,12 +2441,11 @@ chorusStr = Chorus
       \new Lyrics  = ECLyricsA
       \new Lyrics = ECLyricsAAlt
       \new Lyrics  = ECLyricsB
+      \new Lyrics = ECLyricsBAlt
       \new Lyrics  = ECLyricsC
       \new Lyrics = ECLyricsCAlt
       \new Lyrics  = ECLyricsD
       \new Lyrics = ECLyricsDAlt
-      \new Lyrics  = ECLyricsE
-      \new Lyrics = ECLyricsEAlt
 
       \context Staff = ECStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -2514,13 +2453,12 @@ chorusStr = Chorus
       >>
       \context Lyrics = ECLyricsA \lyricsto ECVoiceLyrics \ECVerseA
       \context Lyrics = ECLyricsAAlt \lyricsto ECVoiceLyrics \ECVerseAAlt
-      \context Lyrics = ECLyricsB \lyricsto ECVoiceLyrics \ECChorus
-      \context Lyrics = ECLyricsC \lyricsto ECVoiceLyrics \ECVerseB
-      \context Lyrics = ECLyricsCAlt \lyricsto ECVoiceLyrics \ECVerseBAlt
-      \context Lyrics = ECLyricsD \lyricsto ECVoiceLyrics \ECVerseC
-      \context Lyrics = ECLyricsDAlt \lyricsto ECVoiceLyrics \ECVerseCAlt
-      \context Lyrics = ECLyricsE \lyricsto ECVoiceLyrics \ECVerseD
-      \context Lyrics = ECLyricsEAlt \lyricsto ECVoiceLyrics \ECVerseDAlt
+      \context Lyrics = ECLyricsB \lyricsto ECVoiceLyrics \ECVerseB
+      \context Lyrics = ECLyricsBAlt \lyricsto ECVoiceLyrics \ECVerseBAlt
+      \context Lyrics = ECLyricsC \lyricsto ECVoiceLyrics \ECVerseC
+      \context Lyrics = ECLyricsCAlt \lyricsto ECVoiceLyrics \ECVerseCAlt
+      \context Lyrics = ECLyricsD \lyricsto ECVoiceLyrics \ECVerseD
+      \context Lyrics = ECLyricsDAlt \lyricsto ECVoiceLyrics \ECVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -2549,12 +2487,11 @@ chorusStr = Chorus
       \new Lyrics  = EDLyricsA
       \new Lyrics = EDLyricsAAlt
       \new Lyrics  = EDLyricsB
+      \new Lyrics = EDLyricsBAlt
       \new Lyrics  = EDLyricsC
       \new Lyrics = EDLyricsCAlt
       \new Lyrics  = EDLyricsD
       \new Lyrics = EDLyricsDAlt
-      \new Lyrics  = EDLyricsE
-      \new Lyrics = EDLyricsEAlt
 
       \context Staff = EDStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -2562,13 +2499,12 @@ chorusStr = Chorus
       >>
       \context Lyrics = EDLyricsA \lyricsto EDVoiceLyrics \EDVerseA
       \context Lyrics = EDLyricsAAlt \lyricsto EDVoiceLyrics \EDVerseAAlt
-      \context Lyrics = EDLyricsB \lyricsto EDVoiceLyrics \EDChorus
-      \context Lyrics = EDLyricsC \lyricsto EDVoiceLyrics \EDVerseB
-      \context Lyrics = EDLyricsCAlt \lyricsto EDVoiceLyrics \EDVerseBAlt
-      \context Lyrics = EDLyricsD \lyricsto EDVoiceLyrics \EDVerseC
-      \context Lyrics = EDLyricsDAlt \lyricsto EDVoiceLyrics \EDVerseCAlt
-      \context Lyrics = EDLyricsE \lyricsto EDVoiceLyrics \EDVerseD
-      \context Lyrics = EDLyricsEAlt \lyricsto EDVoiceLyrics \EDVerseDAlt
+      \context Lyrics = EDLyricsB \lyricsto EDVoiceLyrics \EDVerseB
+      \context Lyrics = EDLyricsBAlt \lyricsto EDVoiceLyrics \EDVerseBAlt
+      \context Lyrics = EDLyricsC \lyricsto EDVoiceLyrics \EDVerseC
+      \context Lyrics = EDLyricsCAlt \lyricsto EDVoiceLyrics \EDVerseCAlt
+      \context Lyrics = EDLyricsD \lyricsto EDVoiceLyrics \EDVerseD
+      \context Lyrics = EDLyricsDAlt \lyricsto EDVoiceLyrics \EDVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -2739,12 +2675,11 @@ chorusStr = Chorus
       \new Lyrics  = EHLyricsA
       \new Lyrics = EHLyricsAAlt
       \new Lyrics  = EHLyricsB
+      \new Lyrics = EHLyricsBAlt
       \new Lyrics  = EHLyricsC
       \new Lyrics = EHLyricsCAlt
       \new Lyrics  = EHLyricsD
       \new Lyrics = EHLyricsDAlt
-      \new Lyrics  = EHLyricsE
-      \new Lyrics = EHLyricsEAlt
 
       \context Staff = EHStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -2752,13 +2687,12 @@ chorusStr = Chorus
       >>
       \context Lyrics = EHLyricsA \lyricsto EHVoiceLyrics \EHVerseA
       \context Lyrics = EHLyricsAAlt \lyricsto EHVoiceLyrics \EHVerseAAlt
-      \context Lyrics = EHLyricsB \lyricsto EHVoiceLyrics \EHChorus
-      \context Lyrics = EHLyricsC \lyricsto EHVoiceLyrics \EHVerseB
-      \context Lyrics = EHLyricsCAlt \lyricsto EHVoiceLyrics \EHVerseBAlt
-      \context Lyrics = EHLyricsD \lyricsto EHVoiceLyrics \EHVerseC
-      \context Lyrics = EHLyricsDAlt \lyricsto EHVoiceLyrics \EHVerseCAlt
-      \context Lyrics = EHLyricsE \lyricsto EHVoiceLyrics \EHVerseD
-      \context Lyrics = EHLyricsEAlt \lyricsto EHVoiceLyrics \EHVerseDAlt
+      \context Lyrics = EHLyricsB \lyricsto EHVoiceLyrics \EHVerseB
+      \context Lyrics = EHLyricsBAlt \lyricsto EHVoiceLyrics \EHVerseBAlt
+      \context Lyrics = EHLyricsC \lyricsto EHVoiceLyrics \EHVerseC
+      \context Lyrics = EHLyricsCAlt \lyricsto EHVoiceLyrics \EHVerseCAlt
+      \context Lyrics = EHLyricsD \lyricsto EHVoiceLyrics \EHVerseD
+      \context Lyrics = EHLyricsDAlt \lyricsto EHVoiceLyrics \EHVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -2829,10 +2763,9 @@ chorusStr = Chorus
       \new Lyrics  = FZLyricsA
       \new Lyrics = FZLyricsAAlt
       \new Lyrics  = FZLyricsB
+      \new Lyrics = FZLyricsBAlt
       \new Lyrics  = FZLyricsC
       \new Lyrics = FZLyricsCAlt
-      \new Lyrics  = FZLyricsD
-      \new Lyrics = FZLyricsDAlt
 
       \context Staff = FZStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -2840,11 +2773,10 @@ chorusStr = Chorus
       >>
       \context Lyrics = FZLyricsA \lyricsto FZVoiceLyrics \FZVerseA
       \context Lyrics = FZLyricsAAlt \lyricsto FZVoiceLyrics \FZVerseAAlt
-      \context Lyrics = FZLyricsB \lyricsto FZVoiceLyrics \FZChorus
-      \context Lyrics = FZLyricsC \lyricsto FZVoiceLyrics \FZVerseB
-      \context Lyrics = FZLyricsCAlt \lyricsto FZVoiceLyrics \FZVerseBAlt
-      \context Lyrics = FZLyricsD \lyricsto FZVoiceLyrics \FZVerseC
-      \context Lyrics = FZLyricsDAlt \lyricsto FZVoiceLyrics \FZVerseCAlt
+      \context Lyrics = FZLyricsB \lyricsto FZVoiceLyrics \FZVerseB
+      \context Lyrics = FZLyricsBAlt \lyricsto FZVoiceLyrics \FZVerseBAlt
+      \context Lyrics = FZLyricsC \lyricsto FZVoiceLyrics \FZVerseC
+      \context Lyrics = FZLyricsCAlt \lyricsto FZVoiceLyrics \FZVerseCAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -2873,12 +2805,11 @@ chorusStr = Chorus
       \new Lyrics  = FALyricsA
       \new Lyrics = FALyricsAAlt
       \new Lyrics  = FALyricsB
+      \new Lyrics = FALyricsBAlt
       \new Lyrics  = FALyricsC
       \new Lyrics = FALyricsCAlt
       \new Lyrics  = FALyricsD
       \new Lyrics = FALyricsDAlt
-      \new Lyrics  = FALyricsE
-      \new Lyrics = FALyricsEAlt
 
       \context Staff = FAStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -2886,13 +2817,12 @@ chorusStr = Chorus
       >>
       \context Lyrics = FALyricsA \lyricsto FAVoiceLyrics \FAVerseA
       \context Lyrics = FALyricsAAlt \lyricsto FAVoiceLyrics \FAVerseAAlt
-      \context Lyrics = FALyricsB \lyricsto FAVoiceLyrics \FAChorus
-      \context Lyrics = FALyricsC \lyricsto FAVoiceLyrics \FAVerseB
-      \context Lyrics = FALyricsCAlt \lyricsto FAVoiceLyrics \FAVerseBAlt
-      \context Lyrics = FALyricsD \lyricsto FAVoiceLyrics \FAVerseC
-      \context Lyrics = FALyricsDAlt \lyricsto FAVoiceLyrics \FAVerseCAlt
-      \context Lyrics = FALyricsE \lyricsto FAVoiceLyrics \FAVerseD
-      \context Lyrics = FALyricsEAlt \lyricsto FAVoiceLyrics \FAVerseDAlt
+      \context Lyrics = FALyricsB \lyricsto FAVoiceLyrics \FAVerseB
+      \context Lyrics = FALyricsBAlt \lyricsto FAVoiceLyrics \FAVerseBAlt
+      \context Lyrics = FALyricsC \lyricsto FAVoiceLyrics \FAVerseC
+      \context Lyrics = FALyricsCAlt \lyricsto FAVoiceLyrics \FAVerseCAlt
+      \context Lyrics = FALyricsD \lyricsto FAVoiceLyrics \FAVerseD
+      \context Lyrics = FALyricsDAlt \lyricsto FAVoiceLyrics \FAVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -2921,12 +2851,11 @@ chorusStr = Chorus
       \new Lyrics  = FBLyricsA
       \new Lyrics = FBLyricsAAlt
       \new Lyrics  = FBLyricsB
+      \new Lyrics = FBLyricsBAlt
       \new Lyrics  = FBLyricsC
       \new Lyrics = FBLyricsCAlt
       \new Lyrics  = FBLyricsD
       \new Lyrics = FBLyricsDAlt
-      \new Lyrics  = FBLyricsE
-      \new Lyrics = FBLyricsEAlt
 
       \context Staff = FBStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -2934,13 +2863,12 @@ chorusStr = Chorus
       >>
       \context Lyrics = FBLyricsA \lyricsto FBVoiceLyrics \FBVerseA
       \context Lyrics = FBLyricsAAlt \lyricsto FBVoiceLyrics \FBVerseAAlt
-      \context Lyrics = FBLyricsB \lyricsto FBVoiceLyrics \FBChorus
-      \context Lyrics = FBLyricsC \lyricsto FBVoiceLyrics \FBVerseB
-      \context Lyrics = FBLyricsCAlt \lyricsto FBVoiceLyrics \FBVerseBAlt
-      \context Lyrics = FBLyricsD \lyricsto FBVoiceLyrics \FBVerseC
-      \context Lyrics = FBLyricsDAlt \lyricsto FBVoiceLyrics \FBVerseCAlt
-      \context Lyrics = FBLyricsE \lyricsto FBVoiceLyrics \FBVerseD
-      \context Lyrics = FBLyricsEAlt \lyricsto FBVoiceLyrics \FBVerseDAlt
+      \context Lyrics = FBLyricsB \lyricsto FBVoiceLyrics \FBVerseB
+      \context Lyrics = FBLyricsBAlt \lyricsto FBVoiceLyrics \FBVerseBAlt
+      \context Lyrics = FBLyricsC \lyricsto FBVoiceLyrics \FBVerseC
+      \context Lyrics = FBLyricsCAlt \lyricsto FBVoiceLyrics \FBVerseCAlt
+      \context Lyrics = FBLyricsD \lyricsto FBVoiceLyrics \FBVerseD
+      \context Lyrics = FBLyricsDAlt \lyricsto FBVoiceLyrics \FBVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -3015,12 +2943,11 @@ chorusStr = Chorus
       \new Lyrics  = FDLyricsA
       \new Lyrics = FDLyricsAAlt
       \new Lyrics  = FDLyricsB
+      \new Lyrics = FDLyricsBAlt
       \new Lyrics  = FDLyricsC
       \new Lyrics = FDLyricsCAlt
       \new Lyrics  = FDLyricsD
       \new Lyrics = FDLyricsDAlt
-      \new Lyrics  = FDLyricsE
-      \new Lyrics = FDLyricsEAlt
 
       \context Staff = FDStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -3028,13 +2955,12 @@ chorusStr = Chorus
       >>
       \context Lyrics = FDLyricsA \lyricsto FDVoiceLyrics \FDVerseA
       \context Lyrics = FDLyricsAAlt \lyricsto FDVoiceLyrics \FDVerseAAlt
-      \context Lyrics = FDLyricsB \lyricsto FDVoiceLyrics \FDChorus
-      \context Lyrics = FDLyricsC \lyricsto FDVoiceLyrics \FDVerseB
-      \context Lyrics = FDLyricsCAlt \lyricsto FDVoiceLyrics \FDVerseBAlt
-      \context Lyrics = FDLyricsD \lyricsto FDVoiceLyrics \FDVerseC
-      \context Lyrics = FDLyricsDAlt \lyricsto FDVoiceLyrics \FDVerseCAlt
-      \context Lyrics = FDLyricsE \lyricsto FDVoiceLyrics \FDVerseD
-      \context Lyrics = FDLyricsEAlt \lyricsto FDVoiceLyrics \FDVerseDAlt
+      \context Lyrics = FDLyricsB \lyricsto FDVoiceLyrics \FDVerseB
+      \context Lyrics = FDLyricsBAlt \lyricsto FDVoiceLyrics \FDVerseBAlt
+      \context Lyrics = FDLyricsC \lyricsto FDVoiceLyrics \FDVerseC
+      \context Lyrics = FDLyricsCAlt \lyricsto FDVoiceLyrics \FDVerseCAlt
+      \context Lyrics = FDLyricsD \lyricsto FDVoiceLyrics \FDVerseD
+      \context Lyrics = FDLyricsDAlt \lyricsto FDVoiceLyrics \FDVerseDAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -3063,10 +2989,9 @@ chorusStr = Chorus
       \new Lyrics  = FELyricsA
       \new Lyrics = FELyricsAAlt
       \new Lyrics  = FELyricsB
+      \new Lyrics = FELyricsBAlt
       \new Lyrics  = FELyricsC
       \new Lyrics = FELyricsCAlt
-      \new Lyrics  = FELyricsD
-      \new Lyrics = FELyricsDAlt
 
       \context Staff = FEStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -3074,11 +2999,10 @@ chorusStr = Chorus
       >>
       \context Lyrics = FELyricsA \lyricsto FEVoiceLyrics \FEVerseA
       \context Lyrics = FELyricsAAlt \lyricsto FEVoiceLyrics \FEVerseAAlt
-      \context Lyrics = FELyricsB \lyricsto FEVoiceLyrics \FEChorus
-      \context Lyrics = FELyricsC \lyricsto FEVoiceLyrics \FEVerseB
-      \context Lyrics = FELyricsCAlt \lyricsto FEVoiceLyrics \FEVerseBAlt
-      \context Lyrics = FELyricsD \lyricsto FEVoiceLyrics \FEVerseC
-      \context Lyrics = FELyricsDAlt \lyricsto FEVoiceLyrics \FEVerseCAlt
+      \context Lyrics = FELyricsB \lyricsto FEVoiceLyrics \FEVerseB
+      \context Lyrics = FELyricsBAlt \lyricsto FEVoiceLyrics \FEVerseBAlt
+      \context Lyrics = FELyricsC \lyricsto FEVoiceLyrics \FEVerseC
+      \context Lyrics = FELyricsCAlt \lyricsto FEVoiceLyrics \FEVerseCAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
@@ -3149,10 +3073,9 @@ chorusStr = Chorus
       \new Lyrics  = FGLyricsA
       \new Lyrics = FGLyricsAAlt
       \new Lyrics  = FGLyricsB
+      \new Lyrics = FGLyricsBAlt
       \new Lyrics  = FGLyricsC
       \new Lyrics = FGLyricsCAlt
-      \new Lyrics  = FGLyricsD
-      \new Lyrics = FGLyricsDAlt
 
       \context Staff = FGStaffLH <<
         \set Staff.printPartCombineTexts = ##f
@@ -3160,13 +3083,11 @@ chorusStr = Chorus
       >>
       \context Lyrics = FGLyricsA \lyricsto FGVoiceLyrics \FGVerseA
       \context Lyrics = FGLyricsAAlt \lyricsto FGVoiceLyrics \FGVerseAAlt
-      \context Lyrics = FGLyricsB \lyricsto FGVoiceLyrics \FGChorus
-      \context Lyrics = FGLyricsC \lyricsto FGVoiceLyrics \FGVerseB
-      \context Lyrics = FGLyricsCAlt \lyricsto FGVoiceLyrics \FGVerseBAlt
-      \context Lyrics = FGLyricsD \lyricsto FGVoiceLyrics \FGVerseC
-      \context Lyrics = FGLyricsDAlt \lyricsto FGVoiceLyrics \FGVerseCAlt
+      \context Lyrics = FGLyricsB \lyricsto FGVoiceLyrics \FGVerseB
+      \context Lyrics = FGLyricsBAlt \lyricsto FGVoiceLyrics \FGVerseBAlt
+      \context Lyrics = FGLyricsC \lyricsto FGVoiceLyrics \FGVerseC
+      \context Lyrics = FGLyricsCAlt \lyricsto FGVoiceLyrics \FGVerseCAlt
   >>
   \include "../Lib/HymnScoreSettings.ly"
   >>
-}
-}
+}}
