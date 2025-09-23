@@ -1,9 +1,9 @@
 \version "2.18.2"
 #(ly:set-option 'point-and-click #f)
+\include "../Lib/HymnSetup.ly"
 \include "Lyrics.ly"
 chorusStr = Chorus
 \include "Music.ly"
-\include "../Lib/HymnSetup.ly"
 
 #(set! paper-alist (cons '("my size" . (cons (* 148 mm) (* 210 mm))) paper-alist))
 #(set-default-paper-size "my size")
