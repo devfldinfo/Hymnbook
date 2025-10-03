@@ -1,1 +1,3192 @@
+\version "2.18.2"
+#(ly:set-option 'point-and-click #f)
+\include "Lyrics.ly"
+chorusStr = Chorus
+\include "Music.ly"
+\include "../Lib/HymnSetup.ly"
 
+\include "../Lib/HymnLayoutOutput.ly"
+
+#(set! paper-alist (cons '("my size" . (cons (* 148 mm) (* 210 mm))) paper-alist))
+#(set-default-paper-size "my size")
+#(set-global-staff-size 14.4) 
+
+\paper {
+
+  two-sided = ##t 
+  indent = 0 \mm 
+
+ page-breaking = #ly:page-turn-breaking
+% annotate-spacing = ##t
+  top-margin = 20\mm
+  bottom-margin=20\mm
+  inner-margin = 22\mm
+  outer-margin = 20\mm
+  system-system-spacing =  #'((basic-distance . 6)  (padding . 1) (stretchability . 60) (minimum-distance . 4))
+  score-markup-spacing = #'((basic-distance . 8) (padding . 2) (stretchability . 120)(minimum-distance . 4))  
+  markup-system-spacing = #'((basic-distance . 6) (padding . 1) (stretchability . 40) (minimum-distance .  3))
+  score-system-spacing = #'((basic-distance . 6) (minimum-distance . 1) (padding . 2) (stretchability . 60))  
+  markup-markup-spacing = #'((basic-distance . 0) (minimum-distance . 0) (padding . 0) (stretchability . 0))
+}
+
+\layout {
+  ragged-right = ##f
+  \context {
+  \Lyrics
+  %\override LyricText #'font-name = #"Times New Roman"
+  %\override LyricText #'font-name = #"Bitstream Vera Sans"
+  \override LyricText #'font-name = #"Nyala"
+  %\override LyricText #'font-size = #+1
+  %\override LyricText #'font-series = #'bold
+  %\override LyricText #'font-series = #'medium-bold
+  %\override LyricText #'font-shape = #'italic
+  }
+}
+
+
+\include "../Lib/HymnCommon.ly"
+
+\bookpart {
+\include "../Lib/HymnBookPartSetup.ly"
+
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {1}
+        \fontsize #6 \center-align \line {ስለየሱስ ብዙ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {More about Jesus (2)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = AStaffGroup <<
+      \context Staff = AStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = AVoiceLyrics \AxBAMusicLyrics
+        \context Voice = AVoiceRH \AxBAMusicRH
+      >>
+      \new Lyrics  = ALyricsA
+      \new Lyrics = ALyricsAAlt
+      \new Lyrics  = ALyricsB
+      \new Lyrics = ALyricsBAlt
+      \new Lyrics  = ALyricsC
+      \new Lyrics = ALyricsCAlt
+      \new Lyrics  = ALyricsD
+      \new Lyrics = ALyricsDAlt
+
+      \context Staff = AStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = AVoiceLH \AxBAMusicLH
+      >>
+      \context Lyrics = ALyricsA \lyricsto AVoiceLyrics \AVerseA
+      \context Lyrics = ALyricsAAlt \lyricsto AVoiceLyrics \AVerseAAlt
+      \context Lyrics = ALyricsB \lyricsto AVoiceLyrics \AVerseB
+      \context Lyrics = ALyricsBAlt \lyricsto AVoiceLyrics \AVerseBAlt
+      \context Lyrics = ALyricsC \lyricsto AVoiceLyrics \AVerseC
+      \context Lyrics = ALyricsCAlt \lyricsto AVoiceLyrics \AVerseCAlt
+      \context Lyrics = ALyricsD \lyricsto AVoiceLyrics \AVerseD
+      \context Lyrics = ALyricsDAlt \lyricsto AVoiceLyrics \AVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {2}
+        \fontsize #6 \center-align \line {ሊረዳን የሚችል አለ?}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Is there anyone can help us (47)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = BStaffGroup <<
+      \context Staff = BStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = BVoiceLyrics \BxDGBMusicLyrics
+        \context Voice = BVoiceRH \BxDGBMusicRH
+      >>
+      \new Lyrics  = BLyricsA
+      \new Lyrics = BLyricsAAlt
+      \new Lyrics  = BLyricsB
+      \new Lyrics = BLyricsBAlt
+      \new Lyrics  = BLyricsC
+      \new Lyrics = BLyricsCAlt
+
+      \context Staff = BStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = BVoiceLH \BxDGBMusicLH
+      >>
+      \context Lyrics = BLyricsA \lyricsto BVoiceLyrics \BVerseA
+      \context Lyrics = BLyricsAAlt \lyricsto BVoiceLyrics \BVerseAAlt
+      \context Lyrics = BLyricsB \lyricsto BVoiceLyrics \BVerseB
+      \context Lyrics = BLyricsBAlt \lyricsto BVoiceLyrics \BVerseBAlt
+      \context Lyrics = BLyricsC \lyricsto BVoiceLyrics \BVerseC
+      \context Lyrics = BLyricsCAlt \lyricsto BVoiceLyrics \BVerseCAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {3}
+        \fontsize #6 \center-align \line {መንገድህን አስተምረኝ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Teach Me Thy Way (60)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = CStaffGroup <<
+      \context Staff = CStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = CVoiceLyrics \CxFZCMusicLyrics
+        \context Voice = CVoiceRH \CxFZCMusicRH
+      >>
+      \new Lyrics  = CLyricsA
+      \new Lyrics = CLyricsAAlt
+      \new Lyrics  = CLyricsB
+      \new Lyrics = CLyricsBAlt
+      \new Lyrics  = CLyricsC
+      \new Lyrics = CLyricsCAlt
+      \new Lyrics  = CLyricsD
+      \new Lyrics = CLyricsDAlt
+
+      \context Staff = CStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = CVoiceLH \CxFZCMusicLH
+      >>
+      \context Lyrics = CLyricsA \lyricsto CVoiceLyrics \CVerseA
+      \context Lyrics = CLyricsAAlt \lyricsto CVoiceLyrics \CVerseAAlt
+      \context Lyrics = CLyricsB \lyricsto CVoiceLyrics \CVerseB
+      \context Lyrics = CLyricsBAlt \lyricsto CVoiceLyrics \CVerseBAlt
+      \context Lyrics = CLyricsC \lyricsto CVoiceLyrics \CVerseC
+      \context Lyrics = CLyricsCAlt \lyricsto CVoiceLyrics \CVerseCAlt
+      \context Lyrics = CLyricsD \lyricsto CVoiceLyrics \CVerseD
+      \context Lyrics = CLyricsDAlt \lyricsto CVoiceLyrics \CVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {4}
+        \fontsize #6 \center-align \line {ተከተለኝ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Follow me (84)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = DStaffGroup <<
+      \context Staff = DStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = DVoiceLyrics \DxHDDMusicLyrics
+        \context Voice = DVoiceRH \DxHDDMusicRH
+      >>
+      \new Lyrics  = DLyricsA
+      \new Lyrics = DLyricsAAlt
+      \new Lyrics  = DLyricsB
+      \new Lyrics = DLyricsBAlt
+      \new Lyrics  = DLyricsC
+      \new Lyrics = DLyricsCAlt
+      \new Lyrics  = DLyricsD
+      \new Lyrics = DLyricsDAlt
+
+      \context Staff = DStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = DVoiceLH \DxHDDMusicLH
+      >>
+      \context Lyrics = DLyricsA \lyricsto DVoiceLyrics \DVerseA
+      \context Lyrics = DLyricsAAlt \lyricsto DVoiceLyrics \DVerseAAlt
+      \context Lyrics = DLyricsB \lyricsto DVoiceLyrics \DVerseB
+      \context Lyrics = DLyricsBAlt \lyricsto DVoiceLyrics \DVerseBAlt
+      \context Lyrics = DLyricsC \lyricsto DVoiceLyrics \DVerseC
+      \context Lyrics = DLyricsCAlt \lyricsto DVoiceLyrics \DVerseCAlt
+      \context Lyrics = DLyricsD \lyricsto DVoiceLyrics \DVerseD
+      \context Lyrics = DLyricsDAlt \lyricsto DVoiceLyrics \DVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {5}
+        \fontsize #6 \center-align \line {ኢየሱስን በገሊላ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Tune (84)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = EStaffGroup <<
+      \context Staff = EStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = EVoiceLyrics \ExHDEMusicLyrics
+        \context Voice = EVoiceRH \ExHDEMusicRH
+      >>
+      \new Lyrics  = ELyricsA
+      \new Lyrics = ELyricsAAlt
+      \new Lyrics  = ELyricsB
+      \new Lyrics = ELyricsBAlt
+      \new Lyrics  = ELyricsC
+      \new Lyrics = ELyricsCAlt
+      \new Lyrics  = ELyricsD
+      \new Lyrics = ELyricsDAlt
+
+      \context Staff = EStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = EVoiceLH \ExHDEMusicLH
+      >>
+      \context Lyrics = ELyricsA \lyricsto EVoiceLyrics \EVerseA
+      \context Lyrics = ELyricsAAlt \lyricsto EVoiceLyrics \EVerseAAlt
+      \context Lyrics = ELyricsB \lyricsto EVoiceLyrics \EVerseB
+      \context Lyrics = ELyricsBAlt \lyricsto EVoiceLyrics \EVerseBAlt
+      \context Lyrics = ELyricsC \lyricsto EVoiceLyrics \EVerseC
+      \context Lyrics = ELyricsCAlt \lyricsto EVoiceLyrics \EVerseCAlt
+      \context Lyrics = ELyricsD \lyricsto EVoiceLyrics \EVerseD
+      \context Lyrics = ELyricsDAlt \lyricsto EVoiceLyrics \EVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {6}
+        \fontsize #6 \center-align \line {ለኔ ነበር?}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Was it for me? (8)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = FStaffGroup <<
+      \context Staff = FStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = FVoiceLyrics \FxHFMusicLyrics
+        \context Voice = FVoiceRH \FxHFMusicRH
+      >>
+      \new Lyrics  = FLyricsA
+      \new Lyrics = FLyricsAAlt
+      \new Lyrics  = FLyricsB
+      \new Lyrics = FLyricsBAlt
+      \new Lyrics  = FLyricsC
+      \new Lyrics = FLyricsCAlt
+      \new Lyrics  = FLyricsD
+      \new Lyrics = FLyricsDAlt
+
+      \context Staff = FStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = FVoiceLH \FxHFMusicLH
+      >>
+      \context Lyrics = FLyricsA \lyricsto FVoiceLyrics \FVerseA
+      \context Lyrics = FLyricsAAlt \lyricsto FVoiceLyrics \FVerseAAlt
+      \context Lyrics = FLyricsB \lyricsto FVoiceLyrics \FVerseB
+      \context Lyrics = FLyricsBAlt \lyricsto FVoiceLyrics \FVerseBAlt
+      \context Lyrics = FLyricsC \lyricsto FVoiceLyrics \FVerseC
+      \context Lyrics = FLyricsCAlt \lyricsto FVoiceLyrics \FVerseCAlt
+      \context Lyrics = FLyricsD \lyricsto FVoiceLyrics \FVerseD
+      \context Lyrics = FLyricsDAlt \lyricsto FVoiceLyrics \FVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {7}
+        \fontsize #6 \center-align \line {አንድ መንግስት አለ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {There is a Kingdom (51)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = GStaffGroup <<
+      \context Staff = GStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = GVoiceLyrics \GxEAGMusicLyrics
+        \context Voice = GVoiceRH \GxEAGMusicRH
+      >>
+      \new Lyrics  = GLyricsA
+      \new Lyrics = GLyricsAAlt
+      \new Lyrics  = GLyricsB
+      \new Lyrics = GLyricsBAlt
+      \new Lyrics  = GLyricsC
+      \new Lyrics = GLyricsCAlt
+
+      \context Staff = GStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = GVoiceLH \GxEAGMusicLH
+      >>
+      \context Lyrics = GLyricsA \lyricsto GVoiceLyrics \GVerseA
+      \context Lyrics = GLyricsAAlt \lyricsto GVoiceLyrics \GVerseAAlt
+      \context Lyrics = GLyricsB \lyricsto GVoiceLyrics \GVerseB
+      \context Lyrics = GLyricsBAlt \lyricsto GVoiceLyrics \GVerseBAlt
+      \context Lyrics = GLyricsC \lyricsto GVoiceLyrics \GVerseC
+      \context Lyrics = GLyricsCAlt \lyricsto GVoiceLyrics \GVerseCAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {8}
+        \fontsize #6 \center-align \line {ጌታ ከኔ ጋር ባይሆን}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {If it had not been the Lord (214)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = HStaffGroup <<
+      \context Staff = HStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = HVoiceLyrics \HxBADHMusicLyrics
+        \context Voice = HVoiceRH \HxBADHMusicRH
+      >>
+      \new Lyrics  = HLyricsA
+      \new Lyrics = HLyricsAAlt
+      \new Lyrics  = HLyricsB
+      \new Lyrics = HLyricsBAlt
+      \new Lyrics  = HLyricsC
+      \new Lyrics = HLyricsCAlt
+      \new Lyrics  = HLyricsD
+      \new Lyrics = HLyricsDAlt
+
+      \context Staff = HStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = HVoiceLH \HxBADHMusicLH
+      >>
+      \context Lyrics = HLyricsA \lyricsto HVoiceLyrics \HVerseA
+      \context Lyrics = HLyricsAAlt \lyricsto HVoiceLyrics \HVerseAAlt
+      \context Lyrics = HLyricsB \lyricsto HVoiceLyrics \HVerseB
+      \context Lyrics = HLyricsBAlt \lyricsto HVoiceLyrics \HVerseBAlt
+      \context Lyrics = HLyricsC \lyricsto HVoiceLyrics \HVerseC
+      \context Lyrics = HLyricsCAlt \lyricsto HVoiceLyrics \HVerseCAlt
+      \context Lyrics = HLyricsD \lyricsto HVoiceLyrics \HVerseD
+      \context Lyrics = HLyricsDAlt \lyricsto HVoiceLyrics \HVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {9}
+        \fontsize #6 \center-align \line {ወደ አንተ እንመጣለን}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Lord, in our need (230)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = IStaffGroup <<
+      \context Staff = IStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = IVoiceLyrics \IxBCZIMusicLyrics
+        \context Voice = IVoiceRH \IxBCZIMusicRH
+      >>
+      \new Lyrics  = ILyricsA
+      \new Lyrics = ILyricsAAlt
+      \new Lyrics  = ILyricsB
+      \new Lyrics = ILyricsBAlt
+      \new Lyrics  = ILyricsC
+      \new Lyrics = ILyricsCAlt
+      \new Lyrics  = ILyricsD
+      \new Lyrics = ILyricsDAlt
+
+      \context Staff = IStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = IVoiceLH \IxBCZIMusicLH
+      >>
+      \context Lyrics = ILyricsA \lyricsto IVoiceLyrics \IVerseA
+      \context Lyrics = ILyricsAAlt \lyricsto IVoiceLyrics \IVerseAAlt
+      \context Lyrics = ILyricsB \lyricsto IVoiceLyrics \IVerseB
+      \context Lyrics = ILyricsBAlt \lyricsto IVoiceLyrics \IVerseBAlt
+      \context Lyrics = ILyricsC \lyricsto IVoiceLyrics \IVerseC
+      \context Lyrics = ILyricsCAlt \lyricsto IVoiceLyrics \IVerseCAlt
+      \context Lyrics = ILyricsD \lyricsto IVoiceLyrics \IVerseD
+      \context Lyrics = ILyricsDAlt \lyricsto IVoiceLyrics \IVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {10}
+        \fontsize #6 \center-align \line {ጌታዬ ሆይ ተናገር}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Speak to my soul (231)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = AZStaffGroup <<
+      \context Staff = AZStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = AZVoiceLyrics \AZxBCAAZMusicLyrics
+        \context Voice = AZVoiceRH \AZxBCAAZMusicRH
+      >>
+      \new Lyrics  = AZLyricsA
+      \new Lyrics = AZLyricsAAlt
+      \new Lyrics  = AZLyricsB
+      \new Lyrics = AZLyricsBAlt
+      \new Lyrics  = AZLyricsC
+      \new Lyrics = AZLyricsCAlt
+
+      \context Staff = AZStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = AZVoiceLH \AZxBCAAZMusicLH
+      >>
+      \context Lyrics = AZLyricsA \lyricsto AZVoiceLyrics \AZVerseA
+      \context Lyrics = AZLyricsAAlt \lyricsto AZVoiceLyrics \AZVerseAAlt
+      \context Lyrics = AZLyricsB \lyricsto AZVoiceLyrics \AZVerseB
+      \context Lyrics = AZLyricsBAlt \lyricsto AZVoiceLyrics \AZVerseBAlt
+      \context Lyrics = AZLyricsC \lyricsto AZVoiceLyrics \AZVerseC
+      \context Lyrics = AZLyricsCAlt \lyricsto AZVoiceLyrics \AZVerseCAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {11}
+        \fontsize #6 \center-align \line {ቅርብ ልንጓዝ!}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Oh! for a closer walk with God (266)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = AAStaffGroup <<
+      \context Staff = AAStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = AAVoiceLyrics \AAxBFFAAMusicLyrics
+        \context Voice = AAVoiceRH \AAxBFFAAMusicRH
+      >>
+      \new Lyrics  = AALyricsA
+      \new Lyrics = AALyricsAAlt
+      \new Lyrics  = AALyricsB
+      \new Lyrics = AALyricsBAlt
+      \new Lyrics  = AALyricsC
+      \new Lyrics = AALyricsCAlt
+      \new Lyrics  = AALyricsD
+      \new Lyrics = AALyricsDAlt
+
+      \context Staff = AAStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = AAVoiceLH \AAxBFFAAMusicLH
+      >>
+      \context Lyrics = AALyricsA \lyricsto AAVoiceLyrics \AAVerseA
+      \context Lyrics = AALyricsAAlt \lyricsto AAVoiceLyrics \AAVerseAAlt
+      \context Lyrics = AALyricsB \lyricsto AAVoiceLyrics \AAVerseB
+      \context Lyrics = AALyricsBAlt \lyricsto AAVoiceLyrics \AAVerseBAlt
+      \context Lyrics = AALyricsC \lyricsto AAVoiceLyrics \AAVerseC
+      \context Lyrics = AALyricsCAlt \lyricsto AAVoiceLyrics \AAVerseCAlt
+      \context Lyrics = AALyricsD \lyricsto AAVoiceLyrics \AAVerseD
+      \context Lyrics = AALyricsDAlt \lyricsto AAVoiceLyrics \AAVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {12}
+        \fontsize #6 \center-align \line {እንደ ኢየሱስ የለም}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {There is no friend like Jesus (27)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = ABStaffGroup <<
+      \context Staff = ABStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = ABVoiceLyrics \ABxBGABMusicLyrics
+        \context Voice = ABVoiceRH \ABxBGABMusicRH
+      >>
+      \new Lyrics  = ABLyricsA
+      \new Lyrics = ABLyricsAAlt
+      \new Lyrics  = ABLyricsB
+      \new Lyrics = ABLyricsBAlt
+      \new Lyrics  = ABLyricsC
+      \new Lyrics = ABLyricsCAlt
+
+      \context Staff = ABStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = ABVoiceLH \ABxBGABMusicLH
+      >>
+      \context Lyrics = ABLyricsA \lyricsto ABVoiceLyrics \ABVerseA
+      \context Lyrics = ABLyricsAAlt \lyricsto ABVoiceLyrics \ABVerseAAlt
+      \context Lyrics = ABLyricsB \lyricsto ABVoiceLyrics \ABVerseB
+      \context Lyrics = ABLyricsBAlt \lyricsto ABVoiceLyrics \ABVerseBAlt
+      \context Lyrics = ABLyricsC \lyricsto ABVoiceLyrics \ABVerseC
+      \context Lyrics = ABLyricsCAlt \lyricsto ABVoiceLyrics \ABVerseCAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {13}
+        \fontsize #6 \center-align \line {የተሰቀለው ጌታ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Thy bleeding feet (169)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = ACStaffGroup <<
+      \context Staff = ACStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = ACVoiceLyrics \ACxAFIACMusicLyrics
+        \context Voice = ACVoiceRH \ACxAFIACMusicRH
+      >>
+      \new Lyrics  = ACLyricsA
+      \new Lyrics = ACLyricsAAlt
+      \new Lyrics  = ACLyricsB
+      \new Lyrics = ACLyricsBAlt
+      \new Lyrics  = ACLyricsC
+      \new Lyrics = ACLyricsCAlt
+      \new Lyrics  = ACLyricsD
+      \new Lyrics = ACLyricsDAlt
+
+      \context Staff = ACStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = ACVoiceLH \ACxAFIACMusicLH
+      >>
+      \context Lyrics = ACLyricsA \lyricsto ACVoiceLyrics \ACVerseA
+      \context Lyrics = ACLyricsAAlt \lyricsto ACVoiceLyrics \ACVerseAAlt
+      \context Lyrics = ACLyricsB \lyricsto ACVoiceLyrics \ACVerseB
+      \context Lyrics = ACLyricsBAlt \lyricsto ACVoiceLyrics \ACVerseBAlt
+      \context Lyrics = ACLyricsC \lyricsto ACVoiceLyrics \ACVerseC
+      \context Lyrics = ACLyricsCAlt \lyricsto ACVoiceLyrics \ACVerseCAlt
+      \context Lyrics = ACLyricsD \lyricsto ACVoiceLyrics \ACVerseD
+      \context Lyrics = ACLyricsDAlt \lyricsto ACVoiceLyrics \ACVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {14}
+        \fontsize #6 \center-align \line {ጌታ ሆይ ወዳንተ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Nearer still nearer (125)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = ADStaffGroup <<
+      \context Staff = ADStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = ADVoiceLyrics \ADxABEADMusicLyrics
+        \context Voice = ADVoiceRH \ADxABEADMusicRH
+      >>
+      \new Lyrics  = ADLyricsA
+      \new Lyrics = ADLyricsAAlt
+      \new Lyrics  = ADLyricsB
+      \new Lyrics = ADLyricsBAlt
+      \new Lyrics  = ADLyricsC
+      \new Lyrics = ADLyricsCAlt
+      \new Lyrics  = ADLyricsD
+      \new Lyrics = ADLyricsDAlt
+
+      \context Staff = ADStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = ADVoiceLH \ADxABEADMusicLH
+      >>
+      \context Lyrics = ADLyricsA \lyricsto ADVoiceLyrics \ADVerseA
+      \context Lyrics = ADLyricsAAlt \lyricsto ADVoiceLyrics \ADVerseAAlt
+      \context Lyrics = ADLyricsB \lyricsto ADVoiceLyrics \ADVerseB
+      \context Lyrics = ADLyricsBAlt \lyricsto ADVoiceLyrics \ADVerseBAlt
+      \context Lyrics = ADLyricsC \lyricsto ADVoiceLyrics \ADVerseC
+      \context Lyrics = ADLyricsCAlt \lyricsto ADVoiceLyrics \ADVerseCAlt
+      \context Lyrics = ADLyricsD \lyricsto ADVoiceLyrics \ADVerseD
+      \context Lyrics = ADLyricsDAlt \lyricsto ADVoiceLyrics \ADVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {15}
+        \fontsize #6 \center-align \line {መስቀል ላይ ሳሰላስል}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {When I survey the wondrous cross (6)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = AEStaffGroup <<
+      \context Staff = AEStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = AEVoiceLyrics \AExFAEMusicLyrics
+        \context Voice = AEVoiceRH \AExFAEMusicRH
+      >>
+      \new Lyrics  = AELyricsA
+      \new Lyrics = AELyricsAAlt
+      \new Lyrics  = AELyricsB
+      \new Lyrics = AELyricsBAlt
+      \new Lyrics  = AELyricsC
+      \new Lyrics = AELyricsCAlt
+      \new Lyrics  = AELyricsD
+      \new Lyrics = AELyricsDAlt
+
+      \context Staff = AEStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = AEVoiceLH \AExFAEMusicLH
+      >>
+      \context Lyrics = AELyricsA \lyricsto AEVoiceLyrics \AEVerseA
+      \context Lyrics = AELyricsAAlt \lyricsto AEVoiceLyrics \AEVerseAAlt
+      \context Lyrics = AELyricsB \lyricsto AEVoiceLyrics \AEVerseB
+      \context Lyrics = AELyricsBAlt \lyricsto AEVoiceLyrics \AEVerseBAlt
+      \context Lyrics = AELyricsC \lyricsto AEVoiceLyrics \AEVerseC
+      \context Lyrics = AELyricsCAlt \lyricsto AEVoiceLyrics \AEVerseCAlt
+      \context Lyrics = AELyricsD \lyricsto AEVoiceLyrics \AEVerseD
+      \context Lyrics = AELyricsDAlt \lyricsto AEVoiceLyrics \AEVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {16}
+        \fontsize #6 \center-align \line {ጌታ ሆይ እምነት}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Increase our faith (279)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = AFStaffGroup <<
+      \context Staff = AFStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = AFVoiceLyrics \AFxBGIAFMusicLyrics
+        \context Voice = AFVoiceRH \AFxBGIAFMusicRH
+      >>
+      \new Lyrics  = AFLyricsA
+      \new Lyrics = AFLyricsAAlt
+      \new Lyrics  = AFLyricsB
+      \new Lyrics = AFLyricsBAlt
+      \new Lyrics  = AFLyricsC
+      \new Lyrics = AFLyricsCAlt
+      \new Lyrics  = AFLyricsD
+      \new Lyrics = AFLyricsDAlt
+      \new Lyrics  = AFLyricsE
+      \new Lyrics = AFLyricsEAlt
+
+      \context Staff = AFStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = AFVoiceLH \AFxBGIAFMusicLH
+      >>
+      \context Lyrics = AFLyricsA \lyricsto AFVoiceLyrics \AFVerseA
+      \context Lyrics = AFLyricsAAlt \lyricsto AFVoiceLyrics \AFVerseAAlt
+      \context Lyrics = AFLyricsB \lyricsto AFVoiceLyrics \AFVerseB
+      \context Lyrics = AFLyricsBAlt \lyricsto AFVoiceLyrics \AFVerseBAlt
+      \context Lyrics = AFLyricsC \lyricsto AFVoiceLyrics \AFVerseC
+      \context Lyrics = AFLyricsCAlt \lyricsto AFVoiceLyrics \AFVerseCAlt
+      \context Lyrics = AFLyricsD \lyricsto AFVoiceLyrics \AFVerseD
+      \context Lyrics = AFLyricsDAlt \lyricsto AFVoiceLyrics \AFVerseDAlt
+      \context Lyrics = AFLyricsE \lyricsto AFVoiceLyrics \AFVerseE
+      \context Lyrics = AFLyricsEAlt \lyricsto AFVoiceLyrics \AFVerseEAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {17}
+        \fontsize #6 \center-align \line {ካዳኝ ጋር መጓዝ አለብኝ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {I must have the Saviour with me (85)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = AGStaffGroup <<
+      \context Staff = AGStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = AGVoiceLyrics \AGxHEAGMusicLyrics
+        \context Voice = AGVoiceRH \AGxHEAGMusicRH
+      >>
+      \new Lyrics  = AGLyricsA
+      \new Lyrics = AGLyricsAAlt
+      \new Lyrics  = AGLyricsB
+      \new Lyrics = AGLyricsBAlt
+      \new Lyrics  = AGLyricsC
+      \new Lyrics = AGLyricsCAlt
+      \new Lyrics  = AGLyricsD
+      \new Lyrics = AGLyricsDAlt
+
+      \context Staff = AGStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = AGVoiceLH \AGxHEAGMusicLH
+      >>
+      \context Lyrics = AGLyricsA \lyricsto AGVoiceLyrics \AGVerseA
+      \context Lyrics = AGLyricsAAlt \lyricsto AGVoiceLyrics \AGVerseAAlt
+      \context Lyrics = AGLyricsB \lyricsto AGVoiceLyrics \AGVerseB
+      \context Lyrics = AGLyricsBAlt \lyricsto AGVoiceLyrics \AGVerseBAlt
+      \context Lyrics = AGLyricsC \lyricsto AGVoiceLyrics \AGVerseC
+      \context Lyrics = AGLyricsCAlt \lyricsto AGVoiceLyrics \AGVerseCAlt
+      \context Lyrics = AGLyricsD \lyricsto AGVoiceLyrics \AGVerseD
+      \context Lyrics = AGLyricsDAlt \lyricsto AGVoiceLyrics \AGVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {18}
+        \fontsize #6 \center-align \line {አንድ ሕይወት አለኝ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {I have only one life on the earth (93)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = AHStaffGroup <<
+      \context Staff = AHStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = AHVoiceLyrics \AHxICAHMusicLyrics
+        \context Voice = AHVoiceRH \AHxICAHMusicRH
+      >>
+      \new Lyrics  = AHLyricsA
+      \new Lyrics = AHLyricsAAlt
+      \new Lyrics  = AHLyricsB
+      \new Lyrics = AHLyricsBAlt
+      \new Lyrics  = AHLyricsC
+      \new Lyrics = AHLyricsCAlt
+      \new Lyrics  = AHLyricsD
+      \new Lyrics = AHLyricsDAlt
+
+      \context Staff = AHStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = AHVoiceLH \AHxICAHMusicLH
+      >>
+      \context Lyrics = AHLyricsA \lyricsto AHVoiceLyrics \AHVerseA
+      \context Lyrics = AHLyricsAAlt \lyricsto AHVoiceLyrics \AHVerseAAlt
+      \context Lyrics = AHLyricsB \lyricsto AHVoiceLyrics \AHVerseB
+      \context Lyrics = AHLyricsBAlt \lyricsto AHVoiceLyrics \AHVerseBAlt
+      \context Lyrics = AHLyricsC \lyricsto AHVoiceLyrics \AHVerseC
+      \context Lyrics = AHLyricsCAlt \lyricsto AHVoiceLyrics \AHVerseCAlt
+      \context Lyrics = AHLyricsD \lyricsto AHVoiceLyrics \AHVerseD
+      \context Lyrics = AHLyricsDAlt \lyricsto AHVoiceLyrics \AHVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {19}
+        \fontsize #6 \center-align \line {ከምንም መዳን ይልቃል}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {God gives you the invitation (37)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = AIStaffGroup <<
+      \context Staff = AIStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = AIVoiceLyrics \AIxCGAIMusicLyrics
+        \context Voice = AIVoiceRH \AIxCGAIMusicRH
+      >>
+      \new Lyrics  = AILyricsA
+      \new Lyrics = AILyricsAAlt
+      \new Lyrics  = AILyricsB
+      \new Lyrics = AILyricsBAlt
+      \new Lyrics  = AILyricsC
+      \new Lyrics = AILyricsCAlt
+      \new Lyrics  = AILyricsD
+      \new Lyrics = AILyricsDAlt
+
+      \context Staff = AIStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = AIVoiceLH \AIxCGAIMusicLH
+      >>
+      \context Lyrics = AILyricsA \lyricsto AIVoiceLyrics \AIVerseA
+      \context Lyrics = AILyricsAAlt \lyricsto AIVoiceLyrics \AIVerseAAlt
+      \context Lyrics = AILyricsB \lyricsto AIVoiceLyrics \AIVerseB
+      \context Lyrics = AILyricsBAlt \lyricsto AIVoiceLyrics \AIVerseBAlt
+      \context Lyrics = AILyricsC \lyricsto AIVoiceLyrics \AIVerseC
+      \context Lyrics = AILyricsCAlt \lyricsto AIVoiceLyrics \AIVerseCAlt
+      \context Lyrics = AILyricsD \lyricsto AIVoiceLyrics \AIVerseD
+      \context Lyrics = AILyricsDAlt \lyricsto AIVoiceLyrics \AIVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {20}
+        \fontsize #6 \center-align \line {በርሱ ኑሩ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Abide in Him (394)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = BZStaffGroup <<
+      \context Staff = BZStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = BZVoiceLyrics \BZxCIDBZMusicLyrics
+        \context Voice = BZVoiceRH \BZxCIDBZMusicRH
+      >>
+      \new Lyrics  = BZLyricsA
+      \new Lyrics = BZLyricsAAlt
+      \new Lyrics  = BZLyricsB
+      \new Lyrics = BZLyricsBAlt
+      \new Lyrics  = BZLyricsC
+      \new Lyrics = BZLyricsCAlt
+      \new Lyrics  = BZLyricsD
+      \new Lyrics = BZLyricsDAlt
+      \new Lyrics  = BZLyricsE
+      \new Lyrics = BZLyricsEAlt
+      \new Lyrics  = BZLyricsF
+      \new Lyrics = BZLyricsFAlt
+
+      \context Staff = BZStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = BZVoiceLH \BZxCIDBZMusicLH
+      >>
+      \context Lyrics = BZLyricsA \lyricsto BZVoiceLyrics \BZVerseA
+      \context Lyrics = BZLyricsAAlt \lyricsto BZVoiceLyrics \BZVerseAAlt
+      \context Lyrics = BZLyricsB \lyricsto BZVoiceLyrics \BZVerseB
+      \context Lyrics = BZLyricsBAlt \lyricsto BZVoiceLyrics \BZVerseBAlt
+      \context Lyrics = BZLyricsC \lyricsto BZVoiceLyrics \BZVerseC
+      \context Lyrics = BZLyricsCAlt \lyricsto BZVoiceLyrics \BZVerseCAlt
+      \context Lyrics = BZLyricsD \lyricsto BZVoiceLyrics \BZVerseD
+      \context Lyrics = BZLyricsDAlt \lyricsto BZVoiceLyrics \BZVerseDAlt
+      \context Lyrics = BZLyricsE \lyricsto BZVoiceLyrics \BZVerseE
+      \context Lyrics = BZLyricsEAlt \lyricsto BZVoiceLyrics \BZVerseEAlt
+      \context Lyrics = BZLyricsF \lyricsto BZVoiceLyrics \BZVerseF
+      \context Lyrics = BZLyricsFAlt \lyricsto BZVoiceLyrics \BZVerseFAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {21}
+        \fontsize #6 \center-align \line {ክርስቶስ ዛሬም ያው ነው}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Jesus is still the same (11)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = BAStaffGroup <<
+      \context Staff = BAStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = BAVoiceLyrics \BAxAABAMusicLyrics
+        \context Voice = BAVoiceRH \BAxAABAMusicRH
+      >>
+      \new Lyrics  = BALyricsA
+      \new Lyrics = BALyricsAAlt
+      \new Lyrics  = BALyricsB
+      \new Lyrics = BALyricsBAlt
+      \new Lyrics  = BALyricsC
+      \new Lyrics = BALyricsCAlt
+
+      \context Staff = BAStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = BAVoiceLH \BAxAABAMusicLH
+      >>
+      \context Lyrics = BALyricsA \lyricsto BAVoiceLyrics \BAVerseA
+      \context Lyrics = BALyricsAAlt \lyricsto BAVoiceLyrics \BAVerseAAlt
+      \context Lyrics = BALyricsB \lyricsto BAVoiceLyrics \BAVerseB
+      \context Lyrics = BALyricsBAlt \lyricsto BAVoiceLyrics \BAVerseBAlt
+      \context Lyrics = BALyricsC \lyricsto BAVoiceLyrics \BAVerseC
+      \context Lyrics = BALyricsCAlt \lyricsto BAVoiceLyrics \BAVerseCAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {22}
+        \fontsize #6 \center-align \line {የኢየሱስ ብሩክ ዱካ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Blessèd footprints of my Saviour (81)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = BBStaffGroup <<
+      \context Staff = BBStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = BBVoiceLyrics \BBxHABBMusicLyrics
+        \context Voice = BBVoiceRH \BBxHABBMusicRH
+      >>
+      \new Lyrics  = BBLyricsA
+      \new Lyrics = BBLyricsAAlt
+      \new Lyrics  = BBLyricsB
+      \new Lyrics = BBLyricsBAlt
+      \new Lyrics  = BBLyricsC
+      \new Lyrics = BBLyricsCAlt
+      \new Lyrics  = BBLyricsD
+      \new Lyrics = BBLyricsDAlt
+
+      \context Staff = BBStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = BBVoiceLH \BBxHABBMusicLH
+      >>
+      \context Lyrics = BBLyricsA \lyricsto BBVoiceLyrics \BBVerseA
+      \context Lyrics = BBLyricsAAlt \lyricsto BBVoiceLyrics \BBVerseAAlt
+      \context Lyrics = BBLyricsB \lyricsto BBVoiceLyrics \BBVerseB
+      \context Lyrics = BBLyricsBAlt \lyricsto BBVoiceLyrics \BBVerseBAlt
+      \context Lyrics = BBLyricsC \lyricsto BBVoiceLyrics \BBVerseC
+      \context Lyrics = BBLyricsCAlt \lyricsto BBVoiceLyrics \BBVerseCAlt
+      \context Lyrics = BBLyricsD \lyricsto BBVoiceLyrics \BBVerseD
+      \context Lyrics = BBLyricsDAlt \lyricsto BBVoiceLyrics \BBVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {23}
+        \fontsize #6 \center-align \line {በጊዜ፤ ንቁ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Life at best is very brief (102)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = BCStaffGroup <<
+      \context Staff = BCStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = BCVoiceLyrics \BCxAZBBCMusicLyrics
+        \context Voice = BCVoiceRH \BCxAZBBCMusicRH
+      >>
+      \new Lyrics  = BCLyricsA
+      \new Lyrics = BCLyricsAAlt
+      \new Lyrics  = BCLyricsB
+      \new Lyrics = BCLyricsBAlt
+      \new Lyrics  = BCLyricsC
+      \new Lyrics = BCLyricsCAlt
+      \new Lyrics  = BCLyricsD
+      \new Lyrics = BCLyricsDAlt
+
+      \context Staff = BCStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = BCVoiceLH \BCxAZBBCMusicLH
+      >>
+      \context Lyrics = BCLyricsA \lyricsto BCVoiceLyrics \BCVerseA
+      \context Lyrics = BCLyricsAAlt \lyricsto BCVoiceLyrics \BCVerseAAlt
+      \context Lyrics = BCLyricsB \lyricsto BCVoiceLyrics \BCVerseB
+      \context Lyrics = BCLyricsBAlt \lyricsto BCVoiceLyrics \BCVerseBAlt
+      \context Lyrics = BCLyricsC \lyricsto BCVoiceLyrics \BCVerseC
+      \context Lyrics = BCLyricsCAlt \lyricsto BCVoiceLyrics \BCVerseCAlt
+      \context Lyrics = BCLyricsD \lyricsto BCVoiceLyrics \BCVerseD
+      \context Lyrics = BCLyricsDAlt \lyricsto BCVoiceLyrics \BCVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {24}
+        \fontsize #6 \center-align \line {ፍላጎት}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {I need Thee every hour (124)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = BDStaffGroup <<
+      \context Staff = BDStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = BDVoiceLyrics \BDxABDBDMusicLyrics
+        \context Voice = BDVoiceRH \BDxABDBDMusicRH
+      >>
+      \new Lyrics  = BDLyricsA
+      \new Lyrics = BDLyricsAAlt
+      \new Lyrics  = BDLyricsB
+      \new Lyrics = BDLyricsBAlt
+      \new Lyrics  = BDLyricsC
+      \new Lyrics = BDLyricsCAlt
+      \new Lyrics  = BDLyricsD
+      \new Lyrics = BDLyricsDAlt
+      \new Lyrics  = BDLyricsE
+      \new Lyrics = BDLyricsEAlt
+
+      \context Staff = BDStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = BDVoiceLH \BDxABDBDMusicLH
+      >>
+      \context Lyrics = BDLyricsA \lyricsto BDVoiceLyrics \BDVerseA
+      \context Lyrics = BDLyricsAAlt \lyricsto BDVoiceLyrics \BDVerseAAlt
+      \context Lyrics = BDLyricsB \lyricsto BDVoiceLyrics \BDVerseB
+      \context Lyrics = BDLyricsBAlt \lyricsto BDVoiceLyrics \BDVerseBAlt
+      \context Lyrics = BDLyricsC \lyricsto BDVoiceLyrics \BDVerseC
+      \context Lyrics = BDLyricsCAlt \lyricsto BDVoiceLyrics \BDVerseCAlt
+      \context Lyrics = BDLyricsD \lyricsto BDVoiceLyrics \BDVerseD
+      \context Lyrics = BDLyricsDAlt \lyricsto BDVoiceLyrics \BDVerseDAlt
+      \context Lyrics = BDLyricsE \lyricsto BDVoiceLyrics \BDVerseE
+      \context Lyrics = BDLyricsEAlt \lyricsto BDVoiceLyrics \BDVerseEAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {25}
+        \fontsize #6 \center-align \line {እግዚአብሔር ሆይ፣ በየሱስ ደም በኩል}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Lord, through the Blood (384)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = BEStaffGroup <<
+      \context Staff = BEStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = BEVoiceLyrics \BExCHDBEMusicLyrics
+        \context Voice = BEVoiceRH \BExCHDBEMusicRH
+      >>
+      \new Lyrics  = BELyricsA
+      \new Lyrics = BELyricsAAlt
+      \new Lyrics  = BELyricsB
+      \new Lyrics = BELyricsBAlt
+      \new Lyrics  = BELyricsC
+      \new Lyrics = BELyricsCAlt
+
+      \context Staff = BEStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = BEVoiceLH \BExCHDBEMusicLH
+      >>
+      \context Lyrics = BELyricsA \lyricsto BEVoiceLyrics \BEVerseA
+      \context Lyrics = BELyricsAAlt \lyricsto BEVoiceLyrics \BEVerseAAlt
+      \context Lyrics = BELyricsB \lyricsto BEVoiceLyrics \BEVerseB
+      \context Lyrics = BELyricsBAlt \lyricsto BEVoiceLyrics \BEVerseBAlt
+      \context Lyrics = BELyricsC \lyricsto BEVoiceLyrics \BEVerseC
+      \context Lyrics = BELyricsCAlt \lyricsto BEVoiceLyrics \BEVerseCAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {26}
+        \fontsize #6 \center-align \line {ያንተን ሞገስ እንድናገኝ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Loved of God (365)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = BFStaffGroup <<
+      \context Staff = BFStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = BFVoiceLyrics \BFxCFEBFMusicLyrics
+        \context Voice = BFVoiceRH \BFxCFEBFMusicRH
+      >>
+      \new Lyrics  = BFLyricsA
+      \new Lyrics = BFLyricsAAlt
+      \new Lyrics  = BFLyricsB
+      \new Lyrics = BFLyricsBAlt
+      \new Lyrics  = BFLyricsC
+      \new Lyrics = BFLyricsCAlt
+
+      \context Staff = BFStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = BFVoiceLH \BFxCFEBFMusicLH
+      >>
+      \context Lyrics = BFLyricsA \lyricsto BFVoiceLyrics \BFVerseA
+      \context Lyrics = BFLyricsAAlt \lyricsto BFVoiceLyrics \BFVerseAAlt
+      \context Lyrics = BFLyricsB \lyricsto BFVoiceLyrics \BFVerseB
+      \context Lyrics = BFLyricsBAlt \lyricsto BFVoiceLyrics \BFVerseBAlt
+      \context Lyrics = BFLyricsC \lyricsto BFVoiceLyrics \BFVerseC
+      \context Lyrics = BFLyricsCAlt \lyricsto BFVoiceLyrics \BFVerseCAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {27}
+        \fontsize #6 \center-align \line {ዝም አትበል፣ ተናገረኝ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Lord, be not silent unto me (227)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = BGStaffGroup <<
+      \context Staff = BGStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = BGVoiceLyrics \BGxBBGBGMusicLyrics
+        \context Voice = BGVoiceRH \BGxBBGBGMusicRH
+      >>
+      \new Lyrics  = BGLyricsA
+      \new Lyrics = BGLyricsAAlt
+      \new Lyrics  = BGLyricsB
+      \new Lyrics = BGLyricsBAlt
+      \new Lyrics  = BGLyricsC
+      \new Lyrics = BGLyricsCAlt
+      \new Lyrics  = BGLyricsD
+      \new Lyrics = BGLyricsDAlt
+
+      \context Staff = BGStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = BGVoiceLH \BGxBBGBGMusicLH
+      >>
+      \context Lyrics = BGLyricsA \lyricsto BGVoiceLyrics \BGVerseA
+      \context Lyrics = BGLyricsAAlt \lyricsto BGVoiceLyrics \BGVerseAAlt
+      \context Lyrics = BGLyricsB \lyricsto BGVoiceLyrics \BGVerseB
+      \context Lyrics = BGLyricsBAlt \lyricsto BGVoiceLyrics \BGVerseBAlt
+      \context Lyrics = BGLyricsC \lyricsto BGVoiceLyrics \BGVerseC
+      \context Lyrics = BGLyricsCAlt \lyricsto BGVoiceLyrics \BGVerseCAlt
+      \context Lyrics = BGLyricsD \lyricsto BGVoiceLyrics \BGVerseD
+      \context Lyrics = BGLyricsDAlt \lyricsto BGVoiceLyrics \BGVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {28}
+        \fontsize #6 \center-align \line {የክርስቶስ ንፁህ ልብ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {I need the mind of Christ (390)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = BHStaffGroup <<
+      \context Staff = BHStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = BHVoiceLyrics \BHxCIZBHMusicLyrics
+        \context Voice = BHVoiceRH \BHxCIZBHMusicRH
+      >>
+      \new Lyrics  = BHLyricsA
+      \new Lyrics = BHLyricsAAlt
+      \new Lyrics  = BHLyricsB
+      \new Lyrics = BHLyricsBAlt
+      \new Lyrics  = BHLyricsC
+      \new Lyrics = BHLyricsCAlt
+      \new Lyrics  = BHLyricsD
+      \new Lyrics = BHLyricsDAlt
+
+      \context Staff = BHStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = BHVoiceLH \BHxCIZBHMusicLH
+      >>
+      \context Lyrics = BHLyricsA \lyricsto BHVoiceLyrics \BHVerseA
+      \context Lyrics = BHLyricsAAlt \lyricsto BHVoiceLyrics \BHVerseAAlt
+      \context Lyrics = BHLyricsB \lyricsto BHVoiceLyrics \BHVerseB
+      \context Lyrics = BHLyricsBAlt \lyricsto BHVoiceLyrics \BHVerseBAlt
+      \context Lyrics = BHLyricsC \lyricsto BHVoiceLyrics \BHVerseC
+      \context Lyrics = BHLyricsCAlt \lyricsto BHVoiceLyrics \BHVerseCAlt
+      \context Lyrics = BHLyricsD \lyricsto BHVoiceLyrics \BHVerseD
+      \context Lyrics = BHLyricsDAlt \lyricsto BHVoiceLyrics \BHVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {29}
+        \fontsize #6 \center-align \line {የተከፈለውን ብናውቅ ኖሮ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {If we but knew (21)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = BIStaffGroup <<
+      \context Staff = BIStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = BIVoiceLyrics \BIxBABIMusicLyrics
+        \context Voice = BIVoiceRH \BIxBABIMusicRH
+      >>
+      \new Lyrics  = BILyricsA
+      \new Lyrics = BILyricsAAlt
+      \new Lyrics  = BILyricsB
+      \new Lyrics = BILyricsBAlt
+      \new Lyrics  = BILyricsC
+      \new Lyrics = BILyricsCAlt
+      \new Lyrics  = BILyricsD
+      \new Lyrics = BILyricsDAlt
+
+      \context Staff = BIStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = BIVoiceLH \BIxBABIMusicLH
+      >>
+      \context Lyrics = BILyricsA \lyricsto BIVoiceLyrics \BIVerseA
+      \context Lyrics = BILyricsAAlt \lyricsto BIVoiceLyrics \BIVerseAAlt
+      \context Lyrics = BILyricsB \lyricsto BIVoiceLyrics \BIVerseB
+      \context Lyrics = BILyricsBAlt \lyricsto BIVoiceLyrics \BIVerseBAlt
+      \context Lyrics = BILyricsC \lyricsto BIVoiceLyrics \BIVerseC
+      \context Lyrics = BILyricsCAlt \lyricsto BIVoiceLyrics \BIVerseCAlt
+      \context Lyrics = BILyricsD \lyricsto BIVoiceLyrics \BIVerseD
+      \context Lyrics = BILyricsDAlt \lyricsto BIVoiceLyrics \BIVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {30}
+        \fontsize #6 \center-align \line {ሕይወትህ ተሰጥቷል!}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Thy life was given for me (26)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = CZStaffGroup <<
+      \context Staff = CZStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = CZVoiceLyrics \CZxBFCZMusicLyrics
+        \context Voice = CZVoiceRH \CZxBFCZMusicRH
+      >>
+      \new Lyrics  = CZLyricsA
+      \new Lyrics = CZLyricsAAlt
+      \new Lyrics  = CZLyricsB
+      \new Lyrics = CZLyricsBAlt
+      \new Lyrics  = CZLyricsC
+      \new Lyrics = CZLyricsCAlt
+      \new Lyrics  = CZLyricsD
+      \new Lyrics = CZLyricsDAlt
+
+      \context Staff = CZStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = CZVoiceLH \CZxBFCZMusicLH
+      >>
+      \context Lyrics = CZLyricsA \lyricsto CZVoiceLyrics \CZVerseA
+      \context Lyrics = CZLyricsAAlt \lyricsto CZVoiceLyrics \CZVerseAAlt
+      \context Lyrics = CZLyricsB \lyricsto CZVoiceLyrics \CZVerseB
+      \context Lyrics = CZLyricsBAlt \lyricsto CZVoiceLyrics \CZVerseBAlt
+      \context Lyrics = CZLyricsC \lyricsto CZVoiceLyrics \CZVerseC
+      \context Lyrics = CZLyricsCAlt \lyricsto CZVoiceLyrics \CZVerseCAlt
+      \context Lyrics = CZLyricsD \lyricsto CZVoiceLyrics \CZVerseD
+      \context Lyrics = CZLyricsDAlt \lyricsto CZVoiceLyrics \CZVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {31}
+        \fontsize #6 \center-align \line {ጌታዬ፣ አስበኝ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Amid the trials which I meet (289)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = CAStaffGroup <<
+      \context Staff = CAStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = CAVoiceLyrics \CAxBHICAMusicLyrics
+        \context Voice = CAVoiceRH \CAxBHICAMusicRH
+      >>
+      \new Lyrics  = CALyricsA
+      \new Lyrics = CALyricsAAlt
+      \new Lyrics  = CALyricsB
+      \new Lyrics = CALyricsBAlt
+      \new Lyrics  = CALyricsC
+      \new Lyrics = CALyricsCAlt
+
+      \context Staff = CAStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = CAVoiceLH \CAxBHICAMusicLH
+      >>
+      \context Lyrics = CALyricsA \lyricsto CAVoiceLyrics \CAVerseA
+      \context Lyrics = CALyricsAAlt \lyricsto CAVoiceLyrics \CAVerseAAlt
+      \context Lyrics = CALyricsB \lyricsto CAVoiceLyrics \CAVerseB
+      \context Lyrics = CALyricsBAlt \lyricsto CAVoiceLyrics \CAVerseBAlt
+      \context Lyrics = CALyricsC \lyricsto CAVoiceLyrics \CAVerseC
+      \context Lyrics = CALyricsCAlt \lyricsto CAVoiceLyrics \CAVerseCAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {32}
+        \fontsize #6 \center-align \line {አዳኜ፣ ነፃ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {From Heaven's glory (20)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = CBStaffGroup <<
+      \context Staff = CBStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = CBVoiceLyrics \CBxBZCBMusicLyrics
+        \context Voice = CBVoiceRH \CBxBZCBMusicRH
+      >>
+      \new Lyrics  = CBLyricsA
+      \new Lyrics = CBLyricsAAlt
+      \new Lyrics  = CBLyricsB
+      \new Lyrics = CBLyricsBAlt
+      \new Lyrics  = CBLyricsC
+      \new Lyrics = CBLyricsCAlt
+      \new Lyrics  = CBLyricsD
+      \new Lyrics = CBLyricsDAlt
+
+      \context Staff = CBStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = CBVoiceLH \CBxBZCBMusicLH
+      >>
+      \context Lyrics = CBLyricsA \lyricsto CBVoiceLyrics \CBVerseA
+      \context Lyrics = CBLyricsAAlt \lyricsto CBVoiceLyrics \CBVerseAAlt
+      \context Lyrics = CBLyricsB \lyricsto CBVoiceLyrics \CBVerseB
+      \context Lyrics = CBLyricsBAlt \lyricsto CBVoiceLyrics \CBVerseBAlt
+      \context Lyrics = CBLyricsC \lyricsto CBVoiceLyrics \CBVerseC
+      \context Lyrics = CBLyricsCAlt \lyricsto CBVoiceLyrics \CBVerseCAlt
+      \context Lyrics = CBLyricsD \lyricsto CBVoiceLyrics \CBVerseD
+      \context Lyrics = CBLyricsDAlt \lyricsto CBVoiceLyrics \CBVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {33}
+        \fontsize #6 \center-align \line {ውድ አዳኝ፣ ብቻዬን አትተውኝ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Dear Saviour, leave me not alone (344)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = CCStaffGroup <<
+      \context Staff = CCStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = CCVoiceLyrics \CCxCDDCCMusicLyrics
+        \context Voice = CCVoiceRH \CCxCDDCCMusicRH
+      >>
+      \new Lyrics  = CCLyricsA
+      \new Lyrics = CCLyricsAAlt
+      \new Lyrics  = CCLyricsB
+      \new Lyrics = CCLyricsBAlt
+      \new Lyrics  = CCLyricsC
+      \new Lyrics = CCLyricsCAlt
+      \new Lyrics  = CCLyricsD
+      \new Lyrics = CCLyricsDAlt
+
+      \context Staff = CCStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = CCVoiceLH \CCxCDDCCMusicLH
+      >>
+      \context Lyrics = CCLyricsA \lyricsto CCVoiceLyrics \CCVerseA
+      \context Lyrics = CCLyricsAAlt \lyricsto CCVoiceLyrics \CCVerseAAlt
+      \context Lyrics = CCLyricsB \lyricsto CCVoiceLyrics \CCVerseB
+      \context Lyrics = CCLyricsBAlt \lyricsto CCVoiceLyrics \CCVerseBAlt
+      \context Lyrics = CCLyricsC \lyricsto CCVoiceLyrics \CCVerseC
+      \context Lyrics = CCLyricsCAlt \lyricsto CCVoiceLyrics \CCVerseCAlt
+      \context Lyrics = CCLyricsD \lyricsto CCVoiceLyrics \CCVerseD
+      \context Lyrics = CCLyricsDAlt \lyricsto CCVoiceLyrics \CCVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {34}
+        \fontsize #6 \center-align \line {የሱስ ብቻ ያድንኛል}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Where shall I flee for refuge (153)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = CDStaffGroup <<
+      \context Staff = CDStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = CDVoiceLyrics \CDxAECCDMusicLyrics
+        \context Voice = CDVoiceRH \CDxAECCDMusicRH
+      >>
+      \new Lyrics  = CDLyricsA
+      \new Lyrics = CDLyricsAAlt
+      \new Lyrics  = CDLyricsB
+      \new Lyrics = CDLyricsBAlt
+      \new Lyrics  = CDLyricsC
+      \new Lyrics = CDLyricsCAlt
+      \new Lyrics  = CDLyricsD
+      \new Lyrics = CDLyricsDAlt
+
+      \context Staff = CDStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = CDVoiceLH \CDxAECCDMusicLH
+      >>
+      \context Lyrics = CDLyricsA \lyricsto CDVoiceLyrics \CDVerseA
+      \context Lyrics = CDLyricsAAlt \lyricsto CDVoiceLyrics \CDVerseAAlt
+      \context Lyrics = CDLyricsB \lyricsto CDVoiceLyrics \CDVerseB
+      \context Lyrics = CDLyricsBAlt \lyricsto CDVoiceLyrics \CDVerseBAlt
+      \context Lyrics = CDLyricsC \lyricsto CDVoiceLyrics \CDVerseC
+      \context Lyrics = CDLyricsCAlt \lyricsto CDVoiceLyrics \CDVerseCAlt
+      \context Lyrics = CDLyricsD \lyricsto CDVoiceLyrics \CDVerseD
+      \context Lyrics = CDLyricsDAlt \lyricsto CDVoiceLyrics \CDVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {35}
+        \fontsize #6 \center-align \line {እንደሆንኩኝ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Just as I am (158)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = CEStaffGroup <<
+      \context Staff = CEStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = CEVoiceLyrics \CExAEHCEMusicLyrics
+        \context Voice = CEVoiceRH \CExAEHCEMusicRH
+      >>
+      \new Lyrics  = CELyricsA
+      \new Lyrics = CELyricsAAlt
+      \new Lyrics  = CELyricsB
+      \new Lyrics = CELyricsBAlt
+      \new Lyrics  = CELyricsC
+      \new Lyrics = CELyricsCAlt
+      \new Lyrics  = CELyricsD
+      \new Lyrics = CELyricsDAlt
+
+      \context Staff = CEStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = CEVoiceLH \CExAEHCEMusicLH
+      >>
+      \context Lyrics = CELyricsA \lyricsto CEVoiceLyrics \CEVerseA
+      \context Lyrics = CELyricsAAlt \lyricsto CEVoiceLyrics \CEVerseAAlt
+      \context Lyrics = CELyricsB \lyricsto CEVoiceLyrics \CEVerseB
+      \context Lyrics = CELyricsBAlt \lyricsto CEVoiceLyrics \CEVerseBAlt
+      \context Lyrics = CELyricsC \lyricsto CEVoiceLyrics \CEVerseC
+      \context Lyrics = CELyricsCAlt \lyricsto CEVoiceLyrics \CEVerseCAlt
+      \context Lyrics = CELyricsD \lyricsto CEVoiceLyrics \CEVerseD
+      \context Lyrics = CELyricsDAlt \lyricsto CEVoiceLyrics \CEVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {36}
+        \fontsize #6 \center-align \line {በምድር ካለው ሁሉ ይበልጣል}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {God's word is so pure (29)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = CFStaffGroup <<
+      \context Staff = CFStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = CFVoiceLyrics \CFxBICFMusicLyrics
+        \context Voice = CFVoiceRH \CFxBICFMusicRH
+      >>
+      \new Lyrics  = CFLyricsA
+      \new Lyrics = CFLyricsAAlt
+      \new Lyrics  = CFLyricsB
+      \new Lyrics = CFLyricsBAlt
+      \new Lyrics  = CFLyricsC
+      \new Lyrics = CFLyricsCAlt
+      \new Lyrics  = CFLyricsD
+      \new Lyrics = CFLyricsDAlt
+
+      \context Staff = CFStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = CFVoiceLH \CFxBICFMusicLH
+      >>
+      \context Lyrics = CFLyricsA \lyricsto CFVoiceLyrics \CFVerseA
+      \context Lyrics = CFLyricsAAlt \lyricsto CFVoiceLyrics \CFVerseAAlt
+      \context Lyrics = CFLyricsB \lyricsto CFVoiceLyrics \CFVerseB
+      \context Lyrics = CFLyricsBAlt \lyricsto CFVoiceLyrics \CFVerseBAlt
+      \context Lyrics = CFLyricsC \lyricsto CFVoiceLyrics \CFVerseC
+      \context Lyrics = CFLyricsCAlt \lyricsto CFVoiceLyrics \CFVerseCAlt
+      \context Lyrics = CFLyricsD \lyricsto CFVoiceLyrics \CFVerseD
+      \context Lyrics = CFLyricsDAlt \lyricsto CFVoiceLyrics \CFVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {37}
+        \fontsize #6 \center-align \line {የተባረከ ጊዜ ነው}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Rich are the moments of blessing (228)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = CGStaffGroup <<
+      \context Staff = CGStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = CGVoiceLyrics \CGxBBHCGMusicLyrics
+        \context Voice = CGVoiceRH \CGxBBHCGMusicRH
+      >>
+      \new Lyrics  = CGLyricsA
+      \new Lyrics = CGLyricsAAlt
+      \new Lyrics  = CGLyricsB
+      \new Lyrics = CGLyricsBAlt
+      \new Lyrics  = CGLyricsC
+      \new Lyrics = CGLyricsCAlt
+      \new Lyrics  = CGLyricsD
+      \new Lyrics = CGLyricsDAlt
+
+      \context Staff = CGStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = CGVoiceLH \CGxBBHCGMusicLH
+      >>
+      \context Lyrics = CGLyricsA \lyricsto CGVoiceLyrics \CGVerseA
+      \context Lyrics = CGLyricsAAlt \lyricsto CGVoiceLyrics \CGVerseAAlt
+      \context Lyrics = CGLyricsB \lyricsto CGVoiceLyrics \CGVerseB
+      \context Lyrics = CGLyricsBAlt \lyricsto CGVoiceLyrics \CGVerseBAlt
+      \context Lyrics = CGLyricsC \lyricsto CGVoiceLyrics \CGVerseC
+      \context Lyrics = CGLyricsCAlt \lyricsto CGVoiceLyrics \CGVerseCAlt
+      \context Lyrics = CGLyricsD \lyricsto CGVoiceLyrics \CGVerseD
+      \context Lyrics = CGLyricsDAlt \lyricsto CGVoiceLyrics \CGVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {38}
+        \fontsize #6 \center-align \line {በእግሩ ታች እንድንማር}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Alone with Jesus (198)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = CHStaffGroup <<
+      \context Staff = CHStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = CHVoiceLyrics \CHxAIHCHMusicLyrics
+        \context Voice = CHVoiceRH \CHxAIHCHMusicRH
+      >>
+      \new Lyrics  = CHLyricsA
+      \new Lyrics = CHLyricsAAlt
+      \new Lyrics  = CHLyricsB
+      \new Lyrics = CHLyricsBAlt
+      \new Lyrics  = CHLyricsC
+      \new Lyrics = CHLyricsCAlt
+      \new Lyrics  = CHLyricsD
+      \new Lyrics = CHLyricsDAlt
+
+      \context Staff = CHStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = CHVoiceLH \CHxAIHCHMusicLH
+      >>
+      \context Lyrics = CHLyricsA \lyricsto CHVoiceLyrics \CHVerseA
+      \context Lyrics = CHLyricsAAlt \lyricsto CHVoiceLyrics \CHVerseAAlt
+      \context Lyrics = CHLyricsB \lyricsto CHVoiceLyrics \CHVerseB
+      \context Lyrics = CHLyricsBAlt \lyricsto CHVoiceLyrics \CHVerseBAlt
+      \context Lyrics = CHLyricsC \lyricsto CHVoiceLyrics \CHVerseC
+      \context Lyrics = CHLyricsCAlt \lyricsto CHVoiceLyrics \CHVerseCAlt
+      \context Lyrics = CHLyricsD \lyricsto CHVoiceLyrics \CHVerseD
+      \context Lyrics = CHLyricsDAlt \lyricsto CHVoiceLyrics \CHVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {39}
+        \fontsize #6 \center-align \line {ኢየሱስ ከሰማይ መጣ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Jesus came from Heaven (9)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = CIStaffGroup <<
+      \context Staff = CIStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = CIVoiceLyrics \CIxICIMusicLyrics
+        \context Voice = CIVoiceRH \CIxICIMusicRH
+      >>
+      \new Lyrics  = CILyricsA
+      \new Lyrics = CILyricsAAlt
+      \new Lyrics  = CILyricsB
+      \new Lyrics = CILyricsBAlt
+      \new Lyrics  = CILyricsC
+      \new Lyrics = CILyricsCAlt
+      \new Lyrics  = CILyricsD
+      \new Lyrics = CILyricsDAlt
+
+      \context Staff = CIStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = CIVoiceLH \CIxICIMusicLH
+      >>
+      \context Lyrics = CILyricsA \lyricsto CIVoiceLyrics \CIVerseA
+      \context Lyrics = CILyricsAAlt \lyricsto CIVoiceLyrics \CIVerseAAlt
+      \context Lyrics = CILyricsB \lyricsto CIVoiceLyrics \CIVerseB
+      \context Lyrics = CILyricsBAlt \lyricsto CIVoiceLyrics \CIVerseBAlt
+      \context Lyrics = CILyricsC \lyricsto CIVoiceLyrics \CIVerseC
+      \context Lyrics = CILyricsCAlt \lyricsto CIVoiceLyrics \CIVerseCAlt
+      \context Lyrics = CILyricsD \lyricsto CIVoiceLyrics \CIVerseD
+      \context Lyrics = CILyricsDAlt \lyricsto CIVoiceLyrics \CIVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {40}
+        \fontsize #6 \center-align \line {ኦ ጌታ አምላኬ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {How great Thou art ()}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = DZStaffGroup <<
+      \context Staff = DZStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = DZVoiceLyrics \DZxDZMusicLyrics
+        \context Voice = DZVoiceRH \DZxDZMusicRH
+      >>
+      \new Lyrics  = DZLyricsA
+      \new Lyrics = DZLyricsAAlt
+      \new Lyrics  = DZLyricsB
+      \new Lyrics = DZLyricsBAlt
+      \new Lyrics  = DZLyricsC
+      \new Lyrics = DZLyricsCAlt
+      \new Lyrics  = DZLyricsD
+      \new Lyrics = DZLyricsDAlt
+
+      \context Staff = DZStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = DZVoiceLH \DZxDZMusicLH
+      >>
+      \context Lyrics = DZLyricsA \lyricsto DZVoiceLyrics \DZVerseA
+      \context Lyrics = DZLyricsAAlt \lyricsto DZVoiceLyrics \DZVerseAAlt
+      \context Lyrics = DZLyricsB \lyricsto DZVoiceLyrics \DZVerseB
+      \context Lyrics = DZLyricsBAlt \lyricsto DZVoiceLyrics \DZVerseBAlt
+      \context Lyrics = DZLyricsC \lyricsto DZVoiceLyrics \DZVerseC
+      \context Lyrics = DZLyricsCAlt \lyricsto DZVoiceLyrics \DZVerseCAlt
+      \context Lyrics = DZLyricsD \lyricsto DZVoiceLyrics \DZVerseD
+      \context Lyrics = DZLyricsDAlt \lyricsto DZVoiceLyrics \DZVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {41}
+        \fontsize #6 \center-align \line {ያምላክ በግ ሆይ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {O Lamb of God (4)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = DAStaffGroup <<
+      \context Staff = DAStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = DAVoiceLyrics \DAxDDAMusicLyrics
+        \context Voice = DAVoiceRH \DAxDDAMusicRH
+      >>
+      \new Lyrics  = DALyricsA
+      \new Lyrics = DALyricsAAlt
+      \new Lyrics  = DALyricsB
+      \new Lyrics = DALyricsBAlt
+      \new Lyrics  = DALyricsC
+      \new Lyrics = DALyricsCAlt
+      \new Lyrics  = DALyricsD
+      \new Lyrics = DALyricsDAlt
+
+      \context Staff = DAStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = DAVoiceLH \DAxDDAMusicLH
+      >>
+      \context Lyrics = DALyricsA \lyricsto DAVoiceLyrics \DAVerseA
+      \context Lyrics = DALyricsAAlt \lyricsto DAVoiceLyrics \DAVerseAAlt
+      \context Lyrics = DALyricsB \lyricsto DAVoiceLyrics \DAVerseB
+      \context Lyrics = DALyricsBAlt \lyricsto DAVoiceLyrics \DAVerseBAlt
+      \context Lyrics = DALyricsC \lyricsto DAVoiceLyrics \DAVerseC
+      \context Lyrics = DALyricsCAlt \lyricsto DAVoiceLyrics \DAVerseCAlt
+      \context Lyrics = DALyricsD \lyricsto DAVoiceLyrics \DAVerseD
+      \context Lyrics = DALyricsDAlt \lyricsto DAVoiceLyrics \DAVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {42}
+        \fontsize #6 \center-align \line {የጌታውን መታየት}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Art thou waiting for the day? (401)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = DBStaffGroup <<
+      \context Staff = DBStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = DBVoiceLyrics \DBxDZADBMusicLyrics
+        \context Voice = DBVoiceRH \DBxDZADBMusicRH
+      >>
+      \new Lyrics  = DBLyricsA
+      \new Lyrics = DBLyricsAAlt
+      \new Lyrics  = DBLyricsB
+      \new Lyrics = DBLyricsBAlt
+      \new Lyrics  = DBLyricsC
+      \new Lyrics = DBLyricsCAlt
+      \new Lyrics  = DBLyricsD
+      \new Lyrics = DBLyricsDAlt
+
+      \context Staff = DBStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = DBVoiceLH \DBxDZADBMusicLH
+      >>
+      \context Lyrics = DBLyricsA \lyricsto DBVoiceLyrics \DBVerseA
+      \context Lyrics = DBLyricsAAlt \lyricsto DBVoiceLyrics \DBVerseAAlt
+      \context Lyrics = DBLyricsB \lyricsto DBVoiceLyrics \DBVerseB
+      \context Lyrics = DBLyricsBAlt \lyricsto DBVoiceLyrics \DBVerseBAlt
+      \context Lyrics = DBLyricsC \lyricsto DBVoiceLyrics \DBVerseC
+      \context Lyrics = DBLyricsCAlt \lyricsto DBVoiceLyrics \DBVerseCAlt
+      \context Lyrics = DBLyricsD \lyricsto DBVoiceLyrics \DBVerseD
+      \context Lyrics = DBLyricsDAlt \lyricsto DBVoiceLyrics \DBVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {43}
+        \fontsize #6 \center-align \line {የእግዚአብሔር በግ ሆይ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Wash me, O Lamb of God (17)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = DCStaffGroup <<
+      \context Staff = DCStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = DCVoiceLyrics \DCxAGDCMusicLyrics
+        \context Voice = DCVoiceRH \DCxAGDCMusicRH
+      >>
+      \new Lyrics  = DCLyricsA
+      \new Lyrics = DCLyricsAAlt
+      \new Lyrics  = DCLyricsB
+      \new Lyrics = DCLyricsBAlt
+      \new Lyrics  = DCLyricsC
+      \new Lyrics = DCLyricsCAlt
+      \new Lyrics  = DCLyricsD
+      \new Lyrics = DCLyricsDAlt
+
+      \context Staff = DCStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = DCVoiceLH \DCxAGDCMusicLH
+      >>
+      \context Lyrics = DCLyricsA \lyricsto DCVoiceLyrics \DCVerseA
+      \context Lyrics = DCLyricsAAlt \lyricsto DCVoiceLyrics \DCVerseAAlt
+      \context Lyrics = DCLyricsB \lyricsto DCVoiceLyrics \DCVerseB
+      \context Lyrics = DCLyricsBAlt \lyricsto DCVoiceLyrics \DCVerseBAlt
+      \context Lyrics = DCLyricsC \lyricsto DCVoiceLyrics \DCVerseC
+      \context Lyrics = DCLyricsCAlt \lyricsto DCVoiceLyrics \DCVerseCAlt
+      \context Lyrics = DCLyricsD \lyricsto DCVoiceLyrics \DCVerseD
+      \context Lyrics = DCLyricsDAlt \lyricsto DCVoiceLyrics \DCVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {44}
+        \fontsize #6 \center-align \line {የእስራኤል እረኛ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Shepherd of Israel (310)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = DDStaffGroup <<
+      \context Staff = DDStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = DDVoiceLyrics \DDxCAZDDMusicLyrics
+        \context Voice = DDVoiceRH \DDxCAZDDMusicRH
+      >>
+      \new Lyrics  = DDLyricsA
+      \new Lyrics = DDLyricsAAlt
+      \new Lyrics  = DDLyricsB
+      \new Lyrics = DDLyricsBAlt
+      \new Lyrics  = DDLyricsC
+      \new Lyrics = DDLyricsCAlt
+
+      \context Staff = DDStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = DDVoiceLH \DDxCAZDDMusicLH
+      >>
+      \context Lyrics = DDLyricsA \lyricsto DDVoiceLyrics \DDVerseA
+      \context Lyrics = DDLyricsAAlt \lyricsto DDVoiceLyrics \DDVerseAAlt
+      \context Lyrics = DDLyricsB \lyricsto DDVoiceLyrics \DDVerseB
+      \context Lyrics = DDLyricsBAlt \lyricsto DDVoiceLyrics \DDVerseBAlt
+      \context Lyrics = DDLyricsC \lyricsto DDVoiceLyrics \DDVerseC
+      \context Lyrics = DDLyricsCAlt \lyricsto DDVoiceLyrics \DDVerseCAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {45}
+        \fontsize #6 \center-align \line {ወዳምላክ እንቅረብ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Let us draw near (185)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = DEStaffGroup <<
+      \context Staff = DEStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = DEVoiceLyrics \DExAHEDEMusicLyrics
+        \context Voice = DEVoiceRH \DExAHEDEMusicRH
+      >>
+      \new Lyrics  = DELyricsA
+      \new Lyrics = DELyricsAAlt
+      \new Lyrics  = DELyricsB
+      \new Lyrics = DELyricsBAlt
+      \new Lyrics  = DELyricsC
+      \new Lyrics = DELyricsCAlt
+      \new Lyrics  = DELyricsD
+      \new Lyrics = DELyricsDAlt
+
+      \context Staff = DEStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = DEVoiceLH \DExAHEDEMusicLH
+      >>
+      \context Lyrics = DELyricsA \lyricsto DEVoiceLyrics \DEVerseA
+      \context Lyrics = DELyricsAAlt \lyricsto DEVoiceLyrics \DEVerseAAlt
+      \context Lyrics = DELyricsB \lyricsto DEVoiceLyrics \DEVerseB
+      \context Lyrics = DELyricsBAlt \lyricsto DEVoiceLyrics \DEVerseBAlt
+      \context Lyrics = DELyricsC \lyricsto DEVoiceLyrics \DEVerseC
+      \context Lyrics = DELyricsCAlt \lyricsto DEVoiceLyrics \DEVerseCAlt
+      \context Lyrics = DELyricsD \lyricsto DEVoiceLyrics \DEVerseD
+      \context Lyrics = DELyricsDAlt \lyricsto DEVoiceLyrics \DEVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {46}
+        \fontsize #6 \center-align \line {ስማው፣ ስማው}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Hear the voice of Jesus (127)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = DFStaffGroup <<
+      \context Staff = DFStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = DFVoiceLyrics \DFxABGDFMusicLyrics
+        \context Voice = DFVoiceRH \DFxABGDFMusicRH
+      >>
+      \new Lyrics  = DFLyricsA
+      \new Lyrics = DFLyricsAAlt
+      \new Lyrics  = DFLyricsB
+      \new Lyrics = DFLyricsBAlt
+      \new Lyrics  = DFLyricsC
+      \new Lyrics = DFLyricsCAlt
+      \new Lyrics  = DFLyricsD
+      \new Lyrics = DFLyricsDAlt
+
+      \context Staff = DFStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = DFVoiceLH \DFxABGDFMusicLH
+      >>
+      \context Lyrics = DFLyricsA \lyricsto DFVoiceLyrics \DFVerseA
+      \context Lyrics = DFLyricsAAlt \lyricsto DFVoiceLyrics \DFVerseAAlt
+      \context Lyrics = DFLyricsB \lyricsto DFVoiceLyrics \DFVerseB
+      \context Lyrics = DFLyricsBAlt \lyricsto DFVoiceLyrics \DFVerseBAlt
+      \context Lyrics = DFLyricsC \lyricsto DFVoiceLyrics \DFVerseC
+      \context Lyrics = DFLyricsCAlt \lyricsto DFVoiceLyrics \DFVerseCAlt
+      \context Lyrics = DFLyricsD \lyricsto DFVoiceLyrics \DFVerseD
+      \context Lyrics = DFLyricsDAlt \lyricsto DFVoiceLyrics \DFVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {47}
+        \fontsize #6 \center-align \line {ጸሎት ታላቅ የኃይል ምንጭ ነው}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Prayer is a mighty source (186)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = DGStaffGroup <<
+      \context Staff = DGStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = DGVoiceLyrics \DGxAHFDGMusicLyrics
+        \context Voice = DGVoiceRH \DGxAHFDGMusicRH
+      >>
+      \new Lyrics  = DGLyricsA
+      \new Lyrics = DGLyricsAAlt
+      \new Lyrics  = DGLyricsB
+      \new Lyrics = DGLyricsBAlt
+      \new Lyrics  = DGLyricsC
+      \new Lyrics = DGLyricsCAlt
+      \new Lyrics  = DGLyricsD
+      \new Lyrics = DGLyricsDAlt
+      \new Lyrics  = DGLyricsE
+      \new Lyrics = DGLyricsEAlt
+      \new Lyrics  = DGLyricsF
+      \new Lyrics = DGLyricsFAlt
+
+      \context Staff = DGStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = DGVoiceLH \DGxAHFDGMusicLH
+      >>
+      \context Lyrics = DGLyricsA \lyricsto DGVoiceLyrics \DGVerseA
+      \context Lyrics = DGLyricsAAlt \lyricsto DGVoiceLyrics \DGVerseAAlt
+      \context Lyrics = DGLyricsB \lyricsto DGVoiceLyrics \DGVerseB
+      \context Lyrics = DGLyricsBAlt \lyricsto DGVoiceLyrics \DGVerseBAlt
+      \context Lyrics = DGLyricsC \lyricsto DGVoiceLyrics \DGVerseC
+      \context Lyrics = DGLyricsCAlt \lyricsto DGVoiceLyrics \DGVerseCAlt
+      \context Lyrics = DGLyricsD \lyricsto DGVoiceLyrics \DGVerseD
+      \context Lyrics = DGLyricsDAlt \lyricsto DGVoiceLyrics \DGVerseDAlt
+      \context Lyrics = DGLyricsE \lyricsto DGVoiceLyrics \DGVerseE
+      \context Lyrics = DGLyricsEAlt \lyricsto DGVoiceLyrics \DGVerseEAlt
+      \context Lyrics = DGLyricsF \lyricsto DGVoiceLyrics \DGVerseF
+      \context Lyrics = DGLyricsFAlt \lyricsto DGVoiceLyrics \DGVerseFAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {48}
+        \fontsize #6 \center-align \line {ልብህን ስጠኝ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Give Me Thy Heart (89)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = DHStaffGroup <<
+      \context Staff = DHStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = DHVoiceLyrics \DHxHIDHMusicLyrics
+        \context Voice = DHVoiceRH \DHxHIDHMusicRH
+      >>
+      \new Lyrics  = DHLyricsA
+      \new Lyrics = DHLyricsAAlt
+      \new Lyrics  = DHLyricsB
+      \new Lyrics = DHLyricsBAlt
+      \new Lyrics  = DHLyricsC
+      \new Lyrics = DHLyricsCAlt
+
+      \context Staff = DHStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = DHVoiceLH \DHxHIDHMusicLH
+      >>
+      \context Lyrics = DHLyricsA \lyricsto DHVoiceLyrics \DHVerseA
+      \context Lyrics = DHLyricsAAlt \lyricsto DHVoiceLyrics \DHVerseAAlt
+      \context Lyrics = DHLyricsB \lyricsto DHVoiceLyrics \DHVerseB
+      \context Lyrics = DHLyricsBAlt \lyricsto DHVoiceLyrics \DHVerseBAlt
+      \context Lyrics = DHLyricsC \lyricsto DHVoiceLyrics \DHVerseC
+      \context Lyrics = DHLyricsCAlt \lyricsto DHVoiceLyrics \DHVerseCAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {49}
+        \fontsize #6 \center-align \line {የእረኛው ድምፅ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {The voice of the Shepherd (116)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = DIStaffGroup <<
+      \context Staff = DIStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = DIVoiceLyrics \DIxAAFDIMusicLyrics
+        \context Voice = DIVoiceRH \DIxAAFDIMusicRH
+      >>
+      \new Lyrics  = DILyricsA
+      \new Lyrics = DILyricsAAlt
+      \new Lyrics  = DILyricsB
+      \new Lyrics = DILyricsBAlt
+      \new Lyrics  = DILyricsC
+      \new Lyrics = DILyricsCAlt
+
+      \context Staff = DIStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = DIVoiceLH \DIxAAFDIMusicLH
+      >>
+      \context Lyrics = DILyricsA \lyricsto DIVoiceLyrics \DIVerseA
+      \context Lyrics = DILyricsAAlt \lyricsto DIVoiceLyrics \DIVerseAAlt
+      \context Lyrics = DILyricsB \lyricsto DIVoiceLyrics \DIVerseB
+      \context Lyrics = DILyricsBAlt \lyricsto DIVoiceLyrics \DIVerseBAlt
+      \context Lyrics = DILyricsC \lyricsto DIVoiceLyrics \DIVerseC
+      \context Lyrics = DILyricsCAlt \lyricsto DIVoiceLyrics \DIVerseCAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {50}
+        \fontsize #6 \center-align \line {ደግና አዲስ የሆነ ልብ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Give me a heart (215)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = EZStaffGroup <<
+      \context Staff = EZStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = EZVoiceLyrics \EZxBAEEZMusicLyrics
+        \context Voice = EZVoiceRH \EZxBAEEZMusicRH
+      >>
+      \new Lyrics  = EZLyricsA
+      \new Lyrics = EZLyricsAAlt
+      \new Lyrics  = EZLyricsB
+      \new Lyrics = EZLyricsBAlt
+      \new Lyrics  = EZLyricsC
+      \new Lyrics = EZLyricsCAlt
+
+      \context Staff = EZStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = EZVoiceLH \EZxBAEEZMusicLH
+      >>
+      \context Lyrics = EZLyricsA \lyricsto EZVoiceLyrics \EZVerseA
+      \context Lyrics = EZLyricsAAlt \lyricsto EZVoiceLyrics \EZVerseAAlt
+      \context Lyrics = EZLyricsB \lyricsto EZVoiceLyrics \EZVerseB
+      \context Lyrics = EZLyricsBAlt \lyricsto EZVoiceLyrics \EZVerseBAlt
+      \context Lyrics = EZLyricsC \lyricsto EZVoiceLyrics \EZVerseC
+      \context Lyrics = EZLyricsCAlt \lyricsto EZVoiceLyrics \EZVerseCAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {51}
+        \fontsize #6 \center-align \line {ብርሃን የት ነው?}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Is there no light? (36)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = EAStaffGroup <<
+      \context Staff = EAStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = EAVoiceLyrics \EAxCFEAMusicLyrics
+        \context Voice = EAVoiceRH \EAxCFEAMusicRH
+      >>
+      \new Lyrics  = EALyricsA
+      \new Lyrics = EALyricsAAlt
+      \new Lyrics  = EALyricsB
+      \new Lyrics = EALyricsBAlt
+      \new Lyrics  = EALyricsC
+      \new Lyrics = EALyricsCAlt
+      \new Lyrics  = EALyricsD
+      \new Lyrics = EALyricsDAlt
+
+      \context Staff = EAStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = EAVoiceLH \EAxCFEAMusicLH
+      >>
+      \context Lyrics = EALyricsA \lyricsto EAVoiceLyrics \EAVerseA
+      \context Lyrics = EALyricsAAlt \lyricsto EAVoiceLyrics \EAVerseAAlt
+      \context Lyrics = EALyricsB \lyricsto EAVoiceLyrics \EAVerseB
+      \context Lyrics = EALyricsBAlt \lyricsto EAVoiceLyrics \EAVerseBAlt
+      \context Lyrics = EALyricsC \lyricsto EAVoiceLyrics \EAVerseC
+      \context Lyrics = EALyricsCAlt \lyricsto EAVoiceLyrics \EAVerseCAlt
+      \context Lyrics = EALyricsD \lyricsto EAVoiceLyrics \EAVerseD
+      \context Lyrics = EALyricsDAlt \lyricsto EAVoiceLyrics \EAVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {52}
+        \fontsize #6 \center-align \line {መንገድ አለ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {There is a way (42)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = EBStaffGroup <<
+      \context Staff = EBStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = EBVoiceLyrics \EBxDBEBMusicLyrics
+        \context Voice = EBVoiceRH \EBxDBEBMusicRH
+      >>
+      \new Lyrics  = EBLyricsA
+      \new Lyrics = EBLyricsAAlt
+      \new Lyrics  = EBLyricsB
+      \new Lyrics = EBLyricsBAlt
+      \new Lyrics  = EBLyricsC
+      \new Lyrics = EBLyricsCAlt
+      \new Lyrics  = EBLyricsD
+      \new Lyrics = EBLyricsDAlt
+
+      \context Staff = EBStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = EBVoiceLH \EBxDBEBMusicLH
+      >>
+      \context Lyrics = EBLyricsA \lyricsto EBVoiceLyrics \EBVerseA
+      \context Lyrics = EBLyricsAAlt \lyricsto EBVoiceLyrics \EBVerseAAlt
+      \context Lyrics = EBLyricsB \lyricsto EBVoiceLyrics \EBVerseB
+      \context Lyrics = EBLyricsBAlt \lyricsto EBVoiceLyrics \EBVerseBAlt
+      \context Lyrics = EBLyricsC \lyricsto EBVoiceLyrics \EBVerseC
+      \context Lyrics = EBLyricsCAlt \lyricsto EBVoiceLyrics \EBVerseCAlt
+      \context Lyrics = EBLyricsD \lyricsto EBVoiceLyrics \EBVerseD
+      \context Lyrics = EBLyricsDAlt \lyricsto EBVoiceLyrics \EBVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {53}
+        \fontsize #6 \center-align \line {በወርቅ፣ በብር ያልተዋጀ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Not redeemed with gold (19)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = ECStaffGroup <<
+      \context Staff = ECStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = ECVoiceLyrics \ECxAIECMusicLyrics
+        \context Voice = ECVoiceRH \ECxAIECMusicRH
+      >>
+      \new Lyrics  = ECLyricsA
+      \new Lyrics = ECLyricsAAlt
+      \new Lyrics  = ECLyricsB
+      \new Lyrics = ECLyricsBAlt
+      \new Lyrics  = ECLyricsC
+      \new Lyrics = ECLyricsCAlt
+      \new Lyrics  = ECLyricsD
+      \new Lyrics = ECLyricsDAlt
+
+      \context Staff = ECStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = ECVoiceLH \ECxAIECMusicLH
+      >>
+      \context Lyrics = ECLyricsA \lyricsto ECVoiceLyrics \ECVerseA
+      \context Lyrics = ECLyricsAAlt \lyricsto ECVoiceLyrics \ECVerseAAlt
+      \context Lyrics = ECLyricsB \lyricsto ECVoiceLyrics \ECVerseB
+      \context Lyrics = ECLyricsBAlt \lyricsto ECVoiceLyrics \ECVerseBAlt
+      \context Lyrics = ECLyricsC \lyricsto ECVoiceLyrics \ECVerseC
+      \context Lyrics = ECLyricsCAlt \lyricsto ECVoiceLyrics \ECVerseCAlt
+      \context Lyrics = ECLyricsD \lyricsto ECVoiceLyrics \ECVerseD
+      \context Lyrics = ECLyricsDAlt \lyricsto ECVoiceLyrics \ECVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {54}
+        \fontsize #6 \center-align \line {ወንጌልን ማወቅ ደስ ይላል}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Sweet to know (105)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = EDStaffGroup <<
+      \context Staff = EDStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = EDVoiceLyrics \EDxAZEEDMusicLyrics
+        \context Voice = EDVoiceRH \EDxAZEEDMusicRH
+      >>
+      \new Lyrics  = EDLyricsA
+      \new Lyrics = EDLyricsAAlt
+      \new Lyrics  = EDLyricsB
+      \new Lyrics = EDLyricsBAlt
+      \new Lyrics  = EDLyricsC
+      \new Lyrics = EDLyricsCAlt
+      \new Lyrics  = EDLyricsD
+      \new Lyrics = EDLyricsDAlt
+
+      \context Staff = EDStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = EDVoiceLH \EDxAZEEDMusicLH
+      >>
+      \context Lyrics = EDLyricsA \lyricsto EDVoiceLyrics \EDVerseA
+      \context Lyrics = EDLyricsAAlt \lyricsto EDVoiceLyrics \EDVerseAAlt
+      \context Lyrics = EDLyricsB \lyricsto EDVoiceLyrics \EDVerseB
+      \context Lyrics = EDLyricsBAlt \lyricsto EDVoiceLyrics \EDVerseBAlt
+      \context Lyrics = EDLyricsC \lyricsto EDVoiceLyrics \EDVerseC
+      \context Lyrics = EDLyricsCAlt \lyricsto EDVoiceLyrics \EDVerseCAlt
+      \context Lyrics = EDLyricsD \lyricsto EDVoiceLyrics \EDVerseD
+      \context Lyrics = EDLyricsDAlt \lyricsto EDVoiceLyrics \EDVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {55}
+        \fontsize #6 \center-align \line {ኢየሱስ ሆይ፣ አንተን ሳስብ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Jesus the very thought of Thee (13)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = EEStaffGroup <<
+      \context Staff = EEStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = EEVoiceLyrics \EExACEEMusicLyrics
+        \context Voice = EEVoiceRH \EExACEEMusicRH
+      >>
+      \new Lyrics  = EELyricsA
+      \new Lyrics = EELyricsAAlt
+      \new Lyrics  = EELyricsB
+      \new Lyrics = EELyricsBAlt
+      \new Lyrics  = EELyricsC
+      \new Lyrics = EELyricsCAlt
+      \new Lyrics  = EELyricsD
+      \new Lyrics = EELyricsDAlt
+      \new Lyrics  = EELyricsE
+      \new Lyrics = EELyricsEAlt
+
+      \context Staff = EEStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = EEVoiceLH \EExACEEMusicLH
+      >>
+      \context Lyrics = EELyricsA \lyricsto EEVoiceLyrics \EEVerseA
+      \context Lyrics = EELyricsAAlt \lyricsto EEVoiceLyrics \EEVerseAAlt
+      \context Lyrics = EELyricsB \lyricsto EEVoiceLyrics \EEVerseB
+      \context Lyrics = EELyricsBAlt \lyricsto EEVoiceLyrics \EEVerseBAlt
+      \context Lyrics = EELyricsC \lyricsto EEVoiceLyrics \EEVerseC
+      \context Lyrics = EELyricsCAlt \lyricsto EEVoiceLyrics \EEVerseCAlt
+      \context Lyrics = EELyricsD \lyricsto EEVoiceLyrics \EEVerseD
+      \context Lyrics = EELyricsDAlt \lyricsto EEVoiceLyrics \EEVerseDAlt
+      \context Lyrics = EELyricsE \lyricsto EEVoiceLyrics \EEVerseE
+      \context Lyrics = EELyricsEAlt \lyricsto EEVoiceLyrics \EEVerseEAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {56}
+        \fontsize #6 \center-align \line {ልቤ ዐረፈ፣ አምላክ ሆይ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {My heart is resting (244)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = EFStaffGroup <<
+      \context Staff = EFStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = EFVoiceLyrics \EFxBDDEFMusicLyrics
+        \context Voice = EFVoiceRH \EFxBDDEFMusicRH
+      >>
+      \new Lyrics  = EFLyricsA
+      \new Lyrics = EFLyricsAAlt
+      \new Lyrics  = EFLyricsB
+      \new Lyrics = EFLyricsBAlt
+      \new Lyrics  = EFLyricsC
+      \new Lyrics = EFLyricsCAlt
+      \new Lyrics  = EFLyricsD
+      \new Lyrics = EFLyricsDAlt
+
+      \context Staff = EFStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = EFVoiceLH \EFxBDDEFMusicLH
+      >>
+      \context Lyrics = EFLyricsA \lyricsto EFVoiceLyrics \EFVerseA
+      \context Lyrics = EFLyricsAAlt \lyricsto EFVoiceLyrics \EFVerseAAlt
+      \context Lyrics = EFLyricsB \lyricsto EFVoiceLyrics \EFVerseB
+      \context Lyrics = EFLyricsBAlt \lyricsto EFVoiceLyrics \EFVerseBAlt
+      \context Lyrics = EFLyricsC \lyricsto EFVoiceLyrics \EFVerseC
+      \context Lyrics = EFLyricsCAlt \lyricsto EFVoiceLyrics \EFVerseCAlt
+      \context Lyrics = EFLyricsD \lyricsto EFVoiceLyrics \EFVerseD
+      \context Lyrics = EFLyricsDAlt \lyricsto EFVoiceLyrics \EFVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {57}
+        \fontsize #6 \center-align \line {ጌታ ሆይ ወደ ማን እንሂድ?}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {To whom, Lord, shall we go? (69)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = EGStaffGroup <<
+      \context Staff = EGStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = EGVoiceLyrics \EGxFIEGMusicLyrics
+        \context Voice = EGVoiceRH \EGxFIEGMusicRH
+      >>
+      \new Lyrics  = EGLyricsA
+      \new Lyrics = EGLyricsAAlt
+      \new Lyrics  = EGLyricsB
+      \new Lyrics = EGLyricsBAlt
+      \new Lyrics  = EGLyricsC
+      \new Lyrics = EGLyricsCAlt
+      \new Lyrics  = EGLyricsD
+      \new Lyrics = EGLyricsDAlt
+
+      \context Staff = EGStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = EGVoiceLH \EGxFIEGMusicLH
+      >>
+      \context Lyrics = EGLyricsA \lyricsto EGVoiceLyrics \EGVerseA
+      \context Lyrics = EGLyricsAAlt \lyricsto EGVoiceLyrics \EGVerseAAlt
+      \context Lyrics = EGLyricsB \lyricsto EGVoiceLyrics \EGVerseB
+      \context Lyrics = EGLyricsBAlt \lyricsto EGVoiceLyrics \EGVerseBAlt
+      \context Lyrics = EGLyricsC \lyricsto EGVoiceLyrics \EGVerseC
+      \context Lyrics = EGLyricsCAlt \lyricsto EGVoiceLyrics \EGVerseCAlt
+      \context Lyrics = EGLyricsD \lyricsto EGVoiceLyrics \EGVerseD
+      \context Lyrics = EGLyricsDAlt \lyricsto EGVoiceLyrics \EGVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {58}
+        \fontsize #6 \center-align \line {ያንን ቀን መቼም አልረሳም}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {I never can forget the day (284)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = EHStaffGroup <<
+      \context Staff = EHStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = EHVoiceLyrics \EHxBHDEHMusicLyrics
+        \context Voice = EHVoiceRH \EHxBHDEHMusicRH
+      >>
+      \new Lyrics  = EHLyricsA
+      \new Lyrics = EHLyricsAAlt
+      \new Lyrics  = EHLyricsB
+      \new Lyrics = EHLyricsBAlt
+      \new Lyrics  = EHLyricsC
+      \new Lyrics = EHLyricsCAlt
+      \new Lyrics  = EHLyricsD
+      \new Lyrics = EHLyricsDAlt
+
+      \context Staff = EHStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = EHVoiceLH \EHxBHDEHMusicLH
+      >>
+      \context Lyrics = EHLyricsA \lyricsto EHVoiceLyrics \EHVerseA
+      \context Lyrics = EHLyricsAAlt \lyricsto EHVoiceLyrics \EHVerseAAlt
+      \context Lyrics = EHLyricsB \lyricsto EHVoiceLyrics \EHVerseB
+      \context Lyrics = EHLyricsBAlt \lyricsto EHVoiceLyrics \EHVerseBAlt
+      \context Lyrics = EHLyricsC \lyricsto EHVoiceLyrics \EHVerseC
+      \context Lyrics = EHLyricsCAlt \lyricsto EHVoiceLyrics \EHVerseCAlt
+      \context Lyrics = EHLyricsD \lyricsto EHVoiceLyrics \EHVerseD
+      \context Lyrics = EHLyricsDAlt \lyricsto EHVoiceLyrics \EHVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {59}
+        \fontsize #6 \center-align \line {የአዳኜ ልብ የዋህ ነው}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {The heart of my Saviour (291)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = EIStaffGroup <<
+      \context Staff = EIStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = EIVoiceLyrics \EIxBIAEIMusicLyrics
+        \context Voice = EIVoiceRH \EIxBIAEIMusicRH
+      >>
+      \new Lyrics  = EILyricsA
+      \new Lyrics = EILyricsAAlt
+      \new Lyrics  = EILyricsB
+      \new Lyrics = EILyricsBAlt
+      \new Lyrics  = EILyricsC
+      \new Lyrics = EILyricsCAlt
+
+      \context Staff = EIStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = EIVoiceLH \EIxBIAEIMusicLH
+      >>
+      \context Lyrics = EILyricsA \lyricsto EIVoiceLyrics \EIVerseA
+      \context Lyrics = EILyricsAAlt \lyricsto EIVoiceLyrics \EIVerseAAlt
+      \context Lyrics = EILyricsB \lyricsto EIVoiceLyrics \EIVerseB
+      \context Lyrics = EILyricsBAlt \lyricsto EIVoiceLyrics \EIVerseBAlt
+      \context Lyrics = EILyricsC \lyricsto EIVoiceLyrics \EIVerseC
+      \context Lyrics = EILyricsCAlt \lyricsto EIVoiceLyrics \EIVerseCAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {60}
+        \fontsize #6 \center-align \line {ፍላጎቴን ታውቃለህ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Lord, my heart's deep need Thou knowest (200)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = FZStaffGroup <<
+      \context Staff = FZStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = FZVoiceLyrics \FZxBZZFZMusicLyrics
+        \context Voice = FZVoiceRH \FZxBZZFZMusicRH
+      >>
+      \new Lyrics  = FZLyricsA
+      \new Lyrics = FZLyricsAAlt
+      \new Lyrics  = FZLyricsB
+      \new Lyrics = FZLyricsBAlt
+      \new Lyrics  = FZLyricsC
+      \new Lyrics = FZLyricsCAlt
+
+      \context Staff = FZStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = FZVoiceLH \FZxBZZFZMusicLH
+      >>
+      \context Lyrics = FZLyricsA \lyricsto FZVoiceLyrics \FZVerseA
+      \context Lyrics = FZLyricsAAlt \lyricsto FZVoiceLyrics \FZVerseAAlt
+      \context Lyrics = FZLyricsB \lyricsto FZVoiceLyrics \FZVerseB
+      \context Lyrics = FZLyricsBAlt \lyricsto FZVoiceLyrics \FZVerseBAlt
+      \context Lyrics = FZLyricsC \lyricsto FZVoiceLyrics \FZVerseC
+      \context Lyrics = FZLyricsCAlt \lyricsto FZVoiceLyrics \FZVerseCAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {61}
+        \fontsize #6 \center-align \line {አሁንም ለዘላለም ነው}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Jesus is our only message (10)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = FAStaffGroup <<
+      \context Staff = FAStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = FAVoiceLyrics \FAxAZFAMusicLyrics
+        \context Voice = FAVoiceRH \FAxAZFAMusicRH
+      >>
+      \new Lyrics  = FALyricsA
+      \new Lyrics = FALyricsAAlt
+      \new Lyrics  = FALyricsB
+      \new Lyrics = FALyricsBAlt
+      \new Lyrics  = FALyricsC
+      \new Lyrics = FALyricsCAlt
+      \new Lyrics  = FALyricsD
+      \new Lyrics = FALyricsDAlt
+
+      \context Staff = FAStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = FAVoiceLH \FAxAZFAMusicLH
+      >>
+      \context Lyrics = FALyricsA \lyricsto FAVoiceLyrics \FAVerseA
+      \context Lyrics = FALyricsAAlt \lyricsto FAVoiceLyrics \FAVerseAAlt
+      \context Lyrics = FALyricsB \lyricsto FAVoiceLyrics \FAVerseB
+      \context Lyrics = FALyricsBAlt \lyricsto FAVoiceLyrics \FAVerseBAlt
+      \context Lyrics = FALyricsC \lyricsto FAVoiceLyrics \FAVerseC
+      \context Lyrics = FALyricsCAlt \lyricsto FAVoiceLyrics \FAVerseCAlt
+      \context Lyrics = FALyricsD \lyricsto FAVoiceLyrics \FAVerseD
+      \context Lyrics = FALyricsDAlt \lyricsto FAVoiceLyrics \FAVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {62}
+        \fontsize #6 \center-align \line {ለምን በጨለማ ልሂድ?}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Why should I walk? (72)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = FBStaffGroup <<
+      \context Staff = FBStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = FBVoiceLyrics \FBxGBFBMusicLyrics
+        \context Voice = FBVoiceRH \FBxGBFBMusicRH
+      >>
+      \new Lyrics  = FBLyricsA
+      \new Lyrics = FBLyricsAAlt
+      \new Lyrics  = FBLyricsB
+      \new Lyrics = FBLyricsBAlt
+      \new Lyrics  = FBLyricsC
+      \new Lyrics = FBLyricsCAlt
+      \new Lyrics  = FBLyricsD
+      \new Lyrics = FBLyricsDAlt
+
+      \context Staff = FBStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = FBVoiceLH \FBxGBFBMusicLH
+      >>
+      \context Lyrics = FBLyricsA \lyricsto FBVoiceLyrics \FBVerseA
+      \context Lyrics = FBLyricsAAlt \lyricsto FBVoiceLyrics \FBVerseAAlt
+      \context Lyrics = FBLyricsB \lyricsto FBVoiceLyrics \FBVerseB
+      \context Lyrics = FBLyricsBAlt \lyricsto FBVoiceLyrics \FBVerseBAlt
+      \context Lyrics = FBLyricsC \lyricsto FBVoiceLyrics \FBVerseC
+      \context Lyrics = FBLyricsCAlt \lyricsto FBVoiceLyrics \FBVerseCAlt
+      \context Lyrics = FBLyricsD \lyricsto FBVoiceLyrics \FBVerseD
+      \context Lyrics = FBLyricsDAlt \lyricsto FBVoiceLyrics \FBVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {63}
+        \fontsize #6 \center-align \line {ጌታ ሆይ ቀንበርህን ልሸከመው}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Lord, I would take Thy yoke (223)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = FCStaffGroup <<
+      \context Staff = FCStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = FCVoiceLyrics \FCxBBCFCMusicLyrics
+        \context Voice = FCVoiceRH \FCxBBCFCMusicRH
+      >>
+      \new Lyrics  = FCLyricsA
+      \new Lyrics = FCLyricsAAlt
+      \new Lyrics  = FCLyricsB
+      \new Lyrics = FCLyricsBAlt
+      \new Lyrics  = FCLyricsC
+      \new Lyrics = FCLyricsCAlt
+      \new Lyrics  = FCLyricsD
+      \new Lyrics = FCLyricsDAlt
+
+      \context Staff = FCStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = FCVoiceLH \FCxBBCFCMusicLH
+      >>
+      \context Lyrics = FCLyricsA \lyricsto FCVoiceLyrics \FCVerseA
+      \context Lyrics = FCLyricsAAlt \lyricsto FCVoiceLyrics \FCVerseAAlt
+      \context Lyrics = FCLyricsB \lyricsto FCVoiceLyrics \FCVerseB
+      \context Lyrics = FCLyricsBAlt \lyricsto FCVoiceLyrics \FCVerseBAlt
+      \context Lyrics = FCLyricsC \lyricsto FCVoiceLyrics \FCVerseC
+      \context Lyrics = FCLyricsCAlt \lyricsto FCVoiceLyrics \FCVerseCAlt
+      \context Lyrics = FCLyricsD \lyricsto FCVoiceLyrics \FCVerseD
+      \context Lyrics = FCLyricsDAlt \lyricsto FCVoiceLyrics \FCVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {64}
+        \fontsize #6 \center-align \line {የሱን መንገድ እንወዳለን}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {We love the perfect way (32)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = FDStaffGroup <<
+      \context Staff = FDStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = FDVoiceLyrics \FDxCBFDMusicLyrics
+        \context Voice = FDVoiceRH \FDxCBFDMusicRH
+      >>
+      \new Lyrics  = FDLyricsA
+      \new Lyrics = FDLyricsAAlt
+      \new Lyrics  = FDLyricsB
+      \new Lyrics = FDLyricsBAlt
+      \new Lyrics  = FDLyricsC
+      \new Lyrics = FDLyricsCAlt
+      \new Lyrics  = FDLyricsD
+      \new Lyrics = FDLyricsDAlt
+
+      \context Staff = FDStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = FDVoiceLH \FDxCBFDMusicLH
+      >>
+      \context Lyrics = FDLyricsA \lyricsto FDVoiceLyrics \FDVerseA
+      \context Lyrics = FDLyricsAAlt \lyricsto FDVoiceLyrics \FDVerseAAlt
+      \context Lyrics = FDLyricsB \lyricsto FDVoiceLyrics \FDVerseB
+      \context Lyrics = FDLyricsBAlt \lyricsto FDVoiceLyrics \FDVerseBAlt
+      \context Lyrics = FDLyricsC \lyricsto FDVoiceLyrics \FDVerseC
+      \context Lyrics = FDLyricsCAlt \lyricsto FDVoiceLyrics \FDVerseCAlt
+      \context Lyrics = FDLyricsD \lyricsto FDVoiceLyrics \FDVerseD
+      \context Lyrics = FDLyricsDAlt \lyricsto FDVoiceLyrics \FDVerseDAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {65}
+        \fontsize #6 \center-align \line {የሱስን ታሪክ ቃል ሁሉ}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Tell me the story of Jesus (1)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = FEStaffGroup <<
+      \context Staff = FEStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = FEVoiceLyrics \FExAFEMusicLyrics
+        \context Voice = FEVoiceRH \FExAFEMusicRH
+      >>
+      \new Lyrics  = FELyricsA
+      \new Lyrics = FELyricsAAlt
+      \new Lyrics  = FELyricsB
+      \new Lyrics = FELyricsBAlt
+      \new Lyrics  = FELyricsC
+      \new Lyrics = FELyricsCAlt
+
+      \context Staff = FEStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = FEVoiceLH \FExAFEMusicLH
+      >>
+      \context Lyrics = FELyricsA \lyricsto FEVoiceLyrics \FEVerseA
+      \context Lyrics = FELyricsAAlt \lyricsto FEVoiceLyrics \FEVerseAAlt
+      \context Lyrics = FELyricsB \lyricsto FEVoiceLyrics \FEVerseB
+      \context Lyrics = FELyricsBAlt \lyricsto FEVoiceLyrics \FEVerseBAlt
+      \context Lyrics = FELyricsC \lyricsto FEVoiceLyrics \FEVerseC
+      \context Lyrics = FELyricsCAlt \lyricsto FEVoiceLyrics \FEVerseCAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {66}
+        \fontsize #6 \center-align \line {ኢየሱስ እየመጣ ነው}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {Christ is coming (398)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = FFStaffGroup <<
+      \context Staff = FFStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = FFVoiceLyrics \FFxCIHFFMusicLyrics
+        \context Voice = FFVoiceRH \FFxCIHFFMusicRH
+      >>
+      \new Lyrics  = FFLyricsA
+      \new Lyrics = FFLyricsAAlt
+      \new Lyrics  = FFLyricsB
+      \new Lyrics = FFLyricsBAlt
+      \new Lyrics  = FFLyricsC
+      \new Lyrics = FFLyricsCAlt
+
+      \context Staff = FFStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = FFVoiceLH \FFxCIHFFMusicLH
+      >>
+      \context Lyrics = FFLyricsA \lyricsto FFVoiceLyrics \FFVerseA
+      \context Lyrics = FFLyricsAAlt \lyricsto FFVoiceLyrics \FFVerseAAlt
+      \context Lyrics = FFLyricsB \lyricsto FFVoiceLyrics \FFVerseB
+      \context Lyrics = FFLyricsBAlt \lyricsto FFVoiceLyrics \FFVerseBAlt
+      \context Lyrics = FFLyricsC \lyricsto FFVoiceLyrics \FFVerseC
+      \context Lyrics = FFLyricsCAlt \lyricsto FFVoiceLyrics \FFVerseCAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {67}
+        \fontsize #6 \center-align \line {የኢየሱስ ሕያው ቃል}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line {The living words of Jesus (63)}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = FGStaffGroup <<
+      \context Staff = FGStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = FGVoiceLyrics \FGxFCFGMusicLyrics
+        \context Voice = FGVoiceRH \FGxFCFGMusicRH
+      >>
+      \new Lyrics  = FGLyricsA
+      \new Lyrics = FGLyricsAAlt
+      \new Lyrics  = FGLyricsB
+      \new Lyrics = FGLyricsBAlt
+      \new Lyrics  = FGLyricsC
+      \new Lyrics = FGLyricsCAlt
+
+      \context Staff = FGStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = FGVoiceLH \FGxFCFGMusicLH
+      >>
+      \context Lyrics = FGLyricsA \lyricsto FGVoiceLyrics \FGVerseA
+      \context Lyrics = FGLyricsAAlt \lyricsto FGVoiceLyrics \FGVerseAAlt
+      \context Lyrics = FGLyricsB \lyricsto FGVoiceLyrics \FGVerseB
+      \context Lyrics = FGLyricsBAlt \lyricsto FGVoiceLyrics \FGVerseBAlt
+      \context Lyrics = FGLyricsC \lyricsto FGVoiceLyrics \FGVerseC
+      \context Lyrics = FGLyricsCAlt \lyricsto FGVoiceLyrics \FGVerseCAlt
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+\markup \column{
+    \justify-line {
+        \fontsize #6 \bold {68}
+        \fontsize #6 \center-align \line {}
+        \null
+    }
+    \justify-line {
+        \null\fontsize #-1 \center-align \line { ()}
+        \null
+    }
+    \vspace #-10
+}
+\noPageBreak
+\score {
+  <<
+    \context StaffGroup = FHStaffGroup <<
+      \context Staff = FHStaffRH <<
+        \override Staff.BarLine #'allow-span-bar  = ##f
+        \set Staff.printPartCombineTexts = ##f
+        \context NullVoice = FHVoiceLyrics \FHxFHMusicLyrics
+        \context Voice = FHVoiceRH \FHxFHMusicRH
+      >>
+
+      \context Staff = FHStaffLH <<
+        \set Staff.printPartCombineTexts = ##f
+        \context Voice = FHVoiceLH \FHxFHMusicLH
+      >>
+  >>
+  \include "../Lib/HymnScoreSettings.ly"
+  >>
+}
+}
