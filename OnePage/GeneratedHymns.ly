@@ -3158,35 +3158,5 @@ chorusStr = Chorus
   \include "../Lib/HymnScoreSettings.ly"
   >>
 }
-\markup \column{
-    \justify-line {
-        \fontsize #6 \bold {68}
-        \fontsize #6 \center-align \line {}
-        \null
-    }
-    \justify-line {
-        \null\fontsize #-1 \center-align \line { ()}
-        \null
-    }
-    \vspace #-10
 }
-\noPageBreak
-\score {
-  <<
-    \context StaffGroup = FHStaffGroup <<
-      \context Staff = FHStaffRH <<
-        \override Staff.BarLine #'allow-span-bar  = ##f
-        \set Staff.printPartCombineTexts = ##f
-        \context NullVoice = FHVoiceLyrics \FHxFHMusicLyrics
-        \context Voice = FHVoiceRH \FHxFHMusicRH
-      >>
 
-      \context Staff = FHStaffLH <<
-        \set Staff.printPartCombineTexts = ##f
-        \context Voice = FHVoiceLH \FHxFHMusicLH
-      >>
-  >>
-  \include "../Lib/HymnScoreSettings.ly"
-  >>
-}
-}
