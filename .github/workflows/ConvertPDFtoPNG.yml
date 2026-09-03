@@ -39,7 +39,7 @@ jobs:
             echo "Converting: $pdf"
             echo "Output: output/${filename}.png"
 
-            magick -density 150 "$pdf" \
+            convert -density 150 "$pdf" \
               -background white \
               -alpha remove \
               -alpha off \
