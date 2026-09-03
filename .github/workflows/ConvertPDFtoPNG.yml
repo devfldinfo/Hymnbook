@@ -1,0 +1,78 @@
+name: Convert PDF to PNG
+
+on:
+  workflow_dispatch:
+
+  push:
+    paths:
+      - 'input/*.pdf'
+      - 'input/**/*.pdf'
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install ImageMagick
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick
+
+      - name: Enable PDF processing in ImageMagick
+        run: |
+          sudo sed -i 's/<policy domain="coder" rights="none" pattern="PDF" \/>/<policy domain="coder" rights="read|write" pattern="PDF" \/>/' /etc/ImageMagick-6/policy.xml
+
+      - name: Prepare output folder
+        run: |
+          mkdir -p output
+          rm -f output/*
+
+      - name: Convert PDFs to PNG
+        run: |
+          shopt -s nullglob
+
+          pdf_count=0
+
+          for pdf in input/*.pdf; do
+            pdf_count=$((pdf_count + 1))
+
+            filename=$(basename "$pdf" .pdf)
+
+            echo "Converting: $pdf"
+            echo "Output: output/${filename}.png"
+
+            magick -density 150 "$pdf" \
+              -background white \
+              -alpha remove \
+              -alpha off \
+              "output/${filename}.png"
+          done
+
+          if [ "$pdf_count" -eq 0 ]; then
+            echo "No PDF files found in input/"
+            exit 1
+          fi
+
+          echo "Converted $pdf_count PDF file(s)."
+
+      - name: Show generated files
+        run: |
+          echo "Generated PNG files:"
+          ls -lh output/
+
+      - name: Commit PNG files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add output/
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Convert PDFs to PNG"
+            git push
+          fi
