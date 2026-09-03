@@ -3,13 +3,16 @@ name: Clear PDF Files from Workflows
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   clear-pdfs:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Delete PDFs from .github/workflows
         run: |
