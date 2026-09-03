@@ -42,7 +42,7 @@ jobs:
             echo "Converting: $pdf"
             echo "Output: output/${filename}.png"
 
-            convert -density 150 "$pdf" \
+            convert -density 250 "$pdf" \
               -background white \
               -alpha remove \
               -alpha off \
