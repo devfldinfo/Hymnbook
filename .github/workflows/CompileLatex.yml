@@ -91,6 +91,34 @@ jobs:
             latexmk
 
       # -------------------------------------------------
+      # Copy fonts to LaTeX document directories
+      # -------------------------------------------------
+      - name: Copy Nyala font to LaTeX directories
+        shell: bash
+        run: |
+          set -e
+
+          FONT="$GITHUB_WORKSPACE/.fonts/nyala.ttf"
+
+          if [ ! -f "$FONT" ]; then
+            echo "ERROR: Nyala font not found at $FONT"
+            exit 1
+          fi
+
+          find . -type f -iname "*.tex" -print0 | while IFS= read -r -d '' texfile; do
+            TEXDIR="$(dirname "$texfile")"
+
+            mkdir -p "$TEXDIR/.fonts"
+            cp "$FONT" "$TEXDIR/.fonts/nyala.ttf"
+
+            echo "Copied Nyala font to: $TEXDIR/.fonts/nyala.ttf"
+          done
+
+
+
+
+
+      # -------------------------------------------------
       # Compile root documents
       # -------------------------------------------------
       - name: Compile LaTeX root documents only
